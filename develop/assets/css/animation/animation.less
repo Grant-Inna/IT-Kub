@@ -1,0 +1,305 @@
+.kub-image( @name ) {
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-image: url("../data/animation/@{name}.svg");
+}
+
+
+:root {
+   --width-container: 865px;
+   --height-container: 628px;
+   
+   --center: 275px;
+   --center-top: 199px;
+   --center-left: 215px;
+   
+   --gray-1: 245px;
+   --gray-1-top: 40px;
+   --gray-1-left: 66px;
+   
+   --small-w: 104px;
+   --small-h: 131px;
+   --small-top: 70px;
+   --small-left: 310px;
+   
+   --blue: 245px;
+   --blue-top: 0;
+   --blue-left: 426px;
+   
+   --big: 320px;
+   --big-top: 151px;
+   --big-left: 544px;
+   
+   
+   --gray-2: 172px;
+   --gray-2-top: 394px;
+   --gray-2-left: 401px;
+   
+   --red: 247px;
+   --red-top: 381px;
+   --red-left: 0;
+   
+   --back-w: 151px;
+   --back-h: 86px;
+   --back-top: 289px;
+   --back-left: 83px;
+}
+
+.animation__container {
+   position: relative;
+   z-index: 100;
+   width: var(--width-container);
+   height: var(--height-container);
+   
+   margin-left: 50px;
+}
+.kub {
+   position: absolute;
+   .flex-center();
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-timing-function: linear;
+}
+
+
+
+.kub-center {
+   z-index: 1000;
+   top: var(--center-top);
+   left: var(--center-left);
+   background: linear-gradient(43.83deg, #C6C5C5 1.91%, #F1ECEC 43.76%, #FFFFFF 94.91%);
+   width: var(--center);
+   height: var(--center);
+   .image {
+      .kub-image('center');
+      width: 56%;
+      height: 56%;
+   }
+   
+   animation-duration: 5s;
+  animation-name: kub-center;
+}
+@keyframes kub-center {
+   from { transform: scale(1) }
+   to { transform: scale3d(1.15, 1.15, 1.15) }
+
+}
+
+
+.kub-gray-1 {
+   z-index: 400;
+   top: var(--gray-1-top);
+   left: var(--gray-1-left);
+   background: linear-gradient(315.79deg, #A4A4A4 -3.76%, #E6E6E6 57.2%);
+   width: var(--gray-1);
+   height: var(--gray-1);
+   
+   .image {
+      position: relative;
+      .kub-image('talk');
+      background-position: center;
+      background-size: 45% 45%;
+      width: 100%;
+      height: 100%;
+   }
+   
+   animation-duration: 8s;
+   animation-delay: 1s;
+  animation-name: kub-gray-1;
+}
+.kub-gray-1 .image:before {
+   .pseudo();
+   .kub-image('gray-1');
+   background-position: top;
+   top: 100%;
+   right: 10%;
+   bottom: -100%;
+   left: 0;
+   width: 110%;
+   height: 100%;
+}
+@keyframes kub-gray-1 {
+   from { transform: scale(1) translateX(0) translateY(0) }
+   to { transform: scale3d(1.1, 1.1, 1.1) translateX(-10px) translateY(-10px)}
+
+}
+
+
+
+.kub-small {
+   z-index: 600;
+   top: var(--small-top);
+   left: var(--small-left);
+   background: linear-gradient(350.74deg, #CB4B42 38.14%, #FC3631 98.85%);
+   width: var(--small-w);
+   height: var(--small-h);
+   
+   .image {
+      .kub-image('ai');
+      background-position: top;
+      width: 50%;
+      height: 60%;
+   }
+}
+
+.kub-blue {
+   top: var(--blue-top);
+   left: var(--blue-left);
+   background: linear-gradient(302.59deg, #256FFE 11.29%, #3E79EA 51.14%, #50CDFF 102.8%, #A4C3FE 103.3%);
+   width: var(--blue);
+   height: var(--blue);
+   
+   .image {
+      position: relative;
+      .kub-image('head-1');
+      background-position: center 30%;
+      background-size: 60% 40%;
+      width: 100%;
+      height: 100%;
+   }
+}
+.kub-blue .image:before {
+   .pseudo();
+   .kub-image('blue');
+   background-position: right;
+   top: 0;
+   right: 100%;
+   bottom: -10%;
+   left: -100%;
+   width: 100%;
+   height: 110%;
+}
+
+
+.kub-big {
+   z-index: 500;
+   top: var(--big-top);
+   left: var(--big-left);
+   background:linear-gradient(300.93deg, #CB4B42 -88.51%, #E9403C 111.16%);
+   width: var(--big);
+   height: var(--big);
+   
+   .image {
+      position: relative;
+      .kub-image('chip');
+      background-position: center;
+      background-size: 40% 40%;
+      width: 100%;
+      height: 100%;
+   }
+}
+.kub-big .image:before {
+   .pseudo();
+   .kub-image('big');
+   background-position: right;
+   top: 0;
+   right: 100%;
+   bottom: 0;
+   left: -100%;
+   width: 100%;
+   height: 100%;
+}
+.kub-big {
+   animation-duration: 4s;
+   animation-delay: 1s;
+  animation-name: kub-big;
+}
+@keyframes kub-big {
+   0% { transform: scale(1) translateX(0) translateY(0) }
+   20% { transform: scale(1) translateX(0) translateY(0) }
+   100% { transform: scale3d(1.26, 1.26, 1.26) translateX(50px) translateY(-25px) }
+}
+
+
+.kub-gray-2 {
+   z-index: 300;
+   top: var(--gray-2-top);
+   left: var(--gray-2-left);
+   background: linear-gradient(180deg, #A4A4A4 0%, #E6E6E6 73.12%);
+   border: 1px solid #FFFFFF;
+   width: var(--gray-2);
+   height: var(--gray-2);
+   
+   .image {
+      position: relative;
+      .kub-image('head-2');
+      background-position: center 70%;
+      background-size: 60% 40%;
+      width: 100%;
+      height: 100%;
+   }
+}
+.kub-gray-2 .image:before {
+   .pseudo();
+   .kub-image('gray');
+   background-position: right;
+   top: -10%;
+   right: 100%;
+   bottom: 0;
+   left: -100%;
+   width: 100%;
+   height: 110%;
+}
+
+
+.kub-red{
+   z-index: 600;
+   top: var(--red-top);
+   left: var(--red-left);
+   background:linear-gradient(300.93deg, #CB4B42 -88.51%, #E9403C 111.16%);
+   border-right: 1px solid #CB4B42;
+   width: var(--red);
+   height: var(--red);
+   
+   .image {
+      position: relative;
+      .kub-image('write');
+      background-position: center;
+      background-size: 60%;
+      width: 100%;
+      height: 100%;
+   }
+}
+.kub-red .image:before {
+   .pseudo();
+   .kub-image('red');
+   background-position: left;
+   top: -10%;
+   right: -100%;
+   bottom: 0;
+   left: 100%;
+   width: 100%;
+   height: 110%;
+}
+.kub-red .image:after {
+   .pseudo();
+   .kub-image('redd');
+   background-position: bottom;
+   top: -100%;
+   right: -50%;
+   bottom: 0;
+   left: 0;
+   width: 150%;
+   height: 100%;
+}
+.kub-red {
+   animation-duration: 5s;
+   animation-delay: 4s;
+  animation-name: kub-red;
+}
+@keyframes kub-red {
+   0% { transform: scale(1) translateX(0) translateY(0) }
+   20% { transform: scale(1) translateX(0) translateY(0) }
+   100% { transform: scale3d(1.20, 1.20, 1.20) translateX(-30px) translateY(20px) }
+}
+
+
+.kub.kub-back {
+   z-index: 350;
+   top: var(--back-top);
+   left: var(--back-left);
+   background: linear-gradient(302.59deg, #256FFE 11.29%, #3E79EA 51.14%, #50CDFF 102.8%, #A4C3FE 103.3%);
+   width: var(--back-w);
+   height: var(--back-h);
+}
