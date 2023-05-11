@@ -1,0 +1,62 @@
+.svg-b(@folder1, @folder2, @name) {
+   background-image: url("../data/@{folder1}/@{folder2}/@{name}.svg");
+   background-repeat: no-repeat;
+}
+.svg(@folder, @name) {
+   background-image: url("../data/@{folder}/@{name}.svg");
+   background-repeat: no-repeat;
+}
+.png(@folder, @name) {
+   background-image: url("../data/@{folder}/@{name}.png");
+   background-repeat: no-repeat;
+}
+
+
+
+.logo_ficto {
+   .svg( 'logo', 'ficto' );
+   background-position: left;
+   background-size: contain;
+}
+.logo_kub {
+   .svg( 'logo', 'kub' );
+   background-position: left;
+   background-size: contain;
+}
+.logo_kub-adaptive() {
+   .svg( 'logo', 'kub-adapt' );
+   background-position: left;
+   background-size: contain;
+}
+
+
+.body-lines-left() {
+   .svg('bg', 'lines-dots-left');
+   //background-position: -30%;
+   //background-size: 90%;
+   background-position: -10vw 12vw;
+   background-size: 85vw;
+}
+.body-lines-right() {
+   .svg('bg', 'lines-dots-right');
+   background-position: 70% center;
+   background-size: cover;
+}
+
+.bg-mobile() {
+   .svg( 'bg', 'menu-mobile' );
+   background-position: left 460px;
+   background-size: contain;
+}
+
+
+.bg-purpose() {
+   .png( 'images', 'bg-children' );
+   background-position: left;
+   background-size: contain;
+}
+.bg-purpose-adapt() {
+   .png( 'images', 'bg-children-adapt' );
+   background-position: left;
+   background-size: contain;
+}

@@ -1,0 +1,38 @@
+menu.header__menu_holder {
+   .row();
+   .justify-end();
+   align-content: flex-start;
+   font-size: .95rem;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+   color: @color-black;
+   //.montserrat-semibold();
+   .opensans-semibold();
+   
+   .middle-block({
+      font-size: 1.1rem;
+   });
+   .md-block({
+      display: none;
+   });
+   .sm-block({
+      font-size: 1.2rem;
+   });
+}
+.menu__item {
+   position: relative;
+   .tr();
+   .col();
+   height: 1.1rem;
+   margin-bottom: 1rem;
+    .middle-block({
+      height: 1.2rem;
+   });
+}
+.menu__item.active.hover {
+   .tr();
+   .opensans-bold();
+   color: @color-blue-light;
+   
+   display: inline;
+}

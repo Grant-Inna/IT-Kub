@@ -5,6 +5,11 @@
 
 
 @font-face {
+  font-family: '@{font1}-ExtraBold';
+  src: url('../fonts/@{font1}/@{font1}-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
   font-family: '@{font1}-Bold';
   src: url('../fonts/@{font1}/@{font1}-Bold.ttf') format('truetype');
   font-weight: 700;
@@ -42,6 +47,11 @@
   font-weight: 600;
 }
 @font-face {
+  font-family: '@{font2}-Medium';
+  src: url('../fonts/@{font2}/@{font2}-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
   font-family: '@{font2}-Regular';
   src: url('../fonts/@{font2}/@{font2}-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -62,36 +72,54 @@
 
 
 
+.montserrat-extrabold() {
+  font-family: '@{font1}-ExtraBold', Proxima Nova, Gilroy, Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
 .montserrat-bold() {
-  font-family: '@{font1}-Bold';
+  font-family: '@{font1}-Bold', Proxima Nova, Gilroy, Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 .montserrat-semibold() {
-  font-family: '@{font1}-SemiBold';
+  font-family: '@{font1}-SemiBold', Proxima Nova, Gilroy, Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 .montserrat-medium() {
-  font-family: '@{font1}-Medium';
+  font-family: '@{font1}-Medium', Proxima Nova, Gilroy, Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 .montserrat-regular() {
-  font-family: '@{font1}-Regular';
+  font-family: '@{font1}-Regular', Proxima Nova, Gilroy, Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 .montserrat-light() {
-  font-family: '@{font1}-Light';
+  font-family: '@{font1}-Light', Proxima Nova, Gilroy, Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 .opensans-bold() {
-  font-family: '@{font2}-Bold';
+  font-family: '@{font2}-Bold', Georgia, sans-serif;
+  font-weight: 700;
 }
 .opensans-semibold() {
-  font-family: '@{font2}-SemiBold';
+  font-family: '@{font2}-SemiBold', Georgia, sans-serif;
+  font-weight: 600;
+}
+.opensans-medium() {
+  font-family: '@{font2}-Medium', Georgia, sans-serif;
+  font-weight: 500;
 }
 .opensans-regular() {
-  font-family: '@{font2}-Regular';
+  font-family: '@{font2}-Regular', Georgia, sans-serif;
+  font-weight: 400;
 }
 .opensans-light() {
-  font-family: '@{font2}-Light';
+  font-family: '@{font2}-Light', Georgia, sans-serif;
+  font-weight: 300;
 }
 
 
 .roboto-bold() {
-  font-family: '@{font3}-Bold';
+  font-family: '@{font3}-Bold', "Arial Black", sans-serif;
+  font-weight: 700;
 }

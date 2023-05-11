@@ -1,5 +1,31 @@
+.background-gray {
+   background-color: @color-back-gray-dark;
+}
+.background-black {
+   background-color: @color-black;
+}
 
+.flex { display: flex }
 
+section h1.caption {
+   .montserrat-bold();
+   font-size: 4rem;
+   line-height: 5rem;
+}
+section .text-22 {
+   .montserrat-regular();
+   font-size: 1.5rem;
+   line-height: 1.9rem;
+}
+section .text-27 {
+   .montserrat-regular();
+   font-size: 1.8rem;
+   line-height: 2.2rem;
+}
+section strong {
+   display: inline;
+   .montserrat-bold();
+}
 .hidden {
    display: none;
 }
@@ -9,4 +35,30 @@
 }
 .hide {
    opacity: 0;
+}
+
+
+.block-11 {
+   .col();
+   .size(11);
+   .size-xl(11);
+   .size-md(24);
+   .size-sm(24);
+   .size-xs(24);
+}
+.block-12 {
+   .col();
+   .size(12);
+   .size-xl(12);
+   .size-md(24);
+   .size-sm(24);
+   .size-xs(24);
+}
+.block-13 {
+   .col();
+   .size(13);
+   .size-xl(13);
+   .size-md(24);
+   .size-sm(24);
+   .size-xs(24);
 }

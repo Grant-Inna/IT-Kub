@@ -1,4 +1,64 @@
-.icon-svg( @folder, @name ) {
-   background-image: url("../data/@{folder}/@{name}.svg");
+.icon-svg-b(@folder, @name) {
+   background-image: url("../data/icons/@{folder}/@{name}.svg");
    background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
 }
+.icon-svg(@name) {
+   background-image: url("../data/icons/@{name}.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+}
+.size-1() {
+   width: 1rem;
+   height: 1rem;
+}
+.size-12() {
+   width: 1.2rem;
+   height: 1.2rem;
+}
+.size-14() {
+   width: 1.4rem;
+   height: 1.4rem;
+}
+.size-18() {
+   width: 1.8rem;
+   height: 1.8rem;
+}
+.size-2() {
+   width: 2rem;
+   height: 2rem;
+}
+
+.icon-phone {
+   .icon-svg( 'phone' );
+   .size-12();
+}
+
+.icon-mail{
+   .icon-svg( 'mail' );
+   .size-14();
+}
+
+
+.icon-ok {
+   .icon-svg-b( 'social', 'ok-d' );
+   .size-18();
+   .tr();
+}
+.icon-vk {
+   .icon-svg-b( 'social', 'vk-d' );
+   .size-18();
+   .tr();
+}
+
+
+.icon-arrow-top {
+   .icon-svg( 'arrow-top' );
+   .size-2();
+   .tr();
+}
+

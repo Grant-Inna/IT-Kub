@@ -1,0 +1,73 @@
+.hover {
+   position: relative;
+   .tr();
+}
+.hover:after {
+   .pseudo();
+   bottom: -2px;
+   left: -1px;
+   right: -1px;
+   width: calc( 100% + 2px );
+   height: 1px;
+   background-color: @color-back-gray-light;
+}
+.hover:before {
+   .pseudo();
+   bottom: -2px;
+   left: -1px;
+   right: 0;
+   width: 0;
+   height: 1px;
+   background-color: @color-blue-light;
+}
+
+.hover:hover:before {
+   width: calc( 100% + 2px );
+   right: -1px;
+   .tr();
+}
+.hover:hover:after {
+   width: 0;
+   left: unset;
+   right: -1px;
+   transition: all .15s ease-in-out;
+}
+
+
+.icon-ok:hover {
+   .icon-svg-b( 'social', 'ok-hover' );
+   .tr();
+}
+.icon-vk:hover {
+   .icon-svg-b( 'social', 'vk-hover' );
+   .tr();
+}
+
+
+.footer__totop:hover {
+   .tr();
+   background-color: #ffffff;
+   
+   .icon-arrow-top {
+      .icon-svg('arrow-top-hover');
+      .tr();
+   }
+}
+
+.menu__item.hover:after {
+   background-color: transparent;
+}
+.menu__item.hover:hover {
+   .tr();
+   color: @color-blue-light
+}
+.menu__mobile_item:hover {
+   .tr();
+   color: @color-blue-light;
+   border-bottom: 1px solid @color-blue-light;
+}
+
+.active.menu__item.hover:hover:before {
+   width: 0;
+   .tr();
+}
