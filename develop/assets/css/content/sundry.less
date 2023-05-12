@@ -1,10 +1,16 @@
+/* Index раздел со списком */
 @purpose-container: 12rem;
 .purpose__container {
    position: relative;
    z-index: 100;
    margin-top: @purpose-container;
-   margin-bottom: @purpose-container;
-   
+   margin-bottom: @purpose-container + 8rem;
+   .xl-block({
+      margin-bottom: @purpose-container + 3rem;
+   });
+   .middle-block({
+      margin-bottom: @purpose-container + 1rem;
+   });
    .md-block({
       margin-top: 20rem;
    })
@@ -16,7 +22,7 @@
    .pseudo();
    z-index: 90;
    top: @purpose-container * -1 - 1rem;
-   bottom: @purpose-container * -1 - 1rem;
+   bottom: @purpose-container * -1 - 4rem;
    left: 0;
    width: 45%;
     .bg-purpose();
@@ -38,6 +44,7 @@
    .col();
    .size(13);
    .size-xl(13);
+   .size-middle(13);
    .size-lg(13);
    .size-md(25);
    .size-sm(25);
@@ -46,4 +53,159 @@
    .montserrat-bold();
    font-size: 2rem;
    line-height: 2.4rem;
+}
+
+
+/* Index раздел с иконками */
+.directions__container {
+   position: relative;
+}
+.directions__container:after {
+   .pseudo();
+   top: -35%;
+   right: 0;
+   width: calc( 75% - 15vw );
+   height: 150%;
+   .body-lines-right();
+   .md-block({
+      width: 95%;
+   })
+}
+.row.directions__holder {
+   .justify-center();
+   margin-bottom: calc( 6rem + 3vw );
+}
+.directions__item {
+   .col();
+   .size(6);
+   .size-xl(6);
+   .size-middle(6);
+   .size-lg(8);
+   .size-md(12);
+   .size-sm(12);
+   .size-xs(18);
+   .size-xxs(20);
+   
+   
+    margin-bottom: (@offset * 1.5);
+    .xl-block({
+        margin-bottom: (@offset_xl * 1.5);
+    });
+    .middle-block({
+        margin-bottom: (@offset_middle * 1.5);
+    });
+    .lg-block({
+        margin-bottom: (@offset_lg * 1.5);
+    });
+    .sm-block({
+        margin-bottom: (@offset_sm * 1.5);
+    });
+}
+.directions-icon( @name ) {
+   background-image: url("../data/icons/index/@{name}.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+}
+.directions__icon {
+   width: 100%;
+   height: 11rem;
+}
+.directions__text {
+   .montserrat-medium();
+   text-align: center;
+   margin-top: 2rem;
+   font-size: 1.2rem;
+   line-height: 1.6rem;
+   .middle-block({
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+   });
+   .sm-block({
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+   });
+}
+.directions_icon-1 { .directions-icon( '1' ) }
+.directions_icon-2 { .directions-icon( '2' ) }
+.directions_icon-3 { .directions-icon( '3' ); background-size: auto 92%; background-position: bottom; }
+.directions_icon-4 { .directions-icon( '4' ); background-size: auto 95%; background-position: bottom; }
+.directions_icon-5 { .directions-icon( '5' ); background-size: auto 95%; background-position: bottom; }
+.directions_icon-6 { .directions-icon( '6' ) }
+.directions_icon-7 { .directions-icon( '7' ) }
+.directions_icon-8 { .directions-icon( '8' ); padding-top: .6rem }
+
+.directions_icon-8 + .directions__text {
+   margin-top: 1.4rem;
+}
+
+/* Index диаграмма внизу страницы */
+.number__container {
+}
+.number__container .row {
+   .justify-between();
+}
+.number__container .caption {
+   width: 50%;
+   margin-bottom: 4rem;
+   .lg-block({
+      width: 70%;
+      margin-bottom: 8rem;
+   });
+   .md-block({
+      width: 90%;
+      margin-bottom: 4rem;
+   });
+}
+.number__container .text-25 {
+   align-self: center;
+   .col();
+   .size(7);
+   .size-xxl(7);
+   .size-xl(8);
+   .size-middle(10);
+   .size-lg(10);
+   .size-md(12);
+   .size-sm(20);
+   .size-xs(24);
+   .md-block({
+      margin-bottom: 10rem;
+   });
+   .xs-block({
+      margin-bottom: 7rem;
+   });
+   .xxs-block({
+      margin-bottom: 5rem;
+   })
+}
+.number__diagram {
+   .col();
+   .size(13);
+   .size-xxl(13);
+   .size-xl(13);
+   .size-middle(13);
+   .size-lg(13);
+   .size-md(24);
+   .size-sm(24);
+   .size-xs(24);
+   
+   min-height: 200px;
+   .md-block({
+   
+   })
+}
+
+.number__container strong {
+   .montserrat-regular();
+   display: inline;
+   font-size: 1.7rem;
+   line-height: 2.1rem;
+   .middle-block({
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+   });
+   .sm-block({
+      font-size: 1.9rem;
+      line-height: 2.4rem;
+   });
 }
