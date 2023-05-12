@@ -9,6 +9,9 @@
       margin-top: 20rem;
    })
 }
+.purpose__container .row {
+   .justify-end();
+}
 .purpose__container:before {
    .pseudo();
    z-index: 90;
@@ -29,15 +32,15 @@
 
 @purpose: 52%;
 .purpose__text {
-      position: relative;
+   position: relative;
    z-index: 100;
-   width: @purpose;
-   margin-left: 100% - @purpose;
    
-   .md-block({
-      width: 100%;
-      margin-left: 0;
-   })
+   .col();
+   .size(13);
+   .size-xl(13);
+   .size-lg(13);
+   .size-md(25);
+   .size-sm(25);
 }
 .purpose__container h1 {
    .montserrat-bold();
