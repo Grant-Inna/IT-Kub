@@ -57,9 +57,9 @@ $(document).ready(function () {
          menu_width = width * 0.7
       } // Ширина меню зависит от размера экрана
       else if (width < 450) {
-         menu_width = width * 0.6
+         menu_width = width * 0.7
       } else {
-         menu_width = width * 0.5
+         menu_width = width * 0.6
       }
       
       var $mobile_trigger = $('.wrapper .menu__mobile'),
