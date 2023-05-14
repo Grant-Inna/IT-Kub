@@ -5,11 +5,70 @@ html
    +title( 'Центры цифрового образования детей' )
 
    body
-      #container
+      #container_federal
          include assets/jade/header/__header
          +menu( '', 'active', '', '', '', '', '' )
 
          include assets/jade/header/main-pages
+
+         section( aria-label='О&nbsp;федеральном операторе' ).about_federal__container
+            .wrapper
+               h1.caption.mb4 О федеральном
+                  br
+                  | операторе
+               .about_federal__text
+                  .about_federal__logo.mb2
+                     .logo_ficto-black
+                  .text-22
+                     strong Федеральное государственное автономное научное учреждение «Федеральный институт цифровой трансформации в&nbsp;сфере образования»
+                     | отвечает за&nbsp;полный цикл создания ведомственных информационных систем&nbsp;&mbash; от&nbsp;проектирования до&nbsp;внедрения и&nbsp;поддержки, а&nbsp;также за&nbsp;развитие технологий в&nbsp;сфере образования.
+
+         include assets/jade/content/federal/responsibility
+
+         section( aria-label='О передаче центров ФГАНУ ФИЦТО' ).mt5.mb8
+            .wrapper
+               .row
+                  .block-20-center.text_block
+                     p.text-22 Ввиду наличия у&nbsp;ФГАНУ &laquo;ФИЦТО&raquo; экспертных компетенций в&nbsp;практической реализации информационных продуктов и&nbsp;технологий,
+                        strong.ml Министерством просвещения Российской Федерации
+                        |  принято решение в&nbsp;2023 году
+                        strong.ml определить ФГАНУ &laquo;ФИЦТО&raquo; федеральным оператором проекта
+                        |  и&nbsp;передать организационно&ndash;методическое и&nbsp;информационное сопровождение функционирования Центров цифрового образования детей «IT-куб».
+
+         section( aria-label='Направления деятельности' ).course__container
+            .wrapper
+               h1.caption.mb5 Направления деятельности
+               .flex-wrap
+                  article.course__block
+                     h1.title Просветительские
+                        br
+                        |  мероприятия
+                     .course__holder
+                        .course__icon.course_icon-1
+                        .course__text.text-22
+                           p.mb2 Образовательные мероприятия с&nbsp;участием профессиональных экспертов IT-отрасли
+                           p.mb2 Консультационная поддержка по&nbsp;актуальным тематикам
+                           p.mb2 Освещение вклада педагогов&ndash;наставников в&nbsp;проекты обучающихся
+
+                  article.course__block
+                     h1.title Популяризационные
+                        br
+                        |  мероприятия
+                     .course__holder
+                        .course__icon.course_icon-2
+                        .course__text.text-22
+                           p.mb2 Организация профессионального и&nbsp;неформального общения с&nbsp;экспертным сообществом IT-отрасли
+                           p.mb2 Распространение существующих успешных практик и&nbsp;наработок Центров «IT-куб» на&nbsp;федеральном уровне
+                           p.mb2 Проведение федеральных конкурсных мероприятий
+                  article.course__block-long
+                     h1.title Технологическая
+                        br
+                        | поддержка
+                     .course__holder
+                        .course__icon.course_icon-3
+                        .course__text.text-22
+                           p Проектирование единого федерального банка инновационного опыта педагогов и&nbsp;детей (Федеральный репозиторий проектов команд Центров «IT-куб»)
+
 
 
          include assets/jade/footer/footer

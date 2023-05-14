@@ -7,9 +7,7 @@
    .md( margin-right, 1rem )
 }
 footer.footer__container .background-gray {
-   .xs-block({
-      display: none;
-   })
+
 }
 .footer__holder {
    .row();
@@ -144,4 +142,47 @@ a.footer__icon {
    height: 4.1rem;
    border-radius: 1px;
    background-color: @color-blue-light;
+}
+
+
+.footer__section:first-child {
+   .md-block({
+      margin-bottom: 3rem;
+   })
+}
+footer.footer__container .footer__section .hidden {
+   display: block !important;
+   .md-block({
+      display: none !important;
+   })
+}
+footer.footer__container .footer__section.open .hidden {
+   .md-block({
+      display: block !important;
+   })
+}
+
+.element__more {
+   .flex();
+   .items-center();
+   display: none;
+   
+   cursor: pointer;
+   .md-block({
+      display: flex;
+   })
+   
+}
+.element__more span {
+   color: @color-back-gray-light;
+}
+.element__more_arrow {
+   display: inline-block;
+   margin-left: .8rem;
+   .tr();
+}
+
+.element__more:hover .element__more_arrow {
+   .element__more_arrow-hover();
+   .tr();
 }

@@ -1,40 +1,43 @@
 $(document).ready(function () {
    /* читать дальше */
    
- /*  if ($('.element__more').length > 0) {
+   if ($('.element__more').length > 0) {
       
       let $element__more = $('.element__more'),
           $hide = $('.hidden'),
           $arrow = $('.element__more_arrow'),
-          $text = $('.element__more_text'),
+          $text = $('.element__more span'),
           $link = $('.element__link span');
+      
       $element__more.on('click', openAnswer);
       
       function openAnswer() {
-         let parent = $(this).closest('.element__holder');
+         let parent = $(this).closest('.footer__section');
          
          if (!parent.hasClass('open')) {
             
             $('.open').removeClass('open');
             $hide.slideUp(400);
             $link.fadeOut();
-            $('.element__holder').removeClass('open');
-            $text.html('Развернуть');
+            $('.footer__section').removeClass('open');
+            $text.html('Подробнее');
             
             parent.find($hide).slideDown(400); // ради чего всё затевалось - показать скрытое
+            parent.find($arrow).addClass('rotate');
             parent.find($link).fadeIn();
             parent.addClass('open');
-            $(this).find($text).html('Свернуть');
+            $(this).find($text).html('Скрыть');
             
          } else {
             parent.find($hide).slideUp(400);
             parent.find($link).fadeOut();
             parent.removeClass('open');
-            $(this).find($text).html('Развернуть');
+            $(this).find($text).html('Подробнее');
+            $arrow.removeClass('rotate');
          }
       }
       
-   }*/
+   }
    
    /* плавный скрол */
    

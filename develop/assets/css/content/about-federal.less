@@ -1,0 +1,399 @@
+.about_federal__container {
+   position: relative;
+   z-index: 200;
+   .bg-federal();
+   margin-top: -4rem;
+   padding-top: 12rem;
+   padding-bottom: 6rem;
+   .xl-block({
+      padding-bottom: 3rem;
+   });
+   .middle-block({
+      padding-bottom: 3rem;
+   });
+   .lg-block({
+      margin-top: -2rem;
+      padding-top: 10rem;
+      background-position: 110%;
+   });
+   .md-block({
+      .bg-federal-adapt();
+      padding-top: 3rem;
+      
+      margin-top: -1rem;
+      
+   });
+   .sm-block({
+      background-position: right 20%;
+      padding-top: 2rem;
+   });
+}
+section.about_federal__container h1.caption {
+   .md-block({
+      margin-bottom: 19rem;
+   });
+   .sm-block({
+      margin-bottom: 17rem;
+   });
+   .sm-block({
+      margin-bottom: 21rem;
+      font-size: 3.5rem;
+      line-height: 4rem;
+   });
+   .xxs-block({
+      font-size: 2.8rem;
+      line-height: 3.2rem;
+   });
+}
+.about_federal__text {
+   width: 50%;
+   
+   .md-block({
+      width: 100%;
+   });
+}
+.about_federal__logo {
+
+}
+.about_federal__logo .logo_ficto-black {
+   width: 100%;
+   height: 5rem;
+   
+   .sm-block({
+      height: 4rem;
+   })
+}
+
+
+/* Зона ответственности */
+.responsibility__container {
+   position: relative;
+   z-index: 50;
+   background-color: white;
+   margin-top: 3rem;
+   
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+   
+   .ll-block({
+      margin-top: 4rem;
+   });
+   .xl-block({
+      margin-top: 4rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+   });
+   .md-block({
+      margin-top: 3rem;
+   });
+}
+.responsibility__container .row {
+   .items-center();
+}
+.responsibility__container article.block-12 {
+   .md-block({
+      margin-bottom: 5rem;
+   })
+}
+.responsibility__holder {
+
+}
+.responsibility__block {
+   .row();
+   flex-wrap: nowrap;
+   .items-center();
+   
+   .sm-block({
+   
+   })
+}
+.responsibility__block:first-child {
+   margin-bottom: 3rem;
+}
+.responsibility__icon {
+   .col();
+   .size(8);
+   .size-xl(8);
+   .size-middle(8);
+   .size-lg(8);
+   .size-md(8);
+   .size-sm(7);
+   .size-xs(6);
+   
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 85% 85%;
+   
+   height: 8rem;
+   flex-shrink: 0;
+}
+.responsibility-icon( @name ) {
+   background-image: url("../data/icons/about_federal/@{name}.svg");
+}
+.responsibility_icon-1 { .responsibility-icon( '1' ); }
+.responsibility_icon-2 { .responsibility-icon( '2' ) }
+
+strong.text-22.responsibility__text {
+   .col();
+   .size(16);
+   .size-xl(16);
+   .size-middle(16);
+   .size-lg(16);
+   .size-md(16);
+   .size-sm(17);
+   .size-xs(18);
+   
+   .xs-block({
+      padding-left: 1rem;
+      box-sizing: border-box;
+   })
+}
+
+
+/* Направления деятельности */
+.course__container {
+   cursor: pointer;
+}
+.course__container h1.caption {
+   .xs-block({
+      font-size: 3.5rem;
+      line-height: 3.9rem;
+   });
+}
+.course__container .course__holder {
+   position: relative;
+   z-index: 150;
+}
+article.course__block {
+   width: 50%;
+   
+   .lg-block({
+      width: 100%;
+   });
+   .xs-block({
+      width: calc( 100% + 60px );
+      margin-left: -30px;
+      margin-right: -30px;
+   })
+}
+article.course__block-long {
+   width: 100%;
+   
+   .flex();
+   .items-center();
+   .justify-between();
+   
+   
+   .lg-block({
+      display: block;
+   });
+   .xs-block({
+      width: calc( 100% + 60px );
+      margin-left: -30px;
+      margin-right: -30px;
+   })
+}
+article.course__block:first-child { background-color: @color-red-light }
+article.course__block:nth-child(2) { background-color: @color-blue-light }
+article.course__block-long { background-color: @color-back-gray-light }
+
+.course__container h1.title {
+   color: @color-back-white;
+   text-align: center;
+   
+   margin: 5rem 3rem 4rem;
+   
+   font-size: 2.2rem;
+   line-height: 2.6rem;
+   .middle-block({
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+   });
+   .lg-block({
+      font-size: 2.9rem;
+    line-height: 3rem;
+   });
+   .sm-block({
+      font-size: 2.6rem;
+      line-height: 3rem;
+   });
+   .xs-block({
+      font-size: 2rem;
+      line-height: 2.4rem;
+   });
+   .xxs-block({
+      margin: 4rem 1rem 3rem;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+   });
+}
+
+
+.course__holder {
+   margin: 3rem 3rem 6rem;
+   .xxs-block({
+      margin: 3rem 1.5rem 5rem;
+   })
+}
+.course__icon {
+   width: 26rem;
+   height: 26rem;
+   
+   margin: 0 auto;
+   
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   
+   .xs-block({
+      width: 100%;
+      height: 24rem;
+   });
+}
+.course( @name ) {
+   background-image: url("../data/icons/about_federal/c-@{name}.svg");
+}
+.course__icon.course_icon-1 { .course('1') }
+.course__icon.course_icon-2 { .course('2') }
+.course__icon.course_icon-3 { .course('3') }
+
+article.course__block-long h1.title {
+   color: @color-black;
+   text-align: left;
+   //margin-left: 9rem;
+   
+   font-size: 2.6rem;
+   line-height: 3rem;
+   .middle-block({
+      font-size: 2.8rem;
+      line-height: 3.2rem;
+   });
+   .lg-block({
+      text-align: center;
+      font-size: 2.9rem;
+    line-height: 3rem;
+   });
+   .sm-block({
+      font-size: 2.6rem;
+      line-height: 3rem;
+   });
+   .xs-block({
+      font-size: 2rem;
+      line-height: 2.4rem;
+   });
+   .xxs-block({
+      margin: 4rem 1rem 3rem;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+   });
+   
+   
+}
+article.course__block-long .course__holder {
+   margin: 3rem 9rem 6rem auto;
+   
+   .lg-block({
+      margin: 3rem 3rem 6rem;
+   });
+   .xxs-block({
+      margin: 3rem 1.5rem 4rem;
+   })
+   
+}
+article.course__block-long .course__icon {
+   width: 25rem;
+   height: 30rem;
+   
+   .lg-block({
+      width: 26rem;
+      height: 26rem;
+      margin: 0 auto;
+   });
+   
+   .xs-block({
+      width: 100%;
+      height: 24rem;
+   });
+}
+
+article .course__text {
+   .tr();
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding-top: 2rem;
+   padding-left: 2rem;
+   box-sizing: border-box;
+   
+   color: @color-back-white;
+   
+   opacity: 0;
+   
+   .lg-block({
+      padding-left: 8vw;
+      padding-right: 8vw;
+   });
+   .md-block({
+      padding-left: 5vw;
+      padding-right: 5vw;
+   });
+   .sm-block({
+      padding-left: 1vw;
+      padding-right: 1vw;
+   });
+   .xs-block({
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-left: 0;
+      padding-right: 20px;
+   });
+   
+}
+.course__container article:nth-child(2) .course__text {
+   height: 110%;
+   top: -10%;
+}
+article.course__block-long .course__text {
+   color: @color-black;
+   
+   .column();
+   .justify-center();
+   
+    right: 20%;
+    width: 120%;
+   
+   .lg-block({
+      right: 0;
+      width: 100%;
+      display: block;
+   });
+   
+   font-size: 1.25rem;
+   line-height: 1.65rem;
+   .middle-block({
+      font-size: 1.45rem;
+      line-height: 1.85rem;
+   });
+   .sm-block({
+      font-size: 1.55rem;
+      line-height: 1.95rem;
+   });
+   .xs-block({
+      margin-left: 10px;
+      margin-right: 30px;
+      padding-left: 0;
+      padding-right: 20px;
+   });
+}
+article.course__block:first-child .course__text { background-color: @color-red-light }
+article.course__block:nth-child(2) .course__text { background-color: @color-blue-light }
+article.course__block-long .course__text { background-color: @color-back-gray-light }
+
+.course__container article:hover .course__holder .course__text {
+   .tr();
+   opacity: 1;
+}
+
