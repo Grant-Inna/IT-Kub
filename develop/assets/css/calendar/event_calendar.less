@@ -1,0 +1,83 @@
+.events_calendar__container {
+   position: relative;
+   z-index: 200;
+   background-color: white;
+   
+   padding-top: 6rem;
+   padding-bottom: 6rem;
+}
+.events__slider {
+   padding-right: 2rem;
+   padding-left: 2rem;
+}
+#events_calendar__slider {
+}
+.slider__month {}
+.month__holder {
+   cursor: pointer;
+}
+.month {
+   margin-right: 1.4rem;
+   margin-left: 1.4rem;
+    padding: 6px 0;
+   
+   text-align: center;
+   .montserrat-medium();
+   font-size: 1.4rem;
+   line-height: 1.8rem;
+   .middle-block({
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+   });
+   .sm-block({
+      font-size: 1.6rem;
+      line-height: 2rem;
+   });
+}
+
+
+
+.slider__month .slick-track {
+   .flex();
+   .items-center();
+}
+
+.slick-slide.slick-current.slick-active.slick-center {
+   background-color: @color-red-dark;
+   border-radius: 2px;
+   color: white;
+   .tr();
+   
+   .xxs-block({
+      background-color: transparent;
+      color: @color-black;
+   })
+}
+.slick-slide.slick-current.slick-active.slick-center .month {
+   .xxs-block({
+      .montserrat-semibold();
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+   })
+}
+
+.slick-prev, .slick-next {
+   top: 7px;
+}
+.slick-prev {
+   left: -3rem;
+   .prev();
+}
+.slick-next {
+   right: -3rem;
+   .next();
+}
+
+.slick-prev:hover {
+   left: -3rem;
+   .prev-hover();
+}
+.slick-next:hover {
+   right: -3rem;
+   .next-hover();
+}

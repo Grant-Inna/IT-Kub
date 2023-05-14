@@ -106,4 +106,82 @@ $(document).ready(function () {
       $blackLayer.off( 'click', hideAsideMenu);
       $mobile_trigger.on('click', showAsideMenu);
    }
+   /* слайдер */
+   
+   if ($('#events_calendar__slider').length > 0 ) {
+      $('.slider__calendar').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 400,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider__month'
+         });
+      $('.slider__month').slick({
+         slidesToShow: 8,
+         slidesToScroll: 1,
+         asNavFor: '.slider__calendar',
+         speed: 400,
+         centerPadding: '60px',
+         variableWidth: true,
+         dots: false,
+         arrows: true,
+         centerMode: true,
+         focusOnSelect: true,
+         cssEase: 'easy-in-out',
+         responsive: [
+            {
+               breakpoint: 1400,
+               settings: {
+                  centerPadding: '50px',
+                  slidesToShow: 8
+               }
+            },
+            {
+               breakpoint: 1270,
+               settings: {
+                  centerPadding: '50px',
+                  slidesToShow: 7
+               }
+            },
+            {
+               breakpoint: 950,
+               settings: {
+                  centerPadding: '50px',
+                  slidesToShow: 5
+               }
+            },
+            {
+               breakpoint: 770,
+               settings: {
+                  centerPadding: '40px',
+                  slidesToShow: 4
+               }
+            },
+            {
+               breakpoint: 600,
+               settings: {
+                  centerPadding: '40px',
+                  slidesToShow: 3
+               }
+            },
+            {
+               breakpoint: 450,
+               settings: {
+                  centerPadding: '30px',
+                  slidesToShow: 2
+               }
+            },
+            {
+               breakpoint: 370,
+               settings: {
+                  centerPadding: '20px',
+                  slidesToShow: 1
+               }
+            }
+         ]
+      
+      });
+   }
+   
 });

@@ -14,7 +14,7 @@
    .lg-block({
       margin-top: -2rem;
       padding-top: 10rem;
-      background-position: 110%;
+      background-position: 150%;
    });
    .md-block({
       .bg-federal-adapt();
@@ -152,6 +152,8 @@ strong.text-22.responsibility__text {
 
 /* Направления деятельности */
 .course__container {
+   position: relative;
+   z-index: 300;
    cursor: pointer;
 }
 .course__container h1.caption {
@@ -165,6 +167,7 @@ strong.text-22.responsibility__text {
    z-index: 150;
 }
 article.course__block {
+   .tr();
    width: 50%;
    
    .lg-block({
@@ -177,6 +180,7 @@ article.course__block {
    })
 }
 article.course__block-long {
+   .tr();
    width: 100%;
    
    .flex();
@@ -388,11 +392,23 @@ article.course__block-long .course__text {
       padding-right: 20px;
    });
 }
-article.course__block:first-child .course__text { background-color: @color-red-light }
-article.course__block:nth-child(2) .course__text { background-color: @color-blue-light }
-article.course__block-long .course__text { background-color: @color-back-gray-light }
+article.course__block:first-child .course__text { background-color: @color-red-light; .tr() }
+article.course__block:nth-child(2) .course__text { background-color: @color-blue-light; .tr() }
+article.course__block-long .course__text { background-color: @color-back-gray-light; .tr() }
 
-.course__container article:hover .course__holder .course__text {
+article.course__block:first-child:hover .course__text { background-color: @color-red-dark }
+article.course__block:nth-child(2):hover .course__text { background-color: @color-blue-dark }
+article.course__block-long:hover .course__text { background-color: @color-back-gray-middle }
+
+article.course__block:first-child:hover { background-color: @color-red-dark; .tr() }
+article.course__block:nth-child(2):hover { background-color: @color-blue-dark; .tr() }
+article.course__block-long:hover { background-color: @color-back-gray-middle; .tr() }
+
+.course__container .course__block:hover .course__holder .course__text {
+   .tr();
+   opacity: 1;
+}
+.course__container .course__block-long:hover .course__holder .course__text {
    .tr();
    opacity: 1;
 }

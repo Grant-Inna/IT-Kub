@@ -23,11 +23,6 @@
    background-position: left;
    background-size: contain;
 }
-.logo_kub {
-   .svg( 'logo', 'kub' );
-   background-position: left;
-   background-size: contain;
-}
 .logo_kub-adaptive() {
    .svg( 'logo', 'kub-adapt' );
    background-position: left;
@@ -41,6 +36,11 @@
 }
 .body-lines-right() {
    .svg('bg', 'lines-dots-right');
+   background-position: right;
+   background-size: contain;
+}
+.body-lines-center() {
+   .svg('bg', 'lines-dots-center');
    background-position: right;
    background-size: contain;
 }
@@ -71,4 +71,9 @@
    .png( 'images', 'bg-teen-adapt' );
    background-position: right 50%;
    background-size: 80%;
+}
+.bg-event() {
+   .png( 'images', 'bg-events' );
+   background-position: 100% -10%;
+   background-size: contain;
 }

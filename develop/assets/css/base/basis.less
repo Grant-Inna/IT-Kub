@@ -5,10 +5,10 @@ html {
 }
 body {
    font-size: 1.1rem; /* 17 */
-   line-height: 1.25rem;
+   line-height: 1.4rem;
    .sm-block({
       font-size: 1.3rem; /* 13 */
-      line-height: 1.45;
+      line-height: 1.6;
    });
    .montserrat-regular();
    background-color: @color-back-white;
@@ -63,7 +63,12 @@ body {
       background-size: 180%;
    })
 }
-
+#container_events {
+   .body-lines-center();
+   background-position: -10vw 18vw;
+   background-size: 85vw;
+   
+}
 .wrapper {
    .wrapper();
 }
@@ -73,7 +78,9 @@ body {
 .row {
    .row-flex();
 }
-
+.col {
+   .col();
+}
 
 a {
    display: block;

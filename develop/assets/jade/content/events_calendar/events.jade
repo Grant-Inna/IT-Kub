@@ -1,0 +1,31 @@
+section( aria-label='Календарь мероприятий центра' ).events_calendar__container
+   .wrapper
+      .events__slider
+         #events_calendar__slider
+            .slider__month
+               include __month
+               +month( 'Апрель' )
+               +month( 'Май' )
+               +month( 'Июнь' )
+               +month( 'Июль' )
+               +month( 'Август' )
+               +month( 'Сентябрь' )
+               +month( 'Октябрь' )
+               +month( 'Ноябрь' )
+               +month( 'Декабрь' )
+            .slider__calendar
+               include __calendar-1
+               include __calendar-2
+               +events_calendar-1( '04', 'blue', '26', 'апреля', 'Онлайн семинар для руководителей и педагогов', 'Трансляция пройдет в группе Вконтакте: <br><a href="https://vk.com/fganu_ficto" target="_blank">https://vk.com/fganu_ficto</a>')
+               +events_calendar-2( '05', 'orange', 'blue', '16-19', 'мая', 'Просветительское мероприятие для руководителей и педагогов', 'г. Волгоград', '31', 'Онлайн семинар для руководителей и педагогов', 'Трансляция пройдет в группе Вконтакте: https://vk.com/fganu_ficto'  )
+               +events_calendar-1( '04')
+               +events_calendar-1( '04')
+               +events_calendar-1( '04')
+               +events_calendar-1( '04')
+               +events_calendar-1( '04')
+               +events_calendar-1( '04')
+               +events_calendar-1( '04')
+
+
+
+

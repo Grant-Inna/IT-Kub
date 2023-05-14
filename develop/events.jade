@@ -2,12 +2,42 @@ doctype
 html
 
    include assets/jade/static/__head
-   +title( 'Центры цифрового образования детей' )
+   +title( 'Мероприятия | IT-Kub' )
 
    body
-      #container
+      #container_events
          include assets/jade/header/__header
          +menu( '', '', 'active', '', '', '', '' )
+         include assets/jade/header/main-pages
+
+
+         section( aria-label='О федеральном операторе' ).event__container
+            .wrapper
+               h1.caption.mb9 Мероприятия
+               .text-22
+                  .event__holder
+                     .event__about.event_about-blue
+                        .event__icon
+                        .event__type Онлайн семинар для руководителей и&nbsp;педагогов
+                     .event__text
+                        p.mb Мастер&ndash;класс «Основы информационной безопасности»
+                        p.mb Мастер&ndash;класс «Разработка IT-продуктов»
+                        p.mb Мастер&ndash;класс «Системное администрирование»
+                        p.mb Мастер&ndash;класс «Аналитика данных»
+                  .event__holder
+                     .event__about.event_about-orange
+                        .event__icon
+                        .event__type Просветительское мероприятие для&nbsp;руководителей и&nbsp;педагогов
+                     .event__text
+                        p.mb Офлайн семинар для руководителей
+                  .event__holder
+                     .event__about.event_about-green
+                        .event__icon
+                        .event__type Детский хакатон
+                     .event__text
+                        p.mb Офлайн мероприятия для обучающихся
+
+         include assets/jade/content/events_calendar/events
 
 
          include assets/jade/footer/footer

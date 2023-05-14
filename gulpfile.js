@@ -62,7 +62,7 @@ let gridOptions = {
          width: "470px"
       },
       xxs: {
-         width: "360px"
+         width: "370px"
       }
    }
 };
@@ -101,8 +101,8 @@ function data(done){
    done();
 }
 function fonts(done){
-   return gulp.src(src +' data/fonts/*')
-   .pipe(gulp.dest( dist + ' data/fonts'));
+   return gulp.src(src +' fonts/*')
+   .pipe(gulp.dest( dist + ' fonts/'));
    done();
 }
 function js(done){
