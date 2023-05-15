@@ -184,4 +184,27 @@ $(document).ready(function () {
       });
    }
    
+   /* анимация диаграммы на главной */
+   if ($('.number__container').length > 0) {
+     
+      function is_fully_shown( element ) {
+         let window_scrollTop = $(window).scrollTop(),
+             window_height = $(window).height(),
+             element_height = $(element).height(),
+             element_offsetTop = $(element).offset().top + 100;
+       
+         if (element_offsetTop >= window_scrollTop && element_offsetTop + element_height <= window_height + window_scrollTop) {
+            return true
+         } else {
+            return false;
+         }
+      }
+      
+      $(window).on( 'scroll', function() {
+        if (is_fully_shown( '.number__container' )) {
+           $('.number__container .diagram__holder').addClass('diagram_animation');
+        }
+      })
+   }
+   
 });

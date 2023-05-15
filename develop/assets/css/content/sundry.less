@@ -86,9 +86,9 @@
 }
 .directions__item {
    .col();
-   .size(6);
-   .size-xl(6);
-   .size-middle(6);
+   .size(8);
+   .size-xl(8);
+   .size-middle(8);
    .size-lg(8);
    .size-md(12);
    .size-sm(12);
@@ -132,6 +132,10 @@
        height: 8rem;
        
        flex-shrink: 0;
+    });
+    .xxs-block({
+       width: 35%;
+       height: 5rem;
     });
 }
 .directions__text {
@@ -203,9 +207,9 @@
 }
 .number__diagram {
    .col();
-   .size(13);
-   .size-xxl(13);
-   .size-xl(13);
+   .size(16);
+   .size-xxl(16);
+   .size-xl(15);
    .size-middle(13);
    .size-lg(13);
    .size-md(24);
@@ -232,3 +236,62 @@
       line-height: 2.4rem;
    });
 }
+
+
+/* EVENTS последний блок о семинаре */
+.seminar__container a {
+   display: inline-block;
+}
+.seminar__block {
+   .col();
+   .size(12);
+   .size-xl(12);
+   .size-middle(12);
+   .size-lg(20);
+   .size-md(20);
+   .size-sm(24);
+   
+   .flex();
+   .items-center();
+   
+   .shift-lg-left(2);
+   .shift-md-left(2);
+   .shift-sm-left(0);
+   
+   margin-bottom: 3rem;
+}
+.seminar__icon {
+   width: 8rem;
+   height: 8rem;
+   
+   flex-shrink: 0;
+   
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   
+   margin-right: 3rem;
+   
+   .lg-block({
+      margin-right: 2rem;
+   });
+   .xs-block({
+      width: 6rem;
+      height: 6rem;
+      margin-right: 1.5rem;
+   });
+   .xxs-block({
+      width: 5rem;
+      height: 5rem;
+   });
+}
+.seminar__text {
+
+}
+.seminar(@name) {
+   background-image: url("../data/icons/seminar/@{name}.svg");
+}
+.seminar_icon-1 { .seminar('1') }
+.seminar_icon-2 { .seminar('2') }
+.seminar_icon-3 { .seminar('3') }
+.seminar_icon-4 { .seminar('4') }

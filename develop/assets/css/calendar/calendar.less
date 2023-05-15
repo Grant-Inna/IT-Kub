@@ -6,6 +6,7 @@
 }
 .events_calendar__one_month .row {
    .justify-between();
+   .items-start();
 }
 .calendar {
    position: relative;
@@ -40,6 +41,7 @@
 }
 .events_calendar__one_month section.col .row {
    .justify-end();
+   .items-center();
    flex-wrap: nowrap;
    
    .lg-block({
@@ -101,8 +103,9 @@
    .sm-block({});
 }
 .event__month_text {
+   text-align: center;
    font-size: 1.5rem;
-   line-height: 1.9;
+   line-height: 1.9rem;
    .middle-block({});
    .sm-block({});
 }
@@ -162,9 +165,36 @@
 .events_calendar__one_month .event_orange {
    background-color: @color-orange;
 }
+.events_calendar__one_month .event_green {
+   background-color: @color-green;
+}
 
-
-
+.event__name-empty {
+   .size(16);
+   .size-xl(17);
+   .size-middle(16);
+   .size-lg(8);
+   .size-md(8);
+   .size-sm(20);
+   .size-xs(24);
+   .size-xxs(24);
+   
+   .shift-sm-left(2);
+   .shift-xs-left(0);
+}
+.event__name-empty span {
+   .montserrat-semibold();
+   font-size: 1.8rem;
+   line-height: 2.2rem;
+   .middle-block({
+      font-size: 2rem;
+      line-height: 2.4rem;
+   });
+   .sm-block({
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+   });
+}
 
 .relative {
    width: 100%;
@@ -179,6 +209,8 @@
 .calendar__holder img {
    width: 100%;
    height: 100%;
-   //min-width: 300px;
-   //min-height: 211px;
+}
+
+.calendar-long .relative {
+   padding-top: 82.3%;
 }
