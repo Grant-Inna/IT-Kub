@@ -1,0 +1,10 @@
+mixin events_calendar-null( month, m, cls )
+   .events_calendar__one_month
+      .row
+         .calendar.col( class='#{cls}' )
+            .relative
+            .calendar__holder
+               img( src='./assets/data/calendar/#{month}.svg' )
+
+         .event__name-empty
+            span В !{m} не было мероприятий

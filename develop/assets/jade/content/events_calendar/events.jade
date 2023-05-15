@@ -4,6 +4,9 @@ section( aria-label='Календарь мероприятий центра' ).e
          #events_calendar__slider
             .slider__month
                include __month
+               +month( 'Январь' )
+               +month( 'Февраль' )
+               +month( 'Март' )
                +month( 'Апрель' )
                +month( 'Май' )
                +month( 'Июнь' )
@@ -15,9 +18,13 @@ section( aria-label='Календарь мероприятий центра' ).e
                +month( 'Декабрь' )
             .slider__calendar
                include __calendar
+               include __calendar-null
                include __calendar-1
                include __calendar-2
                include __calendar-spec
+               +events_calendar-null( '01', 'январе', 'calendar-long' )
+               +events_calendar-null( '02', 'феврале', 'calendar-short' )
+               +events_calendar-null( '03', 'марте', '' )
                +events_calendar-1( '04', 'blue', '26', 'апреля', 'Онлайн семинар для руководителей и&nbsp;педагогов', 'Трансляция доступна в&nbsp;группе Вконтакте: <br><a class="hover inline" href="https://vk.com/video-216917614_456239021" target="_blank">https://vk.com/video-216917614_456239021</a>')
                +events_calendar-2( '05', 'orange', 'blue', '16-19', 'мая', 'Просветительское мероприятие для руководителей и&nbsp;педагогов Центров &laquo;IT-куб&raquo;', 'г. Волгоград', '31', 'мая', 'Онлайн семинар для руководителей и&nbsp;педагогов', 'Трансляция пройдет в&nbsp;группе Вконтакте: https://vk.com/fganu_ficto'  )
                +events_calendar-1( '06', 'blue', '28', 'июня', 'Онлайн семинар для руководителей и&nbsp;педагогов', 'Трансляция пройдет в&nbsp;группе Вконтакте: <br><a class="hover inline" href="https://vk.com/fganu_ficto" target="_blank">https://vk.com/fganu_ficto</a>' )
