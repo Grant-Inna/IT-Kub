@@ -53,6 +53,9 @@ let gridOptions = {
       md: {
          width: "770px"
       },
+      smmd: {
+         width: "660px"
+      },
       sm: {
          width: "580px",
          fields: "30px",
