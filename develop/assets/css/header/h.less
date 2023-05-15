@@ -21,4 +21,13 @@ header.header__container .wrapper {
    .justify-between();
    flex-wrap: nowrap;
 }
-.header__logo  {}
+.header__logo  {
+   position: relative;
+   z-index: 500;
+   cursor: pointer;
+}
+.header__logo .logo_kub {
+   .absolute();
+   z-index: 100;
+}
+//             object( type="image/svg+xml", data="assets/data/logo/kub.svg" )
