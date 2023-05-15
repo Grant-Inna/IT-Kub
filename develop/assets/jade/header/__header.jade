@@ -5,9 +5,9 @@ mixin menu( active1, active2, active3, active4, active5, active6, active7 )
             object( type="image/svg+xml", data="assets/data/logo/kub.svg" )
                img( src='./assets/data/logo/kub-static.svg' )
          include __menu
-         +menu( active1, active2, active3, active4, active5, active6, active7  )
+         +menu( active1, active2, active3 )
          .menu__mobile
             .menu__mobile_icon
    include __menu-mobile
-   +menu_mobile( active1, active2, active3, active4, active5, active6, active7  )
+   +menu_mobile( active1, active2, active3 )
 
