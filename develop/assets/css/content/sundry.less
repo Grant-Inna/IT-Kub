@@ -1,3 +1,7 @@
+.about_index strong {
+    white-space: nowrap;
+}
+
 /* Index раздел со списком */
 @purpose-container: 12rem;
 .purpose__container {
@@ -69,7 +73,7 @@
    right: 0;
    width: calc( 75% - 15vw );
    height: 150%;
-   .body-lines-right();
+   .body-lines-right-sm();
    .md-block({
       width: 95%;
    });
@@ -173,8 +177,9 @@
    .justify-between();
 }
 .number__container .caption {
-   width: 50%;
+   width: 55%;
    margin-bottom: 4rem;
+       max-width: 710px;
    .lg-block({
       width: 70%;
       margin-bottom: 8rem;
