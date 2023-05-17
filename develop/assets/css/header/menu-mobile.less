@@ -117,13 +117,16 @@ header.header__container .wrapper {
 }
 .menu__mobile_container .menu__mobile {
    margin-left: auto;
-   padding-top: 4rem;
-   .lg-block({
-      padding-right: @fields_lg;
-   });
-   .sm-block({
-      padding-right: 1rem;
-   });
+   padding-top: 3rem;
+   
+    padding-right: @fields;
+   
+    .lg-block({
+        padding-right: @fields_lg;
+    });
+    .sm-block({
+        padding-right: @fields_sm;
+    });
 }
 
 .menu__mobile_holder {
@@ -141,8 +144,8 @@ header.header__container .wrapper {
    .tr();
    height: 1.1rem;
    width: 75%;
-   margin-bottom: 4vw;
-   padding-bottom: 2vw;
+   margin-bottom: calc( 1rem + 4vw);
+   padding-bottom: calc( .3rem + 2vw );
    border-bottom: 1px solid @color-back-gray-dark;
    border-radius: 1px;
    
