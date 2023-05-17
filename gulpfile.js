@@ -104,8 +104,8 @@ function data(done){
    done();
 }
 function fonts(done){
-   return gulp.src(src +' fonts/*')
-   .pipe(gulp.dest( dist + ' fonts/'));
+   return gulp.src(src + 'fonts/**/*')
+   .pipe(gulp.dest( dist + 'fonts/'));
    done();
 }
 function js(done){
