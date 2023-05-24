@@ -9,7 +9,7 @@ menu.header__menu_holder {
    text-transform: uppercase;
    color: @color-black;
    //.montserrat-semibold();
-   .opensans-semibold();
+   .opensans-bold();
    
    .middle-block({
       font-size: 1.1rem;
@@ -31,9 +31,23 @@ menu.header__menu_holder {
       height: 1.2rem;
    });
 }
-.menu__item.active.hover {
+.menu__item:hover {
+   .tr();
+   color: @color-hover;
+   
+   display: inline;
+}
+
+.menu__item.active {
    .tr();
    .opensans-bold();
+   color: @color-blue-light;
+   
+   display: inline;
+}
+.menu__item.active:hover {
+   .tr();
+   //.opensans-bold();
    color: @color-blue-light;
    
    display: inline;

@@ -1,7 +1,7 @@
 .about_federal__container {
    position: relative;
    z-index: 200;
-   .bg-federal();
+   
    margin-top: -4rem;
    padding-top: 12rem;
    padding-bottom: 9rem;
@@ -15,8 +15,6 @@
    .lg-block({
       margin-top: -2rem;
       padding-top: 10rem;
-      background-size: 72vw;
-      background-position: 180% 15%;
    });
    .md-block({
       .bg-federal-adapt();
@@ -34,10 +32,27 @@
    });
    
    .to( 1550px, {
-      background-position: 120% -5%;
-      background-size: 62vw;
+      background-position: 290% 15%;
+      background-size: 82vw;
       
-   })
+   });
+   .from( 2100px, {
+      background-size: 46vw;
+   });
+}
+.about_federal__container:before {
+   .pseudo();
+   top: 0;
+   right: 0;
+   width: 46vw;
+   height: 100%;
+   .bg-federal();
+   .md-block({
+      display: none;
+   });
+   .from( 2100px, {
+      width: 48vw;
+   });
 }
 section.about_federal__container h1.caption {
    .md-block({
@@ -67,7 +82,9 @@ section.about_federal__container h1.caption {
    });
 }
 .about_federal__logo {
-
+   width: 80%;
+   max-width: 380px;
+   min-width: 260px;
 }
 .about_federal__logo .logo_ficto-black {
    width: 100%;
@@ -182,10 +199,14 @@ strong.text-22.responsibility__text {
 }
 article.course__block {
    .tr();
-   width: 50%;
+   width: 49%;
+   margin-left: 1%;
+   margin-bottom: 1%;
    
    .lg-block({
       width: 100%;
+      margin-right: 0;
+      margin-left: 0;
    });
    .xs-block({
       width: calc( 100% + 60px );
@@ -193,13 +214,17 @@ article.course__block {
       margin-right: -30px;
    })
 }
+article.course__block:last-child {
+    margin-right: 1%;
+    margin-left: 0;
+}
 article.course__block-long {
    .tr();
    width: 100%;
    
    .flex();
    .items-center();
-   .justify-between();
+   .justify-center();
    
    
    .lg-block({
@@ -263,6 +288,8 @@ article.course__block-long { background-color: @color-back-gray-light }
    background-position: center;
    background-size: contain;
    
+   opacity: 1;
+   
    .xs-block({
       width: 100%;
       height: 24rem;
@@ -275,6 +302,15 @@ article.course__block-long { background-color: @color-back-gray-light }
 .course__icon.course_icon-2 { .course('2') }
 .course__icon.course_icon-3 { .course('3') }
 
+article.course__block-long {
+      width: 99%;
+   margin-left: 1%;
+   
+   .lg-block({
+      width: 100%;
+      margin-left: 0;
+   })
+}
 article.course__block-long h1.title {
    color: @color-black;
    text-align: left;
@@ -308,10 +344,13 @@ article.course__block-long h1.title {
    
 }
 article.course__block-long .course__holder {
-   margin: 3rem 9rem 6rem auto;
+   margin: 3rem 9rem 6rem 3.5rem;
    
+   .xl-block({
+      margin: 3rem 9rem 6rem 1rem;
+   });
    .lg-block({
-      margin: 3rem 3rem 6rem;
+      margin: 3rem 3rem 6rem 2rem;
    });
    .xxs-block({
       margin: 3rem 1.5rem 4rem;
@@ -349,10 +388,12 @@ article .course__text {
    color: @color-back-white;
    
    opacity: 0;
-   
+
    .lg-block({
       padding-left: 8vw;
       padding-right: 8vw;
+      font-size: 1.6rem;
+      line-height: 2rem;
    });
    .md-block({
       padding-left: 5vw;
@@ -371,8 +412,11 @@ article .course__text {
    
 }
 .course__container article:nth-child(2) .course__text {
-   height: 110%;
-   top: -10%;
+   .md-block({
+      height: 110%;
+      top: -10%;
+   });
+
 }
 article.course__block-long .course__text {
    color: @color-black;
@@ -387,6 +431,8 @@ article.course__block-long .course__text {
       right: 0;
       width: 100%;
       display: block;
+      font-size: 1.65rem;
+      line-height: 2.05rem;
    });
    
    font-size: 1.25rem;
@@ -425,5 +471,13 @@ article.course__block-long:hover { background-color: @color-back-gray-middle; .t
 .course__container .course__block-long:hover .course__holder .course__text {
    .tr();
    opacity: 1;
+}
+.course__container .course__block:hover .course__holder .course__icon {
+   .tr();
+   opacity: 0;
+}
+.course__container .course__block-long:hover .course__holder .course__icon {
+   .tr();
+   opacity: 0;
 }
 

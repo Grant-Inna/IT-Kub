@@ -59,8 +59,11 @@
 
 .bg-purpose() {
    .png( 'images', 'bg-children' );
-   background-position: left;
-   background-size: contain;
+   background-position: right;
+   background-size: cover;
+   .from( 2100px, {
+      background-size: contain;
+   });
 }
 .bg-purpose-adapt() {
    .png( 'images', 'bg-children-adapt' );
@@ -68,9 +71,12 @@
    background-size: contain;
 }
 .bg-federal() {
-   .png( 'images', 'bg-teen' );
-   background-position: 96%;
-   background-size: 50vw;
+   .png( 'images', 'bg-teen-sm' );
+   background-position: left;
+   background-size: cover;
+   .from( 2100px, {
+      background-size: contain;
+   });
 }
 .bg-federal-adapt() {
    .png( 'images', 'bg-teen-adapt' );
@@ -79,6 +85,15 @@
 }
 .bg-event() {
    .png( 'images', 'bg-events' );
-   background-position: 77%;
-   background-size: contain;
+   background-position: left;
+   background-size: cover;
+   .from( 2100px, {
+      background-size: contain;
+   });
+    .md-block({
+      background-size: cover;
+   });
+    .sm-block({
+      background-size: cover;
+   });
 }

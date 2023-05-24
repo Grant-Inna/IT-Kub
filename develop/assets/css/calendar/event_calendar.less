@@ -25,7 +25,12 @@
 }
 .slider__month {}
 .month__holder {
+   .tr();
    cursor: pointer;
+}
+.month__holder:hover {
+   .tr();
+   color: @color-hover;
 }
 .month {
    margin-right: 1.4rem;
@@ -63,6 +68,9 @@
       background-color: transparent;
       color: @color-black;
    })
+}
+.slick-slide.slick-current.slick-active.slick-center .month__holder:hover {
+   color: white;
 }
 .slick-slide.slick-current.slick-active.slick-center .month {
    .xxs-block({
