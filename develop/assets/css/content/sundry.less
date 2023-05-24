@@ -78,6 +78,7 @@
 /* Index раздел с иконками */
 .directions__container {
    position: relative;
+   z-index: 200;
 }
 .directions__container:after {
    .pseudo();
@@ -95,6 +96,10 @@
        top: -15%;
        background-size: 150%;
     });
+}
+.directions__container .wrapper {
+   position: relative;
+   z-index: 300;
 }
 .row.directions__holder {
    .justify-center();
@@ -161,15 +166,15 @@
    .montserrat-medium();
    text-align: center;
    margin-top: 2rem;
-   font-size: 1.2rem;
-   line-height: 1.6rem;
+   font-size: 1.5rem;
+   line-height: 1.8rem;
    .middle-block({
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       line-height: 1.8rem;
    });
    .sm-block({
       font-size: 1.5rem;
-      line-height: 1.9rem;
+      line-height: 1.8rem;
    });
 }
 .directions_icon-1 { .directions-icon( '1' ) }
