@@ -36,6 +36,18 @@
    width: 2rem;
    height: 2rem;
 }
+.size-25() {
+   width: 2.5rem;
+   height: 2.5rem;
+}
+.size-33() {
+   width: 3.3rem;
+   height: 3.3rem;
+}
+.size-36() {
+   width: 3.6rem;
+   height: 3.6rem;
+}
 
 .icon-phone {
    .icon-svg( 'phone' );
@@ -98,5 +110,54 @@
 .prev-hover() {
    .icon-svg-b( 'slider', 'prev-hover' );
    .size-2();
+   .tr();
+}
+
+
+.competition-nav-arrow() {
+   background-image: url("../data/teacher_competition/icons/arrow.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-33();
+   .tr();
+}
+.competition-nav-arrow-hover() {
+   background-image: url("../data/teacher_competition/icons/arrow-hover.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-33();
+   .tr();
+}
+
+.competition-save() {
+   background-image: url("../data/teacher_competition/icons/save.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-36();
+   .tr();
+}
+.competition-save-hover() {
+   background-image: url("../data/teacher_competition/icons/save-hover.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-36();
+   .tr();
+}
+
+.competition-check() {
+   background-image: url("../data/teacher_competition/icons/check.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-25();
    .tr();
 }
