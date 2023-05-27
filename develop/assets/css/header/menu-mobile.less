@@ -114,6 +114,10 @@ header.header__container .wrapper {
    .bg-mobile();
    
    display: none;
+   
+   .sm-block({
+      background-size: 94%;
+   })
 }
 .menu__mobile_container .menu__mobile {
    margin-left: auto;
@@ -125,7 +129,7 @@ header.header__container .wrapper {
         padding-right: @fields_lg;
     });
     .sm-block({
-        padding-right: @fields_sm;
+        padding-right: @fields_sm - 1;
     });
 }
 
