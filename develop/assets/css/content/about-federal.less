@@ -17,13 +17,12 @@
       padding-top: 10rem;
    });
    .md-block({
-      .bg-federal-adapt();
+      //.bg-federal-adapt();
       padding-top: 3rem;
-      
       margin-top: -1rem;
       
    });
-   .sm-block({
+   /*.sm-block({
       background-position: right 20%;
       padding-top: 2rem;
    });
@@ -38,21 +37,41 @@
    });
    .from( 2100px, {
       background-size: 46vw;
-   });
+   });*/
 }
 .about_federal__container:before {
    .pseudo();
+   z-index: 100;
    top: 0;
    right: 0;
    width: 46vw;
    height: 100%;
    .bg-federal();
-   .md-block({
-      //display: none;
-   });
    .from( 2100px, {
       width: 48vw;
    });
+   .md-block({
+      background-size: contain;
+       width: 500px;
+       top: -3rem;
+       right: -10px;
+   });
+   .sm-block({
+      width: 100%;
+      height: 39rem;
+      top: 5rem;
+      right: 0;
+      background-position: right;
+   });
+   .xs-block({
+      width: 100%;
+      top: 7rem;
+   });
+   .xxs-block({
+      width: 100%;
+      top: 5rem;
+      left: 40px;
+   })
 }
 section.about_federal__container h1.caption {
    .md-block({
@@ -75,6 +94,8 @@ section.about_federal__container h1.caption {
    });
 }
 .about_federal__text {
+   position: relative;
+   z-index: 250;
    width: 50%;
    
    .md-block({
@@ -103,7 +124,7 @@ section.about_federal__container h1.caption {
 /* Зона ответственности */
 .responsibility__container {
    position: relative;
-   z-index: 50;
+   z-index: 150;
    background-color: white;
    margin-top: 3rem;
    
@@ -169,6 +190,8 @@ section.about_federal__container h1.caption {
 .responsibility_icon-2 { .responsibility-icon( '2' ) }
 
 strong.text-22.responsibility__text {
+   position: relative;
+   z-index: 150;
    .col();
    .size(16);
    .size-xl(16);
