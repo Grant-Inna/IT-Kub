@@ -45,20 +45,10 @@ section.competition_stage__container h2.title {
    margin-bottom: 4rem;
 }
 
-
 .competition_stage__month,
 .competition_stage__text {
    .montserrat-semibold();
 }
-.competition_stage__phase {
-}
-.competition_stage__text {
-}
-
-
-
-
-
 
 
 .competition_stage__icon {
@@ -85,7 +75,11 @@ section.competition_stage__container h2.title {
    .competition-stage-arrow-right-long();
 }
 
-.competition_stage__holder:nth-child(3) .competition_stage__icon:before {
+.competition_stage__holder:nth-child(3) .competition_stage__icon:before,
+.competition_stage__holder:nth-child(3) .competition_stage__arrow {
+   display: none !important;
+}
+.competition_stage__arrow  {
    display: none;
 }
 
@@ -170,10 +164,10 @@ section.competition_stage__container h2.title {
       margin-bottom: 5rem;
    }
    .competition_stage__holder {
-      margin-bottom: 5rem;
+      margin-bottom: 1rem;
    }
    .competition_stage__holder:nth-child(2) {
-      margin-bottom: 6rem;
+      margin-bottom: 1.3rem;
    }
    .competition_stage__holder:nth-child(3) {
       margin-bottom: 0;
@@ -205,21 +199,16 @@ section.competition_stage__container h2.title {
        display: flex;
       .items-center();
    }
-   .competition_stage__holder .competition_stage__about:before {
-      .pseudo();
-      bottom: -3.5rem;
-      left: 0;
+
+   .competition_stage__holder .competition_stage__arrow {
+      //.competition-stage-arrow-adapt();
+      .flex-center();
+      width: 4rem;
+      max-height: 4.6rem;
+      margin-top: 1.6rem;
    }
-   .competition_stage__holder .competition_stage__about:before {
-      .competition-stage-arrow-adapt();
-      width: 100%;
-      height: 2.33rem;
-   }
-   .competition_stage__holder:nth-child(2) .competition_stage__about:before {
-      bottom: -4rem;
-   }
-   .competition_stage__holder:nth-child(3) .competition_stage__about:before {
-      display: none;
+   .competition_stage__holder:nth-child(2) {
+      flex-direction: column;
    }
    .competition_stage__holder {
       align-items: center;
@@ -300,5 +289,8 @@ section.competition_stage__container h2.title {
    }
    .competition_stage__phase {
       margin-top: .8rem;
+   }
+   .competition_stage__holder .competition_stage__arrow {
+       margin-top: 2.6rem;
    }
 }
