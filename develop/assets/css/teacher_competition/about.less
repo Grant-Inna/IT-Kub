@@ -1,38 +1,53 @@
 .about_competition__container {
    margin-top: 18rem;
 }
-
+.about_competition__container .wrapper {
+   display: grid;
+   grid-template-columns: repeat( 2, 1fr );
+   grid-template-rows: 120px repeat( 2, 1fr );
+}
+.about_competition__container h1.caption {
+   grid-column: span 2;
+      grid-row: span 1;
+      grid-row-start: 1;
+      grid-row-end: -1;
+}
 .about_competition__holder {
-   .col();
-   .size(14);
-   .size-xl(14);
-   .size-lg(16);
-   .size-md(24);
-   .size-sm(24);
+   grid-column: span 1;
+      grid-row: span 1;
 }
 .about_competition {
-   .col();
-   .size(10);
-   .size-xl(10);
-   .size-lg(8);
-   .size-md(24);
-   .size-sm(24);
+   grid-column: span 1;
+      grid-row: span 1;
+      align-self: start;
+   width: 100%;
+    height: 100%;
 }
 .about_competition_icon {
+   width: calc( 100% - 2rem);
+   height: 100%;
+   margin-left: 2rem;
    .competition-about();
 }
 
 .about_competition_item {
-
+   .flex();
+   margin-bottom: 1.5rem;
 }
 .about_competition__icon {
    .competition-check();
+   margin-right: 1.5rem;
 }
 .about_competition__text {
    .montserrat-regular();
    font-size: 1.5rem;
    line-height: 1.9rem;
 }
+
+
+
+
+
 
 
 @media screen and (max-width: 1400px) {
@@ -54,15 +69,65 @@
    .about_competition__container {
       margin-top: 43rem;
    }
+   
+   .about_competition__container .wrapper {
+      display: grid;
+      grid-template-columns: 40vw 60vw;
+      grid-template-rows: 180px 1fr;
+      grid-gap: 4rem;
+   }
+   .about_competition__container h1.caption {
+      grid-column: span 1;
+      grid-row: span 1;
+      grid-column-start: 2;
+      grid-column-end: -1;
+      text-align: left;
+      
+      margin-left: -15vw;
+      margin-bottom: 0;
+      
+      .flex();
+      .items-center();
+   }
+   .about_competition {
+      grid-column: span 1;
+      grid-row: span 1;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+   }
+   .about_competition__holder {
+      grid-column: span 1;
+      grid-row: span 1;
+      grid-column-start: 1;
+      grid-column-end: -1;
+      
+      width: 80%;
+      
+   }
+   section .about_competition__holder h2.title {
+      margin-bottom: 3rem;
+   }
+   .about_competition_item {
+      margin-bottom: 1rem;
+   }
+   .about_competition_icon {
+      width: 100%;
+      height: 100%;
+      margin-left: 0;
+      .competition-about-adapt();
+   }
+   
 }
 @media screen and (max-width: 945px) {
    .about_competition__container {
-      margin-top: 46vw;
+      margin-top: 50vw;
    }
 }
 @media screen and (max-width: 690px) {
    .about_competition__container {
-      margin-top: 15rem;
+      margin-top: 50vw;
    }
 }
 @media screen and (max-width: 605px) {
@@ -78,5 +143,30 @@
 @media screen and (max-width: 480px) {
    .about_competition__container {
       margin-top: 28vw;
+   }
+   .about_competition__container .wrapper {
+      grid-template-columns: 35vw 65vw;
+      grid-gap: 2rem;
+   }
+   .about_competition__container h1.caption {
+      //margin-left: -10vw;
+   }
+}
+
+@media screen and (max-width: 356px) {
+   .about_competition__container .wrapper {
+      grid-template-columns: 35vw 65vw;
+      grid-template-rows: 120px 1fr;
+      grid-gap: 1.5rem;
+   }
+   .about_competition__container h1.caption {
+      margin-left: -4rem;
+   }
+}
+@media screen and (max-width: 330px) {
+   .about_competition__container .wrapper {
+      grid-template-columns: 30vw 70vw;
+      grid-template-rows: 120px 1fr;
+      grid-gap: 1.5rem;
    }
 }

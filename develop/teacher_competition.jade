@@ -16,14 +16,38 @@ html
 
          section( aria-label='О конкурсе' ).about_competition__container
             .wrapper
-               h1.caption.mb4.center О конкурсе
+               h1.caption.mb4.center
+                  span О&nbsp;конкурсе
+               .about_competition__holder
+                  h2.title.mb4 Цели конкурса
+                  include assets/jade/content/teacher_competition/__about
+                  +about-item( 'Выявление лучших педагогических практик' )
+                  +about-item( 'Создание эффективных условий, обеспечивающих непрерывное профессиональное развитие' )
+                  +about-item( 'Творческий карьерный рост педагогов дополнительного образования детей в&nbsp;едином образовательном пространстве Российской Федерации' )
+                  +about-item( 'Консолидация профессионального педагогического сообщества' )
+                  +about-item( 'Актуализация и&nbsp;развитие новых форм наставничества в&nbsp;сфере дополнительного образования детей' )
+               .about_competition
+                  .about_competition_icon
+
+         section( aria-label='Какие задачи преследует этот конкурс' ).competition_task__container.mt8
+            .wrapper
+               h1.title.mb4 Задачи конкурса
                .row
-                  .about_competition__holder
-                     h2.title.mb4 Цели конкурса
-                     include assets/jade/content/teacher_competition/__about
-                     +about-item( '' )
-                  .about_competition
-                     .about_competition_icon
+                  include assets/jade/content/teacher_competition/__task
+                  +task( '01', 'Совершенствование профессионального мастерства педагогов дополнительного образования детей' )
+                  +task( '02', 'Повышение общественного и профессионального статуса педагогов дополнительного образования детей' )
+                  +task( '03', 'Отбор и продвижение новых педагогических практик и образовательных технологий в сфере дополнительного образования детей' )
+                  +task( '04', 'Выявление лучших педагогических методик и технологий обучения и воспитания детей, разработанных и внедренных в образовательную деятельность педагогами дополнительного образования детей' )
+
+         section( aria-label='Этапы проведения"' ).competition_stage__container.mt7
+            .wrapper
+               h1.caption.center.mb7 Этапы проведения
+               .row
+                  include assets/jade/content/teacher_competition/__stage-one
+                  include assets/jade/content/teacher_competition/__stage
+                  +stage-one( '1', 'Заочный этап', 'июнь-июль', 'Прием заявок на конкурс', '10 июля 2023 года (включительно)', 'Работа конкурсной комиссии', '11 июля 2023 года - 30 июля 2023 года', 'Объявление полуфиналистов', '10 августа 2023 года' )
+                  +stage( '2', 'Очный этап', 'август-сентябрь', 'Полуфинал', '05 сентября 2023 года - 07 сентября 2023 года (г. Челябинск)' )
+                  +stage( '3', 'Заключительный этап', 'октябрь', 'Финал<br>Награждения победителей', '05 октября 2023 года - 07 октября 2023 года (г.Москва)' )
 
 
 

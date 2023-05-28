@@ -1,5 +1,5 @@
 .competition__container {
-   //margin-top: 3rem;
+   margin-top: 3rem;
 }
 .competition__container .wrapper {
    .flex();
@@ -732,11 +732,9 @@ menu.competition__grid_navigation {
    }
 }
 @media screen and (max-width: 360px) {
-   /*.competition__grid_holder {
-      display: grid;
-      grid-template-columns: 50vw 50vw;
-      grid-template-rows: 130px repeat(2, 1fr);
-   }*/
+   .competition__grid_navigation:before {
+      top: -26rem;
+   }
    .competition__grid_hand {
       margin-left: 0;
    }
@@ -763,6 +761,13 @@ menu.competition__grid_navigation {
    .competition__regulations {
        margin-top: 1.8rem;
    }
+   .competition__hand_caption {
+       height: 3.9rem;
+      margin-bottom: 0.7rem;
+   }
+   .competition__hand_title {
+       height: 2.5rem;
+   }
 }
 @media screen and (max-width: 353px) {
    .competition__grid_navigation:after {
@@ -787,10 +792,10 @@ menu.competition__grid_navigation {
 }
 @media screen and (max-width: 330px) {
    .competition__hand_caption {
-       height: 3.9rem;
+       height: 3.6rem;
       margin-bottom: 0.7rem;
    }
    .competition__hand_title {
-       height: 2.5rem;
+       height: 2.1rem;
    }
 }

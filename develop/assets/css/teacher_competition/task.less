@@ -1,0 +1,71 @@
+.competition_task__container {
+
+}
+.competition_task__container h1.title {
+   .montserrat-bold();
+   font-size: 2rem;
+   line-height: 2.4rem;
+   .middle-block({
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+   });
+   .sm-block({
+      font-size: 2.3rem;
+      line-height: 2.6rem;
+   });
+}
+
+.task_competition__item {
+   .col();
+   .size(12);
+   .size-xl(12);
+   .size-middle(12);
+   .size-lg(12);
+   .size-md(24);
+   .size-sm(24);
+   .size-xs(24);
+   
+    margin-bottom: @offset + 10;
+    .xl-block({
+        margin-bottom: @offset + 10;
+    });
+    .middle-block({
+        margin-bottom: @offset_xl + 10;
+    });
+    .lg-block({
+        margin-bottom: @offset_middle + 10;
+    });
+    .sm-block({
+        margin-bottom: @offset_lg + 10;
+    });
+    .xs-block({
+        margin-bottom: @offset_sm + 10;
+    });
+}
+.task_competition__number {
+   width: 8.3rem;
+   height: 5rem;
+   .competition-cube();
+    background-position: left;
+   
+   .montserrat-bold();
+   font-size: 4rem;
+   line-height: 4.4rem;
+   text-align: right;
+   
+   margin-bottom: 1.8rem;
+   
+   .flex();
+   .justify-end();
+   .items-end();
+}
+.task_competition__item:first-child span {
+   padding-right: 1rem;
+   box-sizing: border-box;
+}
+.task_competition__item:last-child .task_competition__number {
+   width: 8.8rem
+}
+.task_competition__text {
+
+}
