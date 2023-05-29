@@ -341,3 +341,182 @@
 .seminar_icon-2 { .seminar('2') }
 .seminar_icon-3 { .seminar('3') }
 .seminar_icon-4 { .seminar('4') }
+
+
+/* конкурс педагоговю Условия участия */
+.competition_terms__container {
+   position: relative;
+   z-index: 100;
+}
+.competition_terms__container:after {
+   .pseudo();
+   .body-lines-competition-left();
+   width: 80vw;
+   height: 140vh;
+   right: 0;
+   top: -55vh;
+   .lg-block({
+      width: 140vw
+   });
+   .md-block({
+      width: 200vw;
+      top: -28rem;
+   })
+}
+.competition_terms__container .row {
+   position: relative;
+   z-index: 200;
+   .justify-center();
+}
+.competition_terms__container .competition_terms__holder {
+   position: relative;
+   .col();
+   .size(7);
+   .size-xl(8);
+   .size-middle(9);
+   .size-lg(10);
+   .size-md(11);
+   .size-sm(24);
+   
+   .shift-left(7);
+   .shift-xl-left(8);
+   .shift-middle-left(9);
+   .shift-lg-left(10);
+   .shift-md-left(11);
+   .shift-sm-left(0);
+   
+   .column();
+}
+.competition_terms__text {
+    font-size: 1.3rem;
+   line-height: 1.8rem;
+   .middle-block({
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+   });
+   .sm-block({
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+   });
+}
+.competition_terms__text strong {
+   display: inline-block;
+}
+.competition_terms__holder:before {
+   .pseudo();
+   z-index: 200;
+   top: 0;
+   right: 0;
+   width: 22.4rem;
+   height: 21rem;
+   
+   .competition-terms();
+   
+   .shift-right(24);
+   .shift-sm-right(0);
+   
+   .sm-block({
+      top: calc( 37% - 3vw );
+      right: 50%;
+      
+      transform: translateX(62%);
+      
+      background-position: center;
+   });
+}
+
+section .competition_terms__holder h2.title {
+  .sm-block({
+     z-index: 150;
+     margin-top: 26rem !important;
+      text-align: center;
+   })
+}
+
+/* конкурс педагогов. Квота участия*/
+.quota__container {
+   margin-top: 14rem;
+   .sm-block({ margin-top: 12rem })
+}
+.quota__container .row {
+   .justify-center()
+}
+.quota__title,
+.quota__holder {
+   position: relative;
+   .col();
+   .size(8);
+   .size-xl(9);
+   .size-middle(9);
+   .size-lg(10);
+   .size-md(11);
+   .size-sm(11);
+   .size-xs(15);
+   
+   .shift-left(7);
+   .shift-xl-left(8);
+   .shift-middle-left(9);
+   .shift-lg-left(10);
+   .shift-md-left(13);
+   .shift-sm-left(13);
+   
+   .column();
+}
+.quota__container .quota__title {
+   .md-block({
+      margin-bottom: 14rem;
+      padding-top: 5rem;
+      box-sizing: border-box;
+   });
+   .sm-block({
+      margin-bottom: 12rem;
+   });
+   .xs-block({
+      margin-bottom: 9rem;
+   });
+   .xxs-block({
+      margin-bottom: 7rem;
+   })
+   
+}
+.quota__holder {
+   .size-md(24);
+   .size-sm(24);
+   .size-xs(24);
+   .shift-md-left(0);
+   .shift-sm-left(0);
+}
+.quota__title:after {
+   .pseudo();
+   z-index: 200;
+   top: -5rem;
+   right: 0;
+   width: 24.3rem;
+   height: 24.6rem;
+   
+   .competition-quota();
+   
+   .shift-right(24);
+   .shift-sm-right(0);
+   
+   .sm-block({
+      left: -240px;
+      right: unset;
+   });
+   .xs-block({
+      width: 22.3rem;
+      height: 22.6rem;
+      left: -200px;
+   });
+   .xxs-block({
+      width: 16.3rem;
+    height: 16.6rem;
+    left: -140px;
+    top: -1rem;
+   })
+   
+}
+.quota__title {}
+.quota__text_holder {
+   .flex();
+}

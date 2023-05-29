@@ -1,0 +1,118 @@
+.nominations__container {}
+.nominations__container .row {
+   .justify-center();
+     .sm-block({
+       margin-left: -25px;
+      margin-right: -25px;
+   })
+}
+.nominations__holder {
+   position: relative;
+   z-index: 200;
+   .col();
+   .size(12);
+   .size-xl(16);
+   .size-middle(16);
+   .size-lg(18);
+   .size-md(24);
+   .size-sm(24);
+   .size-xs(24);
+   
+   min-height: 24rem;
+   padding: 4rem 2rem;
+   box-shadow: 0 0 18px rgba(0, 0, 0, 0.07);
+   border-radius: 2px;
+   
+   .tr();
+   
+    margin-bottom: @offset;
+
+    .xl-block({
+        margin-bottom: @offset_xl;
+    });
+
+    .middle-block({
+        margin-bottom: @offset_middle;
+    });
+
+    .lg-block({
+        margin-bottom: @offset_middle;
+    });
+
+    .sm-block({
+        margin-bottom: @offset_middle;
+    });
+   
+}
+.nominations__text_holder {
+   position: relative;
+   z-index: 200;
+   width: 58%;
+   //min-width: 300px;
+   .lg-block({
+      width: 68%;
+   });
+  .sm-block({
+       width: 85%;
+   });
+  .xxs-block({
+       width: 95%;
+   })
+}
+.nominations__text {
+}
+h2.nominations__title.title {
+   .tr();
+   .sm-block({
+      font-size: 2rem;
+      line-height: 2.3rem;
+   });
+}
+.nominations__holder:hover {
+   .tr();
+   box-shadow: 0 0 18px rgba(60, 120, 236, 0.48);
+}
+.nominations__holder:hover h2.nominations__title.title {
+   .tr();
+   color: @color-blue;
+}
+
+.nominations__holder:before {
+   .pseudo();
+   z-index: 180;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(to right bottom, #ffffff 0%, #ffffff 40%, rgba(255, 255, 255, 0) 80%);
+   
+   display: none;
+   .xxl-block({
+      display: block;
+   })
+}
+.nominations__holder:after {
+   .pseudo();
+   z-index: 150;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%
+}
+
+.nomination_icon-1:after  { .nominations( '1'); background-size: auto 80%;}
+.nomination_icon-2:after  { .nominations( '2'); background-size: auto 95%;}
+.nomination_icon-3:after  { .nominations( '3'); background-size: auto 65%;}
+.nomination_icon-4:after  { .nominations( '4'); background-size: auto 75%;}
+.nomination_icon-5:after  { .nominations( '5'); background-size: auto 76%;}
+
+
+@media screen and (max-width: @break_xs) {
+   .nomination_icon-1:after  { background-size: auto 60%;}
+   .nomination_icon-2:after  { background-size: auto 75%;}
+   .nomination_icon-3:after  { background-size: auto 50%;}
+   .nomination_icon-4:after  { background-size: auto 55%;}
+   .nomination_icon-5:after  { background-size: auto 56%;}
+
+}
+

@@ -508,13 +508,14 @@ menu.competition__grid_navigation {
       margin-top: 4rem;
    }
    .competition__grid_hand {
-      .justify-center();
+      .justify-start();
       .items-end();
       margin-bottom: 2rem;
    }
    .competition__hand_icon {
-       width: 14rem;
+       width: 12rem;
        height: 15rem;
+      margin-right: 2rem;
    }
    
    .competition__hand_holder {
@@ -619,6 +620,9 @@ menu.competition__grid_navigation {
    }
 }
 @media screen and (max-width: 635px) {
+   .competition__container {
+      margin-top: -2rem;
+   }
    .competition__navigation_text {
       font-size: 2rem;
       line-height: 2.4rem;
@@ -739,7 +743,7 @@ menu.competition__grid_navigation {
       margin-left: 0;
    }
    .competition__container {
-       margin-top: -7rem;
+       margin-top: -9rem;
    }
    .competition__navigation_text {
       font-size: 2.2rem;
@@ -776,14 +780,14 @@ menu.competition__grid_navigation {
 }
 @media screen and (max-width: 340px) {
    .competition__container {
-       margin-top: -12rem;
+       margin-top: -14rem;
    }
    .competition__grid_navigation:before {
       top: -26rem;
       right: 7rem;
    }
    .competition__grid_navigation:after {
-      bottom: 12rem;
+      bottom: 11rem;
    }
    .competition__navigation_icon {
       margin-right: 1.3rem;
@@ -797,5 +801,10 @@ menu.competition__grid_navigation {
    }
    .competition__hand_title {
        height: 2.1rem;
+   }
+   .competition__navigation_icon {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 1.2rem;
    }
 }

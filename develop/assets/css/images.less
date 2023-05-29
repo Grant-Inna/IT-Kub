@@ -50,7 +50,12 @@
 }
 .body-lines-competition() {
    .svg('bg', 'competition-lines');
-   background-position: 0 200vh;
+   background-position: 0 100vh;
+   background-size: contain;
+}
+.body-lines-competition-left() {
+   .svg('bg', 'competition-lines-left');
+   background-position: left;
    background-size: contain;
 }
 
@@ -209,6 +214,30 @@
 }
 .competition-stage-adapt-3() {
    .svg-b( 'teacher_competition', 'icons', 'icon-stage-3-adapt' );
+    background-position: center;
+   background-size: contain;
+}
+
+.nominations(@name) {
+     background-image: url("../data/teacher_competition/icons/icon-nominations-@{name}.svg");
+   background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.competition-terms() {
+   .svg-b( 'teacher_competition', 'icons', 'terms' );
+    background-position: right top;
+   background-size: contain;
+}
+.competition-quota() {
+   .svg-b( 'teacher_competition', 'icons', 'quota' );
+    background-position: left;
+   background-size: contain;
+}
+
+.application(@name) {
+     background-image: url("../data/teacher_competition/icons/application-@{name}.svg");
+   background-repeat: no-repeat;
     background-position: center;
    background-size: contain;
 }

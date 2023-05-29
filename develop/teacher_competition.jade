@@ -14,7 +14,7 @@ html
 
          include assets/jade/content/teacher_competition/top
 
-         section( aria-label='О конкурсе' ).about_competition__container
+         section( aria-label='О конкурсе' )#about.about_competition__container
             .wrapper
                h1.caption.mb4.center
                   span О&nbsp;конкурсе
@@ -29,26 +29,78 @@ html
                .about_competition
                   .about_competition_icon
 
-         section( aria-label='Какие задачи преследует этот конкурс' ).competition_task__container.mt8
+         section( aria-label='Какие задачи преследует этот конкурс' )#task.competition_task__container.mt8
             .wrapper
                h1.title.mb4 Задачи конкурса
                .row
                   include assets/jade/content/teacher_competition/__task
                   +task( '01', 'Совершенствование профессионального мастерства педагогов дополнительного образования детей' )
-                  +task( '02', 'Повышение общественного и профессионального статуса педагогов дополнительного образования детей' )
-                  +task( '03', 'Отбор и продвижение новых педагогических практик и образовательных технологий в сфере дополнительного образования детей' )
-                  +task( '04', 'Выявление лучших педагогических методик и технологий обучения и воспитания детей, разработанных и внедренных в образовательную деятельность педагогами дополнительного образования детей' )
+                  +task( '02', 'Повышение общественного и&nbsp;профессионального статуса педагогов дополнительного образования детей' )
+                  +task( '03', 'Отбор и&nbsp;продвижение новых педагогических практик и&nbsp;образовательных технологий в&nbsp;сфере дополнительного образования детей' )
+                  +task( '04', 'Выявление лучших педагогических методик и&nbsp;технологий обучения и&nbsp;воспитания детей, разработанных и&nbsp;внедренных в&nbsp;образовательную деятельность педагогами дополнительного образования детей' )
 
-         section( aria-label='Этапы проведения"' ).competition_stage__container.mt7
+         section( aria-label='Этапы проведения"' )#stages.competition_stage__container.mt7
             .wrapper
                h1.caption.center.mb7 Этапы проведения
                .row
                   include assets/jade/content/teacher_competition/__stage-one
                   include assets/jade/content/teacher_competition/__stage
-                  +stage-one( '1', 'Заочный этап', 'июнь-июль', 'Прием заявок на конкурс', '10 июля 2023 года (включительно)', 'Работа конкурсной комиссии', '11 июля 2023 года - 30 июля 2023 года', 'Объявление полуфиналистов', '10 августа 2023 года' )
-                  +stage( '2', 'Очный этап', 'август-сентябрь', 'Полуфинал', '05 сентября 2023 года - 07 сентября 2023 года (г. Челябинск)' )
-                  +stage( '3', 'Заключительный этап', 'октябрь', 'Финал<br>Награждения победителей', '05 октября 2023 года - 07 октября 2023 года (г.Москва)' )
+                  +stage-one( '1', 'Заочный этап', 'июнь-июль', 'Прием заявок на&nbsp;конкурс', '10&nbsp;июля 2023&nbsp;года (включительно)', 'Работа конкурсной комиссии', '11&nbsp;июля 2023&nbsp;года&nbsp;&mdash; 30&nbsp;июля 2023&nbsp;года', 'Объявление полуфиналистов', '10&nbsp;августа 2023&nbsp;года' )
+                  +stage( '2', 'Очный этап', 'август-сентябрь', 'Полуфинал', '05&nbsp;сентября 2023&nbsp;года&nbsp;&mdash; 07&nbsp;сентября 2023&nbsp;года (г.&nbsp;Челябинск)' )
+                  +stage( '3', 'Заключительный этап', 'октябрь', 'Финал<br>Награждения победителей', '05&nbsp;октября 2023&nbsp;года&nbsp;&mdash; 07&nbsp;октября 2023&nbsp;года (г.&nbsp;Москва)' )
 
+
+         section( aria-label='Номинации"' )#nominations.nominations__container.mt8
+            .wrapper
+               h1.caption.center.mb5 Номинации конкурса
+               .row
+                  include assets/jade/content/teacher_competition/__nominations
+                  include assets/jade/content/teacher_competition/__nominations-more
+                  +nomination-more( '1', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', '<div style="display: inline-block;white-space: nowrap;">Программирование</div>', 'Программирование роботов', 'Программирование на&nbsp;Python', 'Программирование на&nbsp;Java')
+                  +nomination-more( '2', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Разработка приложений', 'Мобильная разработка', 'Разработка VR/AR-приложений', '')
+                  +nomination( '3', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Системное <div class="wwnow">администрирование</div>')
+                  +nomination( '4', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Кибергигиена и&nbsp;работа с&nbsp;большими данными')
+                  +nomination( '5', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Алгоритмика и&nbsp;логика')
+
+
+         section( aria-label='Усовия участия' )#terms.competition_terms__container.mt8
+            .wrapper
+               h1.caption.center.mb5 Условия участия
+               .row
+                  .competition_terms__holder
+                     .competition_terms__text.text-22 Для участия в&nbsp;Конкурсе педагогам Центров &laquo;IT-куб&raquo; необходимо
+                        br
+                        strong.mr.mt05 подать заявку
+                        | с&nbsp;указанием номинации в&nbsp;установленный срок на&nbsp;официальную почту Федерального оператора:
+                     a( href='mailto:it-cube@ficto.ru' )
+                        h2.title.mt2 it-cube@ficto.ru
+
+         section( aria-label='Заявка на участие' ).application__container
+            .wrapper
+               h1.title.center.mb5 Заявка на&nbsp;участие включает
+               .row
+                  include assets/jade/content/teacher_competition/__application-main
+                  +application( '1', 'Видеопрезентация участника Конкурса' )
+                  +application( '2', 'Согласие на&nbsp;обработку персональных данных' )
+                  +application( '3', 'Анкета участника' )
+               .application__line
+               .row
+                  include assets/jade/content/teacher_competition/__application-point
+                  +point( 'Краткая самопрезентация' )
+                  +point( 'Презентация авторских решений и&nbsp;методик, используемых в&nbsp;педагогическом процессе' )
+                  +point( 'Слово руководителя Центра &laquo;IT-куб&raquo; с&nbsp;характеристикой педагога' )
+
+         section( aria-label='Квота участие' ).quota__container
+            .wrapper
+               .row
+                  h1.title.mb3.quota__title Квота участия
+                  .quota__holder.text-22
+                     .quota__text_holder.mb15
+                        .icon-blue-point.mr1
+                        .quota__text Не более одного педагога&ndash;представителя Центра &laquo;IT-куб&raquo; в&nbsp;каждой номинации
+                     .quota__text_holder
+                        .icon-blue-point.mr1
+                        .quota__text Один педагог может заявиться только в&nbsp;одной номинации
 
 
          include assets/jade/footer/footer

@@ -61,18 +61,20 @@ section.competition_stage__container h2.title {
 .competition_stage__icon.stage_icon-2 { .competition-stage-2(); align-self: center }
 .competition_stage__icon.stage_icon-3 { .competition-stage-3(); align-self: flex-end }
 
-.competition_stage__icon:before {
+.competition_stage__holder:nth-child(2) .competition_stage__icon:before,
+.competition_stage__holder:nth-child(2) .competition_stage__icon:after {
    .pseudo();
    width: 200%;
-   height: 10rem;
-   top: 58%;
-   right: -220%;
-   .competition-stage-arrow-long()
+   height: 100%;
+   bottom: 40%;
 }
 .competition_stage__holder:nth-child(2) .competition_stage__icon:before {
-   top: unset;
-   bottom: 58%;
+   .competition-stage-arrow-long();
+   left: -215%;
+}
+.competition_stage__holder:nth-child(2) .competition_stage__icon:after {
    .competition-stage-arrow-right-long();
+   right: -215%
 }
 
 .competition_stage__holder:nth-child(3) .competition_stage__icon:before,
@@ -84,25 +86,20 @@ section.competition_stage__container h2.title {
 }
 
 @media screen and (max-width: 1455px) {
-   .competition_stage__icon:before {
-      .pseudo();
+
+   .competition_stage__holder:nth-child(2) .competition_stage__icon:before,
+   .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
+      bottom: 58%;
       width: 22vw;
-      height: 10rem;
-      top: 58%;
-      right: -24vw;
-      .competition-stage-arrow-long()
    }
    .competition_stage__holder:nth-child(2) .competition_stage__icon:before {
-      top: unset;
-      bottom: 58%;
-      .competition-stage-arrow-right-long();
+      left: -20vw
+   }
+   .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
+      right: -20vw;
    }
 }
 @media screen and (max-width: @break_lg) {
-   .competition_stage__holder .competition_stage__icon:before {
-      width: 210%;
-      height: 11rem;
-   }
    .competition_stage__holder:nth-child(2) {
       order: 3;
       .items-center();
@@ -111,9 +108,16 @@ section.competition_stage__container h2.title {
       max-width: 360px;
       padding-left: 10rem;
    }
+   .competition_stage__holder:nth-child(2) .competition_stage__icon:before,
+   .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
+      width: 26vw;
+   }
    .competition_stage__holder:nth-child(2) .competition_stage__icon:before {
-      bottom: 83%;
-      right: -220%;
+      left: -30vw;
+      transform: rotate(15deg);
+   }
+   .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
+      right: -30vw;
       transform: rotate(-15deg);
    }
    .competition_stage__holder:nth-child(3) {
@@ -123,36 +127,13 @@ section.competition_stage__container h2.title {
    .competition_stage__holder:nth-child(3) .competition_stage__about {
       max-width: 370px;
    }
-   
-   .competition_stage__holder:nth-child(1) .competition_stage__icon:before {
-      top: 560px;
-      right: -150%;
-      transform: rotate(15deg);
-   }
 }
 @media screen and (max-width: 900px) {
-   .competition_stage__holder .competition_stage__icon:before {
-      width: 12rem;
-      height: 6rem;
-      .competition-stage-arrow()
-   }
    .competition_stage__holder:nth-child(2) .competition_stage__icon:before {
-      .competition-stage-arrow-right()
+      .competition-stage-arrow();
    }
-   .competition_stage__holder:nth-child(1) .competition_stage__icon:before {
-      top: 480px;
-      right: -70%;
-      transform: unset;
-   }
-   .competition_stage__holder:nth-child(2) .competition_stage__icon:before {
-       bottom: 300px;
-      right: -150%;
-      transform: unset;
-   }
-}
-@media screen and (max-width: 850px) {
-   .competition_stage__holder:nth-child(1) .competition_stage__icon:before {
-       right: -50%;
+   .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
+       .competition-stage-arrow-right();
    }
 }
 @media screen and (max-width: @break_md) {
@@ -272,6 +253,7 @@ section.competition_stage__container h2.title {
    .competition_stage__title {
       padding-left: 8rem;
       height: 8rem;
+      margin-right: -3rem;
    }
 }
 @media screen and (max-width: @break_xxs) {
