@@ -9,7 +9,7 @@ mixin events_calendar-1( month, color, date, m, name, link )
             .row
                .event__date_holder.col( class='event_#{color}' )
                   .event__date !{date}
-                  .event__month_text #{m}
+                  .event__month_text !{m}
                .line
                .event__about_holder.col
                   .event__name !{name}
