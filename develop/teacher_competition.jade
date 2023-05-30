@@ -45,9 +45,9 @@ html
                .row
                   include assets/jade/content/teacher_competition/__stage-one
                   include assets/jade/content/teacher_competition/__stage
-                  +stage-one( '1', 'Заочный этап', 'июнь-июль', 'Прием заявок на&nbsp;конкурс', '10&nbsp;июля 2023&nbsp;года (включительно)', 'Работа конкурсной комиссии', '11&nbsp;июля 2023&nbsp;года&nbsp;&mdash; 30&nbsp;июля 2023&nbsp;года', 'Объявление полуфиналистов', '10&nbsp;августа 2023&nbsp;года' )
-                  +stage( '2', 'Очный этап', 'август-сентябрь', 'Полуфинал', '05&nbsp;сентября 2023&nbsp;года&nbsp;&mdash; 07&nbsp;сентября 2023&nbsp;года (г.&nbsp;Челябинск)' )
-                  +stage( '3', 'Заключительный этап', 'осень', 'Финал<br>Награждения победителей', 'Даты и&nbsp;место уточняются' )
+                  +stage-one( '1', 'Заочный этап', 'июнь-июль', 'Прием заявок на&nbsp;конкурс', 'до 10&nbsp;июля 2023&nbsp;года (включительно)', 'Работа конкурсной комиссии', '11&nbsp;июля 2023&nbsp;года&nbsp;&mdash; 30&nbsp;июля 2023&nbsp;года', 'Объявление полуфиналистов', '10&nbsp;августа 2023&nbsp;года' )
+                  +stage( '2', 'Очный этап', 'сентябрь 2023', 'Полуфинал', '05&nbsp;сентября 2023&nbsp;года&nbsp;&mdash; 07&nbsp;сентября 2023&nbsp;года (г.&nbsp;Челябинск)' )
+                  +stage( '3', 'Заключительный этап', 'IV&nbsp;квартал 2023', 'Финал<br>Награждения победителей', 'Даты и&nbsp;место уточняются' )
 
 
          section( aria-label='Номинации"' )#nominations.nominations__container.mt8
@@ -81,9 +81,9 @@ html
                .row
                   include assets/jade/content/teacher_competition/__application-main
                   include assets/jade/content/teacher_competition/__application-save
-                  +application( '1', 'Видеопрезентация участника Конкурса' )
-                  +application-save( '2', 'Согласие на&nbsp;обработку персональных данных', 'Согласие_на_обработку_персональных_данных' )
                   +application-save( '3', 'Анкета участника', 'Анкета_участника' )
+                  +application-save( '2', 'Согласие на&nbsp;обработку персональных данных', 'Согласие_на_обработку_персональных_данных' )
+                  +application( '1', 'Видеопрезентация участника Конкурса' )
                .application__line
                .row
                   include assets/jade/content/teacher_competition/__application-point
@@ -101,7 +101,7 @@ html
                         .quota__text Не более одного педагога&ndash;представителя Центра &laquo;IT-куб&raquo; в&nbsp;каждой номинации
                      .quota__text_holder
                         .icon-blue-point.mr1
-                        .quota__text Один педагог может заявиться только в&nbsp;одной номинации
+                        .quota__text Один педагог может подать заявку только в&nbsp;одну номинацию
 
 
          include assets/jade/footer/footer

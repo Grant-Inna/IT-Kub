@@ -1,4 +1,6 @@
 .application__container {
+   position: relative;
+   z-index: 300;
    margin-top: 10rem;
 }
 .application__container .row {
@@ -35,7 +37,7 @@
    margin-top: 1rem;
    .flex();
    .justify-center();
-   .items-center();
+   .items-start();
    
    .montserrat-semibold();
     font-size: 1.2rem;
@@ -49,12 +51,27 @@
       line-height: 1.9rem;
    });
 }
+.application__holder:nth-child(2) .application__text span {
+   max-width: 15rem;
+   .lg-block({
+      max-width: 18rem;
+   });
+   .sm-block({
+      max-width: unset;
+   });
+   .to( 1185px, {
+      max-width: 10rem;
+   });
+   .to( 1034px, {
+      max-width: 11rem;
+   });
+}
 .application__text span {
    max-width: 15rem;
    .middle-block({ max-width: 18rem; });
-   .lg-block({ max-width: unset; text-align: center });
+   .lg-block({ max-width: 23rem; text-align: center });
    .md-block({ max-width: 18rem; });
-   .sm-block({ max-width: unset; text-align: left; });
+   .sm-block({ max-width: 32rem; text-align: left; });
    .xs-block({ margin-left: 1rem })
 }
 
@@ -83,7 +100,7 @@
 }
 .application__holder:nth-child(3):after {
    .pseudo();
-   bottom: -5rem;
+   bottom: -6rem;
    
    width: 2px;
    height: 5rem;
@@ -94,9 +111,9 @@
    .sm-block({
       background-color: transparent;
       .line-blue();
-       bottom: -26rem;
-       left: calc(6.2rem - 2px);
-       height: 28rem;
+       bottom: -23rem;
+       left: calc(6.15rem - 2px);
+       height: 24rem;
    });
    .xs-block({
       height: 27rem;
@@ -108,7 +125,7 @@
    height: 2px;
    background-color: @color-black;
    
-   margin-top: 2rem;
+   margin-top: 3rem;
    .middle-block({
       margin-top: 4rem;
    });
