@@ -356,12 +356,17 @@
    right: 0;
    top: -55vh;
    .lg-block({
-      width: 140vw
+      width: 120vw;
+      top: -21rem;
    });
    .md-block({
-      width: 200vw;
+      width: 120vw;
       top: -28rem;
    })
+}
+.competition_terms__container .wrapper {
+   position: relative;
+   z-index: 200;
 }
 .competition_terms__container .row {
    position: relative;
@@ -426,11 +431,16 @@
 }
 
 section .competition_terms__holder h2.title {
+   .tr();
   .sm-block({
      z-index: 150;
      margin-top: 26rem !important;
       text-align: center;
    })
+}
+section .competition_terms__holder a:hover {
+  .tr();
+   color: @color-blue
 }
 
 /* конкурс педагогов. Квота участия*/

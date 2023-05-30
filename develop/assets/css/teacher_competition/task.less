@@ -1,5 +1,26 @@
 .competition_task__container {
-
+   position: relative;
+   z-index: 100;
+}
+.competition_task__container:before {
+   .pseudo();
+   .body-lines-competition();
+   width: 70vw;
+   height: 140vh;
+   left: 0;
+   top: -30vh;
+   .lg-block({
+      width: 120vw;
+      top: -21rem;
+   });
+   .md-block({
+      width: 140vw;
+      top: -25rem;
+   })
+}
+.competition_task__container .wrapper {
+   position: relative;
+   z-index: 200;
 }
 .competition_task__container h1.title {
    .montserrat-bold();

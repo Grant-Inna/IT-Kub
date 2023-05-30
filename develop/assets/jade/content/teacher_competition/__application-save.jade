@@ -1,0 +1,7 @@
+mixin application-save( icon, text, link )
+   article.application__holder.mb3
+      .application__icon.mb2( class='application_icon-#{icon}' )
+      a( href='./assets/data/files/teacher_competition/#{link}.docx' ).application__text.application__save
+         .icon-save
+         span !{text}
+

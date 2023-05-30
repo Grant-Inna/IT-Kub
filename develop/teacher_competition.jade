@@ -47,7 +47,7 @@ html
                   include assets/jade/content/teacher_competition/__stage
                   +stage-one( '1', 'Заочный этап', 'июнь-июль', 'Прием заявок на&nbsp;конкурс', '10&nbsp;июля 2023&nbsp;года (включительно)', 'Работа конкурсной комиссии', '11&nbsp;июля 2023&nbsp;года&nbsp;&mdash; 30&nbsp;июля 2023&nbsp;года', 'Объявление полуфиналистов', '10&nbsp;августа 2023&nbsp;года' )
                   +stage( '2', 'Очный этап', 'август-сентябрь', 'Полуфинал', '05&nbsp;сентября 2023&nbsp;года&nbsp;&mdash; 07&nbsp;сентября 2023&nbsp;года (г.&nbsp;Челябинск)' )
-                  +stage( '3', 'Заключительный этап', 'октябрь', 'Финал<br>Награждения победителей', '05&nbsp;октября 2023&nbsp;года&nbsp;&mdash; 07&nbsp;октября 2023&nbsp;года (г.&nbsp;Москва)' )
+                  +stage( '3', 'Заключительный этап', 'осень', 'Финал<br>Награждения победителей', 'Даты и&nbsp;место уточняются' )
 
 
          section( aria-label='Номинации"' )#nominations.nominations__container.mt8
@@ -63,7 +63,7 @@ html
                   +nomination( '5', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Алгоритмика и&nbsp;логика')
 
 
-         section( aria-label='Усовия участия' )#terms.competition_terms__container.mt8
+         section( aria-label='Усовия участия' )#terms.competition_terms__container.mt7
             .wrapper
                h1.caption.center.mb5 Условия участия
                .row
@@ -80,9 +80,10 @@ html
                h1.title.center.mb5 Заявка на&nbsp;участие включает
                .row
                   include assets/jade/content/teacher_competition/__application-main
+                  include assets/jade/content/teacher_competition/__application-save
                   +application( '1', 'Видеопрезентация участника Конкурса' )
-                  +application( '2', 'Согласие на&nbsp;обработку персональных данных' )
-                  +application( '3', 'Анкета участника' )
+                  +application-save( '2', 'Согласие на&nbsp;обработку персональных данных', 'Согласие_на_обработку_персональных_данных' )
+                  +application-save( '3', 'Анкета участника', 'Анкета_участника' )
                .application__line
                .row
                   include assets/jade/content/teacher_competition/__application-point
