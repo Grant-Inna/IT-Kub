@@ -1,5 +1,5 @@
 .competition__container {
-   margin-top: 3rem;
+   margin-top: -1rem;
 }
 .competition__container .wrapper {
    .flex();
@@ -203,6 +203,9 @@ menu.competition__grid_navigation {
 
 
 @media screen and (max-width: 1515px) {
+   .competition__container {
+      //margin-top: 2rem;
+   }
    .competition__grid_holder {
       display: grid;
       grid-template-columns: 580px 350px 480px;
@@ -270,6 +273,9 @@ menu.competition__grid_navigation {
 }
 
 @media screen and (max-width: 1320px) {
+   .competition__container {
+      margin-top: 2rem;
+   }
    .competition__grid_holder {
       display: grid;
       grid-template-columns: 500px 330px 500px;
@@ -354,7 +360,7 @@ menu.competition__grid_navigation {
       margin-top: 2rem;
    }
    .competition__hand_title {
-          height: 4.7vw;
+       height: 4.7vw;
    }
    .competition__grid_robo-hand {
       min-height: unset;
@@ -410,6 +416,14 @@ menu.competition__grid_navigation {
    .competition__grid_image {
        width: 26rem;
        height: 26rem;
+   }
+   
+   .competition__hand_caption {
+      height: 6.3vw;
+      margin-top: 2rem;
+   }
+   .competition__hand_title {
+       height: 4.5vw;
    }
 
 }
