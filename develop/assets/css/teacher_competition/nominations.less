@@ -77,10 +77,18 @@ h2.nominations__title.title {
 .nominations__holder:hover {
    .tr();
    box-shadow: 0 0 18px rgba(60, 120, 236, 0.48);
+   
+   .lg-block({
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.07);
+   })
 }
 .nominations__holder:hover h2.nominations__title.title {
    .tr();
    color: @color-blue;
+   
+   .lg-block({
+      color: @color-black;
+   })
 }
 
 .nominations__holder:before {
@@ -95,6 +103,9 @@ h2.nominations__title.title {
    display: none;
    .xxl-block({
       display: block;
+   });
+   .md-block({
+      background: linear-gradient(to right bottom, #ffffff 0%, rgba(255, 255, 255, 84%) 60%, rgba(255, 255, 255, 0) 80%);
    })
 }
 .nominations__holder:after {

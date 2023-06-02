@@ -47,11 +47,17 @@
       line-height: 1.8rem;
    });
    .sm-block({
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       line-height: 1.9rem;
    });
 }
-.application__holder:nth-child(2) .application__text span {
+.application__text > div {
+   height: 34px;
+   .sm-block({
+      height: unset;
+   });
+}
+.application__holder:nth-child(2) .application__text .application__save_text {
    max-width: 15rem;
    .lg-block({
       max-width: 18rem;
@@ -66,10 +72,16 @@
       max-width: 11rem;
    });
 }
-.application__text span {
+.application__save_text {
+   .flex();
+   .items-center();
+   margin-top: 1rem;
+}
+.application__text {
+   .column();
    max-width: 15rem;
    .middle-block({ max-width: 18rem; });
-   .lg-block({ max-width: 23rem; text-align: center });
+   .lg-block({ max-width: 18rem; text-align: center });
    .md-block({ max-width: 18rem; });
    .sm-block({ max-width: 32rem; text-align: left; });
    .xs-block({ margin-left: 1rem })
@@ -103,10 +115,13 @@
    bottom: -6rem;
    
    width: 2px;
-   height: 5rem;
+   height: 7rem;
    background-color: @color-black;
    .middle-block({
       bottom: -7rem;
+   });
+   .lg-block({
+      height: 5rem;
    });
    .sm-block({
       background-color: transparent;
@@ -189,6 +204,7 @@
 }
 .application__holder .icon-save {
    margin-right: 1rem;
+   margin-left: -0.3rem;
    .sm-block({
       width: 2.6rem;
       height: 2.6rem;

@@ -196,6 +196,7 @@
    .sm-block({
       font-size: 1.5rem;
       line-height: 1.8rem;
+      text-align: left;
    });
 }
 .directions_icon-1 { .directions-icon( '1' ) }
@@ -216,6 +217,11 @@
 }
 .number__container .row {
    .justify-between();
+}
+.number__container .row br {
+   .md-block({
+      display: none;
+   })
 }
 .number__container .caption {
    width: 55%;

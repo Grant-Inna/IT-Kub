@@ -214,6 +214,16 @@ strong.text-22.responsibility__text {
    position: relative;
    z-index: 300;
    cursor: pointer;
+   
+   .sm-block({
+      margin-bottom: calc((6rem + 5vw) * -1);
+   })
+}
+.course__container .flex-wrap {
+   .sm-block({
+      margin-right: -30px;
+      margin-left: -30px;
+   })
 }
 .course__container h1.caption {
    .xs-block({
@@ -235,6 +245,9 @@ article.course__block {
       width: 100%;
       margin-right: 0;
       margin-left: 0;
+   });
+   .sm-block({
+      margin-bottom: 0;
    });
    .xs-block({
       width: calc( 100% + 60px );
