@@ -39,14 +39,14 @@ header.header__container .wrapper {
    z-index: 700;
 }
 
-@menu_icon-h: 2px;
+@menu_icon-h: 3px;
 .menu__mobile_icon {
    position: relative;
    z-index: 500;
    width: @menu_mobile;
    height: @menu_icon-h;
    
-   border-radius: 2px;
+   border-radius: 1px;
    background-color: @color-black;
    
    transition: all .4s ease-in-out;
@@ -61,15 +61,15 @@ header.header__container .wrapper {
    height: @menu_icon-h;
    left: 0;
    
-   border-radius: 2px;
+   border-radius: 1px;
    background-color: @color-black;
    .tr();
 }
 .menu__mobile_icon:before {
-   top: @menu_icon-h * -2 - 2;
+   top: @menu_icon-h * -2 - 1;
 }
 .menu__mobile_icon:after {
-   bottom: @menu_icon-h * -2 - 2;
+   bottom: @menu_icon-h * -2 - 1;
 }
 
 .show_aside .menu__mobile_icon {
@@ -137,7 +137,7 @@ header.header__container .wrapper {
    height: 70vw;
    .column();
    .justify-start();
-   margin-top: 20vw;
+   margin-top: 10vw;
    
    color: @color-back-white;
    
@@ -148,8 +148,8 @@ header.header__container .wrapper {
    .tr();
    height: 1.1rem;
    width: 75%;
-   margin-bottom: calc( 1.3rem + 4vw);
-   padding-bottom: calc( .3rem + 2vw );
+   margin-bottom: calc( 1rem + 4vw);
+   padding-bottom: calc( 1rem + 2vw );
    border-bottom: 1px solid @color-back-gray-dark;
    border-radius: 1px;
    

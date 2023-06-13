@@ -536,3 +536,59 @@ section .competition_terms__holder a:hover {
 .quota__text_holder {
    .flex();
 }
+
+
+/*  парнёры проекта  */
+.partner__logo {
+   .col();
+   .size(8);
+   .size-xl(8);
+   .size-middle(9);
+   .size-lg(9);
+   .size-md(25);
+   .size-sm(16);
+   .size-xs(24);
+   
+   .shift-sm-left(4);
+   .shift-xs-left(0);
+   
+   
+   .md-block({
+      .logo_arpp-adapt();
+      width: 55vw;
+      height: 46vw;
+      flex-shrink: 0;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 2rem;
+      
+      background-color: #F7F5F5;
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.11);
+      border-radius: 3px;
+   });
+   .xs-block({
+      width: 20rem;
+      height: 18rem;
+      margin-right: auto;
+      margin-left: auto;
+   });
+}
+.partner__holder {
+   .col();
+   .size(15);
+   .size-xl(15);
+   .size-middle(15);
+   .size-lg(15);
+   .size-md(24);
+   .size-sm(24);
+   .size-xs(24);
+}
+.partner__article {
+   .flex();
+   margin-bottom: 1.5rem;
+}
+.partner__text {
+   .montserrat-semibold();
+   font-size: 1.3rem;
+   line-height: 1.6rem;
+}

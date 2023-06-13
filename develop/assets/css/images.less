@@ -28,6 +28,16 @@
    background-position: left;
    background-size: contain;
 }
+.logo_arpp {
+   .svg( 'logo', 'arpp' );
+   background-position: left;
+   background-size: contain;
+}
+.logo_arpp-adapt() {
+   .svg( 'logo', 'arpp-adapt' );
+   background-position: center;
+   background-size: contain;
+}
 
 
 .body-lines-left() {
@@ -55,6 +65,11 @@
 }
 .body-lines-competition-left() {
    .svg('bg', 'competition-lines-left');
+   background-position: right;
+   background-size: contain;
+}
+.body-lines-news() {
+   .svg('bg', 'lines-dots-news');
    background-position: right;
    background-size: contain;
 }
@@ -239,5 +254,12 @@
      background-image: url("../data/teacher_competition/icons/application-@{name}.svg");
    background-repeat: no-repeat;
     background-position: center;
+   background-size: contain;
+}
+
+
+.news-main() {
+   .svg( 'news', 'main' );
+    background-position: top;
    background-size: contain;
 }

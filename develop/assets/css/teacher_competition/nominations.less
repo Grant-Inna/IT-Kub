@@ -106,6 +106,12 @@ h2.nominations__title.title {
    });
    .md-block({
       background: linear-gradient(to right bottom, #ffffff 0%, rgba(255, 255, 255, 84%) 60%, rgba(255, 255, 255, 0) 80%);
+   });
+   .xs-block({
+      background: linear-gradient(to right bottom, #ffffff 0%, rgba(255, 255, 255, 0.84) 75%, rgba(255, 255, 255, .3) 90%);
+   });
+   .xxs-block({
+      background: linear-gradient(to right bottom, #ffffff 0%, rgba(255, 255, 255, 0.84) 75%, rgba(255, 255, 255, .2) 95%);
    })
 }
 .nominations__holder:after {
@@ -124,12 +130,18 @@ h2.nominations__title.title {
 .nomination_icon-5:after  { .nominations( '5'); background-size: auto 76%;}
 
 
-@media screen and (max-width: @break_xs) {
+@media screen and (max-width: @break_md) {
    .nomination_icon-1:after  { background-size: auto 60%;}
    .nomination_icon-2:after  { background-size: auto 75%;}
    .nomination_icon-3:after  { background-size: auto 50%;}
    .nomination_icon-4:after  { background-size: auto 55%;}
    .nomination_icon-5:after  { background-size: auto 56%;}
 
+}
+@media screen and (max-width: @break_xxs) {
+   .nomination_icon-1:after,
+   .nomination_icon-2:after {
+      opacity: .4;
+   }
 }
 

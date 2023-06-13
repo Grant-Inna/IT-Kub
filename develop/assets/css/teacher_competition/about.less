@@ -35,7 +35,7 @@
    margin-bottom: 1.5rem;
 }
 .about_competition__icon {
-   .competition-check();
+   .icon-check;
    margin-right: 1.5rem;
 }
 .about_competition__text {
@@ -144,6 +144,9 @@
    .about_competition__container {
       margin-top: 24vw;
    }
+   .about_competition__container h1.caption span {
+      margin-bottom: 1rem;
+   }
 }
 @media screen and (max-width: 560px) {
    .about_competition__container {
@@ -163,6 +166,18 @@
    }
 }
 
+@media screen and (max-width: 360px) {
+   .about_competition_icon {
+      opacity: .5;
+      margin-left: -2rem;
+   }
+   .about_competition__container h1.caption {
+      margin-left: -8rem;
+   }
+   .about_competition__container h1.caption span {
+      margin-bottom: 1.5rem;
+   }
+}
 @media screen and (max-width: 356px) {
    .about_competition__container .wrapper {
       grid-template-columns: 35vw 65vw;
@@ -170,7 +185,7 @@
       grid-gap: 1.5rem;
    }
    .about_competition__container h1.caption {
-      margin-left: -4rem;
+      margin-left: -8rem;
    }
 }
 @media screen and (max-width: 330px) {

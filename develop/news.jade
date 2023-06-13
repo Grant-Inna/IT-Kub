@@ -2,7 +2,7 @@ doctype
 html
 
    include assets/jade/static/__head
-   +title( 'Центры цифрового образования детей' )
+   +title( 'Новости центров | IT-cube' )
 
    body
       include assets/jade/static/metrika
@@ -10,8 +10,23 @@ html
          #black_back
          include assets/jade/header/__header
          +menu( '', '', '', 'active', '', '', '', '' )
-         include assets/jade/header/main
+         include assets/jade/header/main-pages
 
+         section( aria-label='Новости проекта' ).news__container
+            .wrapper
+               h1.caption Новости центров
+                  .wwnow &laquo;IT-куб&raquo;
+
+         section( aria-label='Главная новость' ).main_news__container
+            .wrapper
+               .row
+                  .main_news__image
+                  main.main_news__holder
+                     .main_news__date.text-25
+                        span 02 / 06 / 2023
+                     .main_news__text.mb3.text-22
+                        p На втором онлайн-семинаре «IT в кубе» анонсировали актуальные мероприятия для педагогов и руководителей Центров «IT-куб» / взяли с дизайна
+                     a( href='./news/' ).main_news__more.hover.inline Подробнее
 
          include assets/jade/footer/footer
 

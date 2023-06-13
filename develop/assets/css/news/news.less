@@ -1,0 +1,80 @@
+.news__container {
+   position: relative;
+   z-index: 200;
+   overflow: hidden;
+   padding-top: 11rem;
+   
+   margin-top: -2rem;
+   margin-bottom: 6rem;
+   
+   .md-block({
+      padding-top: 4rem;
+   });
+}
+.news__container .caption .wwnow {
+   margin-left: .8rem;
+   .to( 730px, {
+      margin-left: 0;
+   })
+}
+
+.main_news__container {
+
+}
+.main_news__container .row {
+   .items-start();
+}
+.main_news__image {
+   .col();
+   .size(12);
+   .size-xl(12);
+   .size-middle(13);
+   .size-lg(13);
+   .size-md(13);
+   .size-sm(24);
+   .size-xs(24);
+   
+   .news-main();
+   height: 28rem;
+   
+   .sm-block({
+      margin-bottom: 2rem;
+      height: 54vw;
+   });
+   .xs-block({
+      height: 52vw;
+   });
+   .xxs-block({
+      height: 48vw;
+   });
+}
+.main_news__holder {
+   .col();
+   .size(12);
+   .size-xl(12);
+   .size-middle(11);
+   .size-lg(11);
+   .size-md(11);
+   .size-sm(24);
+   .size-xs(24);
+}
+
+.main_news__date {
+   display: inline-block;
+   background-color: @color-blue;
+   padding: .6rem 1.4rem;
+   margin-bottom: 2rem;
+}
+.main_news__date span {
+   .montserrat-semibold();
+   color: white;
+}
+.main_news__text p {
+   .montserrat-semibold();
+}
+.main_news__more {
+   color: @color-blue;
+}
+.main_news__more.inline.hover:after {
+   background-color: @color-blue;
+}
