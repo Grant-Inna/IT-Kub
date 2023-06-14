@@ -184,4 +184,27 @@ $(document).ready(function () {
       });
    }
    
+   
+   /* новости */
+   let image;
+   
+   if( document.location.hash.length != 0 ) {
+      let $news = $(document.location.hash);
+      let current_issue = $news.prop('id').split('_')[1],
+          day = current_issue.split('-')[0],
+          month = current_issue.split('-')[1],
+          year = current_issue.split('-')[2];
+          
+      let date = day + ' / ' + month + ' / ' + year;
+      
+      showHashNews($news, date, current_issue);
+   }
+   function showHashNews( current, date, current_issue ) {
+      $('.news_one__article').not(current).removeClass('active_news').hide();
+      current.addClass('active_news').show();
+      $('.news_one__date').text(date);
+      
+      $('body, html').scrollTop(0);
+   }
+   
 });

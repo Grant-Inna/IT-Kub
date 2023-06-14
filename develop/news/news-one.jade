@@ -1,0 +1,70 @@
+doctype
+html
+   head
+      meta( name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0" )
+      meta( http-equiv="X-UA-Compatible", content="IE=edge" )
+      meta( name="MobileOptimized" content="width" )
+      meta( name="HandheldFriendly", content="True" )
+      meta( charset = "UTF-8")
+      title Новость | IT-cube
+      link( rel="shortcut icon" href="../assets/data/system/favicon.svg" type="image/x-icon" )
+      link( type="text/css" rel="stylesheet" href="../assets/css/style.css?v=2" )
+
+   body
+      include ../assets/jade/static/metrika
+      #container_news_one
+         #black_back
+         header.header__container
+            .wrapper
+               a( href='../index.html' ).header__logo.logo_kub
+                  img( src='../assets/data/logo/kub-static.svg' )
+               menu.header__menu_holder
+                  a( href='../index.html' class='#{active1}').menu__item О&nbsp;проекте
+                  a( href='../federal_operator.html'  class='#{active2}').menu__item О&nbsp;федеральном операторе
+                  a( href='../events.html'  class='#{active3}').menu__item Мероприятия
+                  a( href='../news.html'  class='#{active4}').menu__item.active Новости
+                  //a( href='./videos.html'  class='#{active5}').menu__item Видео
+                  //a( href='./documentation.html'  class='#{active6}').menu__item Документы
+                  //a( href='./list.html'  class='#{active7}').menu__item Список &laquo;IT-КУБОВ&raquo;
+                  a( href='../teacher_competition.html' class='#{active8}').menu__item Конкурс педагогов
+               .menu__mobile
+                  .menu__mobile_icon
+            menu.menu__mobile_container
+               .menu__mobile
+                  .menu__mobile_icon
+               .menu__mobile_holder
+                  a( href='../index.html' class='#{active1}').menu__mobile_item О&nbsp;проекте
+                  a( href='../federal_operator.html'  class='#{active2}').menu__mobile_item О&nbsp;федеральном операторе
+                  a( href='../events.html'  class='#{active3}').menu__mobile_item Мероприятия
+                  a( href='../news.html'  class='#{active4}').menu__mobile_item.active Новости
+                  //a( href='./videos.html'  class='#{active5}').menu__mobile_item Видео
+                  //a( href='./documentation.html'  class='#{active6}').menu__mobile_item Документы
+                  //a( href='./list.html'  class='#{active7}').menu__mobile_item Список &laquo;IT-КУБОВ&raquo;
+                  a( href='../teacher_competition.html'  class='#{active8}').menu__mobile_item Конкурс педагогов
+
+         include ../assets/jade/header/main-pages
+
+         section.wrapper.news__container
+            .row
+               a( href='../news.html' ).back__holder.text-25.mb4
+                  .icon-arrow-back
+                  span назад
+               .news_one__block
+                  include __news_02062023_1
+                  include __news_06052023_1
+                  include __news_06052023_2
+
+
+
+
+         include ../assets/jade/footer/footer
+
+      script( src='../assets/js/jquery.js' )
+      script( src='../assets/js/slick.min.js' )
+      script( src='../assets/js/work.js' )
+
+
+
+
+
+

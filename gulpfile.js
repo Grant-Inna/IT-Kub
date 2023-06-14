@@ -77,6 +77,13 @@ function html(done){
    .pipe(gulpif(isSync, browserSync.stream()));
    done();
 }
+function news(done){
+   return gulp.src( base + 'news/news-one.jade' )
+   .pipe(jade())
+   .pipe(gulp.dest( prod + 'news/' ))
+   .pipe(gulpif(isSync, browserSync.stream()));
+   done();
+}
 
 function styles(){
    return gulp.src( [ src + 'css/style.less' ])
@@ -131,6 +138,7 @@ function watch(done){
    
    gulp.watch( src + 'css/**/*.less', styles);
    gulp.watch( base + '*.jade', html);
+   gulp.watch( base + 'news/*.jade', news);
    gulp.watch( src + 'jade/**/*.jade', html);
    gulp.watch( src + 'images/**/*', images);
    gulp.watch( src + 'data/*', data);
@@ -146,7 +154,7 @@ function grid(done){
 }
 
 const build = gulp.series(clear,
-   gulp.parallel(html, styles, js, images, data, fonts )
+   gulp.parallel(html, news, styles, js, images, data, fonts )
 );
 
 gulp.task('build', build);

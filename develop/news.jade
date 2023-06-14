@@ -21,12 +21,24 @@ html
             .wrapper
                .row
                   .main_news__image
-                  main.main_news__holder
-                     .main_news__date.text-25
-                        span 02 / 06 / 2023
+                     img( src='./assets/data/images/news/02-06-2023.jpg' )
+                  main#news_02-06-1.main_news__holder
+                     .main_news__date.text-25 02
+                        span.first &nbsp;/&nbsp;
+                        span.second .
+                        | 06
+                        span.first &nbsp;/&nbsp;
+                        span.second .
+                        | 2023
                      .main_news__text.mb3.text-22
                         p На втором онлайн-семинаре «IT в кубе» анонсировали актуальные мероприятия для педагогов и руководителей Центров «IT-куб» / взяли с дизайна
-                     a( href='./news/' ).main_news__more.hover.inline Подробнее
+                     a( href='./news/news-one.html#news_02-06-2023_1' ).news__more.hover.inline Подробнее
+
+         section( aria-label='Новости' ).news_list__container.mt4
+            .wrapper
+               include assets/jade/content/__news-one
+               +news( '06', '05', '2023', 'Российское движение детей и молодежи «Движение Первых» подвело итоги первого хакатона / из дизайна', 'news_06-05-2023_1')
+               +news( '06', '05', '2023', 'Российское движение детей и молодежи «Движение Первых» подвело итоги первого хакатона', 'news_06-05-2023_2')
 
          include assets/jade/footer/footer
 
