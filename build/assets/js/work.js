@@ -232,15 +232,10 @@ $(document).ready(function () {
    }
    
    function selectAnotherNumber( event, current ) {
-      let   $pagination_block = $('.pagination__block'),
-         $pagination_container = $('.materials__pagination_container'),
-         $pagination_holder = $('.materials__pagination_holder'),
-         $pagination_arrow = $('.pagination__arrow'),
-         $pagination_numb = $('.pagination__numb'),
-         $show = $('.pagination_show'),
-         $active = $('.pagination_active'),
-         $disable = $('.pagination_disable'),
-         current_p;
+      let $show = $('.pagination_show'),
+          $active = $('.pagination_active'),
+          $disable = $('.pagination_disable'),
+          current_p;
       
       $active.removeClass('pagination_active');
       $disable.removeClass('pagination_disable');
