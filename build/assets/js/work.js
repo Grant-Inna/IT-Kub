@@ -207,4 +207,76 @@ $(document).ready(function () {
       $('body, html').scrollTop(0);
    }
    
+   
+   /*  пагинация  */
+
+   
+   if($('.materials__pagination_container').length > 0){
+      let p_active = 'pagination_active',
+          p_disable = 'pagination_disable';
+      let current;
+      
+      $('.' + p_active).on( 'click', false );
+      $('.' + p_disable).on( 'click', false );
+      // При нажатии на номер или стрелку, получаем айди активного номера пагинации
+      // Прибавляем или убавляем номер и делаем активным его
+      // Считываем айди нового активного номера пагинации и показываем соответствующий блок новостей
+      
+      $('.pagination__item').on( 'click', function( event ) {
+         if ( !$(event.target).hasClass('pagination_active') && !$(event.target).hasClass('pagination_disable')) {
+            current = $('.pagination_show').prop( 'id' ).split('_')[1];
+            selectAnotherNumber(event.target, current);
+            
+         }
+         })
+   }
+   
+   function selectAnotherNumber( event, current ) {
+      let   $pagination_block = $('.pagination__block'),
+         $pagination_container = $('.materials__pagination_container'),
+         $pagination_holder = $('.materials__pagination_holder'),
+         $pagination_arrow = $('.pagination__arrow'),
+         $pagination_numb = $('.pagination__numb'),
+         $show = $('.pagination_show'),
+         $active = $('.pagination_active'),
+         $disable = $('.pagination_disable'),
+         current_p;
+      
+      $active.removeClass('pagination_active');
+      $disable.removeClass('pagination_disable');
+      $show.removeClass('pagination_show');
+      
+      let $id = $(event).prop( 'id' ),
+          id = $id.split('_')[1],
+          new_id;
+      
+      let total = $('div[id^=numb_]').length;
+      
+      
+      if ( $id === 'prev' ) {
+         new_id = current - 1;
+         $('#block_' + new_id).addClass('pagination_show');
+         if (new_id <= 1 ) {
+            $('#prev').addClass('pagination_disable')
+         }
+      } else if ( $id === 'next' ) {
+         new_id = +current + 1;
+          $('#block_' + new_id).addClass('pagination_show');
+         if (new_id >= total ) {
+            $('#next').addClass('pagination_disable')
+         }
+      } else {
+         current_p = $('#num_' + id).addClass('pagination_active');
+         $('#block_' + id).addClass('pagination_show');
+         if ( id == 1 ) {
+            $('#prev').addClass('pagination_disable')
+         } else if ( id >= total ) {
+            $('#next').addClass('pagination_disable')
+         }
+      }
+      
+      current_p = $('#num_' + new_id).addClass('pagination_active');
+      
+   }
+
 });

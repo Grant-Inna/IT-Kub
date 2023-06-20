@@ -195,3 +195,60 @@
    .tr();
 }
 
+
+.pagination() {
+   position: relative;
+   background-size: contain;
+   background-position: center;
+   width: 32px;
+   height: 32px;
+   .tr();
+}
+.pagination-before() {
+   position: absolute;
+   .pseudo();
+   background-size: contain;
+   background-position: center;
+   width: 15px;
+   height: 15px;
+   .tr();
+}
+
+#next {
+   .pagination();
+}
+#prev {
+   .pagination();
+}
+.pagination_disable#prev:before {
+   .icon-svg-b( 'arrow', 'disable_left');
+   .pagination-before();
+}
+#next:before {
+   .icon-svg-b( 'arrow', 'active_right');
+   .pagination-before();
+}
+#prev:before {
+   .icon-svg-b( 'arrow', 'active_left');
+   .pagination-before();
+}
+.pagination_disable#next:before {
+   .icon-svg-b( 'arrow', 'disable_right');
+   .pagination-before();
+}
+
+.pagination__arrow:hover#next:before {
+   .icon-svg-b( 'arrow', 'hover_right');
+   .pagination-before();
+}
+.pagination__arrow:hover#prev:before {
+   .icon-svg-b( 'arrow', 'hover_left');
+   .pagination-before();
+}
+
+.pagination__arrow.pagination_disable:hover#prev:before {
+   .icon-svg-b( 'arrow', 'disable_left');
+}
+.pagination__arrow.pagination_disable:hover#next:before {
+   .icon-svg-b( 'arrow', 'disable_right');
+}
