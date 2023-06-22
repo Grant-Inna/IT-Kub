@@ -245,8 +245,8 @@ $(document).ready(function () {
           id = $id.split('_')[1],
           new_id;
       
-      let total = $('div[id^=numb_]').length;
-      
+      let total = $('div[id^="num_"]').length;
+     
       
       if ( $id === 'prev' ) {
          new_id = current - 1;

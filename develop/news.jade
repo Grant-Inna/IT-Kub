@@ -21,9 +21,9 @@ html
             .wrapper
                .row
                   .main_news__image
-                     img( src='./assets/data/images/news/02-06-2023.jpg' )
+                     img( src='./assets/data/images/news/05-06-2023.jpg' )
                   main#news_02-06-1.main_news__holder
-                     .main_news__date.text-25 02
+                     .main_news__date.text-25 05
                         span.first &nbsp;/&nbsp;
                         span.second .
                         | 06
@@ -31,8 +31,8 @@ html
                         span.second .
                         | 2023
                      .main_news__text.mb3.text-22
-                        p На втором онлайн-семинаре «IT в кубе» анонсировали актуальные мероприятия для педагогов и руководителей Центров «IT-куб» / взяли с дизайна
-                     a( href='./news/news-one.html#news_02-06-2023_1' ).news__more.hover.inline Подробнее
+                        p ФГАНУ &laquo;ФИЦТО&raquo; и&nbsp;АРПП &laquo;Отечественный софт&raquo; заключили соглашениео&nbsp;сотрудничестве
+                     a( href='./news/news-one.html#news_05-06-2023_1' ).news__more.hover.inline Подробнее
 
          section( aria-label='Новости' ).news_list__container.mt4
             .wrapper
@@ -40,12 +40,8 @@ html
                   .news__block.news_block-1#active
                      include assets/jade/content/__news-one
                      .pagination__block.pagination_show#block_1
-                        +news( '19', '06', '2023', 'Российское движение детей и молодежи «Движение Первых» подвело итоги первого хакатона / из дизайна', 'news_19-06-2023_1')
-                        +news( '06', '05', '2023', 'Российское движение детей и молодежи «Движение Первых» подвело итоги первого хакатона', 'news_06-05-2023_2')
-                        +news( '06', '05', '2023', 'Российское движение детей и молодежи «Движение Первых» подвело итоги первого хакатона', 'news_06-05-2023_2')
-                     .pagination__block#block_2
-                        +news( '02', '05', '2023', 'Российское движение детей и молодежи «Движение Первых» подвело итоги первого хакатона', 'news_02-05-2023_2')
-                  include assets/jade/content/pagination
+                        +news( '01', '06', '2023', 'На втором онлайн-семинаре &laquo;IT в&nbsp;кубе&raquo; анонсировали актуальные мероприятия для педагогов и&nbsp;руководителей Центров &laquo;IT-куб&raquo;', 'news_01-06-2023_1')
+                  //include assets/jade/content/pagination
 
          include assets/jade/footer/footer
 
