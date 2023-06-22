@@ -592,3 +592,37 @@ section .competition_terms__holder a:hover {
    font-size: 1.3rem;
    line-height: 1.6rem;
 }
+
+
+/* цитаты в новости */
+.quote {
+   position: relative;
+   margin-right: 2.5rem;
+   margin-left: 2.5rem;
+   text-align: justify;
+}
+.quote span {
+   display: block;
+   text-align: right;
+   margin-top: .8rem;
+}
+.quote:before {
+   content: '«';
+   display: block;
+   position: absolute;
+   top: -2px;
+   left: -3rem;
+   
+   font-size: 4rem;
+   color: @color-back-gray-middle;
+}
+.quote:after {
+   content: '»';
+   display: block;
+   position: absolute;
+   bottom: 5rem;
+   right: -3rem;
+  
+   font-size: 4rem;
+   color: @color-back-gray-middle;
+}
