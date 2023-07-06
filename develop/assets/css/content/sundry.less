@@ -629,3 +629,51 @@ section .competition_terms__holder a:hover {
    font-size: 4rem;
    color: #426591;
 }
+
+
+/* документы */
+.documentation__container {
+   position: relative;
+   z-index: 200;
+   overflow: hidden;
+   padding-top: 11rem;
+   
+   margin-top: -2rem;
+   //margin-bottom: 6rem;
+   
+   .md-block({
+      padding-top: 4rem;
+   });
+}
+.doc_list__container {
+}
+.doc__holder {
+   .flex();
+   .items-start();
+}
+.doc_text__holder {
+   padding-bottom: 1.5rem;
+   box-sizing: border-box;
+    .md-block({
+      padding-bottom: .8rem;
+   });
+}
+.doc__icon {
+   .doc-icon();
+   margin-right: 2rem;
+}
+.doc_text__holder strong.block.text-22 {
+   margin-bottom: 2rem;
+   .md-block({
+      margin-bottom: 1rem;
+   });
+   .xs-block({
+      margin-bottom: .8rem;
+   });
+}
+.doc__more {
+   color: @color-blue;
+}
+.doc__more.inline.hover:after {
+    background-color: #3C78EC;
+}
