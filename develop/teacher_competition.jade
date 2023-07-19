@@ -63,33 +63,33 @@ html
                   +nomination( '5', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Алгоритмика и&nbsp;логика')
 
 
-         section( aria-label='Условия участия' )#terms.competition_terms__container.mt7
-            .wrapper
-               h1.caption.center.mb5 Условия участия
-               .row
-                  .competition_terms__holder
-                     .competition_terms__text.text-22 Для участия в&nbsp;Конкурсе педагогам Центров &laquo;IT-куб&raquo; необходимо
-                        br
-                        strong.mr.mt05 подать заявку
-                        | с&nbsp;указанием номинации в&nbsp;установленный срок на&nbsp;официальную почту Федерального оператора:
-                     a( href='mailto:it-cube@ficto.ru' )
-                        h2.title.mt2 it-cube@ficto.ru
-
-         section( aria-label='Заявка на участие' ).application__container
-            .wrapper
-               h1.title.center.mb5 Заявка на&nbsp;участие включает
-               .row
-                  include assets/jade/content/teacher_competition/__application-main
-                  include assets/jade/content/teacher_competition/__application-save
-                  +application-save( '3', 'Анкета участника', 'Анкета_участника' )
-                  +application-save( '2', 'Согласие на&nbsp;обработку персональных данных', 'Согласие_на_обработку_персональных_данных' )
-                  +application( '1', 'Видеопрезентация участника Конкурса' )
-               .application__line
-               .row
-                  include assets/jade/content/teacher_competition/__application-point
-                  +point( 'Краткая самопрезентация' )
-                  +point( 'Презентация авторских решений и&nbsp;методик, используемых в&nbsp;педагогическом процессе' )
-                  +point( 'Слово руководителя Центра &laquo;IT-куб&raquo; с&nbsp;характеристикой педагога' )
+         //section( aria-label='Условия участия' )#terms.competition_terms__container.mt7
+         //   .wrapper
+         //      h1.caption.center.mb5 Условия участия
+         //      .row
+         //         .competition_terms__holder
+         //            .competition_terms__text.text-22 Для участия в&nbsp;Конкурсе педагогам Центров &laquo;IT-куб&raquo; необходимо
+         //               br
+         //               strong.mr.mt05 подать заявку
+         //               | с&nbsp;указанием номинации в&nbsp;установленный срок на&nbsp;официальную почту Федерального оператора:
+         //            a( href='mailto:it-cube@ficto.ru' )
+         //               h2.title.mt2 it-cube@ficto.ru
+         //
+         //section( aria-label='Заявка на участие' ).application__container
+         //   .wrapper
+         //      h1.title.center.mb5 Заявка на&nbsp;участие включает
+         //      .row
+         //         include assets/jade/content/teacher_competition/__application-main
+         //         include assets/jade/content/teacher_competition/__application-save
+         //         +application-save( '3', 'Анкета участника', 'Анкета_участника' )
+         //         +application-save( '2', 'Согласие на&nbsp;обработку персональных данных', 'Согласие_на_обработку_персональных_данных' )
+         //         +application( '1', 'Видеопрезентация участника Конкурса' )
+         //      .application__line
+         //      .row
+         //         include assets/jade/content/teacher_competition/__application-point
+         //         +point( 'Краткая самопрезентация' )
+         //         +point( 'Презентация авторских решений и&nbsp;методик, используемых в&nbsp;педагогическом процессе' )
+         //         +point( 'Слово руководителя Центра &laquo;IT-куб&raquo; с&nbsp;характеристикой педагога' )
 
          section( aria-label='Квота участие' ).quota__container
             .wrapper
