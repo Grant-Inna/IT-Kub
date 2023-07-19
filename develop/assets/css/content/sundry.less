@@ -677,3 +677,67 @@ section .competition_terms__holder a:hover {
 .doc__more.inline.hover:after {
     background-color: #3C78EC;
 }
+
+
+/* Оргкомитет и экспертное жюри конкурса */
+.expert__container {
+   max-width: 1000px;
+   margin-top: 13rem;
+   margin-right: auto;
+   margin-left: auto;
+}
+.expert_carousel__container {
+   margin-top: 10rem;
+}
+article.expert_carousel__item {
+   height: 350px;
+}
+.expert_carousel__item_hover {
+   .column();
+   height: 100%;
+   background-color: white;
+   border-radius: 2px;
+   padding: 1.5rem;
+   box-sizing: border-box;
+   margin: .5rem;
+}
+.expert_carousel__position {
+   margin-top: auto;
+}
+
+
+.expert_carousel__container .slick-disabled {
+   opacity: .25;
+}
+.expert_carousel__container .slick-next.slick-disabled:hover {
+   .expert-next();
+}
+.expert_carousel__container .slick-prev.slick-disabled:hover {
+   .expert-prev();
+}
+.expert_carousel__container .slick-next {
+   .expert-next();
+   
+   right: 0;
+   top: -4rem
+}
+.expert_carousel__container .slick-prev {
+   .expert-prev();
+   
+   top: -4rem;
+   right: 4rem;
+   left: unset;
+}
+.expert_carousel__container .slick-next:hover {
+   .expert-next-hover();
+   
+   right: 0;
+   top: -4rem
+}
+.expert_carousel__container .slick-prev:hover {
+   .expert-prev-hover();
+   
+   top: -4rem;
+   right: 4rem;
+   left: unset;
+}

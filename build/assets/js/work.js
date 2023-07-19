@@ -183,7 +183,38 @@ $(document).ready(function () {
       
       });
    }
-   
+   if ($('.expert_carousel__container').length > 0) {
+      $('.expert_carousel__container').slick({
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         speed: 400,
+         dots: false,
+         arrows: true,
+         loop: false,
+         infinite: false,
+         cssEase: 'easy-in-out',
+         responsive: [
+            {
+               breakpoint: 1300,
+               settings: {
+                  slidesToShow: 3
+               }
+            },
+            {
+               breakpoint: 600,
+               settings: {
+                  slidesToShow: 2
+               }
+            },
+            {
+               breakpoint: 370,
+               settings: {
+                  slidesToShow: 1
+               }
+            }
+         ]
+      })
+   }
    
    /* новости */
    let image;
