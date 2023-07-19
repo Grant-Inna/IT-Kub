@@ -187,12 +187,10 @@ $(document).ready(function () {
       $('.expert_carousel__container').slick({
          slidesToShow: 3,
          slidesToScroll: 1,
-         speed: 400,
          dots: false,
          arrows: true,
          loop: false,
          infinite: false,
-         cssEase: 'easy-in-out',
          responsive: [
             {
                breakpoint: 1300,
