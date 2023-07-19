@@ -182,7 +182,7 @@ $(document).ready(function () {
    }
    if ($('.expert_carousel__container').length > 0) {
       $('.expert_carousel__container').slick({
-         slidesToShow: 3,
+         slidesToShow: 4,
          slidesToScroll: 1,
          dots: false,
          arrows: true,
