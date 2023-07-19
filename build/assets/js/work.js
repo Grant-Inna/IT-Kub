@@ -202,7 +202,7 @@ $(document).ready(function () {
                }
             },
             {
-               breakpoint: 370,
+               breakpoint: 480,
                settings: {
                   slidesToShow: 1
                }
