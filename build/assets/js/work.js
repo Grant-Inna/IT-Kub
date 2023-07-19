@@ -112,7 +112,6 @@ $(document).ready(function () {
       $('.slider__calendar').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            speed: 400,
             arrows: false,
             fade: true,
             asNavFor: '.slider__month'
@@ -121,14 +120,12 @@ $(document).ready(function () {
          slidesToShow: 8,
          slidesToScroll: 1,
          asNavFor: '.slider__calendar',
-         speed: 400,
          centerPadding: '60px',
          variableWidth: true,
          dots: false,
          arrows: true,
          centerMode: true,
          focusOnSelect: true,
-         cssEase: 'easy-in-out',
          responsive: [
             {
                breakpoint: 1400,
