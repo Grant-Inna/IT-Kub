@@ -183,7 +183,7 @@ $(document).ready(function () {
    if ($('.expert_carousel__container').length > 0) {
       $('.expert_carousel__container').slick({
          slidesToShow: 4,
-         slidesToScroll: 1,
+         slidesToScroll: 2,
          dots: false,
          arrows: true,
          loop: false,
@@ -198,6 +198,7 @@ $(document).ready(function () {
             {
                breakpoint: 700,
                settings: {
+                  slidesToScroll: 1,
                   slidesToShow: 2
                }
             },
