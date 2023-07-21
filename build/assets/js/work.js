@@ -196,7 +196,7 @@ $(document).ready(function () {
                }
             },
             {
-               breakpoint: 700,
+               breakpoint: 770,
                settings: {
                   slidesToScroll: 1,
                   slidesToShow: 2
@@ -205,6 +205,7 @@ $(document).ready(function () {
             {
                breakpoint: 480,
                settings: {
+                  slidesToScroll: 1,
                   slidesToShow: 1
                }
             }
