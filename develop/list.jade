@@ -12,15 +12,24 @@ html
          +menu( '', '', '', '', '', '', 'active', '' )
          include assets/jade/header/main-pages
 
-         section( aria-label='О федеральном операторе' ).list__container.mt8
+         section( aria-label='Список "Кубов в кубе"' ).list__container.mt8.mb5
             .wrapper
                h1.caption.mb4 Список
                   br
-                  | &laquo;IТ-кубов&raquo;
+                  .wwnow &laquo;IТ-кубов&raquo;
                .list__diagram_holder
-                  object( type="image/svg+xml", data="assets/data/images/round/round.svg" )
-                     img( src='./assets/data/icons/animated/gray.svg' )
+                  object#main( type="image/svg+xml", data="assets/data/images/animated/round/round1.svg" )
+                     img( src='./assets/data/images/animated/round/static.svg' )
+                  .list__diagram_info
+                     object#CFO( type="image/svg+xml", data="assets/data/images/animated/round/info/CFO.svg" )
+                     object#DFO( type="image/svg+xml", data="assets/data/images/animated/round/info/DFO.svg" )
+                     object#SZFO( type="image/svg+xml", data="assets/data/images/animated/round/info/SZFO.svg" )
+                     object#SFO( type="image/svg+xml", data="assets/data/images/animated/round/info/SFO.svg" )
 
+
+         section( aria-label='Центры на карте России').map_index__container
+            .wrapper
+               svg#map_index__svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 808.9 458.9' width='100%' style='transition: all 0.5s ease 0s;' xml:space='preserve')
 
 
 
@@ -28,6 +37,7 @@ html
          include assets/jade/footer/footer
 
       include assets/jade/static/script
+      script( src='./assets/js/regions.js' )
 
 
 
