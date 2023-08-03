@@ -75,3 +75,22 @@
    display: block;
    position: absolute;
 }
+
+
+
+.col-offsets-bottom() {
+    margin-bottom: @offset_one_side;
+
+    .xl-block({
+        margin-bottom: @offset_xl_one_side + 6px;
+    });
+    .middle-block({
+        margin-bottom: @offset_middle + 10px;
+    });
+    .lg-block({
+        margin-bottom: @offset_lg + 12px;
+    });
+    .sm-block({
+        margin-bottom: @offset_sm + 20px;
+    });
+}

@@ -25,18 +25,62 @@ html
                      object#DFO( type="image/svg+xml", data="assets/data/images/animated/round/info/DFO.svg" )
                      object#SZFO( type="image/svg+xml", data="assets/data/images/animated/round/info/SZFO.svg" )
                      object#SFO( type="image/svg+xml", data="assets/data/images/animated/round/info/SFO.svg" )
+                     object#YFO( type="image/svg+xml", data="assets/data/images/animated/round/info/YFO.svg" )
+                     object#YUFO( type="image/svg+xml", data="assets/data/images/animated/round/info/YUFO.svg" )
+                     object#SKFO( type="image/svg+xml", data="assets/data/images/animated/round/info/SKFO.svg" )
+                     object#PFO( type="image/svg+xml", data="assets/data/images/animated/round/info/PFO.svg" )
 
 
-         section( aria-label='Центры на карте России').map_index__container
+         section( aria-label='Центры на карте России').map__container
             .wrapper
                svg#map_index__svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 808.9 458.9' width='100%' style='transition: all 0.5s ease 0s;' xml:space='preserve')
 
+            article.card_total__container
+               h1
+               h2
+                  strong
+                  span.mr
+                  | &laquo;IT-куб&raquo;
+                  .icon-more
+               .nocenter
+
+         section( aria-label='Список центров "Кубов в кубе"').map_index__container
+            .wrapper
+               form.map__form
+                  .block_10.block_districts
+                     .caption Выберите округ
+                     select#districts( data-placeholder='Все округа').map__select
+                        option
+                  .block_14.block_regions
+                     .caption Выберите регион
+                     select#regions( data-placeholder='Все регионы').map__select
+                        option
+                  .block_1
+                     a.select__clear.disable
+                        .icon-close
+
+               .listed__container
+                  .listed__caption.mb3
+                     h1 Всего центров
+                     h2
+                        strong
+                        span.mr
+                        | &laquo;IT-куб&raquo;
+                     .back__holder
+                        .icon-back
+                        .back__text Все центры
+
+                  #listed__holder
+
+
+               //include assets/jade/content/pagination-list
 
 
 
          include assets/jade/footer/footer
 
       include assets/jade/static/script
+      script( src='./assets/js/select.js' )
       script( src='./assets/js/regions.js' )
 
 

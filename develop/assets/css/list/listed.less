@@ -1,0 +1,169 @@
+.listed__container {
+   margin-top: 2rem;
+   padding: 2rem;
+   box-sizing: border-box;
+   
+   background-color: white;
+}
+.listed__caption {
+   .flex();
+   .items-end();
+   
+   .lg-block({
+      flex-wrap: wrap;
+   });
+   
+   h1 {
+      .montserrat-bold();
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+      margin-right: 2rem;
+      
+      .lg-block({
+         order: 1;
+      });
+      .smmd-block({
+         flex-grow: 1;
+         order: 2;
+      });
+   }
+   
+   h2 {
+      .flex();
+      .items-end();
+      .montserrat-medium();
+      font-size: 1rem;
+      line-height: 1.2rem;
+      
+      .lg-block({
+         flex-grow: 5;
+         width: 100%;
+         margin-top: .8rem;
+         order: 3;
+      });
+   }
+   h2 strong {
+      .montserrat-medium();
+      color: @color-blue;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      margin-right: .5rem;
+   }
+}
+.back__holder {
+   .flex();
+   .items-center();
+   .justify-end();
+   margin-left: auto;
+   text-align: right;
+   cursor: pointer;
+   
+   .montserrat-medium();
+   color: @color-blue;
+   font-size: 1.4rem;
+   //line-height: 1.6rem;
+   
+   display: none;
+   
+   
+   .lg-block({
+      order: 2;
+   });
+   .smmd-block({
+      margin-bottom: 1rem;
+      flex-grow: 1;
+      order: 1;
+   });
+}
+.icon-back {
+   .arrow-back();
+   margin-right: 1rem;
+   transform: translateX(.5rem);
+   .tr();
+}
+.back__holder:hover .icon-back {
+   transform: translateX(0);
+   .tr();
+}
+
+
+.map__container .wrapper {
+   position: relative;
+}
+.card_total__container {
+   position: absolute;
+   display: none;
+   
+   width: 250px;
+   
+   padding: 1.5rem;
+   box-sizing: border-box;
+   background-color: white;
+   border-radius: 2px;
+   h1 {
+      .montserrat-bold();
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+      margin-bottom: 1.5rem;
+   }
+   h2 {
+      .flex();
+      .items-end();
+      .montserrat-medium();
+      font-size: 1rem;
+      line-height: 1.2rem;
+   }
+   h2 strong {
+      .montserrat-medium();
+      color: @color-blue;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      margin-right: .5rem;
+   }
+}
+.icon-more {
+   .icon-more();
+   margin-left: auto;
+}
+.card_total__container h2:hover .icon-more {
+   .icon-more-hover();
+}
+.nocenter {
+   display: none;
+   font-size: 1rem;
+   line-height: 1.2rem;
+}
+
+
+
+//#listed__holder div[id^='block_'] {
+#listed__holder {
+   .row();
+}
+
+.listed__centres {
+   .col();
+   .size(12);
+   .size-xl(12);
+   .size-middle(12);
+   .size-lg(12);
+   .size-md(24);
+   .size-sm(24);
+   .size-xs(24);
+   
+   .col-offsets-bottom();
+   div {
+      margin-bottom: .5rem;
+   }
+   strong {
+      .montserrat-semibold();
+      margin-right: .5rem;
+   }
+}
+
+.empty_district {
+   .col();
+   
+   .montserrat-semibold();
+   font-size: 1.2rem;
+}
