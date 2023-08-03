@@ -1861,6 +1861,7 @@ $(document).ready(function () {
       
       showCardWithTotal( region, region_title, total )
    });
+   // Функция для показа карточки со справкой о регионе
    function showCardWithTotal( region, region_title, total ) {
       let region_total = total;
       let $card = $('.card_total__container'),
@@ -1887,12 +1888,20 @@ $(document).ready(function () {
          $word.text(getNoun(region_total, 'центр', 'центра', 'центров'));
       }
    }
+   
+   const width = $(document).width();
+   
    function showCard(region, region_title, $name, $card) { // Показ карточки с информацией о регионе у курсора
       $name.text(region_title);
       $(region).mousemove(
          function (pos) {
             $card.show();
-            $card.css('left',(pos.pageX+10)+'px').css('top',(pos.pageY+10)+'px');
+            if ( pos.screenX > (width - 260 )) {
+               $card.css('right',(pos.pageX - 260 )+'px').css('top',(pos.pageY+10)+'px');
+               console.log(pos.pageX);
+            } else {
+               $card.css('left',(pos.pageX)+'px').css('top',(pos.pageY+10)+'px');
+            }
          }).mouseleave(function() {
             $card.hide();
       });
