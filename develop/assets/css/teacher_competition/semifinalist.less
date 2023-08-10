@@ -1,0 +1,140 @@
+.semifinalists__container {}
+
+.semifinalists__holder {
+   padding: 4rem 2rem;
+   box-shadow: 0 0 18px rgba(0, 0, 0, 0.07);
+   background-color: white;
+   border-radius: 2px;
+}
+
+.semifinalists__holder h1 {
+   .montserrat-semibold();
+   font-size: 2.2rem;
+   line-height: 2.4rem;
+   .middle-block({
+      font-size: 2.4rem;
+      line-height: 2.6rem;
+   });
+   .sm-block({
+      font-size: 2.5rem;
+      line-height: 2.7rem;
+   });
+   .to(390px, {
+      font-size: 2rem;
+      line-height: 2.2rem;
+   });
+}
+
+.semifinalists__holder .row {
+   margin-top: 5rem;
+   
+   .u-row-flex(2rem)
+}
+.semifinalist_one__holder {
+   
+   //.col();
+   //.size(6);
+   //.size-xl(8);
+   //.size-middle(8);
+   //.size-lg(8);
+   //.size-md(8);
+   //.size-sm(12);
+   //.size-xxs(24);
+   
+   .u-col(2rem);
+   .u-size(6, 24, 2rem);
+   .col-offsets-bottom();
+   
+   .xl-block({
+      .u-size(8, 24, 2rem);
+   });
+   .middle-block({
+      .u-size(8, 24, 2rem);
+   });
+   .lg-block({
+      .u-size(8, 24, 2rem);
+   });
+   .md-block({
+      .u-size(12, 24, 2rem);
+   });
+   .sm-block({
+      .u-size(20, 24, 2rem);
+      .shift-left(.55)
+   });
+   .xs-block({
+      .u-size(24, 24, 2rem);
+      //.shift-left(.55)
+      margin-left: 1rem;
+   });
+   
+   padding: 1.5rem 1rem;
+   box-shadow: 0 0 18px rgba(0, 0, 0, 0.07);
+   background-color: white;
+   border-radius: 2px;
+}
+.semifinalist_one__holder .semi-line {
+   width: 100%;
+   height: 1px;
+   background-color: @color-black;
+   border-radius: 1px;
+   
+   margin-bottom: 1.5rem;
+}
+
+.semifinalist_one__holder strong {
+   display: block;
+   height: 4.5rem;
+   padding-bottom: 1rem;
+   
+   .lg-block({
+      height: 5rem;
+   });
+   .sm-block({
+      height: 4rem;
+   });
+   .xs-block({
+      min-height: 4rem;
+      height: auto;
+   });
+}
+.semifinalist_one__holder p {
+   margin-top: auto;
+}
+
+
+
+
+
+.semifinalists-1 { .nominations( '1'); }
+.semifinalists-2 { .nominations( '2'); }
+.semifinalists-3 { .nominations( '3'); background-size: 500px auto; }
+.semifinalists-4 { .nominations( '4'); }
+.semifinalists-5 { .nominations( '5'); }
+
+
+@media screen and (max-width: 1250px) {
+   .semifinalists-3 {
+      background-size: 400px auto;
+   }
+}
+@media screen and (max-width: 1125px) {
+   .semifinalists-3 {
+      background-size: 370px auto;
+   }
+}
+@media screen and (max-width: 995px) {
+   .semifinalists-2 {
+      background-position: 98% 93%;
+   }
+   .semifinalists-3 {
+      background-size: 430px auto;
+   }
+}
+@media screen and (max-width: 770px) {
+   .semifinalists-3 {
+      background-size: 310px auto;
+   }
+   .semifinalists-5 {
+      background-size: 250px auto;
+   }
+}

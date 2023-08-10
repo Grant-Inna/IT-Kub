@@ -249,7 +249,18 @@
 .nominations(@name) {
      background-image: url("../data/teacher_competition/icons/icon-nominations-@{name}.svg");
    background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: 98% 2%;
+   background-size: 300px auto;
+   
+   .lg-block({
+      background-position: 98% 98%;
+   });
+   .md-block({
+      background-size: 200px auto;
+   });
+   .sm-block({
+      background-image: none;
+   });
 }
 
 .competition-terms() {
