@@ -21,9 +21,9 @@ html
             .wrapper
                .row
                   .main_news__image
-                     img( src='./assets/data/images/news/08-08-2023.jpg' )
+                     img( src='./assets/data/images/news/' )
                   main#news_29-06-2023_1.main_news__holder
-                     .main_news__date.text-25 08
+                     .main_news__date.text-25 10
                         span.first &nbsp;/&nbsp;
                         span.second .
                         | 08
@@ -31,10 +31,9 @@ html
                         span.second .
                         | 2023
                      .main_news__text.text-22
-                        p Экспертиза заявок участников I&nbsp;Всероссийского конкурса педагогов Центров цифрового образования детей
+                        p Подведены итоги первого этапа I&nbsp;Всероссийского конкурса педагогов Центров цифрового образования детей
                            span.wwnow &laquo;IT&ndash;куб&raquo;
-                           | завершилась
-                     a( href='./news/news-one.html#news_08-08-2023_1' ).news__more.hover.inline Подробнее
+                     a( href='./news/news-one.html#news_10-08-2023_1' ).news__more.hover.inline Подробнее
 
          section( aria-label='Новости' ).news_list__container.mt4
             .wrapper
@@ -42,14 +41,15 @@ html
                   .news__block.news_block-1#active
                      include assets/jade/content/__news-one
                      .pagination__block.pagination_show#block_1
+                        +news( '08', '08', '2023', 'Экспертиза заявок участников I&nbsp;Всероссийского конкурса педагогов Центров цифрового образования детей &laquo;IT&ndash;куб&raquo; завершилась', 'news_08-08-2023_1' )
                         +news( '28', '07', '2023', 'Руководители ЦЦОД &laquo;IT&ndash;куб&raquo; встретятся в&nbsp;Тюмени на&nbsp;Всероссийском съезде &laquo;Как&nbsp;Управлять Будущим&raquo;', 'news_28-07-2023_1' )
                         +news( '21', '07', '2023', 'Началась экспертиза заявок участников I&nbsp;Всероссийского конкурса педагогов Центров цифрового образования детей', 'news_21-07-2023_1' )
-                        +news( '29', '06', '2023', 'На&nbsp;очередном онлайн&ndash;семинаре &laquo;IT в&nbsp;кубе&raquo; обсудили федеральные мероприятия и&nbsp;региональные практики', 'news_29-06-2023_1' )
                      .pagination__block#block_2
+                        +news( '29', '06', '2023', 'На&nbsp;очередном онлайн&ndash;семинаре &laquo;IT в&nbsp;кубе&raquo; обсудили федеральные мероприятия и&nbsp;региональные практики', 'news_29-06-2023_1' )
                         +news( '05', '06', '2023', 'ФГАНУ &laquo;ФИЦТО&raquo; и&nbsp;АРПП &laquo;Отечественный софт&raquo; заключили соглашение о&nbsp;сотрудничестве', 'news_05-06-2023_1' )
                         +news( '01', '06', '2023', 'На&nbsp;втором онлайн&ndash;семинаре &laquo;IT в&nbsp;кубе&raquo; анонсировали актуальные мероприятия для&nbsp;педагогов и&nbsp;руководителей Центров &laquo;IT-куб&raquo;', 'news_01-06-2023_1')
-                        +news( '23', '05', '2023', 'Сотрудники ФГАНУ &laquo;ФИЦТО&raquo; оценивали лучшие проекты учащихся на&nbsp;Фестивале идей &laquo;Коллаборация&raquo;', 'news_23-05-2023_1' )
                      .pagination__block#block_3
+                        +news( '23', '05', '2023', 'Сотрудники ФГАНУ &laquo;ФИЦТО&raquo; оценивали лучшие проекты учащихся на&nbsp;Фестивале идей &laquo;Коллаборация&raquo;', 'news_23-05-2023_1' )
                         +news( '27', '04', '2023', 'На&nbsp;первом онлайн&ndash;семинаре &laquo;IT в&nbsp;кубе&raquo; обсудили форматы поддержки центров &laquo;IT-куб&raquo; в&nbsp;2023&nbsp;году', 'news_27-04-2023_1' )
                   include assets/jade/content/pagination
 
