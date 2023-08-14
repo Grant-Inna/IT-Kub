@@ -89,7 +89,7 @@
 
 .bg-mobile() {
    .svg( 'bg', 'menu-mobile' );
-   background-position: right 460px;
+   background-position: right 600px;
    background-size: 85%;
 }
 
@@ -285,5 +285,84 @@
 .news-main() {
    .svg( 'news', 'main' );
     background-position: top;
+   background-size: contain;
+}
+
+
+// Конгресс
+
+.congress( @name ) {
+   background-image: url("../data/congress/@{name}.svg");
+   background-repeat: no-repeat;
+}
+
+.congress-bg {
+   .congress('bg');
+   background-position: center;
+   background-size: cover;
+}
+.congress-caption {
+   .congress('caption');
+   background-position: center;
+   background-size: contain;
+}
+.congress-logo {
+   .congress('logo');
+   background-position: center;
+   background-size: contain;
+}
+.congress-clock {
+   .congress('clock');
+   background-position: center;
+   background-size: contain;
+}
+.congress-pin {
+   .congress('pin');
+   background-position: center;
+   background-size: contain;
+}
+.congress-pin2 {
+   .congress('pin2');
+   background-position: center;
+   background-size: contain;
+}
+.congress-dash {
+   .congress('dash');
+   background-position: center;
+   background-size: contain;
+}
+.congress-figure {
+   .congress('figure');
+   background-position: center;
+   background-size: contain;
+}
+.congress-diner {
+   .congress('diner');
+   background-position: center;
+   background-size: contain;
+}
+.congress-photo {
+   .congress('photo');
+   background-position: center;
+   background-size: contain;
+}
+.congress-dot {
+   .congress('dot');
+   background-position: center;
+   background-size: contain;
+}
+.congress-car {
+   .congress('car');
+   background-position: center;
+   background-size: contain;
+}
+.congress-light {
+   .congress('light');
+   background-position: center;
+   background-size: contain;
+}
+.congress-break {
+   .congress('break');
+   background-position: center;
    background-size: contain;
 }

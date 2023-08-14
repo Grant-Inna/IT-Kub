@@ -9,14 +9,12 @@ html
       #container_congress
          #black_back
          include assets/jade/header/__header
-         +menu( '', '', '', '', '', '', '', '' )
+         +menu( '', '', '', '', '', '', '', '', 'active' )
          include assets/jade/header/main-pages
 
-         section( aria-label='Страница конгресса "Кубов в кубе"' ).congress__container.mt8.mb5
+         section( aria-label='Страница съезда руководителей "Кубов в кубе"' ).congress__container.mt8.mb5
             .wrapper
-               h1.caption.mb4
-                  span.mr1 Конгресс
-                  .wwnow.ml0 &laquo;IТ-кубов&raquo;
+
 
          include assets/jade/footer/footer
 
