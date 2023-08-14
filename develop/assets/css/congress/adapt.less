@@ -1,6 +1,28 @@
+@media screen and (max-width: @break_lg) {
+   .congress__break strong.text-27,
+   .congress__event .icon-dot {
+      margin-right: 1.5rem;
+   }
+   .congress__break div[class^='icon-'] {
+      margin-right: 1rem;
+   }
+   
+   .congress__event strong.text-27 {
+      margin-right: .3rem;
+      padding-right: .5rem;
+      box-sizing: border-box;
+   }
+   
+   .block-18 .congress__event:last-child .icon-dot:after {
+      height: 600%;
+   }
+}
 @media screen and (max-width: @break_md) {
    .block-6 {
       margin-bottom: 2rem;
+   }
+   .congress__clock .block-18 {
+      margin-left: 7.6rem;
    }
    .congress__event {
       width: calc( 100% - .78rem);
@@ -8,7 +30,7 @@
    }
    .congress__break div[class^='icon-'] {
       margin-left: 0;
-      margin-right: 2rem;
+      margin-right: 1rem;
    }
    .congress__place, .congress__place-2 {
       .items-center();
@@ -20,22 +42,24 @@
    .congress__wrapper .congress__clock.row.mb3 {
       margin-bottom: 3rem !important;
    }
+   
 }
 @media screen and (max-width: @break_sm) {
-   .congress__break strong.text-27,
-   .congress__event .icon-dot {
-      margin-right: 1.5rem;
+   .congress__clock .block-6 {
+      margin-bottom: 1.5rem;
    }
-   .congress__break div[class^='icon-'] {
-      margin-right: 1rem;
+   .congress__wrapper .congress__clock.row.mb3 {
+       margin-bottom: 4rem !important;
    }
    .congress__event strong.text-27 {
       margin-right: 0;
       padding-right: .5rem;
-      box-sizing: border-box;
    }
    .congress__event .icon-dot:after {
-      height: 2000%;
+      height: 3000%;
+   }
+   .block-18 .congress__event:last-child .icon-dot:after {
+      height: 1000%;
    }
 }
 @media screen and (max-width: @break_xs) {
@@ -46,6 +70,12 @@
    .congress__break div[class^='icon-'] {
       width: 2.6rem;
       height: 2.6rem;
+   }
+   .congress__clock .block-6 {
+      margin-bottom: .7rem;
+   }
+   .congress__clock .block-18 {
+      margin-left: 4.2rem;
    }
    article.congress__break,
    .congress__event {
@@ -80,8 +110,8 @@
     height: 2.6rem;
    }
    .congress__event {
-       width: calc(100% - 0.38rem);
-       margin-left: 0.38rem;
+       width: calc(100% - 0.45rem);
+       margin-left: 0.45rem;
    }
 }
 @media screen and (max-width: @break_xxs) {
