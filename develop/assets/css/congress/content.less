@@ -1,0 +1,176 @@
+
+.congress__wrapper .text-blue {
+   color: @color-blue-2
+}
+
+.congress__wrapper h1 {
+   .montserrat-semibold();
+   font-size: 1.4rem;
+   line-height: 1.8rem;
+   .middle-block({
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+   });
+   .sm-block({
+      font-size: 1.6rem;
+      line-height: 2rem;
+   });
+}
+.congress__clock h2.text-22 {
+   .montserrat-semibold();
+   font-size: 1.2rem;
+   line-height: 1.6rem;
+   .middle-block({
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+   });
+   .sm-block({
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+   });
+   .xs-block({
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+   })
+}
+
+.congress__day {
+   .flex();
+   .items-end();
+   
+   color: @color-blue-2;
+}
+.congress__numb {
+   margin-right: 3rem;
+}
+h2.congress__name {
+   margin-bottom: .3rem;
+   .montserrat-semibold();
+   font-size: 2rem;
+   line-height: 2.4rem;
+   .middle-block({
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+   });
+   .sm-block({
+      font-size: 2.3rem;
+      line-height: 2.6rem;
+   });
+}
+
+.congress__block {
+   margin: 2.5rem 0;
+   padding: 2rem 3.6rem;
+   
+   background-color: @color-blue-2;
+   border-radius: 2px;
+   color: white;
+}
+
+
+
+.congress__place {
+   .flex();
+   .items-start();
+}
+.icon-pin {
+   .congress-pin();
+   flex-shrink: 0;
+   margin-right: 1rem;
+}
+.congress__place .text-22 {
+   color: @color-blue-2;
+}
+
+
+.congress__event {
+   .flex();
+   overflow: hidden;
+   
+   padding-bottom: 2rem;
+}
+.congress__event strong.text-27 {
+   width: 11rem;
+   flex-shrink: 0;
+   margin-right: 2rem;
+}
+
+.congress__event .icon-dot {
+   .congress-dot();
+   flex-shrink: 0;
+   position: relative;
+   margin-right: 2.5rem;
+}
+.congress__event .icon-dot:after {
+   .pseudo();
+   width: 2px;
+   height: 1000%;
+   
+   top: 98%;
+   left: 50%;
+   transform: translateX(-50%);
+   .congress-dash();
+}
+.block-18 .congress__event:last-child .icon-dot:after {
+   height: 100%;
+}
+
+
+.congress__clock {
+   .flex();
+   .items-start();
+}
+.icon-clock {
+   .congress-clock();
+   flex-shrink: 0;
+   margin-right: 1rem;
+}
+.congress__clock .simple {
+   .montserrat-regular();
+}
+
+
+.icon-pin-2 {
+   .congress-pin2();
+   flex-shrink: 0;
+   margin-right: 1rem;
+}
+
+.congress__place-2 {
+   .flex();
+   .items-start();
+}
+.congress__place-2 .text-22 {
+   color: @color-violet;
+}
+
+.congress__break {
+   .flex();
+   .items-center();
+}
+.congress__break strong.text-27 {
+   width: 11rem;
+   flex-shrink: 0;
+   margin-right: 2rem;
+}
+.congress__break div[class^='icon-'] {
+   margin-left: -.8rem;
+   flex-shrink: 0;
+   margin-right: 1.8rem;
+}
+
+.icon-diner {
+   .congress-diner();
+}
+.icon-car {
+   .congress-car();
+}
+.icon-light {
+   .congress-light();
+}
+.icon-break {
+   .congress-break();
+}
+.icon-photo {
+   .congress-photo();
+}
