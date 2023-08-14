@@ -174,3 +174,35 @@ h2.congress__name {
 .icon-photo {
    .congress-photo();
 }
+
+
+.congress__wrapper.spec2,
+.congress__wrapper.spec {
+   position: relative;
+   z-index: 200;
+}
+.congress__wrapper.spec2:before,
+.congress__wrapper.spec:before {
+   .pseudo();
+   z-index: 10;
+   width: 100%;
+   background-size: contain;
+}
+.congress__wrapper.spec:before {
+   top: -5vw;
+   right: -10vw;
+   
+   height: 20vw;
+   
+   .congress-bg2();
+   background-position: right;
+}
+.congress__wrapper.spec2:before {
+   top: -12vw;
+   left: -15vw;
+   
+   height: 23vw;
+   
+   .congress-bg();
+   background-position: left;
+}
