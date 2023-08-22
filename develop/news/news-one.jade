@@ -19,28 +19,30 @@ html
                a( href='../index.html' ).header__logo.logo_kub
                   img( src='../assets/data/logo/kub-static.svg' )
                menu.header__menu_holder
-                  a( href='../index.html' class='#{active1}').menu__item О&nbsp;проекте
-                  a( href='../federal_operator.html'  class='#{active2}').menu__item О&nbsp;федеральном операторе
-                  a( href='../events.html'  class='#{active3}').menu__item Мероприятия
-                  a( href='../news.html'  class='#{active4}').menu__item.active Новости
-                  //a( href='./videos.html'  class='#{active5}').menu__item Видео
-                  //a( href='./documentation.html'  class='#{active6}').menu__item Документы
-                  //a( href='./list.html'  class='#{active7}').menu__item Список &laquo;IT-КУБОВ&raquo;
-                  a( href='../teacher_competition.html' class='#{active8}').menu__item Конкурс педагогов
+                  a( href='../index.html').menu__item О&nbsp;проекте
+                  a( href='../federal_operator.html').menu__item О&nbsp;федеральном операторе
+                  a( href='../events.html').menu__item Мероприятия
+                  a( href='../news.html'  class='active').menu__item.active Новости
+                  //a( href='./videos.html').menu__item Видео
+                  a( href='./documentation.html').menu__item Документы
+                  //a( href='./list.html').menu__item Список &laquo;IT-КУБОВ&raquo;
+                  a( href='../teacher_competition.html').menu__item Конкурс педагогов
+                  a( href='../congress.html').menu__item Съезд руководителей
                .menu__mobile
                   .menu__mobile_icon
             menu.menu__mobile_container
                .menu__mobile
                   .menu__mobile_icon
                .menu__mobile_holder
-                  a( href='../index.html' class='#{active1}').menu__mobile_item О&nbsp;проекте
-                  a( href='../federal_operator.html'  class='#{active2}').menu__mobile_item О&nbsp;федеральном операторе
-                  a( href='../events.html'  class='#{active3}').menu__mobile_item Мероприятия
-                  a( href='../news.html'  class='#{active4}').menu__mobile_item.active Новости
-                  //a( href='./videos.html'  class='#{active5}').menu__mobile_item Видео
-                  //a( href='./documentation.html'  class='#{active6}').menu__mobile_item Документы
-                  //a( href='./list.html'  class='#{active7}').menu__mobile_item Список &laquo;IT-КУБОВ&raquo;
-                  a( href='../teacher_competition.html'  class='#{active8}').menu__mobile_item Конкурс педагогов
+                  a( href='../index.html').menu__mobile_item О&nbsp;проекте
+                  a( href='../federal_operator.html').menu__mobile_item О&nbsp;федеральном операторе
+                  a( href='../events.html').menu__mobile_item Мероприятия
+                  a( href='../news.html'  class='active').menu__mobile_item.active Новости
+                  //a( href='./videos.html').menu__mobile_item Видео
+                  a( href='./documentation.html').menu__mobile_item Документы
+                  //a( href='./list.html').menu__mobile_item Список &laquo;IT-КУБОВ&raquo;
+                  a( href='../teacher_competition.html').menu__mobile_item Конкурс педагогов
+                  a( href='../congress.html').menu__mobile_item Съезд руководителей
 
          include ../assets/jade/header/main-pages
 
@@ -50,6 +52,8 @@ html
                   .icon-arrow-back
                   span назад
                .news_one__block
+                  include __news_18082023_1
+                  include __news_17082023_1
                   include __news_10082023_1
                   include __news_08082023_1
                   include __news_28072023_1
