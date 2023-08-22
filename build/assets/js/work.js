@@ -180,6 +180,16 @@ $(document).ready(function () {
       
       });
    }
+   if ($('.news_img__slider').length > 0) {
+      $('.news_img__slider').slick({
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         dots: false,
+         arrows: true,
+         loop: true,
+         infinite: true
+      })
+   }
    if ($('.expert_carousel__container').length > 0) {
       $('.expert_carousel__container').slick({
          slidesToShow: 4,
