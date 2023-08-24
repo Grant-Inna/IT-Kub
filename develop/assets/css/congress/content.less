@@ -330,7 +330,7 @@ menu.congress_navigation__holder {
 .congress__main {
    position: relative;
    z-index: 200;
-   margin-top: 13rem;
+   margin-top: 14rem;
    .md-block({
       margin-top: 8rem;
    });
@@ -448,9 +448,9 @@ article.congress__article:hover a {
 .congress__video {
    position: relative;
    z-index: 200;
-   margin-top: 13rem;
+   margin-top: 15rem;
    .md-block({
-      margin-top: 8rem;
+      margin-top: 13rem;
    });
 }
 .congress__video .wrapper {
@@ -533,4 +533,109 @@ article.congress__article:hover a {
       font-size: 1.7rem;
       line-height: 2.1rem;
    });
+}
+
+
+.congress__gallery,
+.congress__results {
+   position: relative;
+   z-index: 400;
+   margin-top: 13rem;
+   .md-block({
+      margin-top: 8rem;
+   });
+}
+.congress__gallery:before {
+   .pseudo();
+   z-index: 50;
+   .congress-bg2();
+   background-position: 0 0;
+   background-size: 90%;
+   
+   height: 80vw;
+   width: 100%;
+   
+   top: -5vw;
+   right: -45vw;
+}
+.congress_gallery__holder {
+   position: relative;
+   z-index: 500;
+}
+.congress__photo {
+   margin-right: 1.4rem;
+   margin-left: 1.4rem;
+   //
+   //max-height: 70vh;
+   //max-width: 60%;
+}
+.congress__photo img {
+   max-width: 96%;
+   width: auto;
+   object-fit: scale-down;
+   //max-height: 70vh;
+}
+
+
+.congress_gallery__holder .slick-dots li button:before {
+   content: '';
+}
+.congress_gallery__holder .slick-dots li button {
+   background-color: #d1dcf8;
+   border-radius: 25px;
+   
+   
+    height: 14px;
+    width: 14px;
+    margin: 0 10px;
+}
+.congress_gallery__holder .slick-dots li.slick-active button {
+   background-color: @color-blue;
+}
+.congress_gallery__holder .slick-dots {
+   bottom: -35px;
+}
+
+#container_congress .footer__container {
+   margin-top: 0;
+   
+}
+#container_congress .footer__container .background-gray,
+#container_congress .footer__container .background-black {
+   background-color: #191B3E;
+}
+
+.congress__results {
+   padding-bottom: 4rem;
+}
+.congress_results__video {
+   position: relative;
+   z-index: 400;
+}
+.congress__results:before {
+   .pseudo();
+   .congress-result();
+   
+   width: 104%;
+   height: 100%;
+   
+   bottom: -2%;
+   left: -2%;
+}
+
+
+.congress_results__video {
+   position: relative;
+}
+.result__video_ratio {
+   width: 100%;
+   height: 0;
+   padding-top: 56%;
+}
+.result__iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
 }

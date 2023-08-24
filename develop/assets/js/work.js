@@ -317,8 +317,35 @@ $(document).ready(function () {
    
    if ($('.congress__main').length > 0) {
       let $trigger = $('.congress__trigger');
-      
       $trigger.on('click', openList);
+      
+      
+      $('.congress_gallery__holder').slick({
+         slidesToShow: 3,
+         slidesToScroll: 3,
+         dots: true,
+         arrows: false,
+         loop: true,
+         infinite: true,
+         centerMode: true,
+         centerPadding: '60px',
+         responsive: [
+            {
+               breakpoint: 1400,
+               settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 3
+               }
+            },
+            {
+               breakpoint: 480,
+               settings: {
+                  slidesToScroll: 1,
+                  slidesToShow: 1
+               }
+            }
+         ]
+      })
    }
    
    function openList() {
