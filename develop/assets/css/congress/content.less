@@ -1,8 +1,8 @@
 
-.congress__wrapper .text-blue {
+.congress__list .text-blue {
    color: @color-blue-2
 }
-.congress__container .wwnow {
+.congress__main .wwnow {
    margin-right: 0;
    margin-left: 0;
 }
@@ -26,7 +26,7 @@ section .congress__numb h1.caption {
       line-height: 3.7rem;
    });
 }
-.congress__wrapper h1 {
+.congress__article h1 {
    .montserrat-semibold();
    font-size: 1.4rem;
    line-height: 1.8rem;
@@ -39,7 +39,7 @@ section .congress__numb h1.caption {
       line-height: 2rem;
    });
 }
-.congress__clock h2.text-22 {
+.congress__ps h2.text-22 {
    .montserrat-semibold();
    font-size: 1.2rem;
    line-height: 1.6rem;
@@ -56,12 +56,46 @@ section .congress__numb h1.caption {
       line-height: 1.8rem;
    })
 }
+.congress__ps h2.text-22 span {
+   .montserrat-regular();
+   font-size: 1.2rem;
+   line-height: 1.6rem;
+   .middle-block({
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+   });
+   .sm-block({
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+   });
+}
+.congress__ps strong {
+   .montserrat-semibold();
+}
+/*
+.congress__clock h2.text-22 {
+   .montserrat-semibold();
+   font-size: 1.2rem;
+   line-height: 1.6rem;
+   .middle-block({
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+   });
+   .sm-block({
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+   });
+   .xs-block({
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+   })
+}*/
 
 .congress__day {
    .flex();
    .items-end();
    
-   color: @color-blue-2;
+   //color: @color-blue-2;
 }
 .congress__numb {
    margin-right: 3rem;
@@ -82,7 +116,7 @@ h2.congress__name {
 }
 
 .congress__block {
-   margin: 2.5rem 0;
+   margin-bottom: 2.5rem;
    padding: 2rem 3.6rem;
    
    background-color: @color-blue-2;
@@ -228,4 +262,275 @@ h2.congress__name {
    
    .congress-bg();
    background-position: left;
+}
+
+
+/*  NEW  */
+
+.congress_header__holder {
+   .flex();
+   
+   .smmd-block({
+      display: block;
+   });
+}
+
+
+
+menu.congress_navigation__holder {
+    position: relative;
+    z-index: 200;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+   
+   .column();
+   .justify-center();
+   .items-start();
+   
+   margin-top: 4rem;
+      padding-bottom: 6rem;
+
+    .smmd-block({
+      margin-top: 5rem;
+      flex-direction: row;
+       flex-wrap: wrap;
+       .justify-start();
+   })
+}
+.congress__navigation {
+    .flex();
+   .items-center();
+   margin-bottom: 1rem;
+   cursor: pointer;
+    .smmd-block({
+      width: 50%;
+   });
+    .xs-block({
+      width: 100%;
+   });
+}
+.congress__navigation_icon {
+    margin-right: 2rem;
+   .competition-nav-arrow();
+}
+.congress__navigation_text {
+   .montserrat-bold();
+   font-size: 1.8rem;
+   line-height: 2rem;
+   
+   .tr();
+}
+
+
+
+.congress__main {
+   position: relative;
+   z-index: 200;
+   margin-top: 13rem;
+   .md-block({
+      margin-top: 8rem;
+   });
+   .smmd-block({
+      margin-top: 0;
+   });
+}
+.congress__main:after {
+   .pseudo();
+   z-index: 50;
+   .congress-bg3();
+   background-position: 0 0;
+   background-size: 90%;
+   
+   height: 80vw;
+   width: 100%;
+   
+   top: -5vw;
+   right: -45vw;
+}
+
+.congress_list__section {
+   position: relative;
+   z-index: 250;
+}
+
+.congress__trigger {
+   .flex();
+   .justify-between();
+   .items-center();
+   
+   padding-bottom: 2rem;
+   border-bottom: 2px solid @color-blue;
+   //transition: border .3s ease-in-out;
+}
+
+.congress__more {
+   .flex();
+   .items-center();
+   cursor: pointer;
+}
+.congress_more__text {
+   color: #6990F2;
+   opacity: .7;
+   margin-right: 2rem;
+   .tr();
+}
+
+.congress_list__section:hover .congress_more__text {
+   color: @color-blue;
+   opacity: 1;
+   .tr();
+}
+.congress_more__arrow {
+   .congress-arrow();
+   .tr();
+}
+
+.congress_list__section:hover .congress_more__arrow {
+   .congress-arrow-hover();
+}
+.congress_list__holder {
+   display: none;
+}
+
+.congress_list__section.open .congress__trigger {
+   border-bottom-color: transparent;
+   //.tr();
+}
+.congress_list__section.open .congress_more__text {
+   opacity: 0;
+   .tr();
+}
+.congress_list__section.open .congress_more__arrow {
+   .tr();
+   transform: rotate(180deg);
+   .congress-arrow-hover();
+}
+
+
+.congress__list {
+   padding: 0 3.6rem;
+   margin-bottom: 1rem;
+}
+.congress__article {
+   .flex();
+   .items-center();
+   .justify-between();
+   margin-bottom: 2.5rem;
+}
+article.congress__article a {
+   border-bottom: 1px solid rgba(105, 144, 242, 0.2);
+   display: inline;
+   
+   line-height: 1.8rem;
+   .middle-block({
+      line-height: 2rem;
+   });
+   .sm-block({
+      line-height: 2.3rem;
+   });
+   
+   .tr();
+}
+section article.congress__article a span {
+   display: inline-block;
+   margin-top: .8rem;
+}
+article.congress__article:hover a {
+   border-bottom-color: @color-blue-2;
+   .tr();
+}
+
+
+.congress__video {
+   position: relative;
+   z-index: 200;
+   margin-top: 13rem;
+   .md-block({
+      margin-top: 8rem;
+   });
+}
+.congress__video .wrapper {
+   position: relative;
+   z-index: 250;
+}
+.congress__video:after {
+   .pseudo();
+   z-index: 50;
+   .congress-bg();
+   background-position: right top;
+   background-size: 90%;
+   
+   height: 80vw;
+   width: 100%;
+   
+   top: -5vw;
+   left: -45vw;
+}
+
+.congress__video:before {
+   .pseudo();
+   z-index: 70;
+   .congress-after-video-img();
+   background-size: 90%;
+   
+   height: 34rem;
+   width: 38.5rem;
+   max-width: 40%;
+   
+   top: -1rem;
+   left: 15%;
+   
+   .to( 2300px, {
+      max-width: 30%;
+      left: 5%;
+   });
+   .to( 1710px, {
+      left: 0
+   });
+   .to( 1200px, {
+      width: 26%
+   });
+   .to( 700px, {
+      display: none;
+   });
+}
+
+
+.congress__button {
+    display: table;
+    margin: 0 auto;
+   background-color: @color-blue;
+   border-radius: 3px;
+   padding: 1.2rem 1.5rem;
+   cursor: pointer;
+   .tr();
+}
+.congress__button:hover {
+   background-color: #6990F2;
+}
+
+.congress_button__inner {
+   .flex();
+   .items-center()
+}
+.icon-video-white {}
+.congress_button__text {
+   color: white;
+   text-transform: uppercase;
+   
+   .montserrat-semibold();
+   font-size: 1.5rem;
+   line-height: 1.9rem;
+   .middle-block({
+      font-size: 1.6rem;
+      line-height: 2rem;
+   });
+   .sm-block({
+      font-size: 1.7rem;
+      line-height: 2.1rem;
+   });
 }

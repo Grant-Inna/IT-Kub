@@ -302,6 +302,9 @@
 .congress-bg2() {
    .congress('bg2');
 }
+.congress-bg3() {
+   .congress('bg3');
+}
 .congress-caption() {
    .congress('caption');
    background-position: center;
@@ -321,4 +324,28 @@
    .congress('figure');
    background-position: center;
    background-size: contain;
+}
+
+.congress_cube() {
+   background-image: url("../data/congress/after/cubes.svg");
+   background-repeat: no-repeat;
+   background-position: top left;
+   background-size: contain;
+}
+.congress_c() {
+   background-image: url("../data/congress/after/2c.svg");
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: contain;
+}
+.congress-photo( @name ) {
+   background-image: url("../data/congress/after/photo/header/@{name}.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+.congress-after-video-img() {
+   background-image: url("../data/congress/after/image-video.svg");
+   background-repeat: no-repeat;
+   background-position: top left;
 }

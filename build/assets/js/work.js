@@ -312,4 +312,27 @@ $(document).ready(function () {
       
    }
 
+   
+   /*  читать дальше  */
+   
+   if ($('.congress__main').length > 0) {
+      let $trigger = $('.congress__trigger');
+      
+      $trigger.on('click', openList);
+   }
+   
+   function openList() {
+      let current = $(this).closest('.congress_list__section');
+      let answer = current.find('.congress_list__holder'),
+          s = 500;
+      
+      if (!current.hasClass('open')) {
+         $('.open').removeClass('open');
+         answer.slideDown(s);
+         current.addClass('open')
+      } else {
+         answer.slideUp(s);
+         current.removeClass('open')
+      }
+   }
 });
