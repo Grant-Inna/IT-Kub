@@ -314,11 +314,10 @@ $(document).ready(function () {
 
    
    /*  читать дальше  */
-   
-   if ($('.congress__main').length > 0) {
+
+   if ($('#container_congress').length > 0) {
       let $trigger = $('.congress__trigger');
       $trigger.on('click', openList);
-      
       
       $('.congress_gallery__holder').slick({
          slidesToShow: 2,
