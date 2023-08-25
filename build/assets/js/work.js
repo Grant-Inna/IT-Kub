@@ -321,8 +321,8 @@ $(document).ready(function () {
       
       
       $('.congress_gallery__holder').slick({
-         slidesToShow: 3,
-         slidesToScroll: 3,
+         slidesToShow: 2,
+         slidesToScroll: 2,
          dots: true,
          arrows: false,
          loop: true,
@@ -334,7 +334,7 @@ $(document).ready(function () {
                breakpoint: 1400,
                settings: {
                   slidesToShow: 2,
-                  slidesToScroll: 3
+                  slidesToScroll: 2
                }
             },
             {
