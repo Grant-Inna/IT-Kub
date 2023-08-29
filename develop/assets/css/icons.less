@@ -321,6 +321,10 @@
    .icon-svg( 'close' );
    .tr();
 }
+.icon_close-big() {
+   .icon-svg( 'close-big' );
+   .tr();
+}
 .icon_close-hover() {
    .icon-svg( 'close-hover' );
 }
@@ -440,11 +444,18 @@
    flex-shrink: 0;
    .size-25();
 }
-.icon-congress-vk {
+.icon--vk() {
    background-image: url("../data/congress/after/vk.svg");
    background-repeat: no-repeat;
    background-size: contain;
    background-position: center;
    flex-shrink: 0;
+}
+.icon-congress-vk {
+   .icon--vk();
    .size-25();
+}
+.icon-video-vk {
+   .icon--vk();
+   .size-14();
 }
