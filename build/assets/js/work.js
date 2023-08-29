@@ -354,4 +354,26 @@ $(document).ready(function () {
          current.removeClass('open')
       }
    }
+   
+   
+   /*  всплывающее окно  */
+   
+   if($('.semifinalists__container').length > 0) {
+      $('.semifinalists__image').on( 'click', showModal)
+   }
+   function showModal() {
+      let current = $(this).prop( 'id').split( '_')[1],
+          modal = $('.semifinalist_one__modal#' + current),
+          close = modal.find('.modal_close');
+      
+      modal.show();
+      console.log(modal);
+      
+      close.on( 'click', hideModal);
+      modal.on( 'click', hideModal);
+      $('.modal_container').on( 'click', function(event) { event.stopPropagation(); return })
+   }
+   function hideModal() {
+      $('.semifinalist_one__modal').hide();
+   }
 });
