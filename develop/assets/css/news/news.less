@@ -322,8 +322,12 @@ a.back__holder:hover .icon-arrow-back {
 }
 .news_one__article a {
    color: #003668;
-   display: inline-block;
-    margin-bottom: 0.3rem;
+   display: inline !important;
+   margin-bottom: 0.3rem;
+   border-bottom: 1px solid  @color-back-gray-light;
+}
+.news_one__article a:hover {
+   border-bottom-color: @color-blue-light;
 }
 
 section .news_one__article h1.title {
