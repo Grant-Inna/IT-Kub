@@ -27,6 +27,7 @@ html
                         +item( 'Программа', 'program' )
                         +item( 'Видеопрезентация', 'videopresentation' )
                         +item( 'Фотогалерея', 'gallery' )
+                        +item( 'Итоги', 'result' )
 
 
          include assets/jade/content/congress/__trigger
@@ -105,7 +106,7 @@ html
 
          section( aria-label='Видео-презентация' )#videopresentation.congress__video
             .wrapper
-               h1.caption.center.mb5 Видео&ndash;презентация
+               h1.caption.center.mb5 Видеопрезентация
                   br
                   span.mr1 Центров
                   span.wwnow.ml0 &laquo;IT&ndash;куб&raquo;
@@ -143,6 +144,15 @@ html
                   img( src='./assets/data/congress/after/photo/gallery/5.jpg')
 
 
+         section( aria-label='Видео итогов съезда' )#result.congress__results
+            .wrapper
+               h1.caption.center.mb5 Итоги съезда
+
+               .video_relative.mb3
+                  .video_ratio
+                  .iframe_holder
+                     iframe(src='https://vk.com/video_ext.php?oid=-193270730&id=456239062&hash=a2f2e19fe1da2a74' width='100%' height='100%' frameborder='0')
+                        p Твой браузер устарел для отображения элемента iframe
 
          include assets/jade/footer/footer
 
