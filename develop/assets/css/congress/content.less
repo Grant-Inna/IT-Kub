@@ -633,6 +633,19 @@ article.congress__article:hover a {
 
 .congress__results {
    padding-bottom: 4rem;
+   
+   .xl-block({
+      padding-bottom: 3rem;
+   });
+   .lg-block({
+      padding-bottom: 2rem;
+   });
+   .sm-block({
+      padding-bottom: 1rem;
+   });
+   .xs-block({
+      padding-bottom: 1px;
+   });
 }
 .congress_results__video {
    position: relative;
@@ -642,12 +655,20 @@ article.congress__article:hover a {
    .pseudo();
    .congress-result();
    
-   width: 104%;
+   width: 110%;
    height: 100%;
    
    bottom: -2%;
-   left: -2%;
+   left: -4%;
 }
 
-
+.congress__results .video_relative {
+   margin-bottom: 3rem;
+   .lg-block({
+      margin-bottom: 2rem;
+   });
+   .sm-block({
+      margin-bottom: 1rem;
+   });
+}
 
