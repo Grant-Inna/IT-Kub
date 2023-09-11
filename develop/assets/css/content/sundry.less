@@ -547,32 +547,43 @@ section .competition_terms__holder a:hover {
 
 
 /*  парнёры проекта  */
+.partners__container {
+   .xs-block({
+      margin-top: 13rem;
+   })
+}
+.partners__container .row {
+   .justify-around();
+}
 .partner__logo {
+   
    .col();
    .size(8);
    .size-xl(8);
    .size-middle(9);
    .size-lg(9);
-   .size-md(12);
-   .size-sm(16);
-   .size-xs(24);
+   .size-md(10);
+   .size-sm(11);
+   .size-xs(20);
    
-   .shift-sm-left(4);
-   .shift-xs-left(0);
+   //.shift-sm-left(4);
+   //.shift-xs-left(0);
    
+   .flex-center();
+   .col-offsets-bottom-big();
    
    .sm-block({
-      width: 55vw;
-      height: 46vw;
+      //width: 55vw;
+      //height: 46vw;
       flex-shrink: 0;
       margin-right: auto;
       margin-left: auto;
-      margin-bottom: 2rem;
+      //margin-bottom: 2rem;
       
    });
    .xs-block({
-      width: 20rem;
-      height: 18rem;
+      //width: 20rem;
+      //height: 18rem;
       margin-right: auto;
       margin-left: auto;
    });
