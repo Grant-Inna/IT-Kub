@@ -1,0 +1,83 @@
+doctype
+html
+
+   include assets/jade/static/__head
+   +title( 'Всероссийский хакатон по программированию | IT-cube' )
+
+   body
+      include assets/jade/static/metrika
+      #container_hackathon
+         #black_back
+         include assets/jade/header/__header
+         +menu( '', '', '', '', '', '', '', '', '', 'active' )
+         include assets/jade/header/main-pages
+
+         include assets/jade/content/hackathon/__navigation
+         section( aria-label='Страница всероссийского хакатона по программированию' ).hackathon__title
+            .wrapper
+               .logo_relative
+                  .logo_ratio
+                  .logo_holder
+                     .hackathon__logo
+            .wrapper
+               .hackathon_header__image
+               .hackathon__header
+
+                  a().hackathon__button
+                     .hackathon_button__inner
+                        i.icon-file
+                        span Положение о хакатоне
+                  .hackathon_menu__holder
+                     menu.hackathon_navigation__holder
+                        +item( 'О хакатоне', 'participation' )
+                        +item( 'Направления', 'direction' )
+                        +item( 'Этапы проведения', 'step' )
+                        +item( 'Заявка на участие', 'application' )
+
+
+         include assets/jade/content/hackathon/__participation
+         section( aria-label='Кто может принять участие' )#participation.hackathon__participation
+            .wrapper
+               h1.caption.center.mb5 В Хакатоне могут принять участие:
+               .row
+                  +participation( '1', 'Обучающиеся Центров цифрового образования детей <span class="wwnow">&laquo;IT-куб&raquo;</span> в&nbsp;возрасте 14-18&nbsp;лет' )
+                  +participation( '2', 'Состав команды&nbsp;&mdash; от&nbsp;2 до&nbsp;4 человек* <br><span class="sup">*Один участник может быть зарегистрирован только в&nbsp;одной команде</span>'  )
+
+
+         include assets/jade/content/hackathon/__direction
+         section( aria-label='По каким направлениям проводится хакатон' )#direction.hackathon__direction
+            .wrapper
+               h1.caption.center.mb5 Направления
+               .row
+                  +direction( '1', '<span class="wwnow ml0">Программирование</span>', 'sber', '' )
+                  +direction( '2', '<span class="wwnow ml0">Информационная</span><br>безопасность', 'kiber', '' )
+                  +direction( '3', 'Диджитал <div class="text-25">(VR/AR технологии)</span>', 'varmin', '' )
+
+
+         include assets/jade/content/hackathon/__step
+         section( aria-label='Этапы проведения хакатона' )#step.hackathon__steps
+            .wrapper
+               h1.caption.center.mb5 Этапы проведения
+               +step( '1', 'Заочный этап', '15 сентября – 10 октября 2023 года', '<div class="text-22 mb1">На базе субъектов Российской Федерации среди обучающихся Центров <span class="wwnow mr0">&laquo;IT-куб&raquo;</span></div><strong class="text-22">В целях определения команд, направляемых на очный этап Хакатона, субъекту Российской Федерации необходимо провести внутренний отбор, опираясь на представленные задания и критерии оценивания заданий, разработанные Партнерами</strong>' )
+               +step( '2', 'Подготовительный этап', '20 октября – 10 ноября 2023', '<strong class="text-22">Проведение серии подготовительных онлайн-сессий по каждому направлению с партнерами Хакатона</strong>' )
+               +step( '3', 'Очный этап', '24 – 26 ноября 2023', '<div class="text-22 mb1">Свердловская область, г. Верхняя Пышма, Успенский пр., 2Г</span></div><strong class="text-22 mb03">Работа команд над кейсами по расширенному заданию, полученному в первый день мероприятия</strong><strong class="text-22">Демонстрация итогов работы путем публичной защиты презентации</strong>' )
+
+
+         section( aria-label='Подать заявку на участие' )#application.hackathon__application
+            .hackathon_application__image
+               .wrapper
+                  .hackathon_application__icon
+            .hackathon_application__holder
+               .wrapper
+                  h1.caption.center Заявка на участие
+
+
+
+
+         include assets/jade/footer/footer
+
+      include assets/jade/static/script
+
+
+
+
