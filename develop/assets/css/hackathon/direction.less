@@ -69,9 +69,16 @@
       display: inline-block;
       color: @color-green-new;
       border-bottom: 1px solid @color-green-new;
+      .tr();
    }
    span {}
 }
+.hackathon_direction__link a:hover {
+   color: @color-back-gray-middle;
+   border-bottom-color: @color-back-gray-middle;
+   transition: color .3s ease-in-out, border-bottom-color .4s;
+}
+
 .hackathon_direction__icon {
    width: 55%;
    height: 100%;

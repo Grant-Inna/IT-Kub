@@ -1,14 +1,28 @@
 #container_hackathon .footer__container {
    margin-top: 0;
 }
+#container_hackathon #totop {
+   background-color: @color-green-new;
+}
+#container_hackathon #totop:hover {
+   background-color: white;
+}
+#container_hackathon .wwnow {
+   margin-left: 0;
+   margin-right: 0;
+}
+#container_hackathon .hover:before {
+   background-color: #fbfbfb;
+}
+#container_hackathon .hover:after {
+   background-color: @color-black;
+}
 .hackathon__application {
 
 
 }
 .hackathon_application__image {
-   position: relative;
-   z-index: 200;
-   
+ 
    margin-bottom: -2px;
    width: 100%;
    height: 17rem;
@@ -20,21 +34,36 @@
    
    .middle-block({
       background-position: top;
-      background-size: 1022px 276px;
+      background-size: 1022px 350px;
       padding-top: 5rem;
    });
    .sm-block({
       background-position: top;
-      background-size: 1020px 200px;
+      background-size: 1020px 250px;
       padding-top: 5rem;
    });
 }
+.hackathon_application__image .wrapper {
+   position: relative;
+   z-index: 200;
+   height: 100%;
+}
 .hackathon_application__icon {
    position: absolute;
-   width: 27%;
-   height: 90%;
+   width: 45%;
+   height: calc( 100% + 4rem );
+   
+   bottom: -4rem;
    
    .hackathon-noyt();
+   background-position: bottom right;
+   background-size: contain;
+   min-width: 250px;
+   .xs-block({
+      min-width: 200px;
+      left: 10px;
+      background-position: bottom left;
+   })
 }
 
 
@@ -42,7 +71,16 @@
 
 
 
+.hackathon_application__holder .wrapper {
+   .column-center();
+}
 .hackathon_application__holder {
-   padding-top: 5rem;
+   padding-top: 8rem;
    background-color: @color-green-new;
+   
+   h2.text-25 {
+      .montserrat-semibold();
+      
+      max-width: 1000px;
+   }
 }

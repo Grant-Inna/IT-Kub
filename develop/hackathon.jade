@@ -23,22 +23,22 @@ html
                .hackathon_header__image
                .hackathon__header
 
-                  a().hackathon__button
+                  a().hackathon__button.mt9.mb3
                      .hackathon_button__inner
                         i.icon-file
-                        span Положение о хакатоне
+                        span Положение о&nbsp;хакатоне
                   .hackathon_menu__holder
                      menu.hackathon_navigation__holder
-                        +item( 'О хакатоне', 'participation' )
+                        +item( 'О&nbsp;хакатоне', 'participation' )
                         +item( 'Направления', 'direction' )
                         +item( 'Этапы проведения', 'step' )
-                        +item( 'Заявка на участие', 'application' )
+                        +item( 'Заявка на&nbsp;участие', 'application' )
 
 
          include assets/jade/content/hackathon/__participation
          section( aria-label='Кто может принять участие' )#participation.hackathon__participation
             .wrapper
-               h1.caption.center.mb5 В Хакатоне могут принять участие:
+               h1.caption.center.mb5 В&nbsp;Хакатоне могут принять участие:
                .row
                   +participation( '1', 'Обучающиеся Центров цифрового образования детей <span class="wwnow">&laquo;IT-куб&raquo;</span> в&nbsp;возрасте 14-18&nbsp;лет' )
                   +participation( '2', 'Состав команды&nbsp;&mdash; от&nbsp;2 до&nbsp;4 человек* <br><span class="sup">*Один участник может быть зарегистрирован только в&nbsp;одной команде</span>'  )
@@ -51,16 +51,16 @@ html
                .row
                   +direction( '1', '<span class="wwnow ml0">Программирование</span>', 'sber', '' )
                   +direction( '2', '<span class="wwnow ml0">Информационная</span><br>безопасность', 'kiber', '' )
-                  +direction( '3', 'Диджитал <div class="text-25">(VR/AR технологии)</span>', 'varmin', '' )
+                  +direction( '3', 'Диджитал <div class="text-25">(VR/AR&nbsp;технологии)</span>', 'varmin', '' )
 
 
          include assets/jade/content/hackathon/__step
          section( aria-label='Этапы проведения хакатона' )#step.hackathon__steps
             .wrapper
                h1.caption.center.mb5 Этапы проведения
-               +step( '1', 'Заочный этап', '15 сентября – 10 октября 2023 года', '<div class="text-22 mb1">На базе субъектов Российской Федерации среди обучающихся Центров <span class="wwnow mr0">&laquo;IT-куб&raquo;</span></div><strong class="text-22">В целях определения команд, направляемых на очный этап Хакатона, субъекту Российской Федерации необходимо провести внутренний отбор, опираясь на представленные задания и критерии оценивания заданий, разработанные Партнерами</strong>' )
-               +step( '2', 'Подготовительный этап', '20 октября – 10 ноября 2023', '<strong class="text-22">Проведение серии подготовительных онлайн-сессий по каждому направлению с партнерами Хакатона</strong>' )
-               +step( '3', 'Очный этап', '24 – 26 ноября 2023', '<div class="text-22 mb1">Свердловская область, г. Верхняя Пышма, Успенский пр., 2Г</span></div><strong class="text-22 mb03">Работа команд над кейсами по расширенному заданию, полученному в первый день мероприятия</strong><strong class="text-22">Демонстрация итогов работы путем публичной защиты презентации</strong>' )
+               +step( '1', 'Заочный этап', '15 сентября&nbsp;&mdash; 10 октября 2023 года', '<div class="text-22 mb1">На&nbsp;базе субъектов Российской Федерации среди обучающихся Центров <span class="wwnow">&laquo;IT-куб&raquo;</span></div><strong class="text-22">В&nbsp;целях определения команд, направляемых на&nbsp;очный этап Хакатона, субъекту Российской Федерации необходимо провести внутренний отбор, опираясь на&nbsp;представленные задания и&nbsp;критерии оценивания заданий, разработанные Партнерами</strong>' )
+               +step( '2', 'Подготовительный этап', '20 октября&nbsp;&mdash; 10 ноября 2023', '<strong class="text-22">Проведение серии подготовительных онлайн-сессий по&nbsp;каждому направлению с&nbsp;партнерами Хакатона</strong>' )
+               +step( '3', 'Очный этап', '24&nbsp;&mdash; 26 ноября 2023', '<div class="text-22 mb1">Свердловская область, г.&nbsp;Верхняя Пышма, Успенский&nbsp;пр., 2Г</span></div><strong class="text-22 mb03">Работа команд над&nbsp;кейсами по&nbsp;расширенному заданию, полученному в&nbsp;первый день мероприятия</strong><strong class="text-22">Демонстрация итогов работы путем публичной защиты презентации</strong>' )
 
 
          section( aria-label='Подать заявку на участие' )#application.hackathon__application
@@ -69,7 +69,15 @@ html
                   .hackathon_application__icon
             .hackathon_application__holder
                .wrapper
-                  h1.caption.center Заявка на участие
+                  h1.caption.center.mb4 Заявка на&nbsp;участие
+                  h2.text-25.mb3 Для&nbsp;участия в&nbsp;подготовительном и&nbsp;очном этапах Хакатона региональный координатор Центров
+                     span.wwnow   &laquo;ІТ-куб&raquo;
+                     |  субъекта Российской Федерации должен направить Заявку и&nbsp;Согласие на&nbsp;обработку персональных данных от&nbsp;команд не&nbsp;позднее 16&nbsp;октября 2023&nbsp;года на&nbsp;почту&nbsp;
+                     a( href='mailto:it-cube@ficto.ru').inline.hover  it-cube@ficto.ru
+                  a().hackathon__button.mb10
+                     .hackathon_button__inner
+                        i.icon-file
+                        span Скачать пакет документов на&nbsp;участие
 
 
 
