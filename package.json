@@ -27,6 +27,7 @@
     "smart-grid": "^2.1.2"
   },
   "dependencies": {
+    "browserslist": "^4.21.10",
     "slick": "^1.12.2"
   }
 }

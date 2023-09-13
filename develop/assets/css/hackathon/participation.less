@@ -3,13 +3,18 @@
    z-index: 100;
    
    padding-top: calc( 10rem + 5vw );
-   margin-top: 5rem;
+   margin-top: 8rem;
    
    .lg-block({
       padding-top: 8rem;
+      margin-top: 9rem;
    });
    .md-block({
       padding-top: 10rem;
+   });
+   .xs-block({
+      padding-top: 8rem;
+      margin-top: 7rem;
    });
 }
 .hackathon__participation h1.caption.center {
@@ -49,9 +54,11 @@
    background-position: 40% 0;
 
    .lg-block({
-      top: -8rem;
+      top: -10rem;
    });
    .xs-block({
+      width: calc( 100% - 30px );
+      left: 15px;
       top: -4rem;
    });
 }
