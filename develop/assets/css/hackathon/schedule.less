@@ -1,0 +1,209 @@
+.hackathon__schedule {
+   margin-top: 9rem;
+   
+   h1.caption {
+      max-width: 1000px;
+      margin-right: auto;
+      margin-left: auto;
+      
+      .xs-block({
+         font-size: 2.7rem;
+         line-height: 3.1rem;
+      })
+   }
+   h2 {
+      .montserrat-semibold();
+      color: #42C66E;
+   }
+   
+   .top {
+      margin-bottom: 1rem;
+      .md-block({
+         margin-bottom: .8rem;
+      })
+   }
+}
+
+:root {
+   --width: 10rem;
+   --mr: 2rem;
+}
+
+.hackathon_schedule__title {
+   .flex();
+   .items-center();
+   
+   .sm-block({
+      margin-bottom: 2rem;
+   });
+   .xs-block({
+      .column();
+      margin-bottom: 3rem;
+   })
+}
+
+.hackathon_schedule__icon {
+   width: var(--width);
+   height: var(--width);
+   margin-right: var(--mr);
+   
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   
+   .xs-block({
+      margin-bottom: 1.5rem;
+   })
+}
+.schedule_icon(@name) {
+   background-image: url("../data/hackathon/schedule-@{name}.svg");
+}
+.schedule_icon-1 { .schedule_icon( '1' )}
+.schedule_icon-2 { .schedule_icon( '2' )}
+.schedule_icon-3 { .schedule_icon( '3' )}
+
+.hackathon_schedule__text {
+   .montserrat-bold();
+   font-size: 2rem;
+   line-height: 2.4rem;
+   .middle-block({
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+   });
+   .sm-block({
+      font-size: 2.3rem;
+      line-height: 2.6rem;
+   });
+   .xs-block({
+      font-size: 2rem;
+      line-height: 2.5rem;
+   });
+   text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+article.schedule__holder {
+   .row-flex();
+   padding-left: calc( var(--width) + var(--mr));
+   
+   .sm-block({
+      padding-left: 0;
+   })
+}
+.schedule__block-1,
+.schedule__block-2,
+.schedule__block-3 {
+   .col();
+   flex-shrink: 0;
+}
+.schedule__block-1 {
+   .size(5);
+   .size-xl(5.5);
+   .size-middle(5.5);
+   .size-lg(5.5);
+   .size-md(7);
+   .size-sm(7);
+   .size-xs(12);
+}
+.schedule__block-2 {
+   .size(7);
+   .size-xl(7.5);
+   .size-middle(7.5);
+   .size-lg(8.5);
+   .size-md(17);
+   .size-sm(17);
+   .size-xs(22);
+}
+.schedule__block-3 {
+   .size(12);
+   .size-xl(11);
+   .size-middle(11);
+   .size-lg(10);
+   .size-md(22);
+   .size-sm(24);
+}
+.schedule__date {
+   .montserrat-bold();
+   font-size: 1.4rem;
+   line-height: 1.8rem;
+   .middle-block({
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+   });
+   .sm-block({
+      font-size: 1.6rem;
+      line-height: 2rem;
+   });
+   color: #42C66E;
+}
+.schedule__time {
+   .flex();
+   .items-center();
+}
+
+.schedule_time__text {
+
+}
+.schedule__name {
+   .montserrat-bold();
+   font-size: 1.4rem;
+   line-height: 1.8rem;
+   .middle-block({
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+   });
+   .sm-block({
+      font-size: 1.6rem;
+      line-height: 2rem;
+   });
+}
+.schedule__position {
+
+}
+.schedule__about {
+   .flex();
+}
+.schedule_about__text {
+   .montserrat-bold();
+   font-size: 1.2rem;
+   line-height: 1.6rem;
+   .middle-block({
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+   });
+   .sm-block({
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+   });
+   .xs-block({
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+   })
+}
+
+
+@media screen and (max-width: 1155px) {
+   :root {
+      --width: 7rem;
+      --mr: 1.5rem;
+   }
+}
+@media screen and (max-width: 760px) {
+   :root {
+      --width: 6rem;
+      --mr: 1rem;
+   }
+}
+@media screen and (max-width: @break_xs) {
+   :root {
+      --width: 10rem;
+      --mr: 0;
+   }
+}

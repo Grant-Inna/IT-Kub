@@ -32,6 +32,7 @@ html
                         +item( 'Об&nbsp;участии', 'participation' )
                         +item( 'Направления', 'direction' )
                         +item( 'Этапы проведения', 'step' )
+                        +item( 'Расписание', 'schedule' )
                         +item( 'Заявка на&nbsp;участие', 'application' )
 
 
@@ -61,6 +62,19 @@ html
                +step( '1', 'Заочный этап', '15 сентября&nbsp;&mdash; 10 октября 2023 года', '<div class="text-22 mb1">На&nbsp;базе субъектов Российской Федерации среди обучающихся Центров <span class="wwnow">&laquo;IT-куб&raquo;</span></div><strong class="text-22">В&nbsp;целях определения команд, направляемых на&nbsp;очный этап Хакатона, субъекту Российской Федерации необходимо провести внутренний отбор, опираясь на&nbsp;представленные задания и&nbsp;критерии оценивания заданий, разработанные Партнерами</strong>' )
                +step( '2', 'Подготовительный этап', '20 октября&nbsp;&mdash; 10 ноября 2023', '<strong class="text-22">Проведение серии подготовительных онлайн-сессий по&nbsp;каждому направлению с&nbsp;партнерами Хакатона</strong>' )
                +step( '3', 'Очный этап', '24&nbsp;&mdash; 26 ноября 2023', '<div class="text-22 mb1">Свердловская область, г.&nbsp;Верхняя Пышма, Успенский&nbsp;пр., 2Г</span></div><strong class="text-22 mb03">Работа команд над&nbsp;кейсами по&nbsp;расширенному заданию, полученному в&nbsp;первый день мероприятия</strong><strong class="text-22">Демонстрация итогов работы путем публичной защиты презентации</strong>' )
+
+
+         include assets/jade/content/hackathon/__schedule
+         section( aria-label='Расписание подготовительного этапа' )#schedule.hackathon__schedule
+            .wrapper
+               h1.caption.center.mb2 Расписание подготовительного этапа
+               h2.text-25.mb5.center Все встречи пройдут в официальной группе Хакатона
+               section.hackathon_schedule__holder
+                  .hackathon_schedule__title
+                     .hackathon_schedule__icon.schedule_icon-1
+                     h1.hackathon_schedule__text Программирование
+                  +schedule( '24.10.2023', 'Алексей Смирнов', 'Старший системный инженер', 'Общие принципы организации сети', 'Сетевая безопасность: основные угрозы, уязвимости и способы защиты')
+
 
 
          section( aria-label='Подать заявку на участие' )#application.hackathon__application
