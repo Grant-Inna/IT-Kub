@@ -66,6 +66,7 @@ html
 
          include assets/jade/content/hackathon/__schedule
          include assets/jade/content/hackathon/__schedule-one
+         include assets/jade/content/hackathon/__schedule-two
          section( aria-label='Расписание подготовительного этапа' )#schedule.hackathon__schedule
             .wrapper
                h1.caption.center.mb2 Расписание подготовительного этапа
@@ -74,15 +75,16 @@ html
                   .hackathon_schedule__title
                      .hackathon_schedule__icon.schedule_icon-1
                      h1.hackathon_schedule__text Программирование
-                  +schedule( '24.10.2023', 'Алексей Смирнов', 'Старший системный инженер', 'Общие принципы организации сети', 'Сетевая безопасность: основные угрозы, уязвимости и способы защиты')
+                     +schedule-two( '26.10.2023<br>13:00 мск ', 'Евгений Кравченко', 'Java/Kotlin Backend Developer, Сбер', 'Максим Барсукевич', 'MS SQL Developer, Сбер ', 'Разработка приложения: технические требования и особенности')
+                     +schedule-one( '02.11.2023<br>13:00 мск', 'Ирина Феофилова', 'руководитель индустриального центра бизнес-единицы «Кейтеринбург»', 'Corporate Dinner Dash: особенности организации корпоративного питания ')
 
                section.hackathon_schedule__holder
                   .hackathon_schedule__title
                      .hackathon_schedule__icon.schedule_icon-2
                      h1.hackathon_schedule__text Диджитал (VR/AR технологий)
-                  +schedule-one( '24.10.2023<br>14:00', 'Пикулев Александр Евгеньевич', 'Руководитель образовательного направления Varwin Education', 'Классические приемы визуального программирования на Blockly')
-                  +schedule-one( '30.10.2023<br>11:00', 'Пикулев Александр Евгеньевич', 'Руководитель образовательного направления Varwin Education', 'QA-сессия с бизнес-заказчиком (ЦОПП Марий Эл)')
-                  +schedule-one( '07.11.2023<br>15:30', 'Пикулев Александр Евгеньевич', 'Руководитель образовательного направления Varwin Education', 'Консультационный час для участников по работе с Varwin')
+                  +schedule-one( '24.10.2023<br>14:00 мск', 'Пикулев Александр Евгеньевич', 'Руководитель образовательного направления Varwin Education', 'Классические приемы визуального программирования на Blockly')
+                  +schedule-one( '30.10.2023<br>11:00 мск', 'Пикулев Александр Евгеньевич', 'Руководитель образовательного направления Varwin Education', 'QA-сессия с бизнес-заказчиком (ЦОПП Марий Эл)')
+                  +schedule-one( '07.11.2023<br>15:30 мск', 'Пикулев Александр Евгеньевич', 'Руководитель образовательного направления Varwin Education', 'Консультационный час для участников по работе с Varwin')
                   //+schedule-one( '', '', '', '')
 
                section.hackathon_schedule__holder
