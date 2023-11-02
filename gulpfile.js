@@ -110,6 +110,11 @@ function data(done){
    .pipe(gulp.dest( dist + 'data'));
    done();
 }
+function files(done){
+   return gulp.src(src + 'data/files/**/*')
+   .pipe(gulp.dest( dist + 'data/files/'));
+   done();
+}
 function fonts(done){
    return gulp.src(src + 'fonts/**/*')
    .pipe(gulp.dest( dist + 'fonts/'));
@@ -154,7 +159,7 @@ function grid(done){
 }
 
 const build = gulp.series(clear,
-   gulp.parallel(html, news, styles, js, images, data, fonts )
+   gulp.parallel(html, news, styles, js, images, data, files, fonts )
 );
 
 gulp.task('build', build);
