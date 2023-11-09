@@ -1,0 +1,46 @@
+.hackathon__schedule {
+   margin-top: 9rem;
+   margin-bottom: 9rem;
+   
+   
+   .top {
+      margin-bottom: .5rem;
+      .md-block({
+         margin-bottom: .8rem;
+      })
+   }
+   
+   .icon-dot {
+      padding-top: .3rem;
+   }
+}
+
+
+.schedule__trigger {
+   .flex();
+   .justify-between();
+   
+   div { .flex(); .items-center();}
+}
+.schedule__numb {
+   .montserrat-bold();
+   font-size: 2.3rem;
+}
+.schedule__date {
+   .montserrat-bold();
+   font-size: 2.3rem;
+   color: #42C66E;
+}
+.schedule__more {
+
+}
+.schedule_more__arrow {
+   .icon-arrow-green();
+   .tr();
+}
+#container_hackathon .list_section.open {
+   .schedule_more__arrow {
+      .tr();
+      transform: rotate(180deg);
+   }
+}

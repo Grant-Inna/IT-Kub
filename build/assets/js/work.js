@@ -339,10 +339,14 @@ $(document).ready(function () {
          ]
       })
    }
+   if ($('#container_hackathon').length > 0) {
+      let $trigger = $('.schedule__trigger');
+      $trigger.on('click', openList);
+   }
    
    function openList() {
-      let current = $(this).closest('.congress_list__section');
-      let answer = current.find('.congress_list__holder'),
+      let current = $(this).closest('.list_section');
+      let answer = current.find('.list'),
           s = 500;
       
       if (!current.hasClass('open')) {
