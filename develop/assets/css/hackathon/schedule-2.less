@@ -29,18 +29,426 @@
 .schedule__date {
    .montserrat-bold();
    font-size: 2.3rem;
-   color: #42C66E;
+   color: @color-green-new;
 }
 .schedule__more {
 
 }
 .schedule_more__arrow {
    .icon-arrow-green();
+   opacity: .8;
    .tr();
+   
+   &:hover {
+      opacity: 1;
+      .tr();
+   }
+}
+.schedule__trigger {
+   margin-bottom: 3rem;
+   padding-bottom: 2rem;
+   cursor: pointer;
+   border-bottom: 2px solid @color-gray;
 }
 #container_hackathon .list_section.open {
-   .schedule_more__arrow {
+   .schedule_more__arrow,
+   .schedule_more__angle {
       .tr();
+      opacity: 1;
       transform: rotate(180deg);
+   }
+}
+
+
+
+
+
+.schedule__place {
+   .flex();
+   .items-start();
+}
+.schedule__place .text-22 {
+   color: @color-blue-2;
+}
+
+
+.schedule__event {
+   position: relative;
+   .flex();
+   overflow: hidden;
+   
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+.schedule__event strong.text-27 {
+   width: 11rem;
+   flex-shrink: 0;
+   margin-right: 2rem;
+}
+
+.icon-dot-green {
+   .schedule-dot-green();
+   position: relative;
+   z-index: 900;
+   margin-right: 2.5rem;
+}
+#container_hackathon .icon-dot-green:after {
+   .pseudo();
+   z-index: 800;
+   width: 2px;
+   height: 2000%;
+   
+   top: -98%;
+   left: 50%;
+   transform: translateX(-50%);
+   .schedule-dash-vert();
+}
+.block-18 .schedule__event:last-child .icon-dot:after {
+   height: 100%;
+}
+
+
+.schedule__tr {
+   position: relative;
+   width: 100%;
+   
+   .flex();
+   padding: 1.75rem 0;
+   margin-bottom: 2rem;
+   //border: 2px solid #eeeeef;
+  /* border-image: url("../data/hackathon/line-vert.svg") 26 repeat;
+	border-style: solid;
+	border-width: 2px;*/
+}
+.schedule__tr:before {
+   .pseudo();
+   height: 3px;
+   width: 300%;
+   
+   left: calc( -3.5rem - 1px);
+   top: -1px;
+   .schedule-dash-hor();
+}
+/*.schedule__event:before {
+   .pseudo();
+   height: 3px;
+   width: 300%;
+   
+   left: calc( 1rem - 1px);
+}*/
+.schedule__tr:after{
+   .pseudo();
+   width: 2px;
+   height: 2000%;
+   
+   right: 0;
+   top: -1px;
+   .schedule-dash-vert();
+}
+.schedule__td-1,
+.schedule__td-2,
+.schedule__td-3,
+.schedule__td-4 {
+   position: relative;
+}
+.schedule__td-1 {
+   padding-right: 1rem;
+   
+   width: 15%;
+}
+.schedule__td-2 {
+   padding: 0 1rem 0 1rem;
+   width: 27%;
+   flex-shrink: 0;
+   
+   .flex();
+   .items-center();
+}
+.schedule__td-3 {
+   padding: 0 1.3rem 0 1.3rem;
+   width: 22%;
+   flex-shrink: 0;
+}
+.schedule__td-4 {
+   padding: 0 1.3rem 0 1.3rem;
+   width: 36%;
+   flex-shrink: 0;
+}
+.schedule__td-2 .text-22,
+.schedule__td-4 .text-22,
+.schedule__td-3 .text-22 {
+   .montserrat-regular();
+   text-transform: uppercase;
+   color: @color-green-new;
+}
+.schedule__td-2 h1 strong.text-25,
+.schedule__td-4 h1 strong.text-25,
+.schedule__td-3 h1 strong.text-25 {
+   .montserrat-semibold();
+   text-transform: uppercase;
+   color: @color-green-new;
+   
+   font-size: 1.3rem;
+   line-height: 1.5rem;
+   .middle-block({
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+   });
+   .sm-block({
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+   });
+}
+.schedule__td-2:after,
+.schedule__td-1:after,
+.schedule__td-3:after {
+   .pseudo();
+   width: 2px;
+   height: 2000%;
+   
+   right: 0;
+   top: -1.74rem;
+   .schedule-dash-vert();
+}
+
+
+.schedule__break {
+   .flex();
+   .items-center();
+}
+#container_hackathon .block-6 strong.text-27 {
+   width: 11rem;
+   flex-shrink: 0;
+   margin-right: 2rem;
+   margin-bottom: 1rem;
+   color: @color-green-new;
+}
+#container_hackathon .block-18 strong.text-27 {
+   margin-right: 2rem;
+   margin-bottom: 1rem;
+   color: @color-gray;
+}
+.schedule__event h1.text-25 {
+   color: @color-green-new;
+   .montserrat-semibold();
+   font-size: 1.2rem;
+   line-height: 1.4rem;
+   .middle-block({
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+   });
+   .sm-block({
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+   });
+}
+.schedule__event h2.text-25 {
+   .montserrat-semibold();
+   font-size: 1.4rem;
+   line-height: 1.6rem;
+   .middle-block({
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+   });
+   .sm-block({
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+   });
+}
+   
+.schedule__break div[class^='icon-'] {
+   margin-left: -.8rem;
+   flex-shrink: 0;
+   margin-right: 1.8rem;
+}
+
+.icon-diner-green {
+   .schedule-diner-green();
+}
+.icon-break-green {
+   .schedule-break-green();
+}
+.icon-dot-green.empty {
+   background-image: unset;
+}
+#container_hackathon .icon-dot-green.empty:after {
+   top: 0;
+}
+
+.schedule__wrapper.spec2,
+.schedule__wrapper.spec {
+   position: relative;
+   z-index: 200;
+}
+.schedule__wrapper.spec2:before,
+.schedule__wrapper.spec:before {
+   .pseudo();
+   z-index: 10;
+   width: 100%;
+   background-size: contain;
+}
+
+
+
+
+
+
+
+
+.schedule_list__holder {
+
+}
+.schedule__trigger.schedule__trigger-noborder {
+   .justify-center();
+}
+.schedule__trigger.schedule__trigger-noborder .schedule__name {
+
+}
+.schedule__trigger-noborder {
+   border-bottom: none;
+}
+.schedule_more__angle {
+   opacity: .8;
+   .tr();
+   .schedule-angle-green();
+   margin-right: 2rem;
+   
+   &:hover {
+      opacity: 1;
+      .tr();
+   }
+}
+
+
+
+
+@media screen and (max-width: @break_lg) {
+   .schedule__break strong.text-27,
+   .schedule__event .icon-dot {
+      margin-right: 1.5rem;
+   }
+   .schedule__break div[class^='icon-'] {
+      margin-right: .8rem;
+   }
+   .schedule__break strong.text-27,
+   .schedule__event strong.text-27 {
+      margin-right: .3rem;
+      padding-right: .5rem;
+      box-sizing: border-box;
+   }
+   
+   .block-18 .schedule__event:last-child .icon-dot:after {
+      height: 130%;
+   }
+}
+@media screen and (max-width: @break_md) {
+   .block-6 {
+      margin-bottom: 2rem;
+   }
+   .schedule__clock .block-18 {
+      margin-left: 7.6rem;
+   }
+   .schedule__event {
+      width: calc( 100% - .78rem);
+      margin-left: .78rem;
+   }
+   .schedule__break div[class^='icon-'] {
+      margin-left: 0;
+      margin-right: 1rem;
+   }
+   .schedule__place, .schedule__place-2 {
+      .items-center();
+   }
+   .schedule__wrapper .row.mb3,
+   .block-18 article.schedule__break.mb3 {
+      //margin-bottom: 1.5rem !important;
+   }
+   .schedule__wrapper .schedule__clock.row.mb3 {
+      margin-bottom: 3rem !important;
+   }
+   
+   #container_schedule {
+      background-position: 130% 65rem;
+      background-size: 95vw;
+   }
+   .schedule__wrapper.spec:before {
+      top: -30vw;
+      height: 70vw;
+   }
+   .schedule__wrapper.spec2:before {
+      top: -30vw;
+      height: 83vw;
+   }
+   
+}
+@media screen and (max-width: @break_sm) {
+   .schedule__clock .block-6 {
+      margin-bottom: 1.5rem;
+   }
+   .schedule__wrapper .schedule__clock.row.mb3 {
+       margin-bottom: 4rem !important;
+   }
+   .schedule__break strong.text-27,
+   .schedule__event strong.text-27 {
+      margin-right: .4rem;
+      padding-right: .2rem;
+   }
+   .schedule__event .icon-dot:after {
+      height: 3000%;
+   }
+   .block-18 .schedule__event:last-child .icon-dot:after {
+      height: 300%;
+   }
+}
+@media screen and (max-width: @break_xs) {
+   .schedule__event .icon-dot {
+       width: 1.6rem;
+      height: 1.6rem;
+   }
+   .schedule__break div[class^='icon-'] {
+      width: 2.6rem;
+      height: 2.6rem;
+   }
+   .schedule__clock .block-6 {
+      margin-bottom: .7rem;
+   }
+   .schedule__clock .block-18 {
+      margin-left: 4.2rem;
+   }
+   article.schedule__break,
+   .schedule__event {
+      flex-wrap: wrap;
+   }
+   .schedule__break strong.text-27,
+   .schedule__event strong.text-27 {
+      width: 70%;
+   }
+   .schedule__break strong.text-27 {
+      margin-left: .3rem;
+   }
+   .schedule__person,
+   .schedule__event strong.text-25 {
+      width: 100%;
+      margin-top: 1rem;
+      margin-left: 3rem;
+   }
+   .schedule__break .schedule__person {
+      margin-left: 4rem;
+   }
+   
+   .schedule__event .icon-dot:after {
+      height: 4000%;
+   }
+   
+   .schedule__block {
+      padding: 1.8rem 2.6rem;
+   }
+   .icon-clock, .icon-pin, .icon-pin-2 {
+      width: 2.6rem;
+    height: 2.6rem;
+   }
+   .schedule__event {
+       width: calc(100% - 0.45rem);
+       margin-left: 0.45rem;
    }
 }
