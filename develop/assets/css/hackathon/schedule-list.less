@@ -37,9 +37,19 @@
       flex-wrap: nowrap;
    }
    .block-6 {
+      .size(6);
+      .size-xl(6);
+      .size-middle(7);
+      .size-lg(7);
       .size-md(7);
       .size-sm(6.5);
       .size-xs(20);
+      
+      .shift-left(1);
+      .shift-xl-left(1);
+      .shift-middle-left(1);
+      .shift-lg-left(1);
+      .shift-md-left(0);
    }
    .block-18 {
       .size-md(16.5);
@@ -136,8 +146,14 @@
 
    
 }
-@media screen and (max-width: @break_sm) {
-
+@media screen and (max-width: 614px) {
+   .schedule_list__holder {
+      .icon-dot-green,
+      .icon-food-green,
+      .icon-coffee-green {
+         margin-right: 1.5rem;
+      }
+   }
 }
 @media screen and (max-width: 542px) {
    .schedule_list__holder {
@@ -176,7 +192,7 @@
       }
    }
    .block-6 {
-      margin-left: 3.8rem;
+      margin-left: 3.8rem !important;
       margin-bottom: 1.5rem;
    }
    #container_hackathon .block-6 .text-22 {
@@ -194,5 +210,29 @@
          .size-2()
       }
    }
+   .schedule_list__section .schedule__date,
+   .schedule_list__section .schedule__numb {
+      font-size: 2rem;
+   }
+   .schedule__block {
+       padding: 0 0 1rem;
+      margin-bottom: 2.2rem;
+   }
+   .schedule__block:after {
+       .pseudo();
+      height: 1px;
+      width: 1200px;
+      
+      left: 3rem;
+      bottom: 1.7rem;
+      .schedule-dash-hor();
+   }
 }
 
+@media screen and (max-width: @break_xxs) {
+   .schedule_list__section .schedule__date,
+   .schedule_list__section .schedule__numb {
+      font-size: 1.8rem;
+   }
+   
+}
