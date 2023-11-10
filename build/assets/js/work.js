@@ -340,12 +340,14 @@ $(document).ready(function () {
       })
    }
    if ($('#container_hackathon').length > 0) {
-      let $trigger = $('.schedule__trigger'),
-         $ttrigger = $('.schedule_trigger');
-      $trigger.on('click', openList);
+      let $trigger = $('.schedule__trigger');
+      $trigger.on('click', openSchedule);
+      
+      let $subtrigger = $('.schedule_trigger');
+      $subtrigger.on('click', openList);
    }
    
-   function openList() {
+   function openSchedule() {
       let current = $(this).closest('.list_section');
       let answer = current.find('.list'),
           s = 500;
@@ -357,6 +359,20 @@ $(document).ready(function () {
       } else {
          answer.slideUp(s);
          current.removeClass('open')
+      }
+   }
+   function openList() {
+      let current = $(this).closest('.schedule_list__holder.list');
+      let answer = current.find('.schedule__list'),
+          s = 500;
+      
+      if (!current.hasClass('show')) {
+         $('.open').removeClass('show');
+         answer.slideDown(s);
+         current.addClass('show')
+      } else {
+         answer.slideUp(s);
+         current.removeClass('show')
       }
    }
    

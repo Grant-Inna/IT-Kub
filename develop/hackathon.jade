@@ -65,7 +65,7 @@ html
 
          include assets/jade/content/hackathon/__schedule-day
          include assets/jade/content/hackathon/__schedule-triger
-         include assets/jade/content/hackathon/__scedule-big
+
          section( aria-label='Расписание очного этапа' )#schedule.hackathon__schedule
             .wrapper
                h1.caption.center.mb5 Расписание очного этапа
@@ -73,22 +73,19 @@ html
                section( aria-label='День первый, 24 ноября').mb3
                   .schedule_list__section.list_section
                      +trigger( '24', '1')
-                     .congress_list__holder.list
-                        +triggerinn( 'Программирование')
-                        +triggerinn( 'Диджитал (VR/AR&nbsp;технологии)')
-                        +triggerinn( 'Информационная безопасность')
+                     include assets/jade/content/hackathon/__scedule-big
 
                section( aria-label='День второй, 25 ноября').mb3
                   .schedule_list__section.list_section
                      +trigger( '25', '2')
-                     .congress_list__holder.list
+                     .schedule_list__holder.list
                         p разз, два, три
 
 
                section( aria-label='День третий, 26 ноября')
                   .schedule_list__section.list_section
                      +trigger( '26', '3')
-                     .congress_list__holder.list
+                     .schedule_list__holder.list
                         p разз, два, три
 
 
