@@ -1,49 +1,12 @@
 mixin scedule( time, place )
-   //.schedule_table__holder.list
-   //   article.row
-   //      .block-6
-   //      .block-18
-   //         .schedule__event
-   //            .icon-dot-green.empty
-   //            .schedule__tr
-   //               .schedule__td-1
-   //                  h1
-   //                     strong.text-25 Общая
-   //                        br
-   //                        | программа
-   //               .schedule__td-2
-   //                  h1
-   //                     strong.text-25 Программирование
-   //               .schedule__td-3
-   //                  h1
-   //                     strong.text-25 Диджитал
-   //                  .text-22 (VR/AR технологии)
-   //               .schedule__td-4
-   //                  h1
-   //                     strong.text-25 Информационная безопасность
-   //   article.row
-   //      .block-6
-   //         strong.text-27 !{time}
-   //         .text-22 !{place}
-   //      .block-18
-   //         .schedule__event
-   //            .icon-dot-green
-   //            .schedule__about
-   //               h1
-   //                  strong.text-25.mb06 Мероприятие
-   //
-   //   article.row
-   //      .block-6
-   //         strong.text-27 !{time}
-   //         .text-22 !{place}
-   //      .block-18
-   //         .schedule__event
-   //            .icon-dot-green
-   //            .schedule__about
-   //               h1.text-25.mb время
-   //               h2.text-25.mb08 Мероприятие
-   //               .text-20 ult
-   include __schedule-triger
-   .schedule_list__holder.list
-      article
-         +trigger( 'Программирование')
+   article.row
+         .block-6
+            strong.text-27 !{time}
+            .text-22 !{place}
+         .block-18
+            .schedule__event
+               .icon-dot-green
+               .schedule__about
+                  h1.text-25.mb время
+                  h2.text-25.mb08 Мероприятие
+                  .text-20 ult

@@ -63,49 +63,35 @@ html
                +step( '3', 'Очный этап', '24&nbsp;&mdash; 26 ноября 2023', '<div class="text-22 mb1">Свердловская область, г.&nbsp;Верхняя Пышма, Успенский&nbsp;пр., 2Г</span></div><strong class="text-22 mb03">Работа команд над&nbsp;кейсами по&nbsp;расширенному заданию, полученному в&nbsp;первый день мероприятия</strong><strong class="text-22">Демонстрация итогов работы путем публичной защиты презентации</strong>' )
 
 
-         //include assets/jade/content/hackathon/__schedule
-         //include assets/jade/content/hackathon/__schedule-one
-         //include assets/jade/content/hackathon/__schedule-two
-         //section( aria-label='Расписание подготовительного этапа' )#schedule.hackathon__schedule
-         //   .wrapper
-         //      h1.caption.center.mb2 Расписание подготовительного этапа
-         //      //h2.text-25.mb5.center Все встречи пройдут в официальной группе Хакатона
-         //      section.hackathon_schedule__holder
-         //         .hackathon_schedule__title
-         //            .hackathon_schedule__icon.schedule_icon-1
-         //            h1.hackathon_schedule__text Программирование
-         //         +schedule-two( '26.10.2023<br>13:00 мск ', 'Евгений Кравченко', 'Java/Kotlin Backend Developer, Сбер', 'Максим Барсукевич', 'MS&nbsp;SQL Developer, Сбер ', 'Разработка приложения: технические требования и&nbsp;особенности')
-         //         +schedule-one( '02.11.2023<br>13:00 мск', 'Ирина Феофилова', 'руководитель индустриального центра бизнес&ndash;единицы &laquo;Кейтеринбург&raquo;', 'Corporate Dinner Dash: особенности организации корпоративного питания ')
-         //
-         //      section.hackathon_schedule__holder
-         //         .hackathon_schedule__title
-         //            .hackathon_schedule__icon.schedule_icon-2
-         //            h1.hackathon_schedule__text Диджитал (VR/AR технологий)
-         //         +schedule-one( '24.10.2023<br>14:00 мск', 'Пикулев Александр Евгеньевич', 'Руководитель образовательного направления Varwin Education', 'Классические приемы визуального программирования на&nbsp;Blockly')
-         //         +schedule-one( '30.10.2023<br>11:00 мск', 'Пикулев Александр Евгеньевич', 'Руководитель образовательного направления Varwin Education', 'QA-сессия с&nbsp; бизнес&ndash;заказчиком (ЦОПП Марий&nbsp;Эл)')
-         //         +schedule-one( '07.11.2023<br>15:30 мск', 'Пикулев Александр Евгеньевич', 'Руководитель образовательного направления Varwin Education', 'Консультационный час для&nbsp;участников по&nbsp;работе с&nbsp;Varwin')
-         //
-         //      section.hackathon_schedule__holder
-         //         .hackathon_schedule__title
-         //            .hackathon_schedule__icon.schedule_icon-3
-         //            h1.hackathon_schedule__text Информационная безопасность
-         //         +schedule( '24.10.2023', 'Алексей Смирнов', 'Старший системный инженер', 'Общие принципы организации сети', 'Сетевая безопасность: основные угрозы, уязвимости и&nbsp;способы защиты')
-         //         +schedule( '25.10.2023', 'Екатерина Вавилова', 'Ведущий инженер', 'Обзор системы предотвращения утечек данных с&nbsp;рабочих станций Кибер&nbsp;Протего', 'Механизмы блокировок, инструменты мониторинга и&nbsp;анализа событий')
-         //         +schedule( '26.10.2023', 'Федор Воинов', 'Менеджер по&nbsp;информационной безопасности', 'Обзор основных нормативно&ndash;правовых актов по&nbsp;информационной безопасности', 'Локально нормативные акты организации для реализации корпоративной системы менеджмента информационной безопасности')
-         //         +schedule( '01.11.2023', 'Михаил Долгополов', 'Инженер по&nbsp;тестированию', 'Основы Линукс', 'Основные механизы организации безопасного доступа к&nbsp;корпоративным ресурсам')
-         //         +schedule( '02.11.2023', 'Владимир Болотских', 'Ведущий инженер по&nbsp;тестированию', 'Обзор системы резервного копирования данных Кибер&nbsp;Бэкап', 'Механизмы создания резерных копий и&nbsp;восстановления данных')
-         //
-
          include assets/jade/content/hackathon/__schedule-day
-         section( aria-label='Расписание подготовительного этапа' )#schedule.hackathon__schedule
+         include assets/jade/content/hackathon/__schedule-triger
+         include assets/jade/content/hackathon/__scedule-big
+         section( aria-label='Расписание очного этапа' )#schedule.hackathon__schedule
             .wrapper
-               h1.caption.center.mb2 Расписание очного этапа
+               h1.caption.center.mb5 Расписание очного этапа
 
-               section( aria-label='День первый, 24 ноября').mb3.mt5
+               section( aria-label='День первый, 24 ноября').mb3
                   .schedule_list__section.list_section
                      +trigger( '24', '1')
-                     include assets/jade/content/hackathon/__schedule-triger
-                     +triggerinn( 'Программирование')
+                     .congress_list__holder.list
+                        +triggerinn( 'Программирование')
+                        +triggerinn( 'Диджитал (VR/AR&nbsp;технологии)')
+                        +triggerinn( 'Информационная безопасность')
+
+               section( aria-label='День второй, 25 ноября').mb3
+                  .schedule_list__section.list_section
+                     +trigger( '25', '2')
+                     .congress_list__holder.list
+                        p разз, два, три
+
+
+               section( aria-label='День третий, 26 ноября')
+                  .schedule_list__section.list_section
+                     +trigger( '26', '3')
+                     .congress_list__holder.list
+                        p разз, два, три
+
+
 
 
 

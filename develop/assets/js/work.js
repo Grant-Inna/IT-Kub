@@ -340,7 +340,8 @@ $(document).ready(function () {
       })
    }
    if ($('#container_hackathon').length > 0) {
-      let $trigger = $('.schedule__trigger');
+      let $trigger = $('.schedule__trigger'),
+         $ttrigger = $('.schedule_trigger');
       $trigger.on('click', openList);
    }
    
