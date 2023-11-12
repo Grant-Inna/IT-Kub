@@ -13,7 +13,8 @@
    .tr();
 }
 #container_hackathon .schedule_list__holder.show {
-   .schedule__name {
+   .schedule__name,
+   h2.schedule__sub-name {
       color: @color-green-new;
       .tr();
    }
@@ -24,9 +25,9 @@
    }
 }
 
-
 .schedule_list__holder {
-   margin-bottom: 6rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
    
    .from( 1480px, {
       display: none !important;
@@ -133,6 +134,22 @@
    }
 }
 
+.schedule_trigger .schedule__day h2.schedule__sub-name {
+   text-transform: uppercase;
+   .montserrat-regular();
+
+   font-size: 1.4rem;
+   line-height: 1.4rem;
+   .middle-block({
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+   });
+   .sm-block({
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+   });
+   .tr();
+}
 
 
 
