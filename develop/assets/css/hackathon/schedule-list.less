@@ -4,8 +4,8 @@
    
    div { .flex(); .items-center();}
    
-   //margin-bottom: 3rem;
-   padding-bottom: 2rem;
+   //margin-bottom: 2rem;
+   //padding-bottom: 2rem;
    cursor: pointer;
    border-bottom: 2px solid @color-gray;
 }
@@ -26,14 +26,15 @@
 }
 
 .schedule_list__holder {
-   margin-top: 2rem;
-   margin-bottom: 2rem;
+   display: none;
+   //margin-bottom: 1rem;
    
    .from( 1480px, {
       display: none !important;
    });
 }
 .schedule__list {
+   display: none;
    .row {
       flex-wrap: nowrap;
    }
@@ -63,6 +64,7 @@
 }
 
 .schedule_trigger.schedule__trigger-noborder {
+   height: 5rem;
    .justify-start();
    h1.schedule__name {
       text-transform: uppercase;
@@ -99,7 +101,7 @@
 }
 
 #container_hackathon .schedule__list {
-   margin-top: 1.5rem;
+   margin-top: 2.5rem;
    .icon-dot-green:first-of-type:before {
       display: none;
    }
