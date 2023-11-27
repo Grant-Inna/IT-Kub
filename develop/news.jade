@@ -21,18 +21,18 @@ html
             .wrapper
                .row
                   .main_news__image
-                     img( src='./assets/data/images/news/common.png' )
-                  main#news_25-10-2023_1.main_news__holder
-                     .main_news__date.text-25 25
+                     img( src='./assets/data/images/news/24.11.2023/main.jpg' )
+                  main#news_24-11-2023_1.main_news__holder
+                     .main_news__date.text-25 24
                         span.first &nbsp;/&nbsp;
                         span.second .
-                        | 10
+                        | 11
                         span.first &nbsp;/&nbsp;
                         span.second .
                         | 2023
                      .main_news__text.text-22
-                        p На шестом онлайн&ndash;семинаре &laquo;IT в&nbsp;кубе&raquo; обсудили сетевое взаимодействие в&nbsp;сфере образования и&nbsp;предстоящие мероприятия
-                     a( href='./news/news-one.html#news_25-10-2023_1' ).news__more.hover.inline Подробнее
+                        p Дан старт очному этапу Всероссийского хакатона по программированию
+                     a( href='./news/news-one.html#news_24-11-2023_1' ).news__more.hover.inline Подробнее
 
          section( aria-label='Новости' ).news_list__container.mt4
             .wrapper
@@ -40,6 +40,7 @@ html
                   .news__block.news_block-1#active
                      include assets/jade/content/__news-one
                      .pagination__block.pagination_show#block_1
+                        +news( '25', '10', '2023', 'На шестом онлайн&ndash;семинаре &laquo;IT в&nbsp;кубе&raquo; обсудили сетевое взаимодействие в&nbsp;сфере образования и&nbsp;предстоящие мероприятия', 'news_25-10-2023_1' )
                         +news( '28', '09', '2023', 'На пятом онлайн&ndash;семинаре &laquo;IT в&nbsp;кубе&raquo; были представлены образовательные решения для&nbsp;преподавателей и&nbsp;обучающихся', 'news_28-09-2023_1' )
                         +news( '20', '09', '2023', 'ФГАНУ &laquo;ФИЦТО&raquo; провело стажировку финалистов городского проекта &laquo;Будущее здесь&nbsp;&mdash; 2023&raquo; из&nbsp;Сургута', 'news_20-09-2023_1' )
                         +news( '15', '09', '2023', 'Стартовал Всероссийский хакатон по&nbsp;программированию &laquo;Обучаюсь. Проектирую. Программирую. Будущее&raquo;', 'news_15-09-2023_1' )
