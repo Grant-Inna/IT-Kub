@@ -223,6 +223,29 @@ $(document).ready(function () {
       })
    }
    
+   
+   if ($('#container_hackathon').length > 0) {
+      $('.hackathon_gallery__holder').slick({
+         slidesToShow: 2,
+         slidesToScroll: 2,
+         dots: true,
+         arrows: false,
+         loop: true,
+         infinite: true,
+         centerMode: true,
+         centerPadding: '60px',
+         responsive: [
+            {
+               breakpoint: 480,
+               settings: {
+                  slidesToScroll: 1,
+                  slidesToShow: 1
+               }
+            }
+         ]
+      })
+   }
+   
    /* новости */
    let image;
    

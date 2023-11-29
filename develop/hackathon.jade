@@ -33,6 +33,7 @@ html
                         +item( 'Направления', 'direction' )
                         +item( 'Этапы проведения', 'step' )
                         +item( 'Расписание', 'schedule' )
+                        +item( 'Победители', 'winners' )
 
 
          include assets/jade/content/hackathon/__participation
@@ -86,6 +87,45 @@ html
                      +trigger( '26', '3')
                      include assets/jade/content/hackathon/__scedule-big-3
 
+
+         include assets/jade/content/hackathon/__winners
+         section( aria-label='Победители' )#winners.hackathon__winners.mb8
+            .wrapper
+               h1.caption.center.mb5 Победители
+               +winners( '1', 'Программирование', 'Васяяяян', 'Живёт где-то наверно', 'Игоррр', 'Где-то на земле', 'Какие-то гении', 'Лаборатория по выращиванию гениев' )
+               +winners( '2', 'Диджитал (VR/AR технологии)', 'Олежка Шэпс. Он этого достоин!', 'Такой дьявол точно живёт в замке', 'Мать МОЯ, скоро Новый год же... Госпади', 'Где-то на земле', 'Какие-то гении', 'Лаборатория по выращиванию гениев'  )
+               +winners( '3', 'Информационная безопасность', 'Васяяяян', 'В тёмном-тёмном городе, на тёмной-тёмной улице, в тёмном-тёмном доме', 'Игоррр', 'Где-то на земле', 'Какие-то признанные гении по информационной безопасности всякого, очень ценные специалисы, без них никуда', 'Лаборатория по выращиванию гениев'  )
+
+
+
+
+
+
+
+
+
+         section( aria-label='Фотогалерея' )#gallery.hackathon__gallery.mb9
+            .wrapper
+               h1.caption.center.mb5 Фотогалерея
+
+            .hackathon_gallery__holder.mt3
+               .gallery_big__photo
+                  img( src='./assets/data/congress/after/photo/gallery/1.jpg')
+               .gallery_big__photo
+                  img( src='./assets/data/congress/after/photo/gallery/2.jpg')
+               .gallery_big__photo
+                  img( src='./assets/data/congress/after/photo/gallery/3.jpg')
+
+
+         section( aria-label='Видео итогов хакатона' )#result.hackathon__results.mb9
+            .wrapper
+               h1.caption.center.mb5 Итоги Хакатона
+
+               .video_relative
+                  .video_ratio
+                  .iframe_holder
+                     iframe(src='https://vk.com/video_ext.php?oid=-193270730&id=456239062&hash=a2f2e19fe1da2a74' width='100%' height='100%' frameborder='0')
+                        p Твой браузер устарел для отображения элемента iframe
 
 
 
