@@ -46,63 +46,28 @@ html
                   include assets/jade/content/teacher_competition/__stage-one
                   include assets/jade/content/teacher_competition/__stage
                   +stage-one( '1', 'Заочный этап', 'июнь-июль 2023', 'Прием заявок на&nbsp;конкурс', 'до 17&nbsp;июля 2023&nbsp;года (включительно)', 'Работа конкурсной комиссии', '17&nbsp;июля 2023&nbsp;года&nbsp;&mdash; 07&nbsp;августа 2023&nbsp;года', 'Объявление полуфиналистов', '10&nbsp;августа 2023&nbsp;года' )
-                  +stage( '2', 'Очный этап', 'IV&nbsp;квартал 2023', 'Полуфинал', 'даты и место уточняются' )
-                  +stage( '3', 'Заключительный этап', 'IV&nbsp;квартал 2023', 'Финал<br>Награждения победителей', 'даты и&nbsp;место уточняются' )
+                  .stage-arrow
+                  +stage( '3', 'Заключительный этап', '11&nbsp;&ndash; 12 декабря 2023&nbsp;года', 'Инновационно&nbsp;образовательный комплекс &laquo;Техноград&raquo;', 'Публичная защита собственной методической разработки педагогов Центров &laquo;IT-куб&raquo;' )
 
 
 
 
-
-         section( aria-label='Полуфиналисты' )#semifinalists.semifinalists__container.mt8
+         include assets/jade/content/teacher_competition/__winners
+         section( aria-label='Победители конкурса' )#winners.winners__container.mt8
             .wrapper
-               h1.caption.center.mb5 Полуфиналисты конкурса
+               h1.caption.mb4.center
+                  span Победители конкурса
+               section
+                  +winners( '1')
+                  +winners( '2')
+                  +winners( '3')
+                  +winners( '4')
+                  +winners( '5')
 
-               article.semifinalists__holder.mt4.semifinalists-1
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
-                  h1.mt07 Программирование
-                  .row
-                     include assets/jade/content/teacher_competition/__semifinalists
-                     +semifinalists( 'Лапаев Андрей Сергеевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Княгинино', 'lapaev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239041&hash=3928020f79a45862', 'https://vk.com/video-193270730_456239041?list=ln-qM79z6owHAfgm3Zgw0' )
-                     +semifinalists( 'Макаренко Мария Дмитриевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Владикавказ', 'makarenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239042&hash=07bb8b6189d7def0', 'https://vk.com/video-193270730_456239042?list=ln-JpLB5Hkeq07Ob5P6bN' )
-                     +semifinalists( 'Ковалев Владислав Алексеевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Смоленск', 'kovalev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239043&hash=f3acbc5d57786ced', 'https://vk.com/video-193270730_456239043?list=ln-tniBz0wnycf2f5WQPK' )
-                     +semifinalists( 'Логинова Юлия Вячеславовна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Ижевск<br><br>Информация обновлена в соответствии с пунктом 7.2.5. Положения о конкурсе', 'loginova', 'https://vk.com/video_ext.php?oid=-193270730&id=456239063&hash=ee4fd49b19b1455f', 'https://vk.com/video-193270730_456239044?list=ln-Znv5qHe7P46ZlJXHmb' )
 
-               article.semifinalists__holder.mt4.semifinalists-2
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
-                  h1.mt07 Разработка приложений
-                  .row
-                     +semifinalists( 'Ильина Ульяна Вячеславовна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Екатеринбург', 'ilyina', 'https://vk.com/video_ext.php?oid=-193270730&id=456239053&hash=bd0da4f6574769f2', 'https://vk.com/video-193270730_456239053?list=ln-odY2ooImkB68rI1FhH' )
-                     +semifinalists( 'Анисимов Алексей Евгеньевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; Школы &#8470;619 г.&nbsp;Санкт-Петербург', 'anisimov', 'https://vk.com/video_ext.php?oid=-193270730&id=456239054&hash=0840d904fbc36409', 'https://vk.com/video-193270730_456239054?list=ln-g5VY6JXbaW4RflF3ww' )
-                     +semifinalists( 'Лобанова Ольга Викторовна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новосибирск<br><br>Информация обновлена в соответствии с пунктом 7.2.5. Положения о конкурсе', 'lobanova', 'https://vk.com/video_ext.php?oid=-193270730&id=456239056&hash=fda655456c3f84a3', 'https://vk.com/video-193270730_456239056?list=ln-ztHbphJAVfERGvjBep' )
-                     +semifinalists( 'Забеляев Роман Андреевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Барнаул', 'zabelaev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239055&hash=45a3aa93a65a856b', 'https://vk.com/video-193270730_456239055?list=ln-rQgWn16r2A9jQZfXRM' )
-
-               article.semifinalists__holder.mt4.semifinalists-3
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
-                  h1.mt07 Системное администрирование
-                  .row
-                     +semifinalists( 'Муравцев Денис Сергеевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Семенов', 'muravcev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239057&hash=2ad31d38fea640de', 'https://vk.com/video-193270730_456239057?list=ln-ABM8D0zdaw8trXrwlU' )
-                     +semifinalists( 'Мальцев Алексей Александрович', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Сатка', 'malcev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239058&hash=fc675cb916a41e97', 'https://vk.com/video-193270730_456239058?list=ln-82jR0qNpreJd1wx6zz' )
-                     +semifinalists( 'Дьячковский Николай Михайлович', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Якутск', 'dyachkovskiy', 'https://vk.com/video_ext.php?oid=-193270730&id=456239059&hash=e2771430c2b1a280', 'https://vk.com/video-193270730_456239059?list=ln-ZdYnOh8pFJzN64ELK3' )
-                     +semifinalists( 'Канова Мария Идрисовна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Южноуральск', 'kanova', 'https://vk.com/video_ext.php?oid=-193270730&id=456239060&hash=0433dd6e934d8d80', 'https://vk.com/video-193270730_456239060?list=ln-IdL9by5cZCNVunkGom' )
-
-               article.semifinalists__holder.mt4.semifinalists-4
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
-                  h1.mt07 Кибергигиена и&nbsp;работа <br>с&nbsp;большими данными
-                  .row
-                     +semifinalists( 'Диденко Владимир Андреевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Рязань', 'didenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239045&hash=0422fb01ecd865f7', 'https://vk.com/video-193270730_456239045?list=ln-LoJ1tj9TLFU37Px8Ez' )
-                     +semifinalists( 'Шмелев Алексей Андреевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Екатеринбург', 'shmelev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239046&hash=52e041c2ea0c8def', 'https://vk.com/video-193270730_456239046?list=ln-QmXuKJaJv64pOkZ5vq' )
-                     +semifinalists( 'Кличенко Анна Андреевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Иркутск', 'klichenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239048&hash=1efdbf4a604a2e30', 'https://vk.com/video-193270730_456239048?list=ln-QzMVBYZs8YaWCVoZ32' )
-                     +semifinalists( 'Гаан Тамара Валерьевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новосибирск', 'gaan', 'https://vk.com/video_ext.php?oid=-193270730&id=456239047&hash=df542def2425c85c', 'https://vk.com/video-193270730_456239047?list=ln-zMzZd3k6W3o2TJ7WqK' )
-
-               article.semifinalists__holder.mt4.semifinalists-5
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
-                  h1.mt07 Алгоритмика и&nbsp;логика
-                  .row
-                     +semifinalists( 'Раздобреева Мария Николаевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Миасс', 'razdobreeva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239049&hash=b46b70ca90019502', 'https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt' )
-                     +semifinalists( 'Бондарева Елена Николаевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Надым', 'bondareva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239050&hash=935dcfe59cc0bea9', 'https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz' )
-                     +semifinalists( 'Давиденко Алла Владимировна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новокузнецк', 'davidenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239051&hash=3991919358221e03', 'https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB' )
-                     +semifinalists( 'Мошко Станислав Владимирович', 'Центр цифрового образования детей &laquo;IT-куб&raquo; Школа &#8470;619 г.&nbsp;Санкт-Петербург', 'moshko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239052&hash=6e5221e74b023ebf', 'https://vk.com/video-193270730_456239052?list=ln-mC11wKdpE3qVNRCzE6' )
-                     
+         section( aria-label='Архив выступлений победителей конкурса' )#arcive.arcive__container.mt9
+            .wrapper
+               h1.caption.mb4.center Архив выступлений
 
          include assets/jade/content/__expert-one
          section( aria-label='Жюри конкурса' ).expert__container
@@ -123,8 +88,8 @@ html
                   +expert( 'savchenko_vv', 'Савченко Виталий Владимирович', 'Проректор по&nbsp;цифровому развитию и&nbsp;информационным технологиям Государственного университета просвещения', 'Эксперт' )
                   +expert( 'nemikina', 'Немыкина Юлия Сергеевна', 'Специалист отдела образования ООО &laquo;РЭД СОФТ&raquo;', 'Эксперт' )
                   //+expert( 'bokov_dy', 'Боков Денис Юрьевич', 'Советник ФГАНУ &laquo;Федеральный институт цифровой трансформации в&nbsp;сфере образования&raquo;', 'Эксперт' )
-                  +expert( 'korol_aa', 'Король Анна Александровна', 'Руководитель проектов Центра программной и&nbsp;проектной деятельности ФГАНУ &laquo;Федеральный институт цифровой трансформации в&nbsp;сфере образования&raquo;', 'Эксперт' )
-                  +expert( 'mylko_oa', 'Мулько Олег Алексеевич', 'Ведущий программист Центра программной и&nbsp;проектной деятельности ФГАНУ &laquo;Федеральный институт цифровой трансформации в&nbsp;сфере образования&raquo;', 'Эксперт' )
+                  +expert( 'korol_aa', 'Король Анна Александровна', 'Руководитель проектов Центра реализации проектов и&nbsp;научной деятельности ФГАНУ &laquo;Федеральный институт цифровой трансформации в&nbsp;сфере образования&raquo;', 'Эксперт' )
+                  +expert( 'mylko_oa', 'Мулько Олег Алексеевич', 'Ведущий программист Центра проектирования и&nbsp;разработки информационных ресурсов ФГАНУ &laquo;Федеральный институт цифровой трансформации в&nbsp;сфере образования&raquo; ', 'Эксперт' )
 
          include assets/jade/footer/footer
 

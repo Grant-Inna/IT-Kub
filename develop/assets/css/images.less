@@ -224,6 +224,16 @@
     background-position: center;
    background-size: contain;
 }
+.competition-stage-arrow-straight-long() {
+   .svg-b( 'teacher_competition', 'icons', 'icon-stage-straight-long' );
+    background-position: center;
+   background-size: contain;
+}
+.competition-stage-arrow-straight() {
+   .svg-b( 'teacher_competition', 'icons', 'icon-stage-straight' );
+    background-position: center;
+   background-size: contain;
+}
 
 .competition-stage-arrow-adapt() {
    .svg-b( 'teacher_competition', 'icons', 'icon-stage-arrow-adapt' );
@@ -275,9 +285,9 @@
 }
 
 .application(@name) {
-     background-image: url("../data/teacher_competition/icons/application-@{name}.svg");
+   background-image: url("../data/teacher_competition/icons/application-@{name}.svg");
    background-repeat: no-repeat;
-    background-position: center;
+   background-position: center;
    background-size: contain;
 }
 
@@ -455,4 +465,13 @@
 }
 .hackathon-noyt() {
    .hackathon('application.svg');
+}
+
+
+
+.teacher-winner-image( @nmbr ) {
+   background-image: url("../data/teacher_competition/@{nmbr}.png");
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: cover;
 }
