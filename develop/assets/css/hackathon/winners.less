@@ -1,0 +1,80 @@
+.hackathon__winners {
+
+}
+.hackathon_winners__holder {
+
+}
+.hackathon_winners__caption {
+   .flex();
+   .items-center();
+}
+.hackathon_winners__caption_icon {
+   width: 6.5rem;
+   height: 6.5rem;
+   
+   margin-right: 2rem;
+}
+.hackathon_winners__caption h1.title {
+   text-align: left;
+   text-transform: uppercase;
+   color: #42C66E;
+}
+
+
+.hw__caption_icon-1 { .hackathon-winner-image( '1')}
+.hw__caption_icon-2 { .hackathon-winner-image( '2')}
+.hw__caption_icon-3 { .hackathon-winner-image( '3')}
+
+
+
+.hackathon_winners__list .block_8 {
+   .col();
+   .size(8);
+   .size-xl(8);
+   .size-middle(12);
+   .size-lg(12);
+   .size-md(24);
+   .size-sm(24);
+}
+section .hackathon_winner__name.text-22 {
+   .montserrat-bold();
+   margin-top: 2rem;
+   margin-bottom: .5rem;
+}
+.hackathon_winner__img {
+   position: relative;
+   z-index: 100;
+   
+   border: 6px solid transparent;
+   border-radius: 2px;
+   line-height: 0;
+}
+.hackathon_winners__holder article.block_8:first-of-type .hackathon_winner__img {
+   border-color: @color-green-new;
+}
+.hackathon_winner__img img {
+   position: relative;
+   z-index: 90;
+}
+.hackathon_winner__place {
+   position: absolute;
+   z-index: 500;
+   
+   width: 5rem;
+   height: 5rem;
+   top: -2.5rem;
+   right: -2.3rem;
+}
+.hackathon_winners__holder article.block_8:first-of-type .hackathon_winner__place {
+   width: 6.5rem;
+   height: 7rem;
+   top: -2.7rem;
+   right: -3rem;
+}
+
+
+
+
+.hw__place-1 { .hackathon-winner-place( '1')}
+.hw__place-2 { .hackathon-winner-place( '2')}
+.hw__place-3 { .hackathon-winner-place( '3')}

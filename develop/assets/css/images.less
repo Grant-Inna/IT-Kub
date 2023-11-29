@@ -467,7 +467,18 @@
    .hackathon('application.svg');
 }
 
-
+.hackathon-winner-image( @nmbr ) {
+   background-image: url("../data/hackathon/winners/caption-@{nmbr}.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+.hackathon-winner-place( @nmbr ) {
+   background-image: url("../data/hackathon/winners/@{nmbr}.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
 
 .teacher-winner-image( @nmbr ) {
    background-image: url("../data/teacher_competition/@{nmbr}.png");
