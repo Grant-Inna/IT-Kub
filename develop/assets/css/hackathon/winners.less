@@ -7,12 +7,22 @@
 .hackathon_winners__caption {
    .flex();
    .items-center();
+   
+   .xs-block({
+      flex-wrap: wrap;
+   })
 }
 .hackathon_winners__caption_icon {
    width: 6.5rem;
    height: 6.5rem;
    
    margin-right: 2rem;
+   .xs-block({
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 2rem;
+      background-position: left;
+   })
 }
 .hackathon_winners__caption h1.title {
    text-align: left;
@@ -33,14 +43,40 @@
    .size-xl(8);
    .size-middle(12);
    .size-lg(12);
-   .size-md(24);
+   .size-md(20);
    .size-sm(24);
+   
+   .shift-md-left(2);
+   .shift-sm-left(0);
+}
+@media screen and (max-width: @break_middle) {
+   .hackathon_winners__list .block_8 {
+      margin-top: 1rem;
+   }
+   .hackathon_winners__list .block_8:last-of-type {
+      margin-top: 3rem;
+   }
+}
+@media screen and (max-width: @break_md) {
+   .hackathon_winners__list .block_8:nth-of-type(2) {
+      margin-top: 3rem;
+   }
+   .hackathon_winners__list .block_8:last-of-type {
+      margin-bottom: 2rem;
+   }
 }
 section .hackathon_winner__name.text-22 {
    .montserrat-bold();
-   margin-top: 2rem;
+   margin-top: 1.5rem;
    margin-bottom: .5rem;
+   
+   margin-left: 8px;
 }
+.hackathon_winner__location {
+   margin-left: 8px;
+}
+
+
 .hackathon_winner__img {
    position: relative;
    z-index: 100;
@@ -78,3 +114,16 @@ section .hackathon_winner__name.text-22 {
 .hw__place-1 { .hackathon-winner-place( '1')}
 .hw__place-2 { .hackathon-winner-place( '2')}
 .hw__place-3 { .hackathon-winner-place( '3')}
+
+
+.slick-dots li button:before {
+   width: 40px;
+   height: 40px;
+   font-size: 40px;
+   
+   color: @color-green-new;
+}
+.slick-dots li.slick-active button:before {
+   color: @color-green-new;
+   opacity: 1;
+}
