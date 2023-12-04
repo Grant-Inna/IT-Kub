@@ -267,7 +267,7 @@ $(document).ready(function () {
       current.addClass('active_news').show();
       $('.news_one__date').text(date);
       
-      $('body, html').scrollTop(0);
+      $('body, html').scrollTop($('.news__container').position().top);
    }
    
    
