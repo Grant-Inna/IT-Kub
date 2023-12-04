@@ -229,6 +229,8 @@ $(document).ready(function () {
          slidesToShow: 2,
          slidesToScroll: 2,
          dots: true,
+         autoplay: true,
+         autoplaySpeed: 3000,
          arrows: false,
          loop: true,
          infinite: true,
