@@ -261,6 +261,8 @@ $(document).ready(function () {
       let date = day + ' / ' + month + ' / ' + year;
       
       showHashNews($news, date, current_issue);
+      
+      console.log($news)
    }
    function showHashNews( current, date, current_issue ) {
       $('.news_one__article').not(current).removeClass('active_news').hide();
