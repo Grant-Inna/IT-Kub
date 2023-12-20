@@ -72,7 +72,7 @@ let gridOptions = {
 
 function html(done){
    return gulp.src( base + '*.jade' )
-   .pipe(jade())
+   .pipe(jade({pretty: true}))
    .pipe(gulp.dest( prod ))
    .pipe(gulpif(isSync, browserSync.stream()));
    done();

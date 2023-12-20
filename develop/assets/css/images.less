@@ -481,8 +481,36 @@
 }
 
 .teacher-winner-image( @nmbr ) {
-   background-image: url("../data/teacher_competition/@{nmbr}.png");
+   background-image: url("../data/teacher_competition/winners/@{nmbr}.svg");
    background-repeat: no-repeat;
    background-position: bottom;
-   background-size: cover;
+   background-size: contain;
+   .md-block({
+      background-position: bottom right;
+   })
+}
+.teacher-winner-image-p( @nmbr ) {
+   background-image: url("../data/teacher_competition/winners/people/@{nmbr}.jpg");
+   background-repeat: no-repeat;
+   background-position: top;
+   background-size: contain;
+}
+
+.teacher-winner-archive() {
+   background-image: url("../data/teacher_competition/winners/archive_simple.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+.teacher-winner-archive-left() {
+   background-image: url("../data/teacher_competition/winners/archive_left.svg");
+   background-repeat: no-repeat;
+   background-position: top left;
+   background-size: contain;
+}
+.teacher-winner-archive-right() {
+   background-image: url("../data/teacher_competition/winners/archive_right.svg");
+   background-repeat: no-repeat;
+   background-position: top right;
+   background-size: contain;
 }

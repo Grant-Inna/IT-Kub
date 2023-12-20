@@ -64,30 +64,6 @@ html
                +step( '3', 'Очный этап', '24&nbsp;&mdash; 26 ноября 2023', '<div class="text-22 mb1">Свердловская область, г.&nbsp;Верхняя Пышма, Успенский&nbsp;пр., 2Г</span></div><strong class="text-22 mb03">Работа команд над&nbsp;кейсами по&nbsp;расширенному заданию, полученному в&nbsp;первый день мероприятия</strong><strong class="text-22">Демонстрация итогов работы путем публичной защиты презентации</strong>' )
 
 
-         include assets/jade/content/hackathon/__schedule-day
-         include assets/jade/content/hackathon/__schedule-triger
-
-         section( aria-label='Расписание очного этапа' )#schedule.hackathon__schedule
-            .wrapper
-               h1.caption.center.mb5 Расписание очного этапа
-
-               section( aria-label='День первый, 24 ноября').mb3
-                  .schedule_list__section.list_section
-                     +trigger( '24', '1')
-                     include assets/jade/content/hackathon/__scedule-big
-
-               section( aria-label='День второй, 25 ноября').mb3
-                  .schedule_list__section.list_section
-                     +trigger( '25', '2')
-                     include assets/jade/content/hackathon/__scedule-big-2
-
-
-               section( aria-label='День третий, 26 ноября')
-                  .schedule_list__section.list_section
-                     +trigger( '26', '3')
-                     include assets/jade/content/hackathon/__scedule-big-3
-
-
          include assets/jade/content/hackathon/__winners
          section( aria-label='Победители' )#winners.hackathon__winners.mb8
             .wrapper
@@ -122,22 +98,7 @@ html
                .gallery_big__photo
                   img( src='./assets/data/hackathon/winners/winners/6.jpg')
 
-
-         section( aria-label='Видео итогов хакатона' )#result.hackathon__results.mb9
-            .wrapper
-               h1.caption.center.mb5 Итоги Хакатона
-
-               .video_relative
-                  .video_ratio
-                  .iframe_holder
-                     iframe(src='https://vk.com/video_ext.php?oid=-193270730&id=456239062&hash=a2f2e19fe1da2a74' width='100%' height='100%' frameborder='0')
-                        p Твой браузер устарел для отображения элемента iframe
-
-
-
-
          include assets/jade/footer/footer
-
       include assets/jade/static/script
 
 

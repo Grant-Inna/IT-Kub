@@ -389,12 +389,12 @@ $(document).ready(function () {
       }
    }
    function openList() {
-      let current = $(this).closest('.schedule_list__holder.list');
-      let answer = current.find('.schedule__list'),
+      let current = $(this).closest('.list');
+      let answer = current.find('.list__holder'),
           s = 500;
       
       if (!current.hasClass('show')) {
-         $('.open').removeClass('show');
+         $('.list').removeClass('show');
          answer.slideDown(s);
          current.addClass('show')
       } else {
