@@ -11,7 +11,7 @@
 .number__diagram .diagram__holder {
    position: absolute;
    z-index: 200;
-   bottom: 0;
+   bottom: -5rem;
    left: 0;
    .flex();
    .justify-end();
@@ -25,6 +25,7 @@
    });
    .md-block({
       height: 140%;
+      bottom: -1rem;
    })
 }
 .diagram__element {
@@ -33,37 +34,36 @@
    .items-center();
    .justify-end();
    height: 100%;
-   width: 8.7rem;
+   width: 8.5rem;
    
    flex-shrink: 0;
    
    margin-bottom: -3rem;
    
    margin-left: 3rem;
-   .xl-block({
-      width: 8.3rem;
+   .xxl-block({
+      width: 6.7rem;
       margin-left: 2.5rem;
    });
    .lg-block({
-      width: 7.7rem;
+      width: 6rem;
       margin-left: 2rem;
    });
    .md-block({
-      width: 10rem;
+      width: 8rem;
    });
    .smmd-block({
-      width: 9rem;
+      width: 7rem;
    });
    .sm-block({
-      width: 9.2rem;
       margin-left: 1rem;
    });
    .xs-block({
       max-width: 8rem;
-      width: 24%
+      width: 17%
    });
    .xxs-block({
-      width: 23%
+      //width: 23%
    })
 }
 
@@ -78,4 +78,39 @@
 }
 .diagram_element-red {
    margin-bottom: -6.2rem;
+   width: 9.1rem;
+}
+.diagram_element-orange {
+   margin-bottom: -6.6rem;
+   width: 9.3rem;
+}
+.diagram_element-long {
+   width: 8.7rem;
+   .xxl-block({
+      width: 7.5rem;
+   });
+   .lg-block({
+      width: 6.8rem;
+   });
+   .sm-block({
+      width: 7.2rem;
+   });
+   .xs-block({
+      width: 19%
+   });
+}
+.diagram_element-short {
+   width: 8.3rem;
+    .xxl-block({
+      width: 6rem;
+   });
+   .lg-block({
+      width: 5.4rem;
+   });
+   .sm-block({
+      width: 6.8rem;
+   });
+   .xs-block({
+      width: 15%
+   });
 }
