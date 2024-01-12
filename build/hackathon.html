@@ -349,7 +349,7 @@
               </section>
             </div>
             <div class="footer__bottom">
-              <article class="footer__block">&copy; 2023 Федеральный институт цифровой трансформации в&nbsp;сфере образования</article>
+              <article class="footer__block">&copy;&nbsp;<span class="footer__year"></span>  Федеральный институт цифровой трансформации в&nbsp;сфере образования</article>
               <div id="totop" class="footer__totop">
                 <div class="icon-arrow-top"></div>
               </div>
@@ -361,5 +361,6 @@
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/work.js"></script>
+    <script>$('article.footer__block span.footer__year').text(new Date().getFullYear())</script>
   </body>
 </html>

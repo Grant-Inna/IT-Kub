@@ -1,3 +1,10 @@
-mixin month( name )
-   .month__holder
-      .month #{name}
+mixin month( name, past )
+   case past
+      when "new"
+         .month__holder
+            .month !{name}
+      default
+         .month__holder
+            .month.month_past !{name}
+
+
