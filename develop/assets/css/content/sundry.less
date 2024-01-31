@@ -664,11 +664,13 @@ section .competition_terms__holder a:hover {
 }
 .doc__holder {
    .flex();
-   .items-start();
+   .items-center();
+   .xs-block({
+      .items-start();
+   })
 }
 .doc_text__holder {
-   padding-bottom: 1.5rem;
-   box-sizing: border-box;
+   height: 100%;
     .md-block({
       padding-bottom: .8rem;
    });
@@ -676,9 +678,14 @@ section .competition_terms__holder a:hover {
 .doc__icon {
    .doc-icon();
    margin-right: 2rem;
+   .xs-block({
+      width: 4rem;
+      height: 4rem;
+      margin-right: 1rem;
+   })
 }
 .doc_text__holder strong.block.text-22 {
-   margin-bottom: 2rem;
+   margin-bottom: 1rem;
    .md-block({
       margin-bottom: 1rem;
    });
