@@ -21,18 +21,18 @@ html
             .wrapper
                .row
                   .main_news__image
-                     img( src='./assets/data/images/news/common.png' )
+                     img( src='./assets/data/images/news/12.02.2024/1.jpeg' )
                   main#news_28-11-2023.main_news__holder
-                     .main_news__date.text-25 28
+                     .main_news__date.text-25 12
                         span.first &nbsp;/&nbsp;
                         span.second .
-                        | 11
+                        | 02
                         span.first &nbsp;/&nbsp;
                         span.second .
-                        | 2023
+                        | 2024
                      .main_news__text.text-22
-                        p Участники онлайн&nbsp;семинара &laquo;IT в&nbsp;кубе&raquo; обменялись опытом организации образовательных инициатив в&nbsp;рамках Нацпроекта &laquo;Образование&raquo;
-                     a( href='./news/news-one.html#news_28-11-2023' ).news__more.hover.inline Подробнее
+                        p &laquo;IT-кубы&raquo; на&nbsp;выставке&ndash;форуме &laquo;Россия&raquo;: цифровые наработки и&nbsp;достижения юных россиян представлены на&nbsp;главной выставке страны
+                     a( href='./news/news-one.html#news_12-02-2024' ).news__more.hover.inline Подробнее
 
          section( aria-label='Новости' ).news_list__container.mt4
             .wrapper
@@ -40,12 +40,13 @@ html
                   .news__block.news_block-1#active
                      include assets/jade/content/__news-one
                      .pagination__block.pagination_show#block_1
+                        +news( '28', '11', '2023', 'Участники онлайн&nbsp;семинара &laquo;IT в&nbsp;кубе&raquo; обменялись опытом организации образовательных инициатив в&nbsp;рамках Нацпроекта &laquo;Образование&raquo;', 'news_28-11-2023' )
                         +news( '27', '11', '2023', 'Награждены победители Всероссийского хакатона &laquo;Обучаюсь. Проектирую. Программирую. Будущее&raquo;', 'news_27-11-2023' )
                         +news( '24', '11', '2023', 'Дан старт очному этапу Всероссийского хакатона по&nbsp;программированию', 'news_24-11-2023_1' )
                         +news( '25', '10', '2023', 'На шестом онлайн&ndash;семинаре &laquo;IT в&nbsp;кубе&raquo; обсудили сетевое взаимодействие в&nbsp;сфере образования и&nbsp;предстоящие мероприятия', 'news_25-10-2023_1' )
                         +news( '28', '09', '2023', 'На пятом онлайн&ndash;семинаре &laquo;IT в&nbsp;кубе&raquo; были представлены образовательные решения для&nbsp;преподавателей и&nbsp;обучающихся', 'news_28-09-2023_1' )
-                        +news( '20', '09', '2023', 'ФГАНУ &laquo;ФИЦТО&raquo; провело стажировку финалистов городского проекта &laquo;Будущее здесь&nbsp;&mdash; 2023&raquo; из&nbsp;Сургута', 'news_20-09-2023_1' )
                      .pagination__block#block_2
+                        +news( '20', '09', '2023', 'ФГАНУ &laquo;ФИЦТО&raquo; провело стажировку финалистов городского проекта &laquo;Будущее здесь&nbsp;&mdash; 2023&raquo; из&nbsp;Сургута', 'news_20-09-2023_1' )
                         +news( '15', '09', '2023', 'Стартовал Всероссийский хакатон по&nbsp;программированию &laquo;Обучаюсь. Проектирую. Программирую. Будущее&raquo;', 'news_15-09-2023_1' )
                         +news( '12', '09', '2023', 'Дан старт Всероссийской олимпиаде по&nbsp;искусственному интеллекту&nbsp;2023', 'news_12-09-2023_1' )
                         +news( '30', '08', '2023', 'На&nbsp;онлайн&ndash;семинаре &laquo;IT в кубе&raquo; был анонсирован всероссийский хакатон по&nbsp;программированию для&nbsp;обучающихся Центров &laquo;IT&ndash;куб&raquo;', 'news_30-08-2023_2' )
