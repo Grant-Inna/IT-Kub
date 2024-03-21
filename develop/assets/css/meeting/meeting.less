@@ -1,0 +1,357 @@
+.meeting__logo {
+   .meeting-logo();
+   width: 100%;
+   height: 100%;
+   
+   .xs-block({
+      margin-bottom: 15px;
+      margin-left: -15px;
+   })
+}
+.meeting__title {
+   margin-top: 8rem;
+   position: relative;
+   z-index: 500;
+}
+.meeting__title:before {
+   .pseudo();
+   z-index: 295;
+   width: 70%;
+   height: calc( 100% + 15vw );
+   
+   top: -8vw;
+   right: -10px;
+   
+   .meeting-bg();
+   background-size: contain;
+   background-position: bottom right;
+   .ll-block({
+      .meeting-cover();
+   });
+   .lg-block({
+      top: -8vw;
+      width: calc( 100% + 10vw );
+      height: calc( 100% + 15vw );
+   });
+   .smmd-block({
+      opacity: .7;
+   });
+   .xs-block({
+      opacity: .4;
+   });
+}
+.meeting__title:after {
+   .pseudo();
+   z-index: 298;
+   
+   .from( @break_ll, {
+     display: none;
+   });
+   .ll-block({
+      .meeting-cover();
+      width: 370px;
+      height: 411px;
+      top: 0;
+      right: 3vh;
+      
+      .meeting-elem();
+      background-size: contain;
+      background-position: center;
+   });
+   .xxl-block({
+      width: 300px;
+      height: 341px;
+      top: 12vh;
+      right: 20px;
+   });
+   .lg-block({
+      width: 260px;
+      height: 290px;
+      top: 100px;
+      right: 20px;
+      background-position: top;
+   });
+   .smmd-block({
+      top: 80px;
+      width: 160px;
+      opacity: .7;
+   });
+   .sm-block({
+      top: 40px;
+      width: 140px;
+      height: 170px;
+      opacity: .4;
+   });
+   .xs-block({
+      right: 10px;
+      width: 120px;
+      height: 150px;
+      opacity: .4;
+   });
+   .xxs-block({
+      width: 100px;
+      opacity: .7;
+   });
+}
+
+.meeting__trigger {
+   .flex();
+   .justify-between();
+   .items-center();
+   
+   padding-bottom: 2rem;
+}
+
+.meeting__day {
+   .flex();
+   .items-end();
+}
+.meeting__day .caption {
+   .montserrat-bold();
+   font-size: 3rem;
+   line-height: 84%;
+   .middle-block({
+      font-size: 3.1rem;
+   });
+   .sm-block({
+      font-size: 3.2rem;
+   });
+   .xs-block({
+      font-size: 3.3rem;
+   });
+}
+
+
+
+
+.meeting__main {
+   position: relative;
+   z-index: 2000;
+   margin-top: 22rem;
+   .to( 1520px, {
+      margin-top: 20rem;
+   });
+   .lg-block({
+      margin-top: 18rem;
+   });
+   .md-block({
+      margin-top: 18rem;
+   });
+   .smmd-block({
+      margin-top: 12rem;
+   });
+   .sm-block({
+      margin-top: 14rem;
+   });
+   .xs-block({
+      margin-top: 15rem;
+   });
+   .xxs-block({
+      margin-top: 15rem;
+   });
+}
+.meeting__main:after {
+   .pseudo();
+   z-index: 50;
+   .congress-bg3();
+   background-position: 0 0;
+   background-size: 80%;
+   
+   height: 80vw;
+   width: 100%;
+   
+   top: -13vw;
+   right: -50vw;
+   .xs-block({
+      top: -60%;
+      right: 0;
+      .meeting-bg-2();
+      background-size: 70%;
+   });
+}
+
+.meeting__header {
+   position: relative;
+   z-index: 300;
+   order: 1;
+   .smmd-block({
+      order: 2;
+      width: 100%;
+   });
+   .xs-block({
+      margin-bottom: 5rem;
+   });
+}
+.meeting__header:before {
+   .pseudo();
+   z-index: 50;
+   .meeting-bg-1();
+   background-size: 80%;
+   
+   height: 622px;
+   max-width: 1775px;
+   width: 90vw;
+   
+   top: -5vw;
+   left: 0;
+}
+
+.meeting__header .wrapper {
+   position: relative;
+   z-index: 1400;
+}
+.meeting__img {
+   .flex();
+   .justify-end();
+   position: absolute;
+   z-index: 1300;
+   top: -80%;
+   right: 200px;
+   
+   width: 800px;
+   height: auto !important;
+   
+   .to( 1485px, {
+      right: 100px;
+      width: 740px;
+   });
+   .ll-block({
+      top: -70%;
+      right: 80px;
+      width: 680px;
+   });
+   .xxl-block({
+      top: -55%;
+      right: 40px;
+      width: 640px;
+    });
+   .xl-block({
+      top: -40%;
+    });
+   .middle-block({
+      top: -30%;
+      right: 30px;
+      width: 480px;
+    });
+   .lg-block({
+      top: -30%;
+      right: 20px;
+      width: 450px;
+    });
+   .smmd-block({
+      top: -20%;
+      width: 380px;
+   });
+   .sm-block({
+      top: -10%;
+      right: 10px;
+      width: 290px;
+   });
+   .xs-block({
+      top: -5%;
+      right: 5px;
+      width: 290px;
+    });
+   .xxs-block({
+      top: 30%;
+      width: 210px;
+    });
+}
+
+
+.meeting_navigation__holder {
+    position: relative;
+    z-index: 1600;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+   & br { display: none }
+   .column();
+   .justify-center();
+   .items-start();
+   
+   margin-top: 4rem;
+   padding-bottom: 6rem;
+
+    .smmd-block({
+      margin-top: 3rem;
+       & br { display: block }
+   });
+}
+
+.meeting__navigation {
+    .flex();
+   .items-center();
+   margin-bottom: 1rem;
+   cursor: pointer;
+    .smmd-block({
+      width: 50%;
+   });
+    .xs-block({
+      width: 100%;
+       margin-bottom: .5rem;
+   });
+}
+.meeting__navigation_icon {
+    margin-right: 2rem;
+   .meeting-nav-arrow();
+   
+   .xs-block({
+      margin-right: 1rem;
+   });
+}
+.meeting__navigation_text {
+   .montserrat-bold();
+   font-size: 1.8rem;
+   line-height: 2rem;
+   .tr();
+   .sm-block({
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+   })
+}
+.meeting__navigation:hover .meeting__navigation_icon {
+   transform: translateX(10px);
+   .meeting-nav-arrow-hover();
+   .tr();
+   .xs-block({
+      transform: translateX(5px);
+   });
+}
+.meeting__navigation:hover .meeting__navigation_text {
+   color: @color-green-new;
+   .tr();
+}
+
+.meeting__day {
+   .lg-block({
+      margin-right: 1.5rem;
+   });
+   .xs-block({
+      margin-right: 2rem;
+   });
+}
+.meeting__more .congress_more__text {
+   .lg-block({
+      font-size: 1.3rem;
+      line-height: 1.4rem;
+      margin-right: .5rem;
+   });
+   cursor: default;
+}
+.meeting__more .congress_more__arrow {
+   opacity: .4;
+   .sm-block({
+      width: 2.5rem;
+      height: 2.5rem;
+   });
+   cursor: default;
+}
+
+.meeting_list__section {
+   position: relative;
+   z-index: 250;
+}

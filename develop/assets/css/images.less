@@ -514,3 +514,35 @@
    background-position: top right;
    background-size: contain;
 }
+
+
+/*  Окружные совещания  */
+
+.meeting( @name ) {
+   background-image: url("../data/meeting/@{name}");
+   background-repeat: no-repeat;
+}
+.meeting-bg() {
+   .meeting('pattern.svg');
+}
+.meeting-elem() {
+   .meeting('elem.svg');
+}
+.meeting-cover() {
+   .meeting('cover.svg');
+}
+.meeting-logo() {
+   .meeting('logo.svg');
+   background-position: left;
+   background-size: contain;
+}
+.meeting-bg-1() {
+   .meeting('bg_1.svg');
+   background-position: top left;
+   background-size: contain;
+}
+.meeting-bg-2() {
+   .meeting('bg_2.svg');
+   background-position: top right;
+   background-size: contain;
+}
