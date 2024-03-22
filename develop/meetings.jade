@@ -23,18 +23,36 @@ html
                .wrapper
                   menu.meeting_navigation__holder
                      +item( 'Программа', 'program' )
-                     +item( 'Место<br>проведения', 'place' )
+                     +item( 'Место <br>проведения', 'place' )
                .meeting__img
                   img( src='./assets/data/meeting/photo.webp' )
 
          include assets/jade/content/meeting/__trigger
-         section( aria-label='Программа мероприятий' )#program.meeting__main
+         section( aria-label='Программа мероприятий' ).meeting__main
             .wrapper
                h1.caption.center.mb3 Программа мероприятий
 
                section( aria-label='30 марта').mb3
                   .meeting_list__section.list
                      +trigger( '30' )
+
+         include assets/jade/content/meeting/__meeting_block
+         section#program.meeting_map__container
+            .wrapper
+               .section_caption.center Место проведения
+               .meeting__map
+                  img( src='./assets/data/meeting/map.webp' )
+               .meeting__row
+                  .meeting_block__holder.meeting_block_1
+                     .text-16-regular.mb Северо-Западный федеральный округ
+                     .text-16-regular.mb Центральный федеральный округ
+                     .text-16-regular.mb-10 г. Санкт-Петербург
+                     .meeting_block__title
+                        .text-28-bold.mr 30
+                        .text-16-regular марта
+                  +block( '2', 'Приволжский федеральный округ', 'Уральский федеральный округ', '26', 'апреля' )
+                  +block( '3', 'Южный федеральный округ ', 'Северо-Кавказский федеральный округ', '22', 'мая' )
+                  +block( '4', 'Сибирский федеральный округ', 'Дальневосточный федеральный округ', '14', 'июня' )
 
 
 

@@ -8,7 +8,8 @@
 .flex { display: flex }
 .center { text-align: center }
 
-section h1.caption {
+section h1.caption,
+section .section_caption {
    .montserrat-bold();
    font-size: 3rem;
    line-height: 3.4rem;
@@ -185,7 +186,22 @@ strong.text-22 {
       line-height: 1.5rem;
    });
 }
-
+section .text-16-regular {
+   .montserrat-regular();
+   font-size: 16px;
+   line-height: 120%;
+}
+section .text-28-bold {
+   .montserrat-bold();
+   font-size: 28px;
+   line-height: 100%;
+   .middle-block({
+      font-size: 22px;
+   });
+   .sm-block({
+      font-size: 18px;
+   });
+}
 section strong {
    display: inline;
    .montserrat-bold();
