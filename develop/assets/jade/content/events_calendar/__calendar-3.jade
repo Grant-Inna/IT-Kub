@@ -1,4 +1,4 @@
-mixin events_calendar-4( month, color, color2, color3, color4, date, m, name, link, date2, m2, name2, link2, date3, m3, name3, link3, date4, m4, name4, link4 )
+mixin events_calendar-3( month, color, color2, color3, date, m, name, link, date2, m2, name2, link2, date3, m3, name3, link3 )
    .events_calendar__one_month
       .row
          .calendar.col
@@ -30,11 +30,3 @@ mixin events_calendar-4( month, color, color2, color3, color4, date, m, name, li
                .event__about_holder.col
                   .event__name !{name3}
                   .event__link !{link3}
-            .row
-               .event__date_holder.col( class='event_#{color4}' )
-                  .event__date !{date4}
-                  .event__month_text !{m4}
-               .line
-               .event__about_holder.col
-                  .event__name !{name4}
-                  .event__link !{link4}
