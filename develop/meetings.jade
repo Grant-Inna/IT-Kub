@@ -2,7 +2,7 @@ doctype
 html
 
    include assets/jade/static/__head
-   +title( 'Всероссийский хакатон по программированию | IT-cube' )
+   +title( 'Окружные совещания руководителей Центров | IT-cube' )
 
    body
       include assets/jade/static/metrika
@@ -33,8 +33,48 @@ html
                h1.caption.center.mb3 Программа мероприятий
 
                section( aria-label='30 марта').mb3
-                  .meeting_list__section.list
-                     +trigger( '30' )
+                  .meeting_list__section
+                     .meeting__trigger
+                        .meeting__day
+                           .caption.mr 30
+                           .text-22 марта
+                     .meeting__place
+                        .meeting__pin
+                        .meeting__name Центр &laquo;IT-куб&raquo; Школы &#8470;&nbsp;619
+                        .meeting__address Кондратьевский&nbsp;пр., д.&nbsp;68, к.&nbsp;3
+
+               include assets/jade/content/meeting/__program
+               include assets/jade/content/meeting/__program-3
+               include assets/jade/content/meeting/__program-4
+               section.meeting_program__holder
+                  .meeting__program
+                     .meeting_program__time 10:00&nbsp;&ndash; 10:30
+                     .meeting_program__info
+                        .meeting_program__title Регистрация
+                  +program( '10:30', '10:35', 'Открытие первого Окружного совещания', 'Гамула А.Н.', 'заместитель директора ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал (233)' )
+                  +program( '10:35', '10:45', 'Концепция поддержки функционирующих Центров &laquo;IT-куб&raquo;', 'Шумилов А.С.', 'директор Центра реализации проектов и&nbsp;научной деятельности ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал (233)' )
+                  +program( '10:45', '11:00', 'Выполнение показателей функционирования Центров &laquo;IT-куб&raquo;', 'Якубович Т.В. ', 'начальник отдела проектного сопровождения Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал (233)' )
+                  +program( '11:00', '11:10', 'Формирование календаря рекомендованных региональных мероприятий', 'Минасян Н.В.', 'начальник Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал (233)' )
+                  +program( '11:10', '11:20', 'Организация выставки достижений обучающихся Центров &laquo;IT-куб&raquo;', 'Лукиенко Е.В.', 'руководитель проектов Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал (233)' )
+                  +program-3( '11:30', '13:20', 'Мастер&ndash;классы призеров и&nbsp;победителей Всероссийского конкурса педагогов Центров &laquo;IT-куб&raquo;<br>Демонстрационный мастер-класс от&nbsp;технологических партнеров',
+                     'Диденко В.А.', 'педагог дополнительного образования ОГАУ&nbsp;ДО &laquo;ЦЦО &laquo;ИТ-куб&raquo;, г.&nbsp;Рязань',
+                     'Мошко С.В.', 'педагог дополнительного образования Школы &#8470;&nbsp;619,  г.&nbsp;Санкт-Петербург',
+                     'Живых Р.В., Гусев В.И.', 'технические специалисты ООО&nbsp;&laquo;НПО Пролаб&raquo;',
+                     '413, 102, 408' )
+                  .meeting__program
+                     .meeting_program__time 13:30&nbsp;&ndash; 14:30
+                     .meeting_program__dinner
+                        .meeting__dinner.mr-20
+                        .meeting_program__text Перерыв на&nbsp;обед
+                  +program-4( '14:30', '17:00', 'Практико&ndash;ориентированная сессия &laquo;Поиск решений&raquo;',
+                     'Малько И.А.', 'директор ГБУ&nbsp;ДО &laquo;ЦДО&nbsp;ЛО&raquo; ЦЦОД, г.&nbsp;Липецк',
+                     'Терехова А.Б.', 'руководитель Центра &laquo;IT-куб&raquo; МОБУ&nbsp;СОШ &laquo;Бугровский&raquo; ЦО&nbsp;&#8470;&nbsp;3,  Ленинградская область, п.&nbsp;Бугры',
+                     'Милованова О.В.', 'директор МБОУ &laquo;Средняя общеобразовательная школа &#8470;&nbsp;13&raquo; г.&nbsp;Калуги',
+                     'Насиров Р.Р.', 'руководитель службы развития ИКТ Школы &#8470;&nbsp;619, г.&nbsp;Санкт-Петербург',
+                     'Актовый зал (233)' )
+
+
+
 
          include assets/jade/content/meeting/__meeting_block
          section#program.meeting_map__container
