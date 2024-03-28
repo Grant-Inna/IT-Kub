@@ -489,6 +489,15 @@
    grid-row-gap: 10px;
    
    margin-bottom: 3rem;
+   
+   .md-block({
+      grid-column-gap: 3rem;
+   });
+   .sm-block({
+      grid-template-columns: auto;
+      grid-template-rows: 40px repeat(auto-fit, minmax(24px, auto));
+      grid-column-gap: 2rem;
+   });
 }
 .meeting_program__time {
    .flex-center();
@@ -506,6 +515,7 @@
    });
    .sm-block({
       font-size: 1.5rem;
+      width: 125px;
    });
    .xs-block({
       font-size: 1.6rem;
