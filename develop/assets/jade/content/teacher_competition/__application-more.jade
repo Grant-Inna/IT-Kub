@@ -1,7 +1,6 @@
-mixin application-save( icon, text )
+mixin application-more( icon, text, textsm )
    article.application__holder
       .application__icon.mb2( class='application_icon-#{icon}' )
-      .application__text.application__holder_save
+      .application__text
          span !{text}
-
-
+         .application__text-sm !{textsm}
