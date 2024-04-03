@@ -1,0 +1,371 @@
+#container_hackathon_archive_2023 {
+
+.hackathon( @name ) {
+   background-image: url("../data/hackathon/archive/2023/winners/@{name}");
+   background-repeat: no-repeat;
+}
+.hackathon-bg() {
+   .hackathon('bg-top.svg');
+}
+.hackathon-logo() {
+   .hackathon('logo.svg');
+   background-position: center;
+   background-size: contain;
+}
+.hackathon-before-man() {
+   .hackathon('bg-man.svg');
+   background-position: left;
+   background-size: contain;
+}
+.hackathon-before-center() {
+   .hackathon('bd-center.svg');
+   background-size: contain;
+}
+.hackathon-before-green() {
+   .hackathon('bg-green.svg');
+   background-position: left;
+   background-size: contain;
+}
+.hackathon-who-1() {
+   .hackathon('who-1.svg');
+   background-position: center;
+   background-size: contain;
+}
+.hackathon-who-2() {
+   .hackathon('who-2.svg');
+   background-position: center;
+   background-size: contain;
+}
+.hackathon-gr() {
+   .hackathon('green.svg');
+   background-position: center;
+   background-size: contain;
+}
+.hackathon-direction-bg() {
+   .hackathon('bg-kod.svg');
+   background-position: right bottom;
+}
+.hackathon-direction-1() {
+   .hackathon('direction-1.svg');
+   background-position: right bottom;
+   background-size: contain;
+}
+.hackathon-direction-2() {
+   .hackathon('direction-2.svg');
+   background-position: right bottom;
+   background-size: contain;
+}
+.hackathon-direction-3() {
+   .hackathon('direction-3.svg');
+   background-position: right bottom;
+   background-size: contain;
+}
+.hackathon-step-1() {
+   .hackathon('step-1.svg');
+   background-position: center;
+   background-size: contain;
+}
+.hackathon-step-2() {
+   .hackathon('step-2.svg');
+   background-position: center;
+   background-size: contain;
+}
+.hackathon-step-3() {
+   .hackathon('step-3.svg');
+   background-position: center;
+   background-size: contain;
+}
+.hackathon__steps {
+   margin-top: 10rem;
+   
+   h1.title {
+      .montserrat-bold();
+      font-size: 2rem;
+      line-height: 2.4rem;
+      .middle-block({
+         font-size: 2.2rem;
+         line-height: 2.6rem;
+      });
+      .sm-block({
+         font-size: 1.8rem;
+         line-height: 2rem;
+      });
+      .xxs-block({
+         font-size: 1.6rem;
+         line-height: 1.8rem;
+      });
+   }
+   strong {
+      display: inline-block;
+   }
+}
+.hackathon_step__holder {
+   .flex();
+   margin-bottom: 1rem;
+   padding-bottom: 10rem;
+   .md-block({
+       padding-bottom: 5rem;
+   });
+}
+.hackathon_step__icon {
+   position: relative;
+   width: 13.5rem;
+   height: 11.7rem;
+   margin-right: 2rem;
+   margin-left: 3.5rem;
+   
+   flex-shrink: 0;
+   
+   .lg-block({
+      width: 10.5rem;
+      height: 8.7rem;
+      margin-left: 2.5rem;
+   });
+   .md-block({
+      width: 6.5rem;
+      height: 4.7rem;
+      margin-right: 1rem;
+      margin-left: 1.4rem;
+   });
+   .sm-block({
+      margin-right: .8rem;
+      margin-left: .8rem;
+   });
+}
+.hackathon_step__icon-1 { .hackathon-step-1(); width: 100%; height: 100% }
+.hackathon_step__icon-2 { .hackathon-step-2(); width: 100%; height: 100% }
+.hackathon_step__icon-3 { .hackathon-step-3(); width: 100%; height: 100% }
+
+.hackathon_step__icon:after {
+   .pseudo();
+   width: 3.5rem;
+   height: 3px;
+   
+   top: 50%;
+   left: -3.35rem;
+   
+   background-color: #1D2332;
+   
+   transform: translateY(-50%);
+   
+   .lg-block({
+      width: 3rem;
+      height: 3px;
+      left: -2.6rem;
+   });
+   .md-block({
+      width: 2rem;
+      height: 2px;
+      left: -1.35rem;
+   });
+   .sm-block({
+      width: 1.5rem;
+      left: -.8rem;
+   });
+}
+.hackathon_step__icon:before {
+   .pseudo();
+   width: 3px;
+   height: 250%;
+   
+   bottom: 50%;
+   left: -3.4rem;
+   
+   background-color: #1D2332;
+   
+   .lg-block({
+      height: 370%;
+      left: -2.6rem;
+   });
+   .md-block({
+      width: 2px;
+      height: 580%;
+      left: -1.4rem;
+   });
+   .sm-block({
+      height: 700%;
+      left: -.8rem;
+   });
+   .xs-block({
+      height: 680%;
+   });
+   .xxs-block({
+      height: 870%;
+   });
+}
+.hackathon_step__holder:first-of-type .hackathon_step__icon:before {
+   height: 80%;
+   
+   bottom: 50%;
+   background: linear-gradient(180deg, rgba(29, 35, 50, 0.00) 0%, #1D2332 50%);
+   
+   .sm-block({
+      height: 100%;
+   });
+}
+
+.hackathon_step__date {
+   color: @color-green-new;
+   
+   .montserrat-bold();
+   font-size: 1.2rem;
+   line-height: 1.6rem;
+   .middle-block({
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+   });
+   .sm-block({
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+   });
+}
+.hackathon__steps h1.title,
+.hackathon_step__date {
+   .md-block({
+      margin-left: 3rem;
+   })
+}
+.hackathon_step__about {
+   .md-block({
+       margin-left: -3rem;
+   })
+}
+
+
+.hackathon_winners__caption {
+   .flex();
+   .items-center();
+   
+   .xs-block({
+      flex-wrap: wrap;
+   })
+}
+.hackathon_winners__caption_icon {
+   width: 6.5rem;
+   height: 6.5rem;
+   
+   margin-right: 2rem;
+   .xs-block({
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 2rem;
+      background-position: left;
+   })
+}
+.hackathon_winners__caption h1.title {
+   text-align: left;
+   text-transform: uppercase;
+   color: #42C66E;
+}
+
+
+.hackathon-winner-image( @nmbr ) {
+   background-image: url("../data/hackathon/archive/2023/winners/caption-@{nmbr}.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+.hw__caption_icon-1 { .hackathon-winner-image( '1')}
+.hw__caption_icon-2 { .hackathon-winner-image( '2')}
+.hw__caption_icon-3 { .hackathon-winner-image( '3')}
+
+
+
+.hackathon_winners__list .block_8 {
+   .col();
+   .size(8);
+   .size-xl(8);
+   .size-middle(12);
+   .size-lg(12);
+   .size-md(20);
+   .size-sm(24);
+   
+   .shift-md-left(2);
+   .shift-sm-left(0);
+}
+@media screen and (max-width: @break_middle) {
+   .hackathon_winners__list .block_8 {
+      margin-top: 1rem;
+   }
+   .hackathon_winners__list .block_8:last-of-type {
+      margin-top: 3rem;
+   }
+}
+@media screen and (max-width: @break_md) {
+   .hackathon_winners__list .block_8:nth-of-type(2) {
+      margin-top: 3rem;
+   }
+   .hackathon_winners__list .block_8:last-of-type {
+      margin-bottom: 2rem;
+   }
+}
+section .hackathon_winner__name.text-22 {
+   .montserrat-bold();
+   margin-top: 1.5rem;
+   margin-bottom: .5rem;
+   
+   margin-left: 8px;
+}
+.hackathon_winner__location {
+   margin-left: 8px;
+}
+
+
+.hackathon_winner__img {
+   position: relative;
+   z-index: 100;
+   
+   border: 8px solid transparent;
+   border-radius: 2px;
+   line-height: 0;
+}
+.hackathon_winners__holder article.block_8:first-of-type .hackathon_winner__img {
+   border-color: @color-green-new;
+}
+.hackathon_winner__img img {
+   position: relative;
+   z-index: 90;
+}
+.hackathon_winner__place {
+   position: absolute;
+   z-index: 500;
+   
+   width: 5rem;
+   height: 5rem;
+   top: -2.5rem;
+   right: -2.3rem;
+}
+.hackathon_winners__holder article.block_8:first-of-type .hackathon_winner__place {
+   width: 6.5rem;
+   height: 7rem;
+   top: -2.7rem;
+   right: -3rem;
+}
+
+
+
+
+.hackathon-winner-place( @nmbr ) {
+   background-image: url("../data/hackathon/archive/2023/winners/@{nmbr}.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+.hw__place-1 { .hackathon-winner-place( '1')}
+.hw__place-2 { .hackathon-winner-place( '2')}
+.hw__place-3 { .hackathon-winner-place( '3')}
+
+
+.slick-dots li button:before {
+   width: 40px;
+   height: 40px;
+   font-size: 40px;
+   
+   color: @color-green-new;
+}
+.slick-dots li.slick-active button:before {
+   color: @color-green-new;
+   opacity: 1;
+}
+
+}

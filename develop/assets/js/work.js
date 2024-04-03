@@ -224,7 +224,7 @@ $(document).ready(function () {
    }
    
    
-   if ($('#container_hackathon').length > 0) {
+   if ($('.hackathon_gallery__holder').length > 0) {
       $('.hackathon_gallery__holder').slick({
          slidesToShow: 2,
          slidesToScroll: 2,

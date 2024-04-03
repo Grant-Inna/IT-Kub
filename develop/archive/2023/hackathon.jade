@@ -1,0 +1,106 @@
+doctype
+html
+
+   include ../__head
+   +title( 'Всероссийский хакатон по программированию | IT-cube' )
+
+   body
+      include ../../assets/jade/static/metrika
+      #container_hackathon_archive_2023
+         #black_back
+         include ../__header
+         +menu( '', '', '', '', '', '', '', '', '', '', '' )
+         include ../../assets/jade/header/main-pages
+
+         include ../../assets/jade/content/hackathon/__navigation
+         section( aria-label='Страница всероссийского хакатона по программированию' ).hackathon__title
+            .wrapper
+               .logo_relative
+                  .logo_ratio
+                  .logo_holder
+                     .hackathon__logo
+            .wrapper
+               .hackathon_header__image
+               .hackathon__header
+
+                  a( href='../../assets/data/files/documentation/Polozheniye_Khakaton.pdf' target='_blank').hackathon__button.mt9.mb3
+                     .hackathon_button__inner
+                        i.icon-file
+                        span Положение о&nbsp;хакатоне
+                  .hackathon_menu__holder
+                     menu.hackathon_navigation__holder
+                        +item( 'Об&nbsp;участии', 'participation' )
+                        +item( 'Направления', 'direction' )
+                        +item( 'Этапы проведения', 'step' )
+                        +item( 'Расписание', 'schedule' )
+                        +item( 'Победители', 'winners' )
+
+
+         include ../../assets/jade/content/hackathon/__participation
+         section( aria-label='Кто может принять участие' )#participation.hackathon__participation
+            .wrapper
+               h1.caption.center.mb5 В&nbsp;Хакатоне могут принять участие:
+               .row
+                  +participation( '1', 'Обучающиеся Центров цифрового образования детей <span class="wwnow">&laquo;IT-куб&raquo;</span> в&nbsp;возрасте 14-18&nbsp;лет' )
+                  +participation( '2', 'Состав команды&nbsp;&mdash; от&nbsp;2 до&nbsp;4 человек* <br><span class="sup">*Один участник может быть зарегистрирован только в&nbsp;одной команде</span>'  )
+
+
+         include ../../assets/jade/content/hackathon/archive/2023/__direction
+         section( aria-label='По каким направлениям проводится хакатон' )#direction.hackathon__direction
+            .wrapper
+               h1.caption.center.mb5 Направления
+               .row
+                  +direction( '1', '<span class="wwnow ml0">Программирование</span>', 'sber', 'Zadaniye_Zaochnyy_etap_Sber.pdf' )
+                  +direction( '2', '<span class="wwnow ml0">Информационная</span><br>безопасность', 'kiber', 'Zadaniye_Zaochnyy_etap_Kiberprotekt.pdf' )
+                  +direction( '3', 'Диджитал <div class="text-25">(VR/AR&nbsp;технологии)</span>', 'varmin', 'Zadaniye_Zaochnyy_etap_Varvin.pdf' )
+
+
+         include ../../assets/jade/content/hackathon/__step
+         section( aria-label='Этапы проведения хакатона' )#step.hackathon__steps
+            .wrapper
+               h1.caption.center.mb5 Этапы проведения
+               +step( '1', 'Заочный этап', '15 сентября&nbsp;&mdash; 10 октября 2023 года', '<div class="text-22 mb1">На&nbsp;базе субъектов Российской Федерации среди обучающихся Центров <span class="wwnow">&laquo;IT-куб&raquo;</span></div><strong class="text-22">В&nbsp;целях определения команд, направляемых на&nbsp;очный этап Хакатона, субъекту Российской Федерации необходимо провести внутренний отбор, опираясь на&nbsp;представленные задания и&nbsp;критерии оценивания заданий, разработанные Партнерами</strong>' )
+               +step( '2', 'Подготовительный этап', '20 октября&nbsp;&mdash; 10 ноября 2023', '<strong class="text-22">Проведение серии подготовительных онлайн-сессий по&nbsp;каждому направлению с&nbsp;партнерами Хакатона</strong>' )
+               +step( '3', 'Очный этап', '24&nbsp;&mdash; 26 ноября 2023', '<div class="text-22 mb1">Свердловская область, г.&nbsp;Верхняя Пышма, Успенский&nbsp;пр., 2Г</span></div><strong class="text-22 mb03">Работа команд над&nbsp;кейсами по&nbsp;расширенному заданию, полученному в&nbsp;первый день мероприятия</strong><strong class="text-22">Демонстрация итогов работы путем публичной защиты презентации</strong>' )
+
+
+         include ../../assets/jade/content/hackathon/archive/2023/__winners
+         section( aria-label='Победители' )#winners.hackathon__winners.mb8
+            .wrapper
+               h1.caption.center.mb5 Победители
+               +winners( '1', 'Программирование', 'Гусев Георгий Андреевич,<br>Ефременков Алексей Александрович,<br>Мартыненков Яков Юрьевич,<br>Жуков Артём Геннадьевич', 'Смоленская область', 'Юрков Владислав Юрьевич,<br>Литвиненко Даниил Александрович,<br>Бабкина Мария Игоревна', 'Алтайский край', 'Аверьянов Павел Андреевич,<br>Бакурин Максим Николаевич,<br>Русин-Купраш Григорий Васильевич,<br>Чебунин Георгий Викторович', 'Ульяновская область' )
+               +winners( '2', 'Диджитал (VR/AR технологии)', 'Газалтдинов Иван Равильевич,<br>Дзень Артем Сергеевич,<br>Помазкин Кирилл Евгеньевич', 'Свердловская область', 'Курлаев Никита Александрович,<br>Ахтямова София Ильдаровна', 'Оренбургская область', 'Сергеев Степан Сергеевич,<br>Кульбякина Дарья Алексеевна', 'Челябинская область'  )
+               +winners( '3', 'Информационная безопасность', 'Касимов Аскар Маратович,<br>Митрошин Данил Дмитриевич,<br>Вахрушев Иван Юрьевич,<br>Ватлин Денис Витальевич', 'Удмуртская Республика', 'Цукров Михаил Евгеньевич,<br>Воронский Алексей Станиславович,<br>Лапидус Арсений Евгеньевич,<br>Карпов Дмитрий Павлович', ' Свердловская область', 'Дранишников Сергей Юрьевич,<br>Федотко Назар Вадимович', 'Красноярский край'  )
+
+
+
+
+         section( aria-label='Фотогалерея' )#gallery.hackathon__gallery.mb9
+            .wrapper
+               h1.caption.center.mb5 Фотогалерея
+               .congress_button__holder.mt6
+                  a( href='https://vk.com/album-193270730_299966722' target='_blank' ).congress__button
+                     .congress_button__inner
+                        .icon-congress-vk.mr2
+                        .congress_button__text Посмотреть все фотографии
+
+            .hackathon_gallery__holder.mt3
+               .gallery_big__photo
+                  img( src='../../assets/data/hackathon/archive/2023/winners/winners/1.webp')
+               .gallery_big__photo
+                  img( src='../../assets/data/hackathon/archive/2023/winners/winners/2.webp')
+               .gallery_big__photo
+                  img( src='../../assets/data/hackathon/archive/2023/winners/winners/3.webp')
+               .gallery_big__photo
+                  img( src='../../assets/data/hackathon/archive/2023/winners/winners/4.webp')
+               .gallery_big__photo
+                  img( src='../../assets/data/hackathon/archive/2023/winners/winners/5.webp')
+               .gallery_big__photo
+                  img( src='../../assets/data/hackathon/archive/2023/winners/winners/6.webp')
+
+         include ../../assets/jade/footer/footer
+      include ../script
+
+
+
+
