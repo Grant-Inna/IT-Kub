@@ -1,415 +1,444 @@
-.competition_stage__container {
-   background-color: @color-blue-dd;
-   padding-top: 8rem;
-   padding-bottom: 8rem;
-   
-   color: white;
-}
-section.competition_stage__container h1.caption {
-   color: white;
-}
-section.competition_stage__container h2.title {
-   color: @color-orange-light;
-}
-
-.competition_stage__container .competition_stage__row {
-   .justify-center();
-}
-
-.competition_stage__holder {
-
-   
-/*   .col();
-   .size(8);
-   .size-xl(8);
-   .size-middle(11.5);
-   .size-lg(11.5);
-   .size-md(24);
-   .size-sm(24);
-   .size-xs(24);*/
-}
-/*
-.competition_stage__holder:nth-child(1):before,
-.competition_stage__holder:nth-child(2):before {
-   .pseudo();
-   height: 19px;
-   width: 100%;
-   right: -100%;
-   top: 150px;
-   
-   
-   .competition-stage-arrow-2();
-   
-   .middle-block({
-      .competition-stage-arrow-1();
-   });
-}*/
-
-.competition_stage__about {
-   position: relative;
-   z-index: 200;
-   margin-top: 4rem;
-}
-/*.competition_stage__holder:nth-child(1) .competition_stage__about,
-.competition_stage__holder:nth-child(3) .competition_stage__about {
-   margin-left: 2rem;
-}*/
-.competition_stage__month,
-.competition_stage__text {
-   .montserrat-semibold();
-}
-
-
-.competition_stage__icon {
-   position: relative;
-   z-index: 200;
-   width: 12rem;
-   height: 17.6rem;
-   
-   align-self: center;
-}
-.competition_stage__icon.stage_icon-1 { .competition-stage-1();}
-.competition_stage__icon.stage_icon-2 { .competition-stage-2();}
-.competition_stage__icon.stage_icon-3 { .competition-stage-3();}
-
-
-.competition_stage__holder:nth-child(3) .competition_stage__icon:before,
-.competition_stage__holder:nth-child(3) .competition_stage__arrow {
-   display: none !important;
-}
-.competition_stage__arrow  {
-   display: none;
-}
-/*
-
-@media screen and (max-width: 1455px) {
-
-   .competition_stage__holder:nth-child(2) .competition_stage__icon:before,
-   .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
-      bottom: 58%;
-      width: 22vw;
-   }
-   .competition_stage__holder:nth-child(2) .competition_stage__icon:before {
-      left: -20vw
-   }
-   .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
-      right: -20vw;
-   }
-}
-@media screen and (max-width: @break_lg) {
-   .competition_stage__holder:nth-child(2) {
-      order: 3;
-      .items-center();
-   }
-   .competition_stage__holder:nth-child(2) .competition_stage__about {
-      max-width: 360px;
-      padding-left: 10rem;
-   }
-   .competition_stage__holder:nth-child(2) .competition_stage__icon:before,
-   .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
-      width: 26vw;
-   }
-   .competition_stage__holder:nth-child(2) .competition_stage__icon:before {
-      left: -30vw;
-      transform: rotate(15deg);
-   }
-   .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
-      right: -30vw;
-      transform: rotate(-15deg);
-   }
-   .competition_stage__holder:nth-child(3) {
-      order: 2;
-      .items-end();
-   }
-   .competition_stage__holder:nth-child(3) .competition_stage__about {
-      max-width: 370px;
-   }
-}
-@media screen and (max-width: 900px) {
-   .competition_stage__holder:nth-child(2) .competition_stage__icon:before {
-      .competition-stage-arrow();
-   }
-   .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
-       .competition-stage-arrow-right();
-   }
-}*/
-/*@media screen and (max-width: @break_md) {
+#container_competition {
    .competition_stage__container {
-      padding-top: 5rem;
-      padding-bottom: 6rem;
+      background-color: @color-blue-dd;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      
+      color: white;
    }
+   
    section.competition_stage__container h1.caption {
-      margin-bottom: 5rem;
+      color: white;
    }
-   .competition_stage__holder {
-      margin-bottom: 1rem;
+   
+   section.competition_stage__container h2.title {
+      color: @color-orange-light;
    }
-   .competition_stage__holder:nth-child(2) {
-      margin-bottom: 1.3rem;
-   }
-   .competition_stage__holder:nth-child(3) {
-      margin-bottom: 0;
-   }
-   .competition_stage__holder .competition_stage__about {
-      position: relative;
-      z-index: 200;
-      width: 450px;
-      margin-top: 0;
-   }
-   .competition_stage__holder:nth-child(2) .competition_stage__about {
-       max-width: unset;
-       width: 450px;
-       padding-left: 0;
-      margin-bottom: 0;
-   }
-   .competition_stage__holder:nth-child(3) .competition_stage__about {
-       max-width: unset;
-       width: 450px;
-      margin-bottom: 0;
-   }
-   .competition_stage__holder:nth-child(2) {
-      order: 2;
-      display: flex;
-      .items-center();
-   }
-   .competition_stage__holder:nth-child(3) {
-      order: 3;
-       display: flex;
-      .items-center();
-   }
-
-   .competition_stage__holder .competition_stage__arrow {
-      //.competition-stage-arrow-adapt();
-      .flex-center();
-      width: 4rem;
-      max-height: 5rem;
-      margin-top: 2rem;
-   }
-   .competition_stage__holder:nth-child(2) {
-      flex-direction: column;
-   }
-   .competition_stage__holder:nth-child(2) .competition_stage__arrow {
-      margin-top: 3rem;
-   }
-   .competition_stage__holder {
-      align-items: center;
-   }
-   .competition_stage__icon { display: none; }
-   .competition_stage__title {
-      position: relative;
-      z-index: 200;
-      height: 10.8rem;
-   }
-   .competition_stage__title:after {
-      .pseudo();
-      top: 0;
-      left: 0;
-      width: 10.8rem;
-      height: 10.8rem;
-   }
-   .competition_stage__title.competition_stage_icon-1:after {
-      .competition-stage-adapt-1();
-   }
-   .competition_stage__title.competition_stage_icon-2:after {
-      .competition-stage-adapt-2();
-   }
-   .competition_stage__title.competition_stage_icon-3:after {
-      .competition-stage-adapt-3();
-   }
-   .competition_stage__title {
-      .column();
+   
+   .competition_stage__container .competition_stage__row {
       .justify-center();
-      padding-left: 12rem;
    }
-   .competition_stage__phase {
-      margin-top: 1.2rem;
+   
+   .competition_stage__holder {
+      
+      
+      /*   .col();
+         .size(8);
+         .size-xl(8);
+         .size-middle(11.5);
+         .size-lg(11.5);
+         .size-md(24);
+         .size-sm(24);
+         .size-xs(24);*/
    }
-}
-
-@media screen and (max-width: 500px) {
-   .competition_stage__holder:nth-child(1) .competition_stage__about {
+   
+   /*
+   .competition_stage__holder:nth-child(1):before,
+   .competition_stage__holder:nth-child(2):before {
+      .pseudo();
+      height: 19px;
       width: 100%;
+      right: -100%;
+      top: 150px;
+      
+      
+      .competition-stage-arrow-2();
+      
+      .middle-block({
+         .competition-stage-arrow-1();
+      });
+   }*/
+   
+   .competition_stage__about {
+      position: relative;
+      z-index: 200;
+      margin-top: 4rem;
    }
-   .competition_stage__holder:nth-child(2) .competition_stage__about {
-      width: 100%;
-   }
+   
+   /*.competition_stage__holder:nth-child(1) .competition_stage__about,
    .competition_stage__holder:nth-child(3) .competition_stage__about {
-      width: 100%;
+      margin-left: 2rem;
+   }*/
+   
+   .competition_stage__month,
+   .competition_stage__text {
+      .montserrat-semibold();
    }
-   .competition_stage__title:after {
-      width: 9rem;
-      height: 9rem;
+   
+   
+   .competition_stage__icon {
+      position: relative;
+      z-index: 200;
+      width: 12rem;
+      height: 17.6rem;
+      
+      align-self: center;
    }
-   .competition_stage__title {
-      padding-left: 10rem;
-      padding-top: 1rem;
-      height: 9rem;
+   
+   .competition_stage__icon.stage_icon-1 {
+      .competition-stage-1();
    }
-}
-@media screen and (max-width: 410px) {
-   .competition_stage__title:after {
-      width: 7.5rem;
-      height: 7.5rem;
+   
+   .competition_stage__icon.stage_icon-2 {
+      .competition-stage-2();
    }
-   .competition_stage__title {
-      padding-left: 8rem;
-      height: 8rem;
-      margin-right: -3rem;
+   
+   .competition_stage__icon.stage_icon-3 {
+      .competition-stage-3();
    }
-}
-@media screen and (max-width: @break_xxs) {
-   .competition_stage__title:after {
-      width: 6.5rem;
-      height: 6.5rem;
+   
+   
+   .competition_stage__holder:nth-child(3) .competition_stage__icon:before,
+   .competition_stage__holder:nth-child(3) .competition_stage__arrow {
+      display: none !important;
    }
-   .competition_stage__title {
-      padding-left: 7rem;
-      height: 7rem;
-   }
-   section .competition_stage__title h2.title {
-      font-size: 2rem;
-      line-height: 2.3rem;
-   }
-   .competition_stage__phase {
-      margin-top: .8rem;
-   }
-   .competition_stage__holder .competition_stage__arrow {
-       margin-top: 2.6rem;
-   }
-}*/
-
-
-
-.competition_stage__row-top {
-   position: relative;
-   z-index: 1000;
-   display: grid;
-   grid-template-columns: 200px minmax( 100px, 327px) 200px minmax( 100px, 327px) 200px;
-   justify-items: center;
-   align-items: center;
-   .lg-block({
-      grid-template-columns: minmax(100px, 180px) minmax( 100px, 327px)  minmax(100px, 180px) minmax( 100px, 327px)  minmax(100px, 180px);
-   });
-   .to( 800px, {
-      grid-template-columns: 170px;
-      grid-template-rows: 215px auto 215px auto 215px;
-   });
-   .sm-block({
-      grid-template-columns: 120px;
-      grid-template-rows: 165px auto 165px auto 165px;
-   });
-   .xs-block({
-      grid-template-columns: 90px;
-      grid-template-rows: 165px auto 165px auto 165px;
-   });
-   .xxs-block({
-      grid-template-columns: 70px;
-      grid-template-rows: 150px 4rem 150px 4rem 150px;
-   });
-   .to( 340px, {
-      grid-template-columns: 55px;
-   });
-}
-.competition_stage__icon {
-   .justify-center();
-   .to( 800px, {
-   });
-}
-.stage-arrow {
-   width: 100%;
-   height: 19px;
-   margin-top: 46px;
-   .competition-stage-arrow-2();
-   .xl-block({
-      .competition-stage-arrow-1();
-   });
-   .to( 800px, {
+   
+   .competition_stage__arrow {
       display: none;
-   });
-}
-@width-text: (100% / 3) - 2;
-.competition_stage__row-bottom {
-   display: grid;
-   grid-template-columns: repeat(3, @width-text);
-   grid-row-gap: 2%;
-   justify-content: space-between;
+   }
    
-   .to( 800px, {
-      @width-text: (100% / 3);
-      padding-left: 20px;
+   /*
+   
+   @media screen and (max-width: 1455px) {
+   
+      .competition_stage__holder:nth-child(2) .competition_stage__icon:before,
+      .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
+         bottom: 58%;
+         width: 22vw;
+      }
+      .competition_stage__holder:nth-child(2) .competition_stage__icon:before {
+         left: -20vw
+      }
+      .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
+         right: -20vw;
+      }
+   }
+   @media screen and (max-width: @break_lg) {
+      .competition_stage__holder:nth-child(2) {
+         order: 3;
+         .items-center();
+      }
+      .competition_stage__holder:nth-child(2) .competition_stage__about {
+         max-width: 360px;
+         padding-left: 10rem;
+      }
+      .competition_stage__holder:nth-child(2) .competition_stage__icon:before,
+      .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
+         width: 26vw;
+      }
+      .competition_stage__holder:nth-child(2) .competition_stage__icon:before {
+         left: -30vw;
+         transform: rotate(15deg);
+      }
+      .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
+         right: -30vw;
+         transform: rotate(-15deg);
+      }
+      .competition_stage__holder:nth-child(3) {
+         order: 2;
+         .items-end();
+      }
+      .competition_stage__holder:nth-child(3) .competition_stage__about {
+         max-width: 370px;
+      }
+   }
+   @media screen and (max-width: 900px) {
+      .competition_stage__holder:nth-child(2) .competition_stage__icon:before {
+         .competition-stage-arrow();
+      }
+      .competition_stage__holder:nth-child(2) .competition_stage__icon:after {
+          .competition-stage-arrow-right();
+      }
+   }*/
+   /*@media screen and (max-width: @break_md) {
+      .competition_stage__container {
+         padding-top: 5rem;
+         padding-bottom: 6rem;
+      }
+      section.competition_stage__container h1.caption {
+         margin-bottom: 5rem;
+      }
+      .competition_stage__holder {
+         margin-bottom: 1rem;
+      }
+      .competition_stage__holder:nth-child(2) {
+         margin-bottom: 1.3rem;
+      }
+      .competition_stage__holder:nth-child(3) {
+         margin-bottom: 0;
+      }
+      .competition_stage__holder .competition_stage__about {
+         position: relative;
+         z-index: 200;
+         width: 450px;
+         margin-top: 0;
+      }
+      .competition_stage__holder:nth-child(2) .competition_stage__about {
+          max-width: unset;
+          width: 450px;
+          padding-left: 0;
+         margin-bottom: 0;
+      }
+      .competition_stage__holder:nth-child(3) .competition_stage__about {
+          max-width: unset;
+          width: 450px;
+         margin-bottom: 0;
+      }
+      .competition_stage__holder:nth-child(2) {
+         order: 2;
+         display: flex;
+         .items-center();
+      }
+      .competition_stage__holder:nth-child(3) {
+         order: 3;
+          display: flex;
+         .items-center();
+      }
+   
+      .competition_stage__holder .competition_stage__arrow {
+         //.competition-stage-arrow-adapt();
+         .flex-center();
+         width: 4rem;
+         max-height: 5rem;
+         margin-top: 2rem;
+      }
+      .competition_stage__holder:nth-child(2) {
+         flex-direction: column;
+      }
+      .competition_stage__holder:nth-child(2) .competition_stage__arrow {
+         margin-top: 3rem;
+      }
+      .competition_stage__holder {
+         align-items: center;
+      }
+      .competition_stage__icon { display: none; }
+      .competition_stage__title {
+         position: relative;
+         z-index: 200;
+         height: 10.8rem;
+      }
+      .competition_stage__title:after {
+         .pseudo();
+         top: 0;
+         left: 0;
+         width: 10.8rem;
+         height: 10.8rem;
+      }
+      .competition_stage__title.competition_stage_icon-1:after {
+         .competition-stage-adapt-1();
+      }
+      .competition_stage__title.competition_stage_icon-2:after {
+         .competition-stage-adapt-2();
+      }
+      .competition_stage__title.competition_stage_icon-3:after {
+         .competition-stage-adapt-3();
+      }
+      .competition_stage__title {
+         .column();
+         .justify-center();
+         padding-left: 12rem;
+      }
+      .competition_stage__phase {
+         margin-top: 1.2rem;
+      }
+   }
+   
+   @media screen and (max-width: 500px) {
+      .competition_stage__holder:nth-child(1) .competition_stage__about {
+         width: 100%;
+      }
+      .competition_stage__holder:nth-child(2) .competition_stage__about {
+         width: 100%;
+      }
+      .competition_stage__holder:nth-child(3) .competition_stage__about {
+         width: 100%;
+      }
+      .competition_stage__title:after {
+         width: 9rem;
+         height: 9rem;
+      }
+      .competition_stage__title {
+         padding-left: 10rem;
+         padding-top: 1rem;
+         height: 9rem;
+      }
+   }
+   @media screen and (max-width: 410px) {
+      .competition_stage__title:after {
+         width: 7.5rem;
+         height: 7.5rem;
+      }
+      .competition_stage__title {
+         padding-left: 8rem;
+         height: 8rem;
+         margin-right: -3rem;
+      }
+   }
+   @media screen and (max-width: @break_xxs) {
+      .competition_stage__title:after {
+         width: 6.5rem;
+         height: 6.5rem;
+      }
+      .competition_stage__title {
+         padding-left: 7rem;
+         height: 7rem;
+      }
+      section .competition_stage__title h2.title {
+         font-size: 2rem;
+         line-height: 2.3rem;
+      }
+      .competition_stage__phase {
+         margin-top: .8rem;
+      }
+      .competition_stage__holder .competition_stage__arrow {
+          margin-top: 2.6rem;
+      }
+   }*/
+   
+   
+   .competition_stage__row-top {
+      position: relative;
+      z-index: 1000;
       display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: repeat(3, @width-text);
-      align-content: space-between;
-   });
-   .xxs-block({
-      padding-left: 20px;
-   });
-}
-
-.competition_stage__holder {
-   position: relative;
-   //width: calc( 100% / 3);
-   .column();
-   .items-center();
-   .to( 800px, {
-      width: 100%;
-   });
-}
-.competition_stage__about {
-   width: 100%;
-   .to( 800px, {
-      margin-top: 60px;
-   });
-   .sm-block({
-      margin-top: 40px;
-   });
-   .xxs-block({
-      margin-top: 30px;
-   });
-}
-
-.competition_stage__block {
-   .to( 800px, {
-      .flex();
-   });
-}
-
-.competition_stage__arrow {
-   display: none;
+      grid-template-columns: 200px minmax(100px, 327px) 200px minmax(100px, 327px) 200px;
+      justify-items: center;
+      align-items: center;
+      .lg-block({
+         grid-template-columns: minmax(100px, 180px) minmax(100px, 327px) minmax(100px, 180px) minmax(100px, 327px) minmax(100px, 180px);
+      });
+      .to(800px, {
+         grid-template-columns: 170px;
+         grid-template-rows: 215px auto 215px auto 215px;
+      });
+      .sm-block({
+         grid-template-columns: 120px;
+         grid-template-rows: 165px auto 165px auto 165px;
+      });
+      .xs-block({
+         grid-template-columns: 90px;
+         grid-template-rows: 165px auto 165px auto 165px;
+      });
+      .xxs-block({
+         grid-template-columns: 70px;
+         grid-template-rows: 150px 4rem 150px 4rem 150px;
+      });
+      .to(340px, {
+         grid-template-columns: 55px;
+      });
+   }
    
-   width: 4rem;
-   max-height: 4rem;
-   margin-top: .5rem;
+   .competition_stage__icon {
+      .justify-center();
+      .to(800px, {
+      });
+   }
    
-   .to( 800px, {
-      .flex-center();
-   });
-   .sm-block({
-      width: 2rem;
-      height: 2rem;
-      margin-top: 0;
-   });
-   .xs-block({
-      width: 3rem;
-      height: 3rem;
-      margin-top: .5rem;
-   });
-   .xxs-block({
-      width: 2.5rem;
-      height: 3rem;
-      margin-top: .5rem;
-   });
-}
-
-.to( 800px, {
-   .competition_stage__icon.stage_icon-1 { .competition-stage-adapt-1();}
-   .competition_stage__icon.stage_icon-2 { .competition-stage-adapt-2();}
-   .competition_stage__icon.stage_icon-3 { .competition-stage-adapt-3();}
-});
-.competition_stage__icon {
-   .sm-block({
+   .stage-arrow {
       width: 100%;
-      height: 100%;
+      height: 19px;
+      margin-top: 46px;
+      .competition-stage-arrow-2();
+      .xl-block({
+         .competition-stage-arrow-1();
+      });
+      .to(800px, {
+         display: none;
+      });
+   }
+   
+   @width-text: (100% / 3) - 2;
+   
+   .competition_stage__row-bottom {
+      display: grid;
+      grid-template-columns: repeat(3, @width-text);
+      grid-row-gap: 2%;
+      justify-content: space-between;
+      
+      .to(800px, {
+         @width-text: (100% / 3);
+         padding-left: 20px;
+         display: grid;
+         grid-template-columns: auto;
+         grid-template-rows: repeat(3, @width-text);
+         align-content: space-between;
+      });
+      .xxs-block({
+         padding-left: 20px;
+      });
+   }
+   
+   .competition_stage__holder {
+      position: relative;
+      //width: calc( 100% / 3);
+      .column();
+      .items-center();
+      .to(800px, {
+         width: 100%;
+      });
+   }
+   
+   .competition_stage__about {
+      width: 100%;
+      .to(800px, {
+         margin-top: 60px;
+      });
+      .sm-block({
+         margin-top: 40px;
+      });
+      .xxs-block({
+         margin-top: 30px;
+      });
+   }
+   
+   .competition_stage__block {
+      .to(800px, {
+         .flex();
+      });
+   }
+   
+   .competition_stage__arrow {
+      display: none;
+      
+      width: 4rem;
+      max-height: 4rem;
+      margin-top: .5rem;
+      
+      .to(800px, {
+         .flex-center();
+      });
+      .sm-block({
+         width: 2rem;
+         height: 2rem;
+         margin-top: 0;
+      });
+      .xs-block({
+         width: 3rem;
+         height: 3rem;
+         margin-top: .5rem;
+      });
+      .xxs-block({
+         width: 2.5rem;
+         height: 3rem;
+         margin-top: .5rem;
+      });
+   }
+   
+   .to(800px, {
+      .competition_stage__icon.stage_icon-1 {
+         .competition-stage-adapt-1();
+      }
+      .competition_stage__icon.stage_icon-2 {
+         .competition-stage-adapt-2();
+      }
+      .competition_stage__icon.stage_icon-3 {
+         .competition-stage-adapt-3();
+      }
    });
+   
+   .competition_stage__icon {
+      .sm-block({
+         width: 100%;
+         height: 100%;
+      });
+   }
 }
