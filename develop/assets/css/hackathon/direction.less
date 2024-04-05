@@ -119,19 +119,26 @@
 .hackathon_direction__link {
    margin-top: auto;
    width: 90%;
+   cursor: default;
+   
    a {
       display: inline-block;
-      color: #00AF9D;
+      //color: #00AF9D;
       border-bottom: 1px solid #00AF9D;
       .tr();
+      
+         color: #d1d1d1;
+         border-bottom-color: transparent;
+         
    }
-   span {}
+   span { color: #CCCCCC;}
+   
 }
-.hackathon_direction__link a:hover {
+/*.hackathon_direction__link a:hover {
    color: @color-back-gray-middle;
    border-bottom-color: @color-back-gray-middle;
    transition: color .3s ease-in-out, border-bottom-color .4s;
-}
+}*/
 
 .hackathon_direction__icon {
    width: 55%;
