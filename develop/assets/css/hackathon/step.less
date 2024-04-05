@@ -25,7 +25,7 @@
 .hackathon_step__holder {
    .flex();
    margin-bottom: 1rem;
-   padding-bottom: 10rem;
+   padding-bottom: 8rem;
    .md-block({
        padding-bottom: 5rem;
    });
@@ -55,6 +55,7 @@
       margin-left: .8rem;
    });
 }
+.hackathon_step__icon-0 { .hackathon-step-0(); width: 100%; height: 100% }
 .hackathon_step__icon-1 { .hackathon-step-1(); width: 100%; height: 100% }
 .hackathon_step__icon-2 { .hackathon-step-2(); width: 100%; height: 100% }
 .hackathon_step__icon-3 { .hackathon-step-3(); width: 100%; height: 100% }
@@ -89,7 +90,7 @@
 .hackathon_step__icon:before {
    .pseudo();
    width: 3px;
-   height: 250%;
+   height: 200%;
    
    bottom: 50%;
    left: -3.4rem;
@@ -97,23 +98,26 @@
    background-color: #1D2332;
    
    .lg-block({
-      height: 370%;
+      height: 250%;
       left: -2.6rem;
    });
    .md-block({
       width: 2px;
-      height: 580%;
+      height: 350%;
       left: -1.4rem;
    });
+   .smmd-block({
+      height: 380%;
+   });
    .sm-block({
-      height: 700%;
+      height: 320%;
       left: -.8rem;
    });
    .xs-block({
-      height: 680%;
+      height: 320%;
    });
    .xxs-block({
-      height: 870%;
+      height: 380%;
    });
 }
 .hackathon_step__holder:first-of-type .hackathon_step__icon:before {
@@ -126,9 +130,25 @@
       height: 100%;
    });
 }
+.hackathon_step__holder:last-of-type .hackathon_step__icon:before {
+   height: 600%;
+   
+   .xl-block({
+      height: 650%;
+   });
+   .md-block({
+      height: 950%;
+   });
+   .sm-block({
+      height: 1100%;
+   });
+   .xxs-block({
+      height: 1500%;
+   });
+}
 
 .hackathon_step__date {
-   color: @color-green-new;
+   color: #00AF9D;
    
    .montserrat-bold();
    font-size: 1.2rem;
@@ -149,7 +169,40 @@
    })
 }
 .hackathon_step__about {
+   max-width: 900px;
    .md-block({
        margin-left: -3rem;
    })
+}
+
+
+.hackathon_step__more {
+   .flex();
+   .items-start();
+   
+   margin-bottom: 3rem;
+   .md-block({
+      margin-bottom: 1rem;
+   });
+
+   &:last-of-type {
+      margin-bottom: -2rem;
+      .md-block({
+         margin-bottom: -1rem;
+      });
+   }
+   .icon__green_hackathon {
+      flex-shrink: 0;
+   }
+   .hackathon_step__date {
+      .md-block({
+         margin-left: 0;
+      })
+   }
+}
+.hackathon_step__more.first {
+   margin-top: 7rem;
+   .md-block({
+      margin-top: 3rem;
+   });
 }

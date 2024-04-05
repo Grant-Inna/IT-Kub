@@ -9,7 +9,7 @@ html
       #container_hackathon
          #black_back
          include assets/jade/header/__header
-         +menu( '', '', '', '', '', '', '', '', '', 'active', '' )
+         +menu( '', '', '', '', '', '', '', '', '', 'active' )
          include assets/jade/header/main-pages
 
          include assets/jade/content/hackathon/__navigation
@@ -23,7 +23,7 @@ html
                .hackathon_header__image
                .hackathon__header
 
-                  a( href='./assets/data/files/documentation/Polozheniye_Khakaton.pdf' target='_blank').hackathon__button.mt9.mb3
+                  a( href='./assets/data/files/documentation/Polozheniye_o_Khakatone_2024.pdf' target='_blank').hackathon__button.mt9.mb3
                      .hackathon_button__inner
                         i.icon-file
                         span Положение о&nbsp;хакатоне
@@ -32,8 +32,8 @@ html
                         +item( 'Об&nbsp;участии', 'participation' )
                         +item( 'Направления', 'direction' )
                         +item( 'Этапы проведения', 'step' )
-                        +item( 'Расписание', 'schedule' )
-                        +item( 'Победители', 'winners' )
+                        +item( 'Заявка на&nbsp;участие', 'application' )
+                        +item( 'Мероприятие 2023', 'archive' )
 
 
          include assets/jade/content/hackathon/__participation
@@ -50,57 +50,80 @@ html
             .wrapper
                h1.caption.center.mb5 Направления
                .row
-                  +direction( '1', '<span class="wwnow ml0">Программирование</span>', 'sber', 'Zadaniye_Zaochnyy_etap_Sber.pdf' )
-                  +direction( '2', '<span class="wwnow ml0">Информационная</span><br>безопасность', 'kiber', 'Zadaniye_Zaochnyy_etap_Kiberprotekt.pdf' )
-                  +direction( '3', 'Диджитал <div class="text-25">(VR/AR&nbsp;технологии)</span>', 'varmin', 'Zadaniye_Zaochnyy_etap_Varvin.pdf' )
+                  +direction( '1', 'Программирование', 'tinkoff', 'Zadaniye_Zaochnyy_etap_Sber.pdf' )
+                  +direction( '2', 'Кибергигиена', 'kiber', 'Zadaniye_Zaochnyy_etap_Kiberprotekt.pdf' )
+                  +direction( '3', 'VR-разработка', 'varmin', 'Zadaniye_Zaochnyy_etap_Varvin.pdf' )
 
 
          include assets/jade/content/hackathon/__step
          section( aria-label='Этапы проведения хакатона' )#step.hackathon__steps
             .wrapper
                h1.caption.center.mb5 Этапы проведения
-               +step( '1', 'Заочный этап', '15 сентября&nbsp;&mdash; 10 октября 2023 года', '<div class="text-22 mb1">На&nbsp;базе субъектов Российской Федерации среди обучающихся Центров <span class="wwnow">&laquo;IT-куб&raquo;</span></div><strong class="text-22">В&nbsp;целях определения команд, направляемых на&nbsp;очный этап Хакатона, субъекту Российской Федерации необходимо провести внутренний отбор, опираясь на&nbsp;представленные задания и&nbsp;критерии оценивания заданий, разработанные Партнерами</strong>' )
-               +step( '2', 'Подготовительный этап', '20 октября&nbsp;&mdash; 10 ноября 2023', '<strong class="text-22">Проведение серии подготовительных онлайн-сессий по&nbsp;каждому направлению с&nbsp;партнерами Хакатона</strong>' )
-               +step( '3', 'Очный этап', '24&nbsp;&mdash; 26 ноября 2023', '<div class="text-22 mb1">Свердловская область, г.&nbsp;Верхняя Пышма, Успенский&nbsp;пр., 2Г</span></div><strong class="text-22 mb03">Работа команд над&nbsp;кейсами по&nbsp;расширенному заданию, полученному в&nbsp;первый день мероприятия</strong><strong class="text-22">Демонстрация итогов работы путем публичной защиты презентации</strong>' )
+               +step( '0', 'Объявление команд, прошедших в&nbsp;очный заключительный этап', '15 сентября', '' )
+               +step( '1', 'Подача заявок', '1&nbsp;&mdash; 30 апреля 2024 года', '<div class="text-22 mb1">от&nbsp;обучающихся Центров <span class="wwnow">&laquo;IT-куб&raquo;</span></div>' )
+               article.hackathon_step__holder
+                  .hackathon_step__icon
+                     .hackathon_step__icon-2
+                  .hackathon_step__about
+                     h1.title.mb04 Отборочный этап
+                     .hackathon_step__date.mb06 апрель&nbsp;&mdash; сентябрь 2024 года
+                     .hackathon_step__about
+                        .text-22 На&nbsp;базе субъектов Российской Федерации среди обучающихся Центров
+                           span.wwnow  &laquo;IT-куб&raquo;
+                           |  при&nbsp;информационной и&nbsp;консультационно&ndash;методической поддержке Организатора и&nbsp;Партнеров
+                        .hackathon_step__more.first
+                           .icon__green_hackathon.mr1
+                           .hackathon_step__text
+                              b.text-24.mb04 Работа над кейсовым заданием
+                              .hackathon_step__date.mb06 май&nbsp;&mdash; июнь
+                              .text-22 Работа команд над&nbsp;кейсами по&nbsp;расширенному заданию, полученному в&nbsp;первый день мероприятия
+
+                        .hackathon_step__more
+                           .icon__green_hackathon.mr1
+                           .hackathon_step__text
+                              b.text-24.mb04 Прием работ
+                              .hackathon_step__date.mb06 до&nbsp;10 июня (включительно)
+
+                        .hackathon_step__more
+                           .icon__green_hackathon.mr1
+                           .hackathon_step__text
+                              b.text-24.mb04 Работа экспертной комиссии
+                              .hackathon_step__date.mb06 июль&nbsp;&mdash; август
+
+                        .hackathon_step__more
+                           .icon__green_hackathon.mr1
+                           .hackathon_step__text
+                              b.text-24.mb04 Объявление команд, прошедших в&nbsp;очный заключительный этап
+                              .hackathon_step__date.mb06 15 сентября
 
 
-         include assets/jade/content/hackathon/__winners
-         section( aria-label='Победители' )#winners.hackathon__winners.mb8
-            .wrapper
-               h1.caption.center.mb5 Победители
-               +winners( '1', 'Программирование', 'Гусев Георгий Андреевич,<br>Ефременков Алексей Александрович,<br>Мартыненков Яков Юрьевич,<br>Жуков Артём Геннадьевич', 'Смоленская область', 'Юрков Владислав Юрьевич,<br>Литвиненко Даниил Александрович,<br>Бабкина Мария Игоревна', 'Алтайский край', 'Аверьянов Павел Андреевич,<br>Бакурин Максим Николаевич,<br>Русин-Купраш Григорий Васильевич,<br>Чебунин Георгий Викторович', 'Ульяновская область' )
-               +winners( '2', 'Диджитал (VR/AR технологии)', 'Газалтдинов Иван Равильевич,<br>Дзень Артем Сергеевич,<br>Помазкин Кирилл Евгеньевич', 'Свердловская область', 'Курлаев Никита Александрович,<br>Ахтямова София Ильдаровна', 'Оренбургская область', 'Сергеев Степан Сергеевич,<br>Кульбякина Дарья Алексеевна', 'Челябинская область'  )
-               +winners( '3', 'Информационная безопасность', 'Касимов Аскар Маратович,<br>Митрошин Данил Дмитриевич,<br>Вахрушев Иван Юрьевич,<br>Ватлин Денис Витальевич', 'Удмуртская Республика', 'Цукров Михаил Евгеньевич,<br>Воронский Алексей Станиславович,<br>Лапидус Арсений Евгеньевич,<br>Карпов Дмитрий Павлович', ' Свердловская область', 'Дранишников Сергей Юрьевич,<br>Федотко Назар Вадимович', 'Красноярский край'  )
+               +step( '3', 'Заключительный очный этап', '16&nbsp;&mdash; 18 октября', '<div class="text-22 mb1">Работа команд над&nbsp;кейсами по&nbsp;расширенному заданию, полученному в&nbsp;первый день мероприятия</div>' )
 
 
+         section( aria-label='Подать заявку на участие' )#application.hackathon__application
+            .hackathon_application__image
+               .wrapper
+                  .hackathon_application__icon
+            .hackathon_application__holder
+               .wrapper
+                  h1.caption.center.mb4 Заявка на&nbsp;участие
+                  h2.text-25.mb3 Для участия в&nbsp;Хакатоне региональные координаторы Центров
+                     span.wwnow   &laquo;ІТ-куб&raquo;
+                     |  субъектов Российской Федерации направляют заявку и&nbsp;согласия на&nbsp;обработку персональных данных от&nbsp;команд не&nbsp;позднее 30&nbsp;апреля 2024&nbsp;года на&nbsp;почту
+                     span.wwnow
+                        a( href='mailto:it-cube@ficto.ru').inline.hover   it-cube@ficto.ru
+                  a( href='./assets/hackathon/files/Zayavka_na_uchastiye_v_khakatone.zip' download='Заявка на участие в хакатоне 2024.zip' target='_blank' ).hackathon__button.mb8
+                     .hackathon_button__inner
+                        i.icon-file
+                        span Скачать пакет документов на&nbsp;участие
+
+                  a( href='./archive/2023/hackathon.html').archive_button__image.mb12
+                     .video_ratio
+                     .iframe_holder
+                        .archive__image
 
 
-         section( aria-label='Фотогалерея' )#gallery.hackathon__gallery.mb9
-            .wrapper
-               h1.caption.center.mb5 Фотогалерея
-               .congress_button__holder.mt6
-                  a( href='https://vk.com/album-193270730_299966722' target='_blank' ).congress__button
-                     .congress_button__inner
-                        .icon-congress-vk.mr2
-                        .congress_button__text Посмотреть все фотографии
-
-            .hackathon_gallery__holder.mt3
-               .gallery_big__photo
-                  img( src='./assets/data/hackathon/winners/winners/1.jpg')
-               .gallery_big__photo
-                  img( src='./assets/data/hackathon/winners/winners/2.jpg')
-               .gallery_big__photo
-                  img( src='./assets/data/hackathon/winners/winners/3.jpg')
-               .gallery_big__photo
-                  img( src='./assets/data/hackathon/winners/winners/4.jpg')
-               .gallery_big__photo
-                  img( src='./assets/data/hackathon/winners/winners/5.jpg')
-               .gallery_big__photo
-                  img( src='./assets/data/hackathon/winners/winners/6.jpg')
 
          include assets/jade/footer/footer
+
       include assets/jade/static/script
-
-
-
-

@@ -1,77 +1,84 @@
 #container_hackathon_archive_2023 {
 
-.hackathon( @name ) {
-   background-image: url("../data/hackathon/archive/2023/winners/@{name}");
+.hackathon1( @name ) {
+   background-image: url("../data/hackathon/archive/2023/@{name}");
    background-repeat: no-repeat;
 }
-.hackathon-bg() {
-   .hackathon('bg-top.svg');
+.hackathon-23-bg() {
+   .hackathon1('bg-top.svg');
 }
-.hackathon-logo() {
-   .hackathon('logo.svg');
+.hackathon-23-logo() {
+   .hackathon1('logo.svg');
    background-position: center;
    background-size: contain;
 }
-.hackathon-before-man() {
-   .hackathon('bg-man.svg');
+.hackathon-23-before-man() {
+   .hackathon1('bg-man.svg');
    background-position: left;
    background-size: contain;
 }
-.hackathon-before-center() {
-   .hackathon('bd-center.svg');
+.hackathon-23-before-center() {
+   .hackathon1('bd-center.svg');
    background-size: contain;
 }
-.hackathon-before-green() {
-   .hackathon('bg-green.svg');
+.hackathon-23-before-green() {
+   .hackathon1('bg-green.svg');
    background-position: left;
    background-size: contain;
 }
-.hackathon-who-1() {
-   .hackathon('who-1.svg');
+.hackathon-23-who-1() {
+   .hackathon1('who-1.svg');
    background-position: center;
    background-size: contain;
 }
-.hackathon-who-2() {
-   .hackathon('who-2.svg');
+.hackathon-23-who-2() {
+   .hackathon1('who-2.svg');
    background-position: center;
    background-size: contain;
 }
-.hackathon-gr() {
-   .hackathon('green.svg');
+.hackathon-23-gr() {
+   .hackathon1('green.svg');
    background-position: center;
    background-size: contain;
 }
-.hackathon-direction-bg() {
-   .hackathon('bg-kod.svg');
+.hackathon-23-direction-bg() {
+   .hackathon1('bg-kod.svg');
    background-position: right bottom;
 }
-.hackathon-direction-1() {
-   .hackathon('direction-1.svg');
-   background-position: right bottom;
-   background-size: contain;
-}
-.hackathon-direction-2() {
-   .hackathon('direction-2.svg');
+.hackathon-23-direction-1() {
+   .hackathon1('direction-1.svg');
    background-position: right bottom;
    background-size: contain;
 }
-.hackathon-direction-3() {
-   .hackathon('direction-3.svg');
+.hackathon-23-direction-2() {
+   .hackathon1('direction-2.svg');
    background-position: right bottom;
    background-size: contain;
 }
-.hackathon-step-1() {
-   .hackathon('step-1.svg');
+.hackathon-23-direction-3() {
+   .hackathon1('direction-3.svg');
+   background-position: right bottom;
+   background-size: contain;
+}
+.hackathon-23-application() {
+   .hackathon1('bg-application1.svg');
+}
+.hackathon-23-noyt() {
+   .hackathon1('application.svg');
+}
+
+.hackathon-23-step-1() {
+   .hackathon1('step-1.svg');
    background-position: center;
    background-size: contain;
 }
-.hackathon-step-2() {
-   .hackathon('step-2.svg');
+.hackathon-23-step-2() {
+   .hackathon1('step-2.svg');
    background-position: center;
    background-size: contain;
 }
-.hackathon-step-3() {
-   .hackathon('step-3.svg');
+.hackathon-23-step-3() {
+   .hackathon1('step-3.svg');
    background-position: center;
    background-size: contain;
 }
@@ -132,9 +139,9 @@
       margin-left: .8rem;
    });
 }
-.hackathon_step__icon-1 { .hackathon-step-1(); width: 100%; height: 100% }
-.hackathon_step__icon-2 { .hackathon-step-2(); width: 100%; height: 100% }
-.hackathon_step__icon-3 { .hackathon-step-3(); width: 100%; height: 100% }
+.hackathon_step__icon-1 { .hackathon-23-step-1(); width: 100%; height: 100% }
+.hackathon_step__icon-2 { .hackathon-23-step-2(); width: 100%; height: 100% }
+.hackathon_step__icon-3 { .hackathon-23-step-3(); width: 100%; height: 100% }
 
 .hackathon_step__icon:after {
    .pseudo();
@@ -259,15 +266,15 @@
 }
 
 
-.hackathon-winner-image( @nmbr ) {
+.hackathon-23-winner-image( @nmbr ) {
    background-image: url("../data/hackathon/archive/2023/winners/caption-@{nmbr}.svg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
 }
-.hw__caption_icon-1 { .hackathon-winner-image( '1')}
-.hw__caption_icon-2 { .hackathon-winner-image( '2')}
-.hw__caption_icon-3 { .hackathon-winner-image( '3')}
+.hw__caption_icon-1 { .hackathon-23-winner-image( '1')}
+.hw__caption_icon-2 { .hackathon-23-winner-image( '2')}
+.hw__caption_icon-3 { .hackathon-23-winner-image( '3')}
 
 
 
@@ -345,15 +352,15 @@ section .hackathon_winner__name.text-22 {
 
 
 
-.hackathon-winner-place( @nmbr ) {
+.hackathon-23-winner-place( @nmbr ) {
    background-image: url("../data/hackathon/archive/2023/winners/@{nmbr}.svg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
 }
-.hw__place-1 { .hackathon-winner-place( '1')}
-.hw__place-2 { .hackathon-winner-place( '2')}
-.hw__place-3 { .hackathon-winner-place( '3')}
+.hw__place-1 { .hackathon-23-winner-place( '1')}
+.hw__place-2 { .hackathon-23-winner-place( '2')}
+.hw__place-3 { .hackathon-23-winner-place( '3')}
 
 
 .slick-dots li button:before {
@@ -368,4 +375,913 @@ section .hackathon_winner__name.text-22 {
    opacity: 1;
 }
 
+.menu__item.active {
+   color: @color-green-new;
+}
+.hackathon__title {
+   margin-top: 8rem;
+   position: relative;
+}
+.hackathon__title:before {
+   .pseudo();
+   z-index: 100;
+   width: 70%;
+   height: calc( 100% + 15vw );
+   
+   top: -15vw;
+   right: -10px;
+   
+   .hackathon-23-bg();
+   background-size: contain;
+   background-position: bottom right;
+   
+   .smmd-block({
+      right: -1px;
+      background-position: 0 30%;
+   })
+}
+.hackathon__title .wrapper:nth-of-type(2) {
+   .flex();
+   
+   .smmd-block({
+      .column();
+   });
+}
+.hackathon__title .wrapper:nth-of-type(1) {
+   .xs-block({
+      margin-bottom: 3rem;
+   });
+}
+.hackathon_header__image {
+   order: 2;
+   position: relative;
+   z-index: 200;
+   
+   margin-left: 5vw;
+   width: 50%;
+   flex-grow: 1;
+   
+   .smmd-block({
+      order: 1;
+      width: 100%;
+      height: 50vw;
+      margin-top: 7rem;
+      margin-bottom: 2rem;
+   });
+   .sm-block({
+      height: 40vw;
+   });
+   .xs-block({
+      height: 30vw;
+      margin-top: 5rem;
+      margin-left: 0;
+      margin-bottom: 1rem;
+   });
+}
+.hackathon__header {
+   position: relative;
+   z-index: 300;
+   order: 1;
+   .smmd-block({
+      order: 2;
+      width: 100%;
+   });
+   .xs-block({
+      margin-bottom: 5rem;
+   });
+}
+.hackathon__header .hackathon__button {
+   .sm-block({
+      margin-top: 12rem;
+   });
+   .xs-block({
+      margin-top: 21rem;
+   });
+}
+.hackathon__logo {
+   .hackathon-23-logo();
+   width: 100%;
+   height: 100%;
+   
+   .xs-block({
+      width: calc( 100% + 50px );
+      height: calc( 100% + 50px );
+      margin-bottom: 15px;
+      margin-left: -15px;
+   })
+}
+.hackathon__button {
+   position: relative;
+   z-index: 400;
+   display: inline-block;
+   background-color: @color-gray;
+   padding: 1.4rem 2rem;
+   border-radius: 4px;
+   
+   .tr();
+}
+.hackathon__button:hover {
+   background-color: @color-gray-light;
+   .tr();
+}
+.hackathon_button__inner {
+   .flex-center();
+   color: white;
+   text-transform: uppercase;
+   i {
+      margin-right: 1rem;
+   }
+   span {
+      .montserrat-semibold();
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      letter-spacing: 1px;
+   }
+}
+
+
+
+
+menu.hackathon_navigation__holder {
+    position: relative;
+    z-index: 600;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+   
+   .column();
+   .justify-center();
+   .items-start();
+   
+   margin-top: 4rem;
+   padding-bottom: 6rem;
+
+    .smmd-block({
+      margin-top: 3rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .justify-start();
+   });
+    .xs-block({
+      margin-top: 1rem;
+   });
+}
+
+.hackathon__navigation {
+    .flex();
+   .items-center();
+   margin-bottom: 1rem;
+   cursor: pointer;
+    .smmd-block({
+      width: 50%;
+   });
+    .xs-block({
+      width: 100%;
+   });
+}
+.hackathon__navigation_icon {
+    margin-right: 2rem;
+   .hackathon-23-nav-arrow();
+}
+.hackathon__navigation_text {
+   .montserrat-bold();
+   font-size: 1.8rem;
+   line-height: 2rem;
+   
+   .tr();
+}
+.hackathon__navigation:hover .hackathon__navigation_icon {
+   transform: translateX(10px);
+   .hackathon-23-nav-arrow-hover();
+   .tr();
+}
+.hackathon__navigation:hover .hackathon__navigation_text {
+   color: @color-green-new;
+   .tr();
+}
+
+
+.center {
+   position: relative;
+   z-index: 999;
+   .sm-block({
+      text-align: left;
+   })
+}
+
+.logo_relative {
+   position: relative;
+   z-index: 500;
+   width: 824px;
+   max-width: 74vw;
+   
+}
+.logo_ratio {
+   width: 100%;
+   height: 0;
+   padding-top: 24.8%;
+}
+.logo_holder {
+   position: absolute;
+   z-index: 600;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+
+
+.hackathon_header__image:before {
+   .pseudo();
+   width: calc( 100% + 4vw );
+   max-width: 1000px;
+   height: calc( 100% + 10rem );
+   
+   top: -3rem;
+   left: 0;
+   
+   .hackathon-23-before-man();
+   
+   .smmd-block({
+      left: -4vw
+   });
+   .xs-block({
+      width: calc( 100% + 30px );
+      height: calc( 100% + 21rem );
+      
+      left: -15px
+   })
+}
+.hackathon__direction {
+   margin-top: 12rem;
+   .hackathon-23-direction-bg();
+   background-size: 46%;
+   .middle-block({
+      background-size: 70%;
+   });
+   .md-block({
+      background-size: 110%;
+      background-position: 95% 70%;
+   });
+}
+.hackathon__direction .row {
+   height: 100%;
+}
+.hackathon_direction__holder {
+   position: relative;
+   z-index: 50;
+   .col();
+   .size(12);
+   .size-xl(12);
+   .size-middle(12);
+   .size-lg(18);
+   .size-md(22);
+   .size-sm(24);
+   
+   .shift-lg-left(3);
+   .shift-md-left(1);
+   .shift-sm-left(0);
+   
+   .col-offsets-full();
+   
+   background-color: white;
+   box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.07);
+}
+.hackathon_direction__about {
+   .column();
+   .justify-center();
+   
+   position: relative;
+   z-index: 200;
+   
+   width: 55%;
+   height: 100%;
+   
+   box-sizing: border-box;
+   padding: 2rem 0 2rem 2rem;
+   
+   .xxl-block({
+      width: 60%;
+   });
+   .xl-block({
+      width: 65%;
+   });
+   .lg-block({
+      width: 55%;
+   });
+   .sm-block({
+      width: 65%;
+   });
+   .xs-block({
+      width: 65%;
+   });
+}
+.hackathon_direction__link {
+   margin-top: auto;
+   width: 90%;
+   a {
+      display: inline-block;
+      color: @color-green-new;
+      border-bottom: 1px solid @color-green-new;
+      .tr();
+   }
+   span {}
+}
+.hackathon_direction__link a:hover {
+   color: @color-back-gray-middle;
+   border-bottom-color: @color-back-gray-middle;
+   transition: color .3s ease-in-out, border-bottom-color .4s;
+}
+
+.hackathon_direction__icon {
+   width: 55%;
+   height: 100%;
+}
+.hackathon_direction__icon:after {
+   .pseudo();
+   z-index: 50;
+   
+   width: calc( 100% + 2rem );
+   
+   bottom: 0;
+   right: 0;
+   
+   .xxl-block({
+      width: 50%;
+   });
+   .xl-block({
+      width: 45%;
+   });
+   .lg-block({
+      width: 55%;
+   });
+   .sm-block({
+      opacity: .6;
+   });
+}
+.hackathon_direction__icon-1:after { .hackathon-23-direction-1(); height: 95%; }
+.hackathon_direction__icon-2:after { .hackathon-23-direction-2(); height: 97%; }
+.hackathon_direction__icon-3:after { .hackathon-23-direction-3(); height: 100%; }
+
+#container_hackathon #totop {
+   background-color: @color-green-new;
+}
+.hackathon_application__holder {
+   padding-top: 8rem;
+   background-color: @color-green-new;
+   
+   h2.text-25 {
+      .montserrat-semibold();
+      
+      max-width: 1000px;
+   }
+}
+#container_hackathon .menu__item.active {
+   color: @color-green-new;
+}
+.hackathon__navigation:hover .hackathon__navigation_text {
+   color: @color-green-new;
+   .tr();
+}
+   .mml03 {
+   margin-left: -.35rem;
+   
+   .schedule__td-1 {
+      width: 165px;
+   }
+}
+
+.hackathon__schedule {
+   margin-top: 8rem;
+   margin-bottom: 12rem;
+   
+   
+   .top {
+      margin-bottom: .5rem;
+      .md-block({
+         margin-bottom: .8rem;
+      })
+   }
+   
+   .icon-dot {
+      padding-top: .3rem;
+   }
+}
+
+
+.schedule__numb {
+   .montserrat-bold();
+   font-size: 2.2rem;
+}
+.schedule__date {
+   .montserrat-bold();
+   font-size: 2.2rem;
+   color: @color-green-new;
+}
+.schedule__more {
+
+}
+.schedule_more__arrow {
+   .icon-arrow-green();
+   opacity: .8;
+   .tr();
+   
+   &:hover {
+      opacity: 1;
+      .tr();
+   }
+}
+.schedule__trigger {
+      .flex();
+   .justify-between();
+   
+   div { .flex(); .items-center();}
+   
+   margin-bottom: 2rem;
+   padding-bottom: 2rem;
+   cursor: pointer;
+   border-bottom: 2px solid @color-gray;
+}
+#container_hackathon .list_section.open {
+   .schedule_more__arrow {
+      .tr();
+      opacity: 1;
+      transform: rotate(180deg);
+   }
+}
+
+
+
+.schedule__event strong.text-27,
+.schedule__column strong.text-27 {
+   //width: 11rem;
+   flex-shrink: 0;
+   margin-right: 2rem;
+}
+
+.icon-dot-green {
+   .schedule-dot-green();
+   position: relative;
+   z-index: 900;
+   margin-right: 2.5rem;
+   //margin-left: .3rem;
+}
+.icon-food-green {
+   .schedule-food-green();
+   position: relative;
+   z-index: 900;
+   margin-right: 2.5rem;
+}
+.icon-coffee-green {
+   .schedule-coffee-green();
+   position: relative;
+   z-index: 900;
+   margin-right: 2.5rem;
+}
+#container_hackathon .icon-dot-green:before,
+#container_hackathon .icon-coffee-green:before,
+#container_hackathon .icon-food-green:before {
+   .pseudo();
+   z-index: 20;
+   width: 2px;
+   height: 1000px;
+   
+   bottom: 98%;
+   left: 50%;
+   transform: translateX(-50%);
+   .schedule-dash-vert();
+}
+#container_hackathon .icon-dot-green:after,
+#container_hackathon .icon-coffee-green:after,
+#container_hackathon .icon-food-green:after {
+   .pseudo();
+   z-index: 20;
+   width: 2px;
+   height: 1000px;
+   
+   top: 98%;
+   left: 50%;
+   transform: translateX(-50%);
+   .schedule-dash-vert();
+}
+.block-18 .schedule__event:last-child .icon-dot:after {
+   height: 100%;
+}
+
+.schedule__event h1.text-25 {
+   color: @color-green-new;
+   .montserrat-semibold();
+   font-size: 1.2rem;
+   line-height: 1.4rem;
+   .middle-block({
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+   });
+   .sm-block({
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+   });
+}
+.schedule__event h2.text-25,
+.schedule__column h2.text-25 {
+   .montserrat-semibold();
+   font-size: 1.4rem;
+   line-height: 1.6rem;
+   .middle-block({
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+   });
+   .sm-block({
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+   });
+}
+
+.schedule__event .font-sm h2.text-25 {
+   .montserrat-semibold();
+   font-size: 1.1rem;
+   line-height: 1.2rem;
+   .middle-block({
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+   });
+   .sm-block({
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+   });
+}
+
+.icon-dot-green.empty {
+   background-image: unset;
+}
+#container_hackathon .icon-dot-green.empty:after {
+   top: 0;
+}
+
+#container_hackathon .block-4 {
+   .column();
+   .items-start();
+   .justify-center();
+}
+#container_hackathon .block-6 strong.text-27,
+#container_hackathon .block-4 strong.text-27 {
+   color: @color-green-new;
+}
+#container_hackathon .block-6 .text-22,
+#container_hackathon .block-4 .text-22 {
+   height: 0;
+}
+.schedule_trigger {
+      .flex();
+   .justify-between();
+   
+   div { .flex(); .items-center();}
+   
+   //margin-bottom: 2rem;
+   //padding-bottom: 2rem;
+   cursor: pointer;
+   border-bottom: 2px solid @color-gray;
+}
+.schedule__name {
+   .tr();
+}
+#container_hackathon .schedule_list__holder.show {
+   .schedule__name,
+   h2.schedule__sub-name {
+      color: @color-green-new;
+      .tr();
+   }
+   .schedule_more__angle {
+      .tr();
+      opacity: 1;
+      transform: rotate(180deg);
+   }
+}
+
+.schedule_list__holder {
+   display: none;
+   //margin-bottom: 1rem;
+   
+   .from( 1480px, {
+      display: none !important;
+   });
+}
+.schedule__list {
+   display: none;
+   .row {
+      flex-wrap: nowrap;
+   }
+   .block-6 {
+      .size(6);
+      .size-xl(6);
+      .size-middle(7);
+      .size-lg(7);
+      .size-md(7);
+      .size-sm(6.5);
+      .size-xs(20);
+      
+      .shift-left(1);
+      .shift-xl-left(1);
+      .shift-middle-left(1);
+      .shift-lg-left(1);
+      .shift-md-left(0);
+   }
+   .block-18 {
+      .size-md(16.5);
+      .size-sm(16);
+      .size-xs(22);
+      
+      
+      
+   }
+}
+
+.schedule_trigger.schedule__trigger-noborder {
+   height: 5rem;
+   .justify-start();
+   h1.schedule__name {
+      text-transform: uppercase;
+      .montserrat-bold();
+   
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+      .middle-block({
+         font-size: 1.5rem;
+         line-height: 1.5rem;
+      });
+      .sm-block({
+         font-size: 1.5rem;
+         line-height: 1.5rem;
+      });
+   }
+}
+
+
+.icon-file {
+   display: block;
+   background-image: url("../data/hackathon/archive/2023/file.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-25();
+}
+
+
+.hackathon-23-nav-arrow() {
+   background-image: url("../data/hackathon/archive/2023/arrow.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-33();
+   .tr();
+}
+.hackathon-23-nav-arrow-hover() {
+   background-image: url("../data/hackathon/archive/2023/arrow-hover.svg");
+   .tr();
+}
+
+.icon-time {
+   background-image: url("../data/hackathon/archive/2023/time.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-15();
+}
+.icon-dot {
+   background-image: url("../data/hackathon/archive/2023/dot.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-12();
+}
+
+.icon-arrow-green() {
+   background-image: url("../data/hackathon/archive/2023/arrow-green.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-33();
+}
+.schedule-dot-green() {
+   background-image: url("../data/hackathon/archive/2023/dot-green.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-2();
+}
+.schedule-food-green() {
+   background-image: url("../data/hackathon/archive/2023/food.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-27();
+}
+.schedule-coffee-green() {
+   background-image: url("../data/hackathon/archive/2023/coffee.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-27();
+}
+
+
+.schedule-angle-green() {
+   background-image: url("../data/hackathon/archive/2023/angle.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   .size-15();
+}
+
+.meeting-nav-arrow() {
+   background-image: url("../data/hackathon/archive/2023/arrow.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+   .size-33();
+   .tr();
+   
+   .sm-block({
+      .size-2();
+   })
+}
+
+.hackathon__participation {
+   position: relative;
+   z-index: 100;
+   
+   padding-top: calc( 10rem + 5vw );
+   margin-top: 8rem;
+   
+   .lg-block({
+      padding-top: 8rem;
+      margin-top: 9rem;
+   });
+   .md-block({
+      padding-top: 10rem;
+   });
+   .xs-block({
+      padding-top: 8rem;
+      margin-top: 7rem;
+   });
+}
+.hackathon__participation h1.caption.center {
+   position: relative;
+   z-index: 100;
+   width: 60%;
+   min-width: 830px;
+   margin-left: auto;
+   margin-right: auto;
+   .lg-block({
+      width: 100%;
+      min-width: unset;
+   })
+}
+.hackathon__participation:before {
+   .pseudo();
+   width: calc( 100% + 4vw );
+   max-width: 1000px;
+   height: calc( 100% + 20rem );
+   
+   top: 0;
+   left: -10px;
+   
+   .hackathon-23-before-green();
+   .smmd-block({
+   })
+}
+.hackathon__participation:after {
+   .pseudo();
+   width: 100%;
+   height: 18rem;
+   
+   top: -4rem;
+   left: 0;
+   
+   .hackathon-23-before-center();
+   background-position: 40% 0;
+
+   .lg-block({
+      top: -10rem;
+   });
+   .xs-block({
+      width: calc( 100% - 30px );
+      left: 15px;
+      top: -9rem;
+   });
+   .xxs-block({
+      width: calc( 100% - 30px );
+      left: 15px;
+      top: -5rem;
+   });
+}
+.hackathon__participation .row {
+   .justify-center();
+}
+.hackathon_participation__holder {
+   position: relative;
+   z-index: 400;
+   .col();
+   .size(10);
+   .size-xl(11);
+   .size-lg(12);
+   .size-md(24);
+   .size-smmd(24);
+   .size-sm(24);
+   .size-xs(24);
+   
+   .flex();
+   .items-center();
+}
+.hackathon_participation__icon {
+   position: relative;
+   z-index: 300;
+   width: 10rem;
+   height: 10rem;
+   flex-shrink: 0;
+   
+   margin-right: 1.5rem;
+   .smmd-block({
+      width: 6rem;
+      height: 6rem;
+   });
+}
+.hackathon_participation__icon:after {
+   .pseudo();
+   z-index: 100;
+   width: 6rem;
+   height: 6rem;
+   .hackathon-23-gr();
+}
+.hackathon_participation__holder:nth-of-type(1) .hackathon_participation__icon:after {
+   top: -1rem;
+   right: -1.5rem;
+}
+.hackathon_participation__holder:nth-of-type(2) .hackathon_participation__icon:after {
+   bottom: -2rem;
+   left: -1rem;
+}
+.hackathon_participation__icon-1 {
+   position: relative;
+   z-index: 500;
+   .hackathon-23-who-1();
+   width: 100%;
+   height: 100%;
+}
+.hackathon_participation__icon-2 {
+   position: relative;
+   z-index: 500;
+   .hackathon-23-who-2();
+   width: 100%;
+   height: 100%;
+}
+.hackathon_participation__text {
+   .montserrat-semibold();
+   font-size: 1.4rem;
+   line-height: 1.6rem;
+   .sup {
+      .montserrat-regular();
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      
+      display: inline-block;
+      margin-top: 6px;
+   }
+}
+
+
+
+}
+
+
+
+
+
+#container_hackathon {
+   .video_ratio {
+       width: 100%;
+       height: 0;
+       padding-top: 57.1%;
+   }
+   .archive__image {
+      background-image: url("../data/hackathon/2023.jpg");
+   }
+   
+   .archive_button__image:hover .archive__image {
+      background-image: url("../data/hackathon/2023-hover.jpg");
+      .tr();
+   }
 }
