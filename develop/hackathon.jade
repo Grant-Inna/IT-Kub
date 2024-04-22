@@ -50,9 +50,16 @@ html
             .wrapper
                h1.caption.center.mb5 Направления
                .row
-                  +direction( '1', 'Программирование', 'tinkoff', 'Zadaniye_Zaochnyy_etap_Sber.pdf' )
-                  +direction( '2', 'Кибергигиена', 'kiber', 'Zadaniye_Zaochnyy_etap_Kiberprotekt.pdf' )
-                  +direction( '3', 'VR-разработка', 'varmin', 'Zadaniye_Zaochnyy_etap_Varvin.pdf' )
+                  +direction( '1', 'Программирование', 'tinkoff_new', 'Zadaniye_otborochnogo_etapa_po_napravleniyu_Programmirovaniye_(II_Vserossiyskiy_khakaton).pdf' )
+                  //+direction( '2', 'Кибергигиена', 'kiber', 'Zadaniye_Zaochnyy_etap_Kiberprotekt.pdf' )
+                  article.hackathon_direction__holder
+                     .hackathon_direction__about(class='kiber')
+                        h1.text-27.mb4.mt1 !{title}
+                        img( src='./assets/data/hackathon/kiber.png?v=3' ).mb4
+                        .hackathon_direction__link
+                           .span Скоро можно будет скачать задания для&nbsp;заочного этапа
+                     .hackathon_direction__icon( class='hackathon_direction__icon-2' )
+                  +direction( '3', 'VR-разработка', 'varmin', 'Zadaniye_otborochnogo_etapa_po_napravleniyu_VR-razrabotka_(II_Vserossiyskiy_khakaton).pdf' )
 
 
          include assets/jade/content/hackathon/__step
