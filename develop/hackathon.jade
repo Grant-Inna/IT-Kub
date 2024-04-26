@@ -46,11 +46,12 @@ html
 
 
          include assets/jade/content/hackathon/__direction
+         include assets/jade/content/hackathon/__direction-more
          section( aria-label='По каким направлениям проводится хакатон' )#direction.hackathon__direction
             .wrapper
                h1.caption.center.mb5 Направления
                .row
-                  +direction( '1', 'Программирование', 'tinkoff_new', 'Zadaniye_otborochnogo_etapa_po_napravleniyu_Programmirovaniye_(II_Vserossiyskiy_khakaton).pdf' )
+                  +direction-more( '1', 'Программирование', 'tinkoff_new', 'cu', 'Zadaniye_otborochnogo_etapa_po_napravleniyu_Programmirovaniye_(II_Vserossiyskiy_khakaton).pdf' )
                   +direction( '2', 'Кибергигиена', 'kiber', 'Zadaniye_otborochnogo_etapa_po_napravleniyu_Kibergigiyena_(II_Vserossiyskiy_khakaton).pdf' )
                   +direction( '3', 'VR-разработка', 'varmin', 'Zadaniye_otborochnogo_etapa_po_napravleniyu_VR-razrabotka_(II_Vserossiyskiy_khakaton).pdf' )
 
