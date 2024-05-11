@@ -30,9 +30,9 @@ html
          include assets/jade/content/meeting/__trigger
          section( aria-label='Программа мероприятий' ).meeting__main
             .wrapper#may
-               h1.caption.center.mb3 Программа мероприятий
+               h1.caption.center.mb6 Программа мероприятий
 
-               section( aria-label='21 мая').mb3
+               section( aria-label='21 мая').mb5
                   .meeting_list__section
                      .meeting__trigger
                         .meeting__day
@@ -85,7 +85,7 @@ html
          section( aria-label='Программа мероприятий' ).meeting__main.mt4
             .wrapper
 
-               section( aria-label='22 мая').mb3
+               section( aria-label='22 мая').mb5
                   .meeting_list__section
                      .meeting__trigger
                         .meeting__day
@@ -149,21 +149,39 @@ html
                      .text-16-regular.mb07 Приволжский федеральный округ
                      .text-16-regular.mb07 Южный федеральный округ
                      .text-16-regular.mb07 Северо-Кавказский федеральный округ
-                     .text-16-regular.mb1 г.Грозный
+                     .text-16-regular.mb1 г.&nbsp;Грозный
                      a( href='#may' ).meeting_block__title
                         .text-28-bold.mr 21&ndash;22
                         .text-16-regular мая
                         .icon-arrow-sm
                   +block( '4', 'Сибирский федеральный округ', 'Уральский  федеральный округ', 'Дальневосточный федеральный округ', '14&ndash;15', 'июня', '', '#map_index__svg' )
 
+               .map_index__information#pink
+                  .text-16-regular.mb07 Северо-Западный федеральный округ
+                  .text-16-regular.mb07 Центральный федеральный округ
+                  .text-16-regular.mb2 г. Санкт-Петербург
+                  .data
+                     span 30 марта
+               .map_index__information#beige
+                  .text-16-regular.mb07 Приволжский федеральный округ
+                  .text-16-regular.mb07 Южный федеральный округ
+                  .text-16-regular.mb07 Северо-Кавказский федеральный округ
+                  .text-16-regular.mb2 г. Грозный
+                  .data
+                     span 21-22 марта
+               .map_index__information#blue
+                  .text-16-regular.mb07 Сибирский федеральный округ
+                  .text-16-regular.mb07 Уральский  федеральный округ
+                  .text-16-regular.mb2 Дальневосточный федеральный округ
+                  .data
+                     span 14&ndash;15 июня
                svg#map_index__svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 808.9 458.9' width='100%' style='transition: all 0.5s ease 0s;' xml:space='preserve')
-               #map_index__information
 
 
 
          section( aria-label='Программа мероприятий' ).meeting__main.mt10
-            .wrapper#mart
-               h1.caption.center.mb3 Прошедшие мероприятия
+            .wrapper.list#mart
+               h1.caption.center.mb6 Прошедшие мероприятия
 
                section( aria-label='30 марта').mb3
                   .meeting_list__section
@@ -174,12 +192,13 @@ html
                      .meeting__place
                         .meeting__pin
                         .meeting__name Центр &laquo;IT-куб&raquo; Школы &#8470;&nbsp;619
-                        .meeting__address Кондратьевский&nbsp;пр., д.&nbsp;68, к.&nbsp;3
+                        .meeting__address г.&nbsp;Санкт-Петербург, Кондратьевский&nbsp;пр., д.&nbsp;68, к.&nbsp;3
+                     .icon-angle.trigger.ml3
 
                include assets/jade/content/meeting/__program
                include assets/jade/content/meeting/__program-3
                include assets/jade/content/meeting/__program-4
-               section.meeting_program__holder
+               section.meeting_program__holder.list__holder( style='display: none' )
                   .meeting__program
                      .meeting_program__time 10:00&nbsp;&ndash; 10:30
                      .meeting_program__info

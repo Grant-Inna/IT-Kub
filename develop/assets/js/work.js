@@ -251,7 +251,7 @@ $(document).ready(function () {
    /* новости */
    let image;
    
-   if( document.location.hash.length != 0 ) {
+   if( document.location.hash.length != 0 && $('#container_meetings').length == 0) {
       let $news = $(document.location.hash);
       let current_issue = $news.prop('id').split('_')[1],
           day = current_issue.split('-')[0],
@@ -261,8 +261,6 @@ $(document).ready(function () {
       let date = day + ' / ' + month + ' / ' + year;
       
       showHashNews($news, date, current_issue);
-      
-      console.log($news)
    }
    function showHashNews( current, date, current_issue ) {
       $('.news_one__article').not(current).removeClass('active_news').hide();
@@ -293,7 +291,7 @@ $(document).ready(function () {
             selectAnotherNumber(event.target, current);
             
          }
-         })
+      })
    }
    
    function selectAnotherNumber( event, current ) {
@@ -372,6 +370,10 @@ $(document).ready(function () {
       
       let $subtrigger = $('.schedule_trigger');
       $subtrigger.on('click', openList);
+   }
+   if ($('#container_meetings').length > 0) {
+      let $trigger = $('.trigger');
+      $trigger.on('click', openList);
    }
    
    function openSchedule() {
@@ -1713,9 +1715,9 @@ $(document).ready(function () {
    ];
 
    function initMap(regions) {
-      $('.district').hide();
-      $('#map_index__information').hide();
-      
+      // $('.district').hide();
+      // $('#map_index__information').hide();
+
       // Перебираем массив регионов
       $.each(regions, function (index, data) {
          var newpath = document.createElementNS("http://www.w3.org/2000/svg", "path");

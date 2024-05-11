@@ -434,6 +434,11 @@
 .meeting_block_4 {
    border-left-color: #8BAEF1;
 }
+.meeting_list__section .icon-angle {
+   width: 40px;
+   height: 23px;
+   align-self: center;
+}
 .meeting_block__title .icon-arrow-sm {
    width: 18px;
    height: 15px;
@@ -450,7 +455,8 @@
 .meeting__place {
    display: grid;
    max-width: 860px;
-   margin-left: 6rem;
+   margin-left: auto;
+   padding-left: 6rem;
    grid-template-columns: 50px auto;
    grid-template-rows: repeat(2, auto);
    grid-column-gap: 22px;
@@ -511,6 +517,14 @@
 
 .meeting_program__holder {
    align-items: flex-start;
+}
+.list .icon-angle {
+   .tr();
+   transform: rotate(0);
+}
+.list.show .icon-angle {
+   .tr();
+   transform: rotate(180deg);
 }
 .meeting__program {
    display: grid;
@@ -655,4 +669,32 @@
 }
 .meeting_program__q {
    font-size: 1.1rem;
+}
+
+
+.map_index__information {
+   background-color: white;
+   box-shadow: 0 0 10px 1px rgba(224, 224, 224, 0.53);
+   max-width: 300px;
+   //min-width: 200px;
+   //max-height: 230px;
+   //min-height: 180px;
+   padding: 1.8rem;
+   border-radius: 2px;
+}
+.map_index__information .data {
+   display: inline-block;
+   color: white;
+   padding: 8px 15px;
+   border-radius: 1px;
+   .montserrat-semibold();
+}
+.map_index__information#pink .data {
+   background-color: #FA90AF;
+}
+.map_index__information#beige .data {
+   background-color: #F0CFA7;
+}
+.map_index__information#blue .data {
+   background-color: #8CAEF2;
 }
