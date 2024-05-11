@@ -29,8 +29,141 @@ html
 
          include assets/jade/content/meeting/__trigger
          section( aria-label='Программа мероприятий' ).meeting__main
-            .wrapper
+            .wrapper#may
                h1.caption.center.mb3 Программа мероприятий
+
+               section( aria-label='21 мая').mb3
+                  .meeting_list__section
+                     .meeting__trigger
+                        .meeting__day
+                           .caption.mr 21
+                           .text-22 мая
+                     .meeting__place
+                        .meeting__pin
+                        .meeting__name ГБНОУ Республиканский комплекс общего и&nbsp;дополнительного образования &laquo;Квант&raquo;, здание Лицея
+                        .meeting__address г.&nbsp;Грозный
+
+               include assets/jade/content/meeting/__program
+               include assets/jade/content/meeting/__program-3
+               include assets/jade/content/meeting/__program-4
+               section.meeting_program__holder
+                  .meeting__program
+                     .meeting_program__time.mb2 9:30&nbsp;&ndash; 10:00
+                     .meeting_program__info
+                        .meeting_program__title Регистрация
+
+                     .meeting_program__time.mb2 10:00&nbsp;&ndash; 11:00
+                     .meeting_program__info
+                        .meeting_program__title Пленарное заседание
+
+                     .meeting_program__time.mb2 11:00&nbsp;&ndash; 11:30
+                     .meeting_program__info
+                        .meeting_program__title Экскурсия по&nbsp;комплексу общего и&nbsp;дополнительного образования &laquo;Квант&raquo;
+
+                     .meeting_program__time 11:40&nbsp;&ndash; 13:40
+                     .meeting_program__info
+                        .meeting_program__title Практико&ndash;ориентированная сессия
+
+
+                     .meeting_program__time.mt3.mb3 13:40&nbsp;&ndash; 14:30
+                     .meeting_program__dinner
+                        .meeting__dinner.mr-20
+                        .meeting_program__text Перерыв на&nbsp;обед
+
+                     .meeting_program__time.mb2 14:30&nbsp;&ndash; 16:30
+                     .meeting_program__info
+                        .meeting_program__title Мастер&ndash;классы призёров Всероссийского конкурса педагогов центров &laquo;IT-куб&raquo; и&nbsp;технологических партнёров
+
+                     .meeting_program__time 16:30&nbsp;&ndash; 17:00
+                     .meeting_program__info
+                        .meeting_program__title Подведение итогов
+
+
+
+
+
+         section( aria-label='Программа мероприятий' ).meeting__main.mt4
+            .wrapper
+
+               section( aria-label='22 мая').mb3
+                  .meeting_list__section
+                     .meeting__trigger
+                        .meeting__day
+                           .caption.mr 22
+                           .text-22 мая
+                     .meeting__place
+                        .meeting__pin
+                        .meeting__name ГБНОУ Республиканский комплекс общего и&nbsp;дополнительного образования &laquo;Квант&raquo;, здание Лицея
+                        .meeting__address г.&nbsp;Грозный
+
+                 section.meeting_program__holder
+                  .meeting__program
+                     .meeting_program__time.mb2 9:30&nbsp;&ndash; 10:00
+                     .meeting_program__info
+                        .meeting_program__title Регистрация
+
+                     .meeting_program__time.mb2 10:00&nbsp;&ndash; 11:00
+                     .meeting_program__info
+                        .meeting_program__title Научно&ndash;практический семинар
+                        .meeting_program__topic Вопросы для обсуждения:
+                        .meeting_program__question
+                           .meeting_program__num.mr1 1.
+                           .meeting_program__q Методология проектирования цифровой образовательной среды, основанной на&nbsp;принципах информального образования
+
+                        .meeting_program__question
+                           .meeting_program__num.mr1 2.
+                           .meeting_program__q Организационно&ndash;управленческая модель организации профессионального развития педагога, реализуемая средствами информального образования
+
+                        .meeting_program__question
+                           .meeting_program__num.mr1 3.
+                           .meeting_program__q Инструментарий развития цифровых компетенций педагогов средствами информального образования через цифровой сервис &laquo;Цифровой  помощник учителя&raquo;
+
+                        .meeting_program__question
+                           .meeting_program__num.mr1 4.
+                           .meeting_program__q Мотивирующий мониторинг как инструмент управления системой образования
+
+                        .meeting_program__question
+                           .meeting_program__num.mr1 5.
+                           .meeting_program__q  Проблематика доступности общего образования в&nbsp;субъектах РФ
+
+                        .meeting_program__question
+                           .meeting_program__num.mr1 6.
+                           .meeting_program__q Старое и&nbsp;новое в&nbsp;организации внеурочной деятельности
+
+
+
+
+
+
+
+
+
+
+         include assets/jade/content/meeting/__meeting_block
+         section#program.meeting_map__container
+            .wrapper
+               .section_caption.center Место проведения
+               .meeting__row.mt2
+                  +block( '1', 'Северо-Западный федеральный округ', 'Центральный федеральный округ', 'г. Санкт-Петербург', '30', 'марта', 'icon-arrow-sm', '#mart')
+                  .meeting_block__holder.meeting_block_3
+                     .text-16-regular.mb07 Приволжский федеральный округ
+                     .text-16-regular.mb07 Южный федеральный округ
+                     .text-16-regular.mb07 Северо-Кавказский федеральный округ
+                     .text-16-regular.mb1 г.Грозный
+                     a( href='#may' ).meeting_block__title
+                        .text-28-bold.mr 21&ndash;22
+                        .text-16-regular мая
+                        .icon-arrow-sm
+                  +block( '4', 'Сибирский федеральный округ', 'Уральский  федеральный округ', 'Дальневосточный федеральный округ', '14&ndash;15', 'июня', '', '#map_index__svg' )
+
+               svg#map_index__svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 808.9 458.9' width='100%' style='transition: all 0.5s ease 0s;' xml:space='preserve')
+               #map_index__information
+
+
+
+         section( aria-label='Программа мероприятий' ).meeting__main.mt10
+            .wrapper#mart
+               h1.caption.center.mb3 Прошедшие мероприятия
 
                section( aria-label='30 марта').mb3
                   .meeting_list__section
@@ -77,23 +210,10 @@ html
 
 
 
-         include assets/jade/content/meeting/__meeting_block
-         section#program.meeting_map__container
-            .wrapper
-               .section_caption.center Место проведения
-               .meeting__map
-                  img( src='./assets/data/meeting/map.png' )
-               .meeting__row
-                  .meeting_block__holder.meeting_block_1
-                     .text-16-regular.mb Северо-Западный федеральный округ
-                     .text-16-regular.mb Центральный федеральный округ
-                     .text-16-regular.mb-10 г. Санкт-Петербург
-                     .meeting_block__title
-                        .text-28-bold.mr 30
-                        .text-16-regular марта
-                  +block( '2', 'Приволжский федеральный округ', 'Уральский федеральный округ', '26', 'апреля' )
-                  +block( '3', 'Южный федеральный округ ', 'Северо-Кавказский федеральный округ', '22', 'мая' )
-                  +block( '4', 'Сибирский федеральный округ', 'Дальневосточный федеральный округ', '14', 'июня' )
+
+
+
+
 
 
 

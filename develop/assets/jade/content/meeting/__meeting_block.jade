@@ -1,7 +1,9 @@
-mixin block( id, text1, text3, date, mongth )
+mixin block( id, text1, text2, text3, date, month, arrow, link )
    .meeting_block__holder( class='meeting_block_#{id}' )
-      .text-16-regular.mbauto !{text1}
-      .text-16-regular.mb-10 !{text3}
-      .meeting_block__title
+      .text-16-regular.mb07 !{text1}
+      .text-16-regular.mb07 !{text2}
+      .text-16-regular.mbauto !{text3}
+      a( href='#{link}' ).meeting_block__title
          .text-28-bold.mr !{date}
-         .text-16-regular !{mongth}
+         .text-16-regular !{month}
+         div( class='#{arrow}')

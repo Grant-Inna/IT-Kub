@@ -2,7 +2,6 @@ $(document).ready(function () {
 
 
    const regions = [
-      // Байконур можно вычеркнуть!
       {
          text: 'Все регионы',
          federalDistrict: '',
