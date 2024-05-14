@@ -133,12 +133,6 @@ html
 
 
 
-
-
-
-
-
-
          include assets/jade/content/meeting/__meeting_block
          section#program.meeting_map__container
             .wrapper
@@ -155,31 +149,31 @@ html
                         .text-16-regular мая
                         .icon-arrow-sm
                   +block( '4', 'Сибирский федеральный округ', 'Уральский  федеральный округ', 'Дальневосточный федеральный округ', '14&ndash;15', 'июня', '', '#map_index__svg' )
+               .prelative
+                  .span
+                  svg#map_index__svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 808.9 458.9' width='100%' style='transition: all 0.5s ease 0s;' xml:space='preserve')
 
-               .map_index__information#pink
-                  .text-16-regular.mb07 Северо-Западный федеральный округ
-                  .text-16-regular.mb07 Центральный федеральный округ
-                  .text-16-regular.mb2 г. Санкт-Петербург
-                  .data
-                     span 30 марта
-               .map_index__information#beige
-                  .text-16-regular.mb07 Приволжский федеральный округ
-                  .text-16-regular.mb07 Южный федеральный округ
-                  .text-16-regular.mb07 Северо-Кавказский федеральный округ
-                  .text-16-regular.mb2 г. Грозный
-                  .data
-                     span 21-22 марта
-               .map_index__information#blue
-                  .text-16-regular.mb07 Сибирский федеральный округ
-                  .text-16-regular.mb07 Уральский  федеральный округ
-                  .text-16-regular.mb2 Дальневосточный федеральный округ
-                  .data
-                     span 14&ndash;15 июня
-               svg#map_index__svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 808.9 458.9' width='100%' style='transition: all 0.5s ease 0s;' xml:space='preserve')
+                  .map_index__information.pink#card_1( style='display: none' )
+                     .text-16-regular.mb07 Северо-Западный федеральный округ
+                     .text-16-regular.mb07 Центральный федеральный округ
+                     .text-16-regular.mb2 г. Санкт-Петербург
+                     .data
+                        span 30 марта
+                  .map_index__information.beige#card_2( style='display: none' )
+                     .text-16-regular.mb07 Приволжский федеральный округ
+                     .text-16-regular.mb07 Южный федеральный округ
+                     .text-16-regular.mb07 Северо-Кавказский федеральный округ
+                     .text-16-regular.mb2 г. Грозный
+                     .data
+                        span 21-22 марта
+                  .map_index__information.blue#card_3( style='display: none' )
+                     .text-16-regular.mb07 Сибирский федеральный округ
+                     .text-16-regular.mb07 Уральский  федеральный округ
+                     .text-16-regular.mb2 Дальневосточный федеральный округ
+                     .data
+                        span 14&ndash;15 июня
 
-
-
-         section( aria-label='Программа мероприятий' ).meeting__main.mt10
+         section( aria-label='Прошедшие мероприятия' ).meeting__main.mt10
             .wrapper.list#mart
                h1.caption.center.mb6 Прошедшие мероприятия
 
@@ -225,15 +219,6 @@ html
                      'Милованова О.В.', 'директор МБОУ &laquo;Средняя общеобразовательная школа &#8470;&nbsp;13&raquo; г.&nbsp;Калуги',
                      'Насиров Р.Р.', 'руководитель службы развития ИКТ Школы &#8470;&nbsp;619, г.&nbsp;Санкт-Петербург',
                      'Актовый зал <b>(233)</b>' )
-
-
-
-
-
-
-
-
-
 
 
          include assets/jade/footer/footer

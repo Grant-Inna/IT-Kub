@@ -3,7 +3,7 @@ mixin block( id, text1, text2, text3, date, month, arrow, link )
       .text-16-regular.mb07 !{text1}
       .text-16-regular.mb07 !{text2}
       .text-16-regular.mbauto !{text3}
-      a( href='#{link}' ).meeting_block__title
+      a( href='#{link}' ).meeting_block__title.mt1
          .text-28-bold.mr !{date}
          .text-16-regular !{month}
          div( class='#{arrow}')

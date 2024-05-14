@@ -369,6 +369,7 @@
 
 
 .meeting_map__container {
+   position: relative;
    padding-top: calc(5rem + 5vw);
    background-color: #F8F9FA;
    padding-bottom: calc(5rem + 5vw);
@@ -469,6 +470,7 @@
       margin-left: auto;
       grid-column-gap: 15px;
       grid-row-gap: 2px;
+      padding-left: 0;
    });
    .sm-block({
       padding-top: 5px;
@@ -673,14 +675,15 @@
 
 
 .map_index__information {
+   position: absolute;
    background-color: white;
    box-shadow: 0 0 10px 1px rgba(224, 224, 224, 0.53);
    max-width: 300px;
-   //min-width: 200px;
-   //max-height: 230px;
-   //min-height: 180px;
    padding: 1.8rem;
    border-radius: 2px;
+   .sm-block({
+      width: 200px;
+   })
 }
 .map_index__information .data {
    display: inline-block;
@@ -689,12 +692,24 @@
    border-radius: 1px;
    .montserrat-semibold();
 }
-.map_index__information#pink .data {
+.map_index__information.pink .data {
    background-color: #FA90AF;
 }
-.map_index__information#beige .data {
+.map_index__information.beige .data {
    background-color: #F0CFA7;
 }
-.map_index__information#blue .data {
+.map_index__information.blue .data {
    background-color: #8CAEF2;
+}
+
+.meeting_list__section .icon-angle.trigger {
+   .md-block({
+      margin-left: auto;
+      margin-top: 15px;
+   });
+}
+
+
+.prelative {
+   position: relative;
 }
