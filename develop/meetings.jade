@@ -28,7 +28,7 @@ html
                   img( src='./assets/data/meeting/photo.webp' )
 
          include assets/jade/content/meeting/__trigger
-         section( aria-label='Программа мероприятий' ).meeting__main
+         section( aria-label='Программа мероприятий' ).meeting__main#program
             .wrapper#may
                h1.caption.center.mb6 Программа мероприятий
 
@@ -84,7 +84,6 @@ html
 
          section( aria-label='Программа мероприятий' ).meeting__main.mt4
             .wrapper
-
                section( aria-label='22 мая').mb5
                   .meeting_list__section
                      .meeting__trigger
@@ -124,7 +123,7 @@ html
 
 
          include assets/jade/content/meeting/__meeting_block
-         section#program.meeting_map__container
+         section#place.meeting_map__container
             .wrapper
                .section_caption.center Место проведения
                .meeting__row.mt2
