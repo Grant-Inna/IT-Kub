@@ -46,7 +46,19 @@ $(document).ready(function () {
       $('#totop').on( 'click', function() {
          $('body, html').animate({scrollTop: 0 }, 600); // плавно переходим наверх
       });
+   }
+   
+   /*  плоавный скролл в рамках страницы  */
+   
+   if ($('.js_href').length > 0) {
+      $('.js_href').on( 'click', (event) => goTo(event))
+   }
+   function goTo(event) {
+      event.preventDefault();
+      let id = $(event.target).closest('a').attr('href'),
+            speed = 500;
       
+      $('body, html').animate({ scrollTop: $(id).offset().top - 100 }, speed); // чуть выше самого блока
    }
    
    /* боковое меню */
@@ -373,7 +385,7 @@ $(document).ready(function () {
    }
    if ($('#container_meetings').length > 0) {
       let $trigger = $('.trigger');
-      $trigger.on('click', openList);
+      $trigger.on('click', meetingSchedule);
    }
    
    function openSchedule() {
@@ -397,6 +409,20 @@ $(document).ready(function () {
       
       if (!current.hasClass('show')) {
          $('.list').removeClass('show');
+         answer.slideDown(s);
+         current.addClass('show')
+      } else {
+         answer.slideUp(s);
+         current.removeClass('show')
+      }
+   }
+   function meetingSchedule() {
+      let current = $(this).closest('.meeting_schedule');
+      let answer = current.find('.list__holder'),
+          s = 500;
+      
+      if (!current.hasClass('show')) {
+         current.removeClass('show');
          answer.slideDown(s);
          current.addClass('show')
       } else {

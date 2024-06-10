@@ -5,6 +5,9 @@ html
    +title( 'Окружные совещания руководителей Центров | IT-cube' )
 
    body
+      include assets/jade/content/meeting/__program
+      include assets/jade/content/meeting/__program-3
+      include assets/jade/content/meeting/__program-4
       include assets/jade/static/metrika
       #container_meetings
          #black_back
@@ -29,67 +32,59 @@ html
 
          include assets/jade/content/meeting/__trigger
          section( aria-label='Программа мероприятий' ).meeting__main#program
-            .wrapper#may
+            .wrapper#june
                h1.caption.center.mb6 Программа мероприятий
 
-               section( aria-label='21 мая').mb5
+               section( aria-label='14 июня').mb5
                   .meeting_list__section
                      .meeting__trigger
                         .meeting__day
-                           .caption.mr 21
-                           .text-22 мая
+                           .caption.mr 14
+                           .text-22 июня
                      .meeting__place
                         .meeting__pin
                         .meeting__name ГБНОУ Республиканский комплекс общего и&nbsp;дополнительного образования &laquo;Квант&raquo;, здание Лицея
                         .meeting__address г.&nbsp;Грозный
 
-               include assets/jade/content/meeting/__program
-               include assets/jade/content/meeting/__program-3
-               include assets/jade/content/meeting/__program-4
-               section.meeting_program__holder
-                  .meeting__program
-                     .meeting_program__time.mb2 9:30&nbsp;&ndash; 10:00
-                     .meeting_program__info
-                        .meeting_program__title Регистрация
 
-                     .meeting_program__time.mb2 10:00&nbsp;&ndash; 11:00
-                     .meeting_program__info
-                        .meeting_program__title Пленарное заседание
-
-                     .meeting_program__time.mb2 11:00&nbsp;&ndash; 11:30
-                     .meeting_program__info
-                        .meeting_program__title Экскурсия по&nbsp;комплексу общего и&nbsp;дополнительного образования &laquo;Квант&raquo;
-
-                     .meeting_program__time 11:40&nbsp;&ndash; 13:40
-                     .meeting_program__info
-                        .meeting_program__title Практико&ndash;ориентированная сессия
-
-
-                     .meeting_program__time.mt3.mb3 13:40&nbsp;&ndash; 14:30
-                     .meeting_program__dinner
-                        .meeting__dinner.mr-20
-                        .meeting_program__text Перерыв на&nbsp;обед
-
-                     .meeting_program__time.mb2 14:30&nbsp;&ndash; 16:30
-                     .meeting_program__info
-                        .meeting_program__title Мастер&ndash;классы призёров Всероссийского конкурса педагогов центров &laquo;IT-куб&raquo; и&nbsp;технологических партнёров
-
-                     .meeting_program__time 16:30&nbsp;&ndash; 17:00
-                     .meeting_program__info
-                        .meeting_program__title Подведение итогов
-
-
+                  section.meeting_program__holder.mt3
+                     .meeting__program
+                        .meeting_program__time 10:00&nbsp;&ndash; 10:30
+                        .meeting_program__info
+                           .meeting_program__title Регистрация
+                     +program( '10:30', '10:35', 'Открытие первого Окружного совещания', 'Гамула А.Н.', 'заместитель директора ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program( '10:35', '10:45', 'Концепция поддержки функционирующих Центров &laquo;IT-куб&raquo;', 'Шумилов А.С.', 'директор Центра реализации проектов и&nbsp;научной деятельности ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program( '10:45', '11:00', 'Выполнение показателей функционирования Центров &laquo;IT-куб&raquo;', 'Якубович Т.В. ', 'начальник отдела проектного сопровождения Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program( '11:00', '11:10', 'Формирование календаря рекомендованных региональных мероприятий', 'Минасян Н.В.', 'начальник Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program( '11:10', '11:20', 'Организация выставки достижений обучающихся Центров &laquo;IT-куб&raquo;', 'Лукиенко Е.В.', 'руководитель проектов Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program( '11:20', '11:30', 'Методическое сопровождение Центров цифрового образования', 'Зотова В.А.', 'И.о.&nbsp;директора ГБНОУ &laquo;Академия цифровых технологий&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program-3( '11:30', '13:20', 'Мастер&ndash;классы призеров и&nbsp;победителей Всероссийского конкурса педагогов Центров &laquo;IT-куб&raquo;<br>Демонстрационный мастер-класс от&nbsp;технологических партнеров',
+                        'Диденко В.А.', 'педагог дополнительного образования ОГАУ&nbsp;ДО &laquo;ЦЦО &laquo;ИТ-куб&raquo;, г.&nbsp;Рязань',
+                        'Мошко С.В.', 'педагог дополнительного образования Школы &#8470;&nbsp;619,  г.&nbsp;Санкт-Петербург',
+                        'Живых Р.В., Гусев В.И.', 'технические специалисты ООО&nbsp;&laquo;НПО Пролаб&raquo;',
+                        '<b>413, 102, 408</b>' )
+                     .meeting__program
+                        .meeting_program__time 13:30&nbsp;&ndash; 14:30
+                        .meeting_program__dinner
+                           .meeting__dinner.mr-20
+                           .meeting_program__text Перерыв на&nbsp;обед
+                     +program-4( '14:30', '17:00', 'Практико&ndash;ориентированная сессия &laquo;Поиск решений&raquo;',
+                        'Малько И.А.', 'директор ГБУ&nbsp;ДО &laquo;ЦДО&nbsp;ЛО&raquo; ЦЦОД, г.&nbsp;Липецк',
+                        'Терехова А.Б.', 'руководитель Центра &laquo;IT-куб&raquo; МОБУ&nbsp;СОШ &laquo;Бугровский&raquo; ЦО&nbsp;&#8470;&nbsp;3,  Ленинградская область, п.&nbsp;Бугры',
+                        'Милованова О.В.', 'директор МБОУ &laquo;Средняя общеобразовательная школа &#8470;&nbsp;13&raquo; г.&nbsp;Калуги',
+                        'Насиров Р.Р.', 'руководитель службы развития ИКТ Школы &#8470;&nbsp;619, г.&nbsp;Санкт-Петербург',
+                        'Актовый зал <b>(233)</b>' )
 
 
 
          section( aria-label='Программа мероприятий' ).meeting__main.mt4
             .wrapper
-               section( aria-label='22 мая').mb5
+               section( aria-label='15 июня').mb5
                   .meeting_list__section
                      .meeting__trigger
                         .meeting__day
-                           .caption.mr 22
-                           .text-22 мая
+                           .caption.mr 15
+                           .text-22 июня
                      .meeting__place
                         .meeting__pin
                         .meeting__name ГБНОУ Республиканский комплекс общего и&nbsp;дополнительного образования &laquo;Квант&raquo;, здание Лицея
@@ -133,11 +128,11 @@ html
                      .text-16-regular.mb07 Южный федеральный округ
                      .text-16-regular.mb07 Северо-Кавказский федеральный округ
                      .text-16-regular.mb1 г.&nbsp;Грозный
-                     a( href='#may' ).meeting_block__title
+                     a( href='#may' ).meeting_block__title.js_href
                         .text-28-bold.mr 21&ndash;22
                         .text-16-regular мая
                         .icon-arrow-sm
-                  +block( '4', 'Сибирский федеральный округ', 'Уральский  федеральный округ', 'Дальневосточный федеральный округ', '14&ndash;15', 'июня', '', '#map_index__svg' )
+                  +block( '4', 'Сибирский федеральный округ', 'Уральский  федеральный округ', 'Дальневосточный федеральный округ', '14&ndash;15', 'июня', '', '#june' )
                .prelative
                   .span
                   svg#map_index__svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 808.9 458.9' width='100%' style='transition: all 0.5s ease 0s;' xml:space='preserve')
@@ -162,11 +157,110 @@ html
                      .data
                         span 14&ndash;15 июня
 
+
+
+
+
+
+
          section( aria-label='Прошедшие мероприятия' ).meeting__main.mt10
-            .wrapper.list#mart
+            .wrapper
                h1.caption.center.mb6 Прошедшие мероприятия
 
-               section( aria-label='30 марта').mb3
+
+
+
+               section( aria-label='21-22 мая').meeting_schedule#may
+                  .meeting_list__section.mb3
+                     .meeting__trigger
+                        .meeting__day
+                           .caption.mr 21-22
+                           .text-22 мая
+                     .meeting__place
+                        .meeting__pin
+                        .meeting__name ГБНОУ Республиканский комплекс общего и&nbsp;дополнительного образования &laquo;Квант&raquo;, здание Лицея
+                        .meeting__address г.&nbsp;Грозный
+                     .icon-angle.trigger.ml3
+
+                  section.meeting_program__holder.list__holder.mt3.mb5( style='display: none' )
+                     section( aria-label='21 мая').mb2
+                        .meeting_list__section.border-transparent
+                           .meeting__trigger
+                              .meeting__day
+                                 .caption.mr 21
+                                 .text-22 мая
+                     section.meeting_program__holder.mb5
+                        .meeting__program
+                           .meeting_program__time.mb2 9:30&nbsp;&ndash; 10:00
+                           .meeting_program__info
+                              .meeting_program__title Регистрация
+
+                           .meeting_program__time.mb2 10:00&nbsp;&ndash; 11:00
+                           .meeting_program__info
+                              .meeting_program__title Пленарное заседание
+
+                           .meeting_program__time.mb2 11:00&nbsp;&ndash; 11:30
+                           .meeting_program__info
+                              .meeting_program__title Экскурсия по&nbsp;комплексу общего и&nbsp;дополнительного образования &laquo;Квант&raquo;
+
+                           .meeting_program__time 11:40&nbsp;&ndash; 13:40
+                           .meeting_program__info
+                              .meeting_program__title Практико&ndash;ориентированная сессия
+
+
+                           .meeting_program__time.mt3.mb3 13:40&nbsp;&ndash; 14:30
+                           .meeting_program__dinner
+                              .meeting__dinner.mr-20
+                              .meeting_program__text Перерыв на&nbsp;обед
+
+                           .meeting_program__time.mb2 14:30&nbsp;&ndash; 16:30
+                           .meeting_program__info
+                              .meeting_program__title Мастер&ndash;классы призёров Всероссийского конкурса педагогов центров &laquo;IT-куб&raquo; и&nbsp;технологических партнёров
+
+                           .meeting_program__time 16:30&nbsp;&ndash; 17:00
+                           .meeting_program__info
+                              .meeting_program__title Подведение итогов
+
+
+
+                     section( aria-label='22 мая').mb3
+                        .meeting_list__section.border-transparent
+                           .meeting__trigger
+                              .meeting__day
+                                 .caption.mr 22
+                                 .text-22 мая
+
+                     section.meeting_program__holder
+                        .meeting_program__caption Модуль 1
+                        .meeting__program
+                           .meeting_program__time.mb2 9:30&nbsp;&ndash; 10:00
+                           .meeting_program__info
+                              .meeting_program__title Регистрация
+
+                           .meeting_program__time.mb2 10:00&nbsp;&ndash; 13:00
+                           .meeting_program__info
+                              .meeting_program__title Научно&ndash;практический семинар
+                                 br
+                                 |  &laquo;Региональное образование: современное состояние и&nbsp;цифровое завтра&raquo;
+
+                        .meeting_program__caption Модуль 2
+                        .meeting__program
+                           .meeting_program__time.mb2 10:30&nbsp;&ndash; 11:00
+                           .meeting_program__info
+                              .meeting_program__title Регистрация
+
+                           .meeting_program__time.mb2 11:00&nbsp;&ndash; 13:00
+                           .meeting_program__info
+                              .meeting_program__title Круглый стол
+                                 br
+                                 |  &laquo;IT: соперничество  или&nbsp;сотрудничество?&raquo;
+
+
+
+
+
+
+               section( aria-label='30 марта').meeting_schedule.mt7.mb3#mart
                   .meeting_list__section
                      .meeting__trigger
                         .meeting__day
@@ -178,36 +272,34 @@ html
                         .meeting__address г.&nbsp;Санкт-Петербург, Кондратьевский&nbsp;пр., д.&nbsp;68, к.&nbsp;3
                      .icon-angle.trigger.ml3
 
-               include assets/jade/content/meeting/__program
-               include assets/jade/content/meeting/__program-3
-               include assets/jade/content/meeting/__program-4
-               section.meeting_program__holder.list__holder( style='display: none' )
-                  .meeting__program
-                     .meeting_program__time 10:00&nbsp;&ndash; 10:30
-                     .meeting_program__info
-                        .meeting_program__title Регистрация
-                  +program( '10:30', '10:35', 'Открытие первого Окружного совещания', 'Гамула А.Н.', 'заместитель директора ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
-                  +program( '10:35', '10:45', 'Концепция поддержки функционирующих Центров &laquo;IT-куб&raquo;', 'Шумилов А.С.', 'директор Центра реализации проектов и&nbsp;научной деятельности ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
-                  +program( '10:45', '11:00', 'Выполнение показателей функционирования Центров &laquo;IT-куб&raquo;', 'Якубович Т.В. ', 'начальник отдела проектного сопровождения Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
-                  +program( '11:00', '11:10', 'Формирование календаря рекомендованных региональных мероприятий', 'Минасян Н.В.', 'начальник Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
-                  +program( '11:10', '11:20', 'Организация выставки достижений обучающихся Центров &laquo;IT-куб&raquo;', 'Лукиенко Е.В.', 'руководитель проектов Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
-                  +program( '11:20', '11:30', 'Методическое сопровождение Центров цифрового образования', 'Зотова В.А.', 'И.о.&nbsp;директора ГБНОУ &laquo;Академия цифровых технологий&raquo;', 'Актовый зал <b>(233)</b>' )
-                  +program-3( '11:30', '13:20', 'Мастер&ndash;классы призеров и&nbsp;победителей Всероссийского конкурса педагогов Центров &laquo;IT-куб&raquo;<br>Демонстрационный мастер-класс от&nbsp;технологических партнеров',
-                     'Диденко В.А.', 'педагог дополнительного образования ОГАУ&nbsp;ДО &laquo;ЦЦО &laquo;ИТ-куб&raquo;, г.&nbsp;Рязань',
-                     'Мошко С.В.', 'педагог дополнительного образования Школы &#8470;&nbsp;619,  г.&nbsp;Санкт-Петербург',
-                     'Живых Р.В., Гусев В.И.', 'технические специалисты ООО&nbsp;&laquo;НПО Пролаб&raquo;',
-                     '<b>413, 102, 408</b>' )
-                  .meeting__program
-                     .meeting_program__time 13:30&nbsp;&ndash; 14:30
-                     .meeting_program__dinner
-                        .meeting__dinner.mr-20
-                        .meeting_program__text Перерыв на&nbsp;обед
-                  +program-4( '14:30', '17:00', 'Практико&ndash;ориентированная сессия &laquo;Поиск решений&raquo;',
-                     'Малько И.А.', 'директор ГБУ&nbsp;ДО &laquo;ЦДО&nbsp;ЛО&raquo; ЦЦОД, г.&nbsp;Липецк',
-                     'Терехова А.Б.', 'руководитель Центра &laquo;IT-куб&raquo; МОБУ&nbsp;СОШ &laquo;Бугровский&raquo; ЦО&nbsp;&#8470;&nbsp;3,  Ленинградская область, п.&nbsp;Бугры',
-                     'Милованова О.В.', 'директор МБОУ &laquo;Средняя общеобразовательная школа &#8470;&nbsp;13&raquo; г.&nbsp;Калуги',
-                     'Насиров Р.Р.', 'руководитель службы развития ИКТ Школы &#8470;&nbsp;619, г.&nbsp;Санкт-Петербург',
-                     'Актовый зал <b>(233)</b>' )
+
+                  section.meeting_program__holder.list__holder.mt3( style='display: none' )
+                     .meeting__program
+                        .meeting_program__time 10:00&nbsp;&ndash; 10:30
+                        .meeting_program__info
+                           .meeting_program__title Регистрация
+                     +program( '10:30', '10:35', 'Открытие первого Окружного совещания', 'Гамула А.Н.', 'заместитель директора ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program( '10:35', '10:45', 'Концепция поддержки функционирующих Центров &laquo;IT-куб&raquo;', 'Шумилов А.С.', 'директор Центра реализации проектов и&nbsp;научной деятельности ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program( '10:45', '11:00', 'Выполнение показателей функционирования Центров &laquo;IT-куб&raquo;', 'Якубович Т.В. ', 'начальник отдела проектного сопровождения Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program( '11:00', '11:10', 'Формирование календаря рекомендованных региональных мероприятий', 'Минасян Н.В.', 'начальник Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program( '11:10', '11:20', 'Организация выставки достижений обучающихся Центров &laquo;IT-куб&raquo;', 'Лукиенко Е.В.', 'руководитель проектов Дирекции реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program( '11:20', '11:30', 'Методическое сопровождение Центров цифрового образования', 'Зотова В.А.', 'И.о.&nbsp;директора ГБНОУ &laquo;Академия цифровых технологий&raquo;', 'Актовый зал <b>(233)</b>' )
+                     +program-3( '11:30', '13:20', 'Мастер&ndash;классы призеров и&nbsp;победителей Всероссийского конкурса педагогов Центров &laquo;IT-куб&raquo;<br>Демонстрационный мастер-класс от&nbsp;технологических партнеров',
+                        'Диденко В.А.', 'педагог дополнительного образования ОГАУ&nbsp;ДО &laquo;ЦЦО &laquo;ИТ-куб&raquo;, г.&nbsp;Рязань',
+                        'Мошко С.В.', 'педагог дополнительного образования Школы &#8470;&nbsp;619,  г.&nbsp;Санкт-Петербург',
+                        'Живых Р.В., Гусев В.И.', 'технические специалисты ООО&nbsp;&laquo;НПО Пролаб&raquo;',
+                        '<b>413, 102, 408</b>' )
+                     .meeting__program
+                        .meeting_program__time 13:30&nbsp;&ndash; 14:30
+                        .meeting_program__dinner
+                           .meeting__dinner.mr-20
+                           .meeting_program__text Перерыв на&nbsp;обед
+                     +program-4( '14:30', '17:00', 'Практико&ndash;ориентированная сессия &laquo;Поиск решений&raquo;',
+                        'Малько И.А.', 'директор ГБУ&nbsp;ДО &laquo;ЦДО&nbsp;ЛО&raquo; ЦЦОД, г.&nbsp;Липецк',
+                        'Терехова А.Б.', 'руководитель Центра &laquo;IT-куб&raquo; МОБУ&nbsp;СОШ &laquo;Бугровский&raquo; ЦО&nbsp;&#8470;&nbsp;3,  Ленинградская область, п.&nbsp;Бугры',
+                        'Милованова О.В.', 'директор МБОУ &laquo;Средняя общеобразовательная школа &#8470;&nbsp;13&raquo; г.&nbsp;Калуги',
+                        'Насиров Р.Р.', 'руководитель службы развития ИКТ Школы &#8470;&nbsp;619, г.&nbsp;Санкт-Петербург',
+                        'Актовый зал <b>(233)</b>' )
 
 
          include assets/jade/footer/footer
