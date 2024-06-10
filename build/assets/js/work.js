@@ -1762,7 +1762,7 @@ $(document).ready(function () {
          var elem_left = pos.left; // 60
          var elem_top = pos.top;
          
-         console.log((width - 300) + ' width - 300    ' + 'event.pageX    ' + event.pageX);
+         // console.log((width - 300) + ' width - 300    ' + 'event.pageX    ' + event.pageX);
          
          
          var Xinner = Number(event.pageX - elem_left + 10); // положение курсора внутри элемента
