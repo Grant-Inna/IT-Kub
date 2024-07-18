@@ -1,0 +1,27 @@
+doctype
+html
+
+   include assets/jade/static/__head
+   +title( '#цифровое_поколение_наше_будущее | IT-cube')
+
+   body
+      include assets/jade/static/metrika
+      #container_digital_generation
+         #black_back
+         include assets/jade/header/__header
+         +menu( '', '', '', '', '', '', '', '', '', '', '', 'active' )
+         include assets/jade/header/main-pages
+
+         section.mt8
+            .wrapper
+               h1.caption #цифровое_поколение_наше_будущее
+
+
+
+         include assets/jade/footer/footer
+
+      include assets/jade/static/script
+
+
+
+
