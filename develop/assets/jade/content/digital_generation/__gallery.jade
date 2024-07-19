@@ -1,0 +1,6 @@
+mixin gallery ( name, photo)
+   a( href='##{photo}' aria-label='#{name}').js_href.digital_generation__item
+      .digital_generation__card
+         span !{name}
+      .digital_generation__photo
+         img( src='../assets/data/digital_generation/#{photo}.webp' )

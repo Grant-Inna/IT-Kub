@@ -58,7 +58,7 @@ $(document).ready(function () {
       let id = $(event.target).closest('a').attr('href'),
             speed = 500;
       
-      $('body, html').animate({ scrollTop: $(id).offset().top - 100 }, speed); // чуть выше самого блока
+      $('body, html').animate({ scrollTop: $(id).offset().top - 50 }, speed); // чуть выше самого блока
    }
    
    /* боковое меню */
@@ -258,6 +258,39 @@ $(document).ready(function () {
             }
          ]
       })
+   }
+   
+   
+   if ($('.digital_generation__gallery').length > 0) {
+      $('.digital_generation__gallery').slick({
+         // slidesToShow: 5,
+         slidesToScroll: 2,
+         // autoplay: true,
+         autoplaySpeed: 2000,
+         dots: true,
+         arrows: true,
+         loop: true,
+         infinite: true,
+         centerMode: true,
+         variableWidth: true,
+         slidesToShow: 3,
+         responsive: [
+            {
+               breakpoint: 580,
+               settings: {
+                  dots: false,
+               }
+            }
+         ]
+      });
+      
+      $('a').on( 'click', (event) => pointDigitalGeneration(event));
+      function pointDigitalGeneration(event) {
+         let target = $(event.target).closest('a').prop('href').split('#')[1];
+         console.log(target);
+         $('target-cell').removeClass('target-cell');
+         $('#'+ target).addClass('target-cell');
+      }
    }
    
    /* новости */
