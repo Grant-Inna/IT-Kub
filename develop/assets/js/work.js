@@ -307,6 +307,7 @@ $(document).ready(function () {
       
       showHashNews($news, date, current_issue);
    }
+   
    function showHashNews( current, date, current_issue ) {
       $('.news_one__article').not(current).removeClass('active_news').hide();
       current.addClass('active_news').show();
