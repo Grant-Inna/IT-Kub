@@ -5,6 +5,8 @@
    });
 }
 .digital_generation__article {
+   .column();
+   
    .col();
    .size(8);
    .size-ll(12);
@@ -28,7 +30,10 @@
 }
 
 .digital_generation__about {
-   padding: 1rem 1.4rem 2.4rem;
+   .column();
+   .justify-start();
+   height: 100%;
+   padding: 1rem 1.4rem 2.5rem;
    
    .digital_generation__name {
       .flex();
@@ -76,6 +81,7 @@
 .digital_generation__link {
    .flex();
    .items-center();
+   margin-top: auto;
    span {
       font-size: 1.2rem;
       margin-right: 10px;
