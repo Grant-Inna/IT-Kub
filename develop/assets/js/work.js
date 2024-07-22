@@ -265,7 +265,7 @@ $(document).ready(function () {
       $('.digital_generation__gallery').slick({
          // slidesToShow: 5,
          slidesToScroll: 2,
-         // autoplay: true,
+         autoplay: true,
          autoplaySpeed: 2000,
          dots: true,
          arrows: true,
@@ -287,7 +287,7 @@ $(document).ready(function () {
       $('a').on( 'click', (event) => pointDigitalGeneration(event));
       function pointDigitalGeneration(event) {
          let target = $(event.target).closest('a').prop('href').split('#')[1];
-         console.log(target);
+         // console.log(target);
          $('target-cell').removeClass('target-cell');
          $('#'+ target).addClass('target-cell');
       }

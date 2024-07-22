@@ -1,11 +1,17 @@
 .digital_generation__tile {
    .row-flex();
+   .md-block({
+      .justify-center();
+   });
 }
 .digital_generation__article {
    .col();
    .size(8);
    .size-ll(12);
+   .size-lg(12);
+   .size-md(20);
    .size-smmd(24);
+   .size-sm(24);
    
    border-radius: 2px;
    overflow: hidden;
@@ -49,12 +55,18 @@
 .digital_generation__info {
    .montserrat-regular();
    display: flex;
+   flex-wrap: wrap;
    font-size: 1.2rem;
    line-height: 130%;
+   
+   & div {
+      display: inline-block;
+   }
    
    .question {
       margin-right: 10px;
       white-space: nowrap;
+      min-width: 7vw;
    }
    .answer {
       .montserrat-semibold();
