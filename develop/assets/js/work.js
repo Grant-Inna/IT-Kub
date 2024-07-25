@@ -263,7 +263,7 @@ $(document).ready(function () {
    
    if ($('.digital_generation__gallery').length > 0) {
       $('.digital_generation__gallery').slick({
-         // slidesToShow: 5,
+         slidesToShow: 1,
          slidesToScroll: 2,
          autoplay: true,
          autoplaySpeed: 2000,
@@ -273,7 +273,6 @@ $(document).ready(function () {
          infinite: true,
          centerMode: true,
          variableWidth: true,
-         slidesToShow: 3,
          responsive: [
             {
                breakpoint: 580,
