@@ -21,9 +21,9 @@ html
             .wrapper
                .row
                   .main_news__image
-                     img( src='./assets/data/images/news/2024-07-01.webp' )
-                  main#news_01-07-2024.main_news__holder
-                     .main_news__date.text-25 01
+                     img( src='./assets/data/images/news/2024.07.26.webp' )
+                  main#news_26-07-2024.main_news__holder
+                     .main_news__date.text-25 26
                         span.first &nbsp;/&nbsp;
                         span.second .
                         | 07
@@ -31,8 +31,8 @@ html
                         span.second .
                         | 2024
                      .main_news__text.text-22
-                        p Стартовал тренировочный этап Всероссийской олимпиады по&nbsp;искусственному интеллекту 2024&nbsp;года от&nbsp;Минпросвещения России
-                     a( href='./news/news-one.html#news_01-07-2024' ).news__more.hover.inline Подробнее
+                        p Открыта страница выставки достижений обучающихся центров &laquo;IT-куб&raquo;
+                     a( href='./news/news-one.html#news_26-07-2024' ).news__more.hover.inline Подробнее
 
          section( aria-label='Новости' ).news_list__container.mt4
             .wrapper
@@ -40,6 +40,7 @@ html
                   .news__block.news_block-1#active
                      include assets/jade/content/__news-one
                      .pagination__block.pagination_show#block_1
+                        +news( '01', '07', '2024', 'Стартовал тренировочный этап Всероссийской олимпиады по&nbsp;искусственному интеллекту 2024&nbsp;года от&nbsp;Минпросвещения России', 'news_01-07-2024' )
                         +news( '15', '06', '2024', 'Завершилась череда окружных совещаний для&nbsp;руководителей Центров цифрового образования детей &laquo;IT-куб&raquo;', 'news_15-06-2024' )
                         +news( '14', '06', '2024', 'Участники Окружного совещания руководителей Центров &laquo;IT-куб&raquo; в&nbsp;Красноярске обсудили практические вопросы и&nbsp;результаты работы', 'news_14-06-2024_2' )
                         +news( '14', '06', '2024', 'Третье окружное совещание руководителей Центров &laquo;IT-куб&raquo; &laquo;Поиск решений&raquo; открылось в&nbsp;Красноярске', 'news_14-06-2024' )
