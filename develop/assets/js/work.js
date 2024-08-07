@@ -441,7 +441,7 @@ $(document).ready(function () {
           s = 500;
       
       if (!current.hasClass('show')) {
-         $('.list').removeClass('show');
+         current.removeClass('show');
          answer.slideDown(s);
          current.addClass('show')
       } else {

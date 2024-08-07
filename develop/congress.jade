@@ -12,6 +12,7 @@ html
          +menu( '', '', '', '', '', '', '', '', 'active', '', '', '' )
          include assets/jade/header/main-pages
 
+
          include assets/jade/content/congress/__navigation
          section( aria-label='Страница съезда руководителей "Кубов в кубе"' ).congress__title
             .congress__image.congress__cube
@@ -24,7 +25,8 @@ html
                      .congress__image.congress__image-1
                   .congress_menu__holder
                      menu.congress_navigation__holder
-                        +item( 'Программа', 'program' )
+                        +item( 'Программа на&nbsp;20 августа', 'program20' )
+                        +item( 'Программа на&nbsp;21 августа', 'program21' )
                         +item( 'Видеопрезентация', 'videopresentation' )
                         +item( 'Итоги I Съезда', 'result' )
 
@@ -42,21 +44,188 @@ html
          include assets/jade/content/congress/__ps-1
          include assets/jade/content/congress/__ps-2
          include assets/jade/content/congress/__ps-3
-         section( aria-label='Программа прошедших мероприятий' )#program.congress__main
+
+         section( aria-label='Программа мероприятий на 20 и 21 августа' ).congress__main
             .wrapper
                h1.caption.center.mb3 Программа мероприятий
 
+
+
+         include assets/jade/content/congress/__day
+         include assets/jade/content/congress/__place
+         include assets/jade/content/congress/__place2
+         include assets/jade/content/congress/__event-simple
+         include assets/jade/content/congress/__event-0
+         include assets/jade/content/congress/__event
+         include assets/jade/content/congress/__event-no-time
+         include assets/jade/content/congress/__clock
+         include assets/jade/content/congress/__clock-0
+         include assets/jade/content/congress/__clock-simple
+         include assets/jade/content/congress/__clock-1
+         include assets/jade/content/congress/__clock-2
+         include assets/jade/content/congress/__clock-3
+         include assets/jade/content/congress/__break
+
+         section( aria-label='Программа проведения съезда руководителей' ).congress__container
+            .wrapper.list#program20
                section( aria-label='').mb3
                   .congress_list__section
-                        .congress__trigger
-                           .congress__day
-                              .congress__numb
-                                 h1.caption.inline 20-21
-                                 .text-22.inline   &nbsp;августа
-                           .congress__more
-                              .congress_more__text список выступлений
-                              .congress_more__arrow
+                     .congress__day_title
+                        .congress__day
+                           .congress__numb
+                              h1.caption.inline 20
+                              .text-22.inline   &nbsp;августа
 
+                        a( href='https://yandex.ru/maps/-/CDcG7ZMy' target='_blank').congress__main_place
+                           .meeting__pin
+                           .meeting__name отель Radisson Blu
+                           .meeting__address улица Труда 179
+
+                        .congress__more
+                           .congress_more__arrow.congress__trigger
+
+
+               section( aria-label='День один' style='display: none').congress__wrapper.mb4.list__holder
+                  .congress__block
+                     strong.text-22.upper Открытие мероприятия, пленарное заседание
+                  +clock( '10:30&nbsp;&ndash; 11:15', ' Открытие мероприятия, пленарное заседание')
+
+
+                  .row
+                     .block-6
+                        +place( 'Galaxy Hall')
+                     .block-18
+                        +event-simple( '10:30&nbsp;&ndash; 10:35', 'Открытие Всероссийского съезда руководителей центров цифрового образования детей «IT-куб» «Как Управлять Будущим»')
+                        +event( '10:35&nbsp;&ndash; 10:40', 'Кравцов Сергей Сергеевич', 'Министр просвещения Российской Федерации (видеообращение)', 'Обращение Министра просвещения Российской Федерации к руководителям центров цифрового образования детей <div class="wwnow">&laquo;IT-куб&raquo;</div>')
+                        +event( '10:40&nbsp;&ndash; 10:50', 'Литке Виталий Владимирович', 'Министр образования и науки Челябинской области', 'Приветственное слово, обращение к руководителям центров цифрового образования детей «IT-куб» <div class="wwnow">&laquo;IT-куб&raquo;</div>')
+                        +event( '11:00&nbsp;&ndash; 11:14', 'Горобец Андрей Валерьевич', 'директор Департамента цифровой трансформации и больших данных', '«Достижение «цифровой зрелости» сферы образования на базе единого, качественного, безопасного образовательного пространства»<b>(Стратегия цифровой трансформации образования)</b>')
+                        +event( '11:05&nbsp;&ndash; 11:25', 'Пономарёва Юлия Александровна', 'директор ФГАНУ «ФИЦТО»', '«Роль центров цифрового образования детей <div class="wwnow">&laquo;IT-куб&raquo;</div> в достижении национальных целей» ')
+
+                  .congress__block
+                     strong.text-22.upper Проектная сессия
+                  +clock-1( '11:15&nbsp;&ndash; 12:40 ', 'Проектная сессия «Направления развития центров <div class="wwnow">&laquo;IT-куб&raquo;</div>', 'Пономарёва Юлия Александровна', 'директор ФГАНУ &laquo;ФИЦТО&raquo;' )
+                  .row.mb3
+                     .block-6
+                        +place( 'Galaxy Hall')
+                     .block-18
+                        +event( '11:15&nbsp;&ndash; 11:30', 'Есин Иван Владимирович', 'директор Фонда гуманитарных проектов', 'Включение партнеров в единую модель профориентации. Опыт взаимодействия с центрами <div class="wwnow mr0">&laquo;IT-куб&raquo;</div>')
+                        +event( '11:30&nbsp;&ndash; 11:45', 'Паунов Ярослав Иванович', 'директор проектов Центра молодежных инициатив Агентства стратегических инициатив', '«Карьерный Навигатор»')
+                        +event( '11:45&nbsp;&ndash; 12:00', 'Куликов Дмитрий Александрович', 'проректор по научной работе ФГАОУ ВО «Государственный университет просвещения»', '«Всероссийская олимпиада по искусственному интеллекту как форма работы с одаренными детьми»')
+                        +event( '12:00&nbsp;&ndash; 12:15', 'Халамов Владислав Николаевич', 'директор ГБУ ДО «Дом юношеского технического творчества», г. Челябинск', '«Роль центров цифрового образования детей «IT-куб» в развитии экономики региона')
+                        +event( '12:15&nbsp;&ndash; 12:30', 'Полушкин Денис Павлович', 'руководитель центра «IT-куб» г. Магнитогорск', '«Всероссийский конкурс «Инженерные кадры России» как форма эффективного сотрудничества образовательных организаций с работодателями»')
+                        +event-simple( '12:30&nbsp;&ndash; 12:40', '«Вопрос-ответ»')
+                  .row
+                     .block-6
+                        +place2( 'Ресторан<br>1,2 этаж')
+                     .block-18
+                        +break( 'diner', '12:50&nbsp;&ndash; 14:00', 'Обед' )
+                  .congress__block
+                     strong.text-22.upper Практико-ориентированная сессия ( группы 1-3 )
+                  +clock-simple( '14:00&nbsp;&ndash; 17:00', 'Практико-ориентированная сессия «Презентация региональных практик»', 'Calipso, Astra, Sigma' )
+                  .row.mb3
+                     .block-6
+                     .block-18
+                        +event( '14:00&nbsp;&ndash; 15:40', 'Группа Calipso<br>Ковалев Владислав Алексеевич', 'педагог дополнительного образования «IT-куб» г. Смоленск', 'Мастер-класс «Командообразование. Как собрать команду мечты из своих учеников»')
+                        +event-notime( 'Группа Astra<br>Канова Мария Идрисовна', 'педагог дополнительного образования «IT-куб» г. Южноуральск', 'Мастер-классы «Организация проектной деятельности обучающихся»')
+                        +event-notime( 'Группа Sigma<br>Мальцев Алексей Александрович', 'педагог дополнительного образования «IT-куб» г. Сатка', 'Мастер-класс «Нестандартные подходы к решению задач»')
+
+                        +event( '15:50&nbsp;&ndash; 17:00', 'Группа Calipso<br>Денисов Дмитрий Анатольевич', 'начальник информационно-методического отдела ГБУ ДО «Дом юношеского технического творчества», г. Челябинск', '«Использование малозатратных форм при организации обучениях летних смен в центрах цифрового образования детей «IT-куб')
+                        +event-notime( 'Группа Astra<br>Малько Ирина Александровна', 'руководитель центра «IT-куб» г. Липецк', '«Подбор, сохранение и развитие кадров в центрах цифрового образования детей «IT-куб»')
+                        +event-notime( 'Группа Sigma<br>Милованова Оксана Владимировна', 'руководитель центра «IT-куб» г. Калуга', '«Возможности профориентационной работы центров цифрового образования детей «IT-куб»')
+
+
+                  .congress__block
+                     strong.text-22.upper стратегическая сессия (группы 4-6 )
+                  +clock-simple( '14:00&nbsp;&ndash; 17:00', 'Стратегическая сессия «Поиск эффективных управленческих решений» (решение кейсов)', 'Galaxy 1, Galaxy 2, Galaxy 3')
+                  .row.mb3
+                     .block-6
+                     .block-18
+
+
+                  .congress__block
+                     strong.text-22.upper Экскурсионная программа
+                  .row
+                     .block-6
+                     .block-18
+                        +break( 'photo', '17:00&nbsp;&ndash; 19:00', 'Экскурсионная программа по&nbsp;достопримечательностям Челябинска' )
+
+
+
+
+            .wrapper.list#program21
+               section( aria-label='').mb3.mt5
+                  .congress_list__section
+                     .congress__day_title
+                        .congress__day
+                           .congress__numb
+                              h1.caption.inline 21
+                              .text-22.inline   &nbsp;августа
+
+                        a( href='https://yandex.ru/maps/-/CDcG7ZMy' target='_blank').congress__main_place
+                           .meeting__pin
+                           .meeting__name отель Radisson Blu
+                           .meeting__address улица Труда 179
+                        .congress__more.trigger
+                           .congress_more__arrow.congress__trigger
+
+
+                  section( aria-label='День два' style='display: none').congress__wrapper.spec.mb4.list__holder
+                     .row.mt3
+                        .block-6.mt05
+                           +place2( 'Холл 1 этажа')
+                        .block-18
+                           +break( 'break', '09:00&nbsp;&ndash; 10:00', 'Приветственный кофе&ndash;брейк' )
+
+                     .congress__block
+                        strong.text-22.upper стратегическая сессия ( группы 1-3 )
+                     +clock-simple( '10:00&nbsp;&ndash; 13:00', 'Практико-ориентированная сессия «Презентация региональных практик»', 'Galaxy 1, Galaxy 2, Galaxy 3')
+                     .row.mb3
+                        .block-6
+                        .block-18
+
+
+                     .congress__block
+                        strong.text-22.upper практико-ориентированная сессия ( группы 4-6 )
+                     +clock-simple( '10:00&nbsp;&ndash; 13:00', 'Практико-ориентированная сессия «Презентация региональных практик»', 'Calipso, Astra, Sigma')
+                     .row.mb3
+                        .block-6
+                        .block-18
+                           +event( '10:00&nbsp;&ndash; 11:40', 'Группа Calipso<br>Ковалев Владислав Алексеевич', 'педагог дополнительного образования «IT-куб» г. Смоленск', 'Мастер-класс «Командообразование. Как собрать команду мечты из своих учеников»')
+                           +event-notime( 'Группа Astra<br>Канова Мария Идрисовна', 'педагог дополнительного образования «IT-куб» г. Южноуральск', 'Мастер-классы «Организация проектной деятельности обучающихся»')
+                           +event-notime( 'Группа Sigma<br>Мальцев Алексей Александрович', 'педагог дополнительного образования «IT-куб» г. Сатка', 'Мастер-класс «Нестандартные подходы к решению задач»')
+
+                           +event( '11:50&nbsp;&ndash; 13:00', 'Группа Calipso<br>Денисов Дмитрий Анатольевич', 'начальник информационно-методического отдела ГБУ ДО «Дом юношеского технического творчества», г. Челябинск', '«Использование малозатратных форм при организации обучениях летних смен в центрах цифрового образования детей «IT-куб')
+                           +event-notime( 'Группа Astra<br>Малько Ирина Александровна', 'руководитель центра «IT-куб» г. Липецк', '«Подбор, сохранение и развитие кадров в центрах цифрового образования детей «IT-куб»')
+                           +event-notime( 'Группа Sigma<br>Милованова Оксана Владимировна', 'руководитель центра «IT-куб» г. Калуга', '«Возможности профориентационной работы центров цифрового образования детей «IT-куб»')
+
+
+                     .row
+                        .block-6
+                           +place2( 'Ресторан<br>1,2 этаж')
+                        .block-18
+                           +break( 'diner', '12:50&nbsp;&ndash; 14:00', 'Обед' )
+
+                     .congress__block
+                        strong.text-22.upper Подведение итогов
+                     +clock-1( '14:00&nbsp;&ndash; 16:00', '«Модели выстраивания сотрудничества центров цифрового образования детей «IT-куб» с технологическими партнерами»', 'Шумилов Алексей Сергеевич', 'директор Центра реализации проектов и научной деятельности ФГАНУ «ФИЦТО»')
+                     .row.mb3
+                        .block-6
+                           +place( 'Galaxy Hall')
+                        .block-18
+                           +event( '14:00&nbsp;&ndash; 14:15', 'Пикулев Александр Евгеньевич', 'руководитель образовательного направления Varwin, ООО «3Д Инновации»', '«Модели сетевого взаимодействия с технологическим партнером: от мастер-классов и конференций до подготовки детей к НТО Junior» ')
+                           +event( '14:15&nbsp;&ndash; 14:30', 'Елина Яна Анатольевна', 'координатор образовательных программ, Т Банк', '«Форматы продуктивного сотрудничества Т-Образования и центров IT-куб: успешный опыт, перспективы сотрудничества»')
+                           +event( '14:30&nbsp;&ndash; 14:45', 'Шахов Александр Дмитриевич', 'академический лидер направления разработки, Центральный университет', '«Почему важно уметь задавать вопросы в эпоху генерации ответов?»')
+                           +event( '14:45&nbsp;&ndash; 15:00', 'Хорошилов Евгений Владимирович', 'директор проектного офиса цифровизации образования ПАО «Ростелеком»', '«Ростелеком-Лицей как образовательный инструмент для центров «IT-куб»')
+                           +event( '15:00&nbsp;&ndash; 15:15', 'Черникина Юлия Ильинична', 'руководитель образовательного направления компании «Киберпротект»', '«От цифровой гигиены к передовым инструментам защиты данных - бесплатные образовательные программы компании Киберпротект для педагогов центров «IT-куб» и СПО»')
+                           +event( '15:15&nbsp;&ndash; 15:30', 'Шмавонян Саркис Артушевич', 'ведущий менеджер по работе с образовательными организациями компании «Киберпротект»', '«Квиз «Киберзащитник» для учащихся ИТ-Кубов интерактивная игра для обучения цифровой гигиене и основам информационной безопасности»')
+
+                     .congress__block
+                        strong.text-22.upper Закрытие мероприятия
+                     +clock-0( '15:30&nbsp;&ndash; 16:00', 'Закрытие мероприятия. Подведение итогов Всероссийского съезда руководителей Центров цифрового образования детей «IT-куб» «Как Управлять Будущим»')
+                     .row.mb3
+                        .block-6
+                           +place( 'Galaxy Hall')
+                        .block-18
 
 
          section( aria-label='Видео-презентация' )#videopresentation.congress__video
@@ -72,8 +241,8 @@ html
                         .congress_button__text Скачать видеоролик
 
                video(width='100%' height='auto' controls='controls' poster='./assets/data/congress/after/video/poster24.jpg').congress_video__holder.mt3
-                 source(src='./assets/data/congress/after/video/IT-cube.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
-                 |    Тег video не поддерживается вашим браузером
+                  source(src='./assets/data/congress/after/video/IT-cube.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+                  |    Тег video не поддерживается вашим браузером
 
 
 
