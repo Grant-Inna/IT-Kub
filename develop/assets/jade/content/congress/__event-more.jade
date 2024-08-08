@@ -1,7 +1,7 @@
-mixin event-notime( zal, name, position, title  )
+mixin event-more( time, zal, name, position, title  )
    article.congress__event
       .icon-dot
-      strong.text-27
+      strong.text-27 !{time}
       .congress__person
          .text-25.mb03 !{zal}
          h1.text-25.big !{name}
