@@ -86,7 +86,7 @@ html
                            .congress_more__arrow.congress__trigger
 
 
-               section( aria-label='День один' style='display: none').congress__wrapper.list__holder
+               section( aria-label='День один').congress__wrapper.list__holder
                   .row.mt3
                      .block-6.mt05
                         +place2( 'Холл 1 этажа')
@@ -104,7 +104,7 @@ html
                      .block-18
                         +event-simple( '10:30&nbsp;&ndash; 10:35', 'Открытие Всероссийского съезда руководителей центров цифрового образования детей <div class="wwnow">&laquo;IT-куб&raquo;</div> &laquo;Как Управлять Будущим&raquo;')
                         +event( '10:30&nbsp;&ndash; 10:45', 'Литке Виталий Владимирович', 'Министр образования и&nbsp;науки Челябинской области', '&laquo;Приветственное слово, обращение к&nbsp;руководителям центров цифрового образования детей <div class="wwnow">&laquo;IT-куб&raquo;</div>')
-                        +event( '10:45&nbsp;&ndash; 11:00', 'Горобец Андрей Валерьевич', 'Директор Департамента цифровой трансформации и&nbsp;больших данных<b>Министерство просвещения Российской Федерации', '&laquo;Достижение &laquo;цифровой зрелости&raquo; сферы образования на&nbsp;базе единого, качественного, безопасного образовательного пространства&raquo;')
+                        +event( '10:45&nbsp;&ndash; 11:00', 'Горобец Андрей Валерьевич', 'Директор Департамента цифровой трансформации и&nbsp;больших данных<br>Министерство просвещения Российской Федерации', '&laquo;Достижение &laquo;цифровой зрелости&raquo; сферы образования на&nbsp;базе единого, качественного, безопасного образовательного пространства&raquo;')
                         +event( '11:00&nbsp;&ndash; 11:15', 'Пономарёва Юлия Александровна', 'Директор ФГАНУ &laquo;ФИЦТО&raquo;', '&laquo;Роль центров цифрового образования детей <div class="wwnow">&laquo;IT-куб&raquo;</div> в&nbsp;достижении национальных целей&raquo; ')
 
                   .congress__block
@@ -142,7 +142,15 @@ html
 
                   .congress__block
                      strong.text-22.upper стратегическая сессия (группы 4-6 )
-                  +clock-simple( '14:00&nbsp;&ndash; 17:00', 'Стратегическая сессия &laquo;Поиск эффективных управленческих решений&raquo;<br>Решение кейсов', 'Galaxy 1, Galaxy 2, Galaxy 3')
+                  article.congress__clock.row.mb3
+                     .block-6.flex.items-center
+                        .icon-clock
+                        strong.text-27.text-blue 14:00&nbsp;&ndash; 17:00
+                     .block-18
+                        h1.text-25.big.text-blue Стратегическая сессия &laquo;Поиск эффективных управленческих решений&raquo;
+                        .text-25.mb05 Решение кейсов
+                        h2.text-22.big  Залы:&nbsp;
+                           span Galaxy 1, Galaxy 2, Galaxy 3
                   .row.mb3
                      .block-6
                      .block-18
