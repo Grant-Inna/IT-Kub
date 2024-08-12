@@ -9,6 +9,7 @@ html
       include assets/jade/content/digital_generation/__gallery
       include assets/jade/content/digital_generation/__article-team
       include assets/jade/content/digital_generation/__article-one
+      include assets/jade/content/digital_generation/__article-one-nonastavnic
       include assets/jade/content/digital_generation/__article-one-short
       include assets/jade/content/digital_generation/__article-one-links
       #container_digital_generation
@@ -23,6 +24,7 @@ html
 
 
          section.digital_generation__gallery
+            +gallery( 'Литвиненко Даниил', '8__litvinenko_daniil')
             +gallery( 'Добрухин Григорий', '7__dobruhin_grigorii')
             +gallery( 'Огородников Даниил', '6__ogorodnikov_daniil')
             +gallery( 'Черныгов Ярослав', '5__chernigov_yaroslav')
@@ -42,6 +44,7 @@ html
                +article-one(  'Черныгов Ярослав,', '5__chernigov_yaroslav', '15 лет', '&laquo;IT-куб&raquo; Рязань', 'Диденко Владимир Андреевич', '<b>Разработал цифровую экосистему &laquo;Yarach&raquo;&nbsp;&mdash; рязанский ответ Google-сервисам</b>, уже получивший народное признание. Это набор сервисов для&nbsp;работы и&nbsp;учебы.', 'Импортозаменяющий проект работает исключительно <b>на&nbsp;отечественных технологиях</b>.', 'https://vk.com/video-197911173_456239090')
                +article-one-links( 'Огородников Даниил,', '6__ogorodnikov_daniil', '15 лет', '&laquo;IT-куб&raquo; Липецк', 'Горяйнов Александр Олегович', '<b>Разработал метод управления роботизированными системами</b> на&nbsp;основе совокупности нейросетей <b>и&nbsp;систему визуализации погоды в&nbsp;замкнутой камере</b> для&nbsp;тестирования электронных устройств <b>&laquo;Погодный фонарь&raquo;</b>.', '<b>Диплом III&nbsp;степени</b> на&nbsp;Международном форуме научной молодёжи <b>&laquo;Шаг в&nbsp;будущее&raquo;</b>.', 'https://vk.com/video-184246628_456239259', 'Смотреть видеоролик', 'https://vk.com/video-184246628_456239258', 'Смотреть второй видеоролик')
                +article-one( 'Добрухин Григорий,', '7__dobruhin_grigorii', '17 лет', '&laquo;IT-куб&raquo; Южноуральск', 'Шатров Антон Рудольфович', 'Соавтор проекта <b>&laquo;Интерактивный баннер&raquo;</b>. Проект разработан <b>по&nbsp;техническому заданию партнёра&nbsp;&mdash; АО&nbsp;&laquo;Южноуральский арматурно-изоляторный завод&raquo;&nbsp;&mdash; и&nbsp;в&nbsp;настоящее время внедрён</b>.', '<b>Победитель</b> номинации Всероссийского профориентационного <b>конкурса &laquo;Икар&raquo;</b>.', 'https://vk.com/wall-196154709_3525' )
+               +article-one-nonastavnic( 'Литвиненко Даниил,', '8__litvinenko_daniil', '16 лет', '&laquo;IT-куб&raquo; Барнаул', 'Разработал <b>мобильное приложение</b>, с&nbsp;помощью которого можно <b>подобрать и&nbsp;приобрести спортивные товары, а&nbsp;затем отслеживать их&nbsp;доставку</b>.', '<b>3&nbsp;место</b> на&nbsp;межрегиональном (итоговом) этапе Чемпионата по&nbsp;профессиональному мастерству <b>&laquo;Профессионалы&raquo;&nbsp;&mdash; 2024 в&nbsp;компетенции &laquo;Разработка мобильных приложений (юниоры)&raquo;</b>.', 'https://vk.com/video-197166957_456239652' )
 
 
          include assets/jade/footer/footer

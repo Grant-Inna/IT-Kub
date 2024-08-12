@@ -1,0 +1,20 @@
+mixin article-one-nonastavnic( name, photo, age, itcube, about, place, link)
+   .digital_generation__article( id='#{photo}')
+      .digital_generation__photo
+         img( src='./assets/data/digital_generation/#{photo}.webp')
+      .digital_generation__about
+         h2.digital_generation__name #{name}
+            span.age !{age}
+
+         .digital_generation__info.mb15
+            .answer !{itcube}
+
+         .digital_generation__info.mb06
+            p !{about}
+
+         .digital_generation__info.mb2
+            p !{place}
+
+         a( href='#{link}' target='_blank').digital_generation__link
+            span Смотреть видеоролик
+            .icon
