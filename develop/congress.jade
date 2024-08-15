@@ -87,7 +87,7 @@ html
                            .congress_more__arrow.congress__trigger
 
 
-               section( aria-label='День один').congress__wrapper.list__holder
+               section( aria-label='День один' style='display: none').congress__wrapper.list__holder
                   .row.mt3
                      .block-6.mt05
                         +place2( 'Холл 1 этажа')
@@ -128,7 +128,7 @@ html
                         +break( 'diner', '12:30&nbsp;&ndash; 13:30', 'Обед' )
                   .congress__block
                      strong.text-22.upper Практико&ndash;ориентированная сессия (группы 1-3)
-                  +clock-simple( '13:30&nbsp;&ndash; 16:30', 'Практико-ориентированная сессия &laquo;Презентация региональных практик&raquo;', 'Calipso, Astra, Sigma' )
+                  +clock-0( '13:30&nbsp;&ndash; 16:30', 'Практико-ориентированная сессия &laquo;Презентация региональных практик&raquo;' )
                   .row.mb3
                      .block-6
                         .congress__place.spec
@@ -209,12 +209,12 @@ html
 
                      .congress__block
                         strong.text-22.upper Практико&ndash;ориентированная сессия (группы 4-6)
-                     +clock-simple( '10:00&nbsp;&ndash; 13:00', 'Практико-ориентированная сессия &laquo;Презентация региональных практик&raquo;', 'Calipso, Astra, Sigma')
+                     +clock-0( '10:00&nbsp;&ndash; 13:00', 'Практико-ориентированная сессия &laquo;Презентация региональных практик&raquo;')
                      .row.mb3
                         .block-6
-                        .congress__place.spec
-                           .icon-pin
-                           strong.text-22 Calipso, Astra, Sigma
+                           .congress__place.spec
+                              .icon-pin
+                              strong.text-22 Calipso, Astra, Sigma
                         .block-18
                            +event-more( '10:00&nbsp;&ndash; 11:40', 'Calipso', 'Ковалев Владислав Алексеевич', 'Педагог дополнительного образования Центра цифрового образования детей <div class="wwnow">&laquo;IT-куб&raquo;</div><br>г.&nbsp;Смоленск, Смоленская область', 'Мастер-класс: &laquo;Командообразование. Как&nbsp;собрать команду мечты из&nbsp;своих учеников&raquo;')
                            +event-notime( 'Astra', 'Канова Мария Идрисовна', 'Педагог дополнительного образования Центра цифрового образования детей <div class="wwnow">&laquo;IT-куб&raquo;</div><br>г.&nbsp;Южноуральск, Челябинская область', 'Мастер-класс: &laquo;Организация проектной деятельности обучающихся&raquo;')
