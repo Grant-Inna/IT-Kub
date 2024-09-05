@@ -1,7 +1,7 @@
 mixin article-one( name, photo, age, itcube, nastavnik, about, place, link)
    .digital_generation__article( id='#{photo}')
       .digital_generation__photo
-         img( src='./assets/data/digital_generation/#{photo}.webp')
+         img( src='./assets/data/digital_generation/#{photo}.webp' alt='#{name}')
       .digital_generation__about
          h2.digital_generation__name #{name}
             span.age !{age}
