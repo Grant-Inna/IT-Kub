@@ -206,61 +206,23 @@
           </div>
         </div>
       </section>
-      <section aria-label="Номинации&quot;" id="nominations" class="nominations__container mt8">
-        <div class="wrapper">
-          <h1 class="caption center mb5">Номинации конкурса</h1>
-          <div class="row">
-                        <div class="nominations__holder text-22 nomination_icon-1">
-                          <div class="nominations__text_holder">
-                            <div class="nominations__text mb1">Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении</div>
-                            <h2 class="nominations__title title"><div style="display: inline-block;white-space: nowrap;">Программирование</div></h2>
-                          </div>
-                        </div>
-                        <div class="nominations__holder text-22 nomination_icon-2">
-                          <div class="nominations__text_holder">
-                            <div class="nominations__text mb1">Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении</div>
-                            <h2 class="nominations__title title">Разработка<br>VR/AR-приложений</h2>
-                          </div>
-                        </div>
-                        <div class="nominations__holder text-22 nomination_icon-3">
-                          <div class="nominations__text_holder">
-                            <div class="nominations__text mb1">Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении</div>
-                            <h2 class="nominations__title title">Системное <div class="wwnow ml0">администрирование</div></h2>
-                          </div>
-                        </div>
-                        <div class="nominations__holder text-22 nomination_icon-4">
-                          <div class="nominations__text_holder">
-                            <div class="nominations__text mb1">Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении</div>
-                            <h2 class="nominations__title title">Кибергигиена</h2>
-                          </div>
-                        </div>
-                        <div class="nominations__holder text-22 nomination_icon-5">
-                          <div class="nominations__text_holder">
-                            <div class="nominations__text mb1">Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении</div>
-                            <h2 class="nominations__title title">Алгоритмика<br>и&nbsp;логика</h2>
-                          </div>
-                        </div>
-                        <div class="nominations__holder text-22 nomination_icon-6">
-                          <div class="nominations__text_holder">
-                            <div class="nominations__text mb1">Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении</div>
-                            <h2 class="nominations__title title">Мобильная разработка</h2>
-                          </div>
-                        </div>
-                        <div class="nominations__holder text-22 nomination_icon-7">
-                          <div class="nominations__text_holder">
-                            <div class="nominations__text mb1">Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении</div>
-                            <h2 class="nominations__title title">Робототехника</h2>
-                          </div>
-                        </div>
-                        <div class="nominations__holder text-22 nomination_icon-8">
-                          <div class="nominations__text_holder">
-                            <div class="nominations__text mb1">Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении</div>
-                            <h2 class="nominations__title title">Большие данные</h2>
-                          </div>
-                        </div>
-          </div>
-        </div>
-      </section>
+      <!---->
+      <!--section( aria-label='Номинации"' )#nominations.nominations__container.mt8-->
+      <!--   .wrapper-->
+      <!--      h1.caption.center.mb5 Номинации конкурса-->
+      <!--      .row-->
+      <!--         include assets/jade/content/teacher_competition/__nominations-->
+      <!--         include assets/jade/content/teacher_competition/__nominations-more-->
+      <!--         +nomination( '1', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', '<div style="display: inline-block;white-space: nowrap;">Программирование</div>', 'Программирование на&nbsp;Python', 'Программирование на&nbsp;Java', '')-->
+      <!--         +nomination( '2', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Разработка<br>VR/AR-приложений', 'Мобильная разработка', 'Разработка VR/AR-приложений', '')-->
+      <!--         +nomination( '3', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Системное <div class="wwnow ml0">администрирование</div>')-->
+      <!--         +nomination( '4', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Кибергигиена')-->
+      <!--         +nomination( '5', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Алгоритмика<br>и&nbsp;логика')-->
+      <!--         +nomination( '6', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Мобильная разработка')-->
+      <!--         +nomination( '7', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Робототехника', 'Программирование<br>роботов', '', '')-->
+      <!--         +nomination( '8', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Большие данные')-->
+      <!---->
+      
       <section aria-label="Полуфиналисты" id="semifinalists" class="semifinalists__container mt8">
         <div class="wrapper">
           <h1 class="caption center mb5">Полуфиналисты конкурса</h1>
@@ -271,7 +233,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Лапаев Андрей Сергеевич</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Княгинино</p>
-                              <div id="trigger_lapaev" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/lapaev.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="lapaev" class="semifinalist_one__modal">
                               <div class="modal">
@@ -297,7 +260,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Макаренко Мария Дмитриевна</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Владикавказ</p>
-                              <div id="trigger_makarenko" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/makarenko.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="makarenko" class="semifinalist_one__modal">
                               <div class="modal">
@@ -323,7 +287,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Ковалев Владислав Алексеевич</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Смоленск</p>
-                              <div id="trigger_kovalev" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/kovalev.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="kovalev" class="semifinalist_one__modal">
                               <div class="modal">
@@ -346,32 +311,6 @@
                                 </div>
                               </div>
                             </div>
-                            <article class="semifinalist_one__holder"><strong class="text-22">Логинова Юлия Вячеславовна</strong>
-                              <div class="semi-line"></div>
-                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Ижевск<br><br>Информация обновлена в соответствии с пунктом 7.2.5. Положения о конкурсе</p>
-                              <div id="trigger_loginova" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/loginova.jpg"></div>
-                            </article>
-                            <div id="loginova" class="semifinalist_one__modal">
-                              <div class="modal">
-                                <div class="modal_container">
-                                  <div class="modal_close mb1"></div>
-                                  <h1 class="text-25 center mb2">Логинова Юлия Вячеславовна</h1>
-                                  <div class="video_relative">
-                                    <div class="video_ratio"></div>
-                                    <div class="iframe_holder">
-                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239063&amp;hash=ee4fd49b19b1455f" width="100%" height="100%" frameborder="0" allowfullscreen>
-                                        <p>Твой браузер устарел для отображения элемента iframe</p>
-                                      </iframe>
-                                    </div>
-                                  </div>
-                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239044?list=ln-Znv5qHe7P46ZlJXHmb" target="_blank" class="video__button">
-                                      <div class="video_button__inner">
-                                        <div class="icon-video-vk mr1"></div>
-                                        <div class="video_button__text">Посмотреть видео на сайте</div>
-                                      </div></a></div>
-                                </div>
-                              </div>
-                            </div>
             </div>
           </article>
           <article class="semifinalists__holder mt4 semifinalists-2">
@@ -381,7 +320,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Ильина Ульяна Вячеславовна</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Екатеринбург</p>
-                              <div id="trigger_ilyina" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/ilyina.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="ilyina" class="semifinalist_one__modal">
                               <div class="modal">
@@ -407,7 +347,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Анисимов Алексей Евгеньевич</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; Школы &#8470;619 г.&nbsp;Санкт-Петербург</p>
-                              <div id="trigger_anisimov" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/anisimov.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="anisimov" class="semifinalist_one__modal">
                               <div class="modal">
@@ -433,7 +374,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Лобанова Ольга Викторовна</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новосибирск<br><br>Информация обновлена в соответствии с пунктом 7.2.5. Положения о конкурсе</p>
-                              <div id="trigger_lobanova" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/lobanova.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="lobanova" class="semifinalist_one__modal">
                               <div class="modal">
@@ -456,32 +398,6 @@
                                 </div>
                               </div>
                             </div>
-                            <article class="semifinalist_one__holder"><strong class="text-22">Забеляев Роман Андреевич</strong>
-                              <div class="semi-line"></div>
-                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Барнаул</p>
-                              <div id="trigger_zabelaev" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/zabelaev.jpg"></div>
-                            </article>
-                            <div id="zabelaev" class="semifinalist_one__modal">
-                              <div class="modal">
-                                <div class="modal_container">
-                                  <div class="modal_close mb1"></div>
-                                  <h1 class="text-25 center mb2">Забеляев Роман Андреевич</h1>
-                                  <div class="video_relative">
-                                    <div class="video_ratio"></div>
-                                    <div class="iframe_holder">
-                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239055&amp;hash=45a3aa93a65a856b" width="100%" height="100%" frameborder="0" allowfullscreen>
-                                        <p>Твой браузер устарел для отображения элемента iframe</p>
-                                      </iframe>
-                                    </div>
-                                  </div>
-                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239055?list=ln-rQgWn16r2A9jQZfXRM" target="_blank" class="video__button">
-                                      <div class="video_button__inner">
-                                        <div class="icon-video-vk mr1"></div>
-                                        <div class="video_button__text">Посмотреть видео на сайте</div>
-                                      </div></a></div>
-                                </div>
-                              </div>
-                            </div>
             </div>
           </article>
           <article class="semifinalists__holder mt4 semifinalists-3">
@@ -491,7 +407,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Муравцев Денис Сергеевич</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Семенов</p>
-                              <div id="trigger_muravcev" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/muravcev.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="muravcev" class="semifinalist_one__modal">
                               <div class="modal">
@@ -517,7 +434,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Мальцев Алексей Александрович</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Сатка</p>
-                              <div id="trigger_malcev" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/malcev.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="malcev" class="semifinalist_one__modal">
                               <div class="modal">
@@ -543,7 +461,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Дьячковский Николай Михайлович</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Якутск</p>
-                              <div id="trigger_dyachkovskiy" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/dyachkovskiy.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="dyachkovskiy" class="semifinalist_one__modal">
                               <div class="modal">
@@ -566,32 +485,6 @@
                                 </div>
                               </div>
                             </div>
-                            <article class="semifinalist_one__holder"><strong class="text-22">Канова Мария Идрисовна</strong>
-                              <div class="semi-line"></div>
-                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Южноуральск</p>
-                              <div id="trigger_kanova" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/kanova.jpg"></div>
-                            </article>
-                            <div id="kanova" class="semifinalist_one__modal">
-                              <div class="modal">
-                                <div class="modal_container">
-                                  <div class="modal_close mb1"></div>
-                                  <h1 class="text-25 center mb2">Канова Мария Идрисовна</h1>
-                                  <div class="video_relative">
-                                    <div class="video_ratio"></div>
-                                    <div class="iframe_holder">
-                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239060&amp;hash=0433dd6e934d8d80" width="100%" height="100%" frameborder="0" allowfullscreen>
-                                        <p>Твой браузер устарел для отображения элемента iframe</p>
-                                      </iframe>
-                                    </div>
-                                  </div>
-                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239060?list=ln-IdL9by5cZCNVunkGom" target="_blank" class="video__button">
-                                      <div class="video_button__inner">
-                                        <div class="icon-video-vk mr1"></div>
-                                        <div class="video_button__text">Посмотреть видео на сайте</div>
-                                      </div></a></div>
-                                </div>
-                              </div>
-                            </div>
             </div>
           </article>
           <article class="semifinalists__holder mt4 semifinalists-4">
@@ -601,7 +494,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Диденко Владимир Андреевич</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Рязань</p>
-                              <div id="trigger_didenko" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/didenko.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="didenko" class="semifinalist_one__modal">
                               <div class="modal">
@@ -627,7 +521,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Шмелев Алексей Андреевич</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Екатеринбург</p>
-                              <div id="trigger_shmelev" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/shmelev.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="shmelev" class="semifinalist_one__modal">
                               <div class="modal">
@@ -653,7 +548,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Кличенко Анна Андреевна</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Иркутск</p>
-                              <div id="trigger_klichenko" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/klichenko.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="klichenko" class="semifinalist_one__modal">
                               <div class="modal">
@@ -676,32 +572,6 @@
                                 </div>
                               </div>
                             </div>
-                            <article class="semifinalist_one__holder"><strong class="text-22">Гаан Тамара Валерьевна</strong>
-                              <div class="semi-line"></div>
-                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новосибирск</p>
-                              <div id="trigger_gaan" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/gaan.jpg"></div>
-                            </article>
-                            <div id="gaan" class="semifinalist_one__modal">
-                              <div class="modal">
-                                <div class="modal_container">
-                                  <div class="modal_close mb1"></div>
-                                  <h1 class="text-25 center mb2">Гаан Тамара Валерьевна</h1>
-                                  <div class="video_relative">
-                                    <div class="video_ratio"></div>
-                                    <div class="iframe_holder">
-                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239047&amp;hash=df542def2425c85c" width="100%" height="100%" frameborder="0" allowfullscreen>
-                                        <p>Твой браузер устарел для отображения элемента iframe</p>
-                                      </iframe>
-                                    </div>
-                                  </div>
-                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239047?list=ln-zMzZd3k6W3o2TJ7WqK" target="_blank" class="video__button">
-                                      <div class="video_button__inner">
-                                        <div class="icon-video-vk mr1"></div>
-                                        <div class="video_button__text">Посмотреть видео на сайте</div>
-                                      </div></a></div>
-                                </div>
-                              </div>
-                            </div>
             </div>
           </article>
           <article class="semifinalists__holder mt4 semifinalists-5">
@@ -711,7 +581,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Раздобреева Мария Николаевна</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Миасс</p>
-                              <div id="trigger_razdobreeva" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/razdobreeva.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="razdobreeva" class="semifinalist_one__modal">
                               <div class="modal">
@@ -737,7 +608,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Бондарева Елена Николаевна</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Надым</p>
-                              <div id="trigger_bondareva" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/bondareva.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="bondareva" class="semifinalist_one__modal">
                               <div class="modal">
@@ -763,7 +635,8 @@
                             <article class="semifinalist_one__holder"><strong class="text-22">Давиденко Алла Владимировна</strong>
                               <div class="semi-line"></div>
                               <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новокузнецк</p>
-                              <div id="trigger_davidenko" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/davidenko.jpg"></div>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
                             <div id="davidenko" class="semifinalist_one__modal">
                               <div class="modal">
@@ -786,25 +659,260 @@
                                 </div>
                               </div>
                             </div>
-                            <article class="semifinalist_one__holder"><strong class="text-22">Мошко Станислав Владимирович</strong>
+            </div>
+          </article>
+          <article class="semifinalists__holder mt4 semifinalists-6">
+            <div class="text-22">Лучший педагог Центров &laquo;IT-куб&raquo; в направлении</div>
+            <h1 class="mt07">Мобильная разработка</h1>
+            <div class="row">
+                            <article class="semifinalist_one__holder"><strong class="text-22">Раздобреева Мария Николаевна</strong>
                               <div class="semi-line"></div>
-                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; Школа &#8470;619 г.&nbsp;Санкт-Петербург</p>
-                              <div id="trigger_moshko" class="semifinalists__image mtauto"><img src="./assets/data/teacher_competition/semifinalist/moshko.jpg"></div>
+                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Миасс</p>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
                             </article>
-                            <div id="moshko" class="semifinalist_one__modal">
+                            <div id="razdobreeva" class="semifinalist_one__modal">
                               <div class="modal">
                                 <div class="modal_container">
                                   <div class="modal_close mb1"></div>
-                                  <h1 class="text-25 center mb2">Мошко Станислав Владимирович</h1>
+                                  <h1 class="text-25 center mb2">Раздобреева Мария Николаевна</h1>
                                   <div class="video_relative">
                                     <div class="video_ratio"></div>
                                     <div class="iframe_holder">
-                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239052&amp;hash=6e5221e74b023ebf" width="100%" height="100%" frameborder="0" allowfullscreen>
+                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239049&amp;hash=b46b70ca90019502" width="100%" height="100%" frameborder="0" allowfullscreen>
                                         <p>Твой браузер устарел для отображения элемента iframe</p>
                                       </iframe>
                                     </div>
                                   </div>
-                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239052?list=ln-mC11wKdpE3qVNRCzE6" target="_blank" class="video__button">
+                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt" target="_blank" class="video__button">
+                                      <div class="video_button__inner">
+                                        <div class="icon-video-vk mr1"></div>
+                                        <div class="video_button__text">Посмотреть видео на сайте</div>
+                                      </div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <article class="semifinalist_one__holder"><strong class="text-22">Бондарева Елена Николаевна</strong>
+                              <div class="semi-line"></div>
+                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Надым</p>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
+                            </article>
+                            <div id="bondareva" class="semifinalist_one__modal">
+                              <div class="modal">
+                                <div class="modal_container">
+                                  <div class="modal_close mb1"></div>
+                                  <h1 class="text-25 center mb2">Бондарева Елена Николаевна</h1>
+                                  <div class="video_relative">
+                                    <div class="video_ratio"></div>
+                                    <div class="iframe_holder">
+                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239050&amp;hash=935dcfe59cc0bea9" width="100%" height="100%" frameborder="0" allowfullscreen>
+                                        <p>Твой браузер устарел для отображения элемента iframe</p>
+                                      </iframe>
+                                    </div>
+                                  </div>
+                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz" target="_blank" class="video__button">
+                                      <div class="video_button__inner">
+                                        <div class="icon-video-vk mr1"></div>
+                                        <div class="video_button__text">Посмотреть видео на сайте</div>
+                                      </div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <article class="semifinalist_one__holder"><strong class="text-22">Давиденко Алла Владимировна</strong>
+                              <div class="semi-line"></div>
+                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новокузнецк</p>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
+                            </article>
+                            <div id="davidenko" class="semifinalist_one__modal">
+                              <div class="modal">
+                                <div class="modal_container">
+                                  <div class="modal_close mb1"></div>
+                                  <h1 class="text-25 center mb2">Давиденко Алла Владимировна</h1>
+                                  <div class="video_relative">
+                                    <div class="video_ratio"></div>
+                                    <div class="iframe_holder">
+                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239051&amp;hash=3991919358221e03" width="100%" height="100%" frameborder="0" allowfullscreen>
+                                        <p>Твой браузер устарел для отображения элемента iframe</p>
+                                      </iframe>
+                                    </div>
+                                  </div>
+                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB" target="_blank" class="video__button">
+                                      <div class="video_button__inner">
+                                        <div class="icon-video-vk mr1"></div>
+                                        <div class="video_button__text">Посмотреть видео на сайте</div>
+                                      </div></a></div>
+                                </div>
+                              </div>
+                            </div>
+            </div>
+          </article>
+          <article class="semifinalists__holder mt4 semifinalists-7">
+            <div class="text-22">Лучший педагог Центров &laquo;IT-куб&raquo; в направлении</div>
+            <h1 class="mt07">Робототехника</h1>
+            <div class="row">
+                            <article class="semifinalist_one__holder"><strong class="text-22">Раздобреева Мария Николаевна</strong>
+                              <div class="semi-line"></div>
+                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Миасс</p>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
+                            </article>
+                            <div id="razdobreeva" class="semifinalist_one__modal">
+                              <div class="modal">
+                                <div class="modal_container">
+                                  <div class="modal_close mb1"></div>
+                                  <h1 class="text-25 center mb2">Раздобреева Мария Николаевна</h1>
+                                  <div class="video_relative">
+                                    <div class="video_ratio"></div>
+                                    <div class="iframe_holder">
+                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239049&amp;hash=b46b70ca90019502" width="100%" height="100%" frameborder="0" allowfullscreen>
+                                        <p>Твой браузер устарел для отображения элемента iframe</p>
+                                      </iframe>
+                                    </div>
+                                  </div>
+                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt" target="_blank" class="video__button">
+                                      <div class="video_button__inner">
+                                        <div class="icon-video-vk mr1"></div>
+                                        <div class="video_button__text">Посмотреть видео на сайте</div>
+                                      </div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <article class="semifinalist_one__holder"><strong class="text-22">Бондарева Елена Николаевна</strong>
+                              <div class="semi-line"></div>
+                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Надым</p>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
+                            </article>
+                            <div id="bondareva" class="semifinalist_one__modal">
+                              <div class="modal">
+                                <div class="modal_container">
+                                  <div class="modal_close mb1"></div>
+                                  <h1 class="text-25 center mb2">Бондарева Елена Николаевна</h1>
+                                  <div class="video_relative">
+                                    <div class="video_ratio"></div>
+                                    <div class="iframe_holder">
+                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239050&amp;hash=935dcfe59cc0bea9" width="100%" height="100%" frameborder="0" allowfullscreen>
+                                        <p>Твой браузер устарел для отображения элемента iframe</p>
+                                      </iframe>
+                                    </div>
+                                  </div>
+                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz" target="_blank" class="video__button">
+                                      <div class="video_button__inner">
+                                        <div class="icon-video-vk mr1"></div>
+                                        <div class="video_button__text">Посмотреть видео на сайте</div>
+                                      </div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <article class="semifinalist_one__holder"><strong class="text-22">Давиденко Алла Владимировна</strong>
+                              <div class="semi-line"></div>
+                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новокузнецк</p>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
+                            </article>
+                            <div id="davidenko" class="semifinalist_one__modal">
+                              <div class="modal">
+                                <div class="modal_container">
+                                  <div class="modal_close mb1"></div>
+                                  <h1 class="text-25 center mb2">Давиденко Алла Владимировна</h1>
+                                  <div class="video_relative">
+                                    <div class="video_ratio"></div>
+                                    <div class="iframe_holder">
+                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239051&amp;hash=3991919358221e03" width="100%" height="100%" frameborder="0" allowfullscreen>
+                                        <p>Твой браузер устарел для отображения элемента iframe</p>
+                                      </iframe>
+                                    </div>
+                                  </div>
+                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB" target="_blank" class="video__button">
+                                      <div class="video_button__inner">
+                                        <div class="icon-video-vk mr1"></div>
+                                        <div class="video_button__text">Посмотреть видео на сайте</div>
+                                      </div></a></div>
+                                </div>
+                              </div>
+                            </div>
+            </div>
+          </article>
+          <article class="semifinalists__holder mt4 semifinalists-8">
+            <div class="text-22">Лучший педагог Центров &laquo;IT-куб&raquo; в направлении</div>
+            <h1 class="mt07">Большие данные</h1>
+            <div class="row">
+                            <article class="semifinalist_one__holder"><strong class="text-22">Раздобреева Мария Николаевна</strong>
+                              <div class="semi-line"></div>
+                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Миасс</p>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
+                            </article>
+                            <div id="razdobreeva" class="semifinalist_one__modal">
+                              <div class="modal">
+                                <div class="modal_container">
+                                  <div class="modal_close mb1"></div>
+                                  <h1 class="text-25 center mb2">Раздобреева Мария Николаевна</h1>
+                                  <div class="video_relative">
+                                    <div class="video_ratio"></div>
+                                    <div class="iframe_holder">
+                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239049&amp;hash=b46b70ca90019502" width="100%" height="100%" frameborder="0" allowfullscreen>
+                                        <p>Твой браузер устарел для отображения элемента iframe</p>
+                                      </iframe>
+                                    </div>
+                                  </div>
+                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt" target="_blank" class="video__button">
+                                      <div class="video_button__inner">
+                                        <div class="icon-video-vk mr1"></div>
+                                        <div class="video_button__text">Посмотреть видео на сайте</div>
+                                      </div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <article class="semifinalist_one__holder"><strong class="text-22">Бондарева Елена Николаевна</strong>
+                              <div class="semi-line"></div>
+                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Надым</p>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
+                            </article>
+                            <div id="bondareva" class="semifinalist_one__modal">
+                              <div class="modal">
+                                <div class="modal_container">
+                                  <div class="modal_close mb1"></div>
+                                  <h1 class="text-25 center mb2">Бондарева Елена Николаевна</h1>
+                                  <div class="video_relative">
+                                    <div class="video_ratio"></div>
+                                    <div class="iframe_holder">
+                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239050&amp;hash=935dcfe59cc0bea9" width="100%" height="100%" frameborder="0" allowfullscreen>
+                                        <p>Твой браузер устарел для отображения элемента iframe</p>
+                                      </iframe>
+                                    </div>
+                                  </div>
+                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz" target="_blank" class="video__button">
+                                      <div class="video_button__inner">
+                                        <div class="icon-video-vk mr1"></div>
+                                        <div class="video_button__text">Посмотреть видео на сайте</div>
+                                      </div></a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <article class="semifinalist_one__holder"><strong class="text-22">Давиденко Алла Владимировна</strong>
+                              <div class="semi-line"></div>
+                              <p class="text-20">Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новокузнецк</p>
+                              <!--.semifinalists__image.mtauto( id='trigger_#{img}' )-->
+                              <!--   img( src='./assets/data/teacher_competition/semifinalist/#{img}.jpg' )-->
+                            </article>
+                            <div id="davidenko" class="semifinalist_one__modal">
+                              <div class="modal">
+                                <div class="modal_container">
+                                  <div class="modal_close mb1"></div>
+                                  <h1 class="text-25 center mb2">Давиденко Алла Владимировна</h1>
+                                  <div class="video_relative">
+                                    <div class="video_ratio"></div>
+                                    <div class="iframe_holder">
+                                      <iframe src="https://vk.com/video_ext.php?oid=-193270730&amp;id=456239051&amp;hash=3991919358221e03" width="100%" height="100%" frameborder="0" allowfullscreen>
+                                        <p>Твой браузер устарел для отображения элемента iframe</p>
+                                      </iframe>
+                                    </div>
+                                  </div>
+                                  <div class="congress_button__holder mt2"><a href="https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB" target="_blank" class="video__button">
                                       <div class="video_button__inner">
                                         <div class="icon-video-vk mr1"></div>
                                         <div class="video_button__text">Посмотреть видео на сайте</div>
