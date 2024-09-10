@@ -86,92 +86,76 @@ html
                            .competition_stage__phase Публичная презентация дополнительной общеобразовательной программы педагогов Центров &laquo;IT-куб&raquo;
 
 
-         //
-         //section( aria-label='Номинации"' )#nominations.nominations__container.mt8
-         //   .wrapper
-         //      h1.caption.center.mb5 Номинации конкурса
-         //      .row
-         //         include assets/jade/content/teacher_competition/__nominations
-         //         include assets/jade/content/teacher_competition/__nominations-more
-         //         +nomination( '1', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', '<div style="display: inline-block;white-space: nowrap;">Программирование</div>', 'Программирование на&nbsp;Python', 'Программирование на&nbsp;Java', '')
-         //         +nomination( '2', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Разработка<br>VR/AR-приложений', 'Мобильная разработка', 'Разработка VR/AR-приложений', '')
-         //         +nomination( '3', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Системное <div class="wwnow ml0">администрирование</div>')
-         //         +nomination( '4', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Кибергигиена')
-         //         +nomination( '5', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Алгоритмика<br>и&nbsp;логика')
-         //         +nomination( '6', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Мобильная разработка')
-         //         +nomination( '7', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Робототехника', 'Программирование<br>роботов', '', '')
-         //         +nomination( '8', 'Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении', 'Большие данные')
-         //
-
-
          section( aria-label='Полуфиналисты' )#semifinalists.semifinalists__container.mt8
             .wrapper
                h1.caption.center.mb5 Финалисты конкурса
 
                article.semifinalists__holder.mt4.semifinalists-1
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
+                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении
                   h1.mt07 Программирование
                   .row
                      include assets/jade/content/teacher_competition/__semifinalists
-                     +semifinalists( 'Лапаев Андрей Сергеевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Княгинино', 'lapaev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239041&hash=3928020f79a45862', 'https://vk.com/video-193270730_456239041?list=ln-qM79z6owHAfgm3Zgw0' )
-                     +semifinalists( 'Макаренко Мария Дмитриевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Владикавказ', 'makarenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239042&hash=07bb8b6189d7def0', 'https://vk.com/video-193270730_456239042?list=ln-JpLB5Hkeq07Ob5P6bN' )
-                     +semifinalists( 'Ковалев Владислав Алексеевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Смоленск', 'kovalev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239043&hash=f3acbc5d57786ced', 'https://vk.com/video-193270730_456239043?list=ln-tniBz0wnycf2f5WQPK' )
+                     +semifinalists( 'Кузнецова Ксения Валерьевна ', '&laquo;IT-куб&raquo; г.&nbsp;Мурманск ', 'lapaev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239041&hash=3928020f79a45862', 'https://vk.com/video-193270730_456239041?list=ln-qM79z6owHAfgm3Zgw0' )
+                     +semifinalists( 'Никифорова Маргарита Дмитриевна', '&laquo;IT-куб&raquo; г.&nbsp;Магнитогорск (Челябинская область)', 'makarenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239042&hash=07bb8b6189d7def0', 'https://vk.com/video-193270730_456239042?list=ln-JpLB5Hkeq07Ob5P6bN' )
+                     +semifinalists( 'Шатров Антон Рудольфович', '&laquo;IT-куб&raquo; г.&nbsp;Южноуральск (Челябинская область)', 'kovalev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239043&hash=f3acbc5d57786ced', 'https://vk.com/video-193270730_456239043?list=ln-tniBz0wnycf2f5WQPK' )
 
                article.semifinalists__holder.mt4.semifinalists-2
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
+                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении
                   h1.mt07 Разработка приложений
                   .row
-                     +semifinalists( 'Ильина Ульяна Вячеславовна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Екатеринбург', 'ilyina', 'https://vk.com/video_ext.php?oid=-193270730&id=456239053&hash=bd0da4f6574769f2', 'https://vk.com/video-193270730_456239053?list=ln-odY2ooImkB68rI1FhH' )
-                     +semifinalists( 'Анисимов Алексей Евгеньевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; Школы &#8470;619 г.&nbsp;Санкт-Петербург', 'anisimov', 'https://vk.com/video_ext.php?oid=-193270730&id=456239054&hash=0840d904fbc36409', 'https://vk.com/video-193270730_456239054?list=ln-g5VY6JXbaW4RflF3ww' )
-                     +semifinalists( 'Лобанова Ольга Викторовна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новосибирск<br><br>Информация обновлена в соответствии с пунктом 7.2.5. Положения о конкурсе', 'lobanova', 'https://vk.com/video_ext.php?oid=-193270730&id=456239056&hash=fda655456c3f84a3', 'https://vk.com/video-193270730_456239056?list=ln-ztHbphJAVfERGvjBep' )
+                     +semifinalists( 'Войт Екатерина Игоревна', '&laquo;IT-куб&raquo; г.&nbsp;Сыктывкар', 'ilyina', 'https://vk.com/video_ext.php?oid=-193270730&id=456239053&hash=bd0da4f6574769f2', 'https://vk.com/video-193270730_456239053?list=ln-odY2ooImkB68rI1FhH' )
+                     +semifinalists( 'Вдовиченко Никита Александрович', '&laquo;IT-куб&raquo; г.&nbsp;Кировск (Мурманская область)', 'anisimov', 'https://vk.com/video_ext.php?oid=-193270730&id=456239054&hash=0840d904fbc36409', 'https://vk.com/video-193270730_456239054?list=ln-g5VY6JXbaW4RflF3ww' )
+                     +semifinalists( 'Бобровских Владимир Алексеевич', '&laquo;IT-куб&raquo; г.&nbsp;Семёнов (Нижегородская область)', 'lobanova', 'https://vk.com/video_ext.php?oid=-193270730&id=456239056&hash=fda655456c3f84a3', 'https://vk.com/video-193270730_456239056?list=ln-ztHbphJAVfERGvjBep' )
 
                article.semifinalists__holder.mt4.semifinalists-3
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
+                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении
                   h1.mt07 Системное администрирование
                   .row
-                     +semifinalists( 'Муравцев Денис Сергеевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Семенов', 'muravcev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239057&hash=2ad31d38fea640de', 'https://vk.com/video-193270730_456239057?list=ln-ABM8D0zdaw8trXrwlU' )
-                     +semifinalists( 'Мальцев Алексей Александрович', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Сатка', 'malcev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239058&hash=fc675cb916a41e97', 'https://vk.com/video-193270730_456239058?list=ln-82jR0qNpreJd1wx6zz' )
-                     +semifinalists( 'Дьячковский Николай Михайлович', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Якутск', 'dyachkovskiy', 'https://vk.com/video_ext.php?oid=-193270730&id=456239059&hash=e2771430c2b1a280', 'https://vk.com/video-193270730_456239059?list=ln-ZdYnOh8pFJzN64ELK3' )
+                     +semifinalists( 'Зорин Захар Алексеевич', '&laquo;IT-куб&raquo; г.&nbsp;Нижний Новгород', 'muravcev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239057&hash=2ad31d38fea640de', 'https://vk.com/video-193270730_456239057?list=ln-ABM8D0zdaw8trXrwlU' )
+                     +semifinalists( 'Самореченков Кирилл Александрович', '&laquo;IT-куб&raquo; г.&nbsp;Верхняя Пышма  (Свердловская область)', 'malcev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239058&hash=fc675cb916a41e97', 'https://vk.com/video-193270730_456239058?list=ln-82jR0qNpreJd1wx6zz' )
+                     +semifinalists( 'Плугов Сергей Юрьевич', '&laquo;IT-куб&raquo; г.&nbsp;Владикавказ', 'dyachkovskiy', 'https://vk.com/video_ext.php?oid=-193270730&id=456239059&hash=e2771430c2b1a280', 'https://vk.com/video-193270730_456239059?list=ln-ZdYnOh8pFJzN64ELK3' )
 
                article.semifinalists__holder.mt4.semifinalists-4
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
-                  h1.mt07 Кибергигиена и&nbsp;работа <br>с&nbsp;большими данными
+                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении
+                  h1.mt07 Кибергигиена и&nbsp;работа
+                     br
+                     | с&nbsp;большими данными
                   .row
-                     +semifinalists( 'Диденко Владимир Андреевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Рязань', 'didenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239045&hash=0422fb01ecd865f7', 'https://vk.com/video-193270730_456239045?list=ln-LoJ1tj9TLFU37Px8Ez' )
-                     +semifinalists( 'Шмелев Алексей Андреевич', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Екатеринбург', 'shmelev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239046&hash=52e041c2ea0c8def', 'https://vk.com/video-193270730_456239046?list=ln-QmXuKJaJv64pOkZ5vq' )
-                     +semifinalists( 'Кличенко Анна Андреевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Иркутск', 'klichenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239048&hash=1efdbf4a604a2e30', 'https://vk.com/video-193270730_456239048?list=ln-QzMVBYZs8YaWCVoZ32' )
+                     +semifinalists( 'Староверова Елена Львовна ', '&laquo;IT-куб&raquo; г.&nbsp;Астрахань', 'didenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239045&hash=0422fb01ecd865f7', 'https://vk.com/video-193270730_456239045?list=ln-LoJ1tj9TLFU37Px8Ez' )
+                     +semifinalists( 'Суслов Петр Витальевич ', '&laquo;IT-куб&raquo; г.&nbsp;Челябинск', 'shmelev', 'https://vk.com/video_ext.php?oid=-193270730&id=456239046&hash=52e041c2ea0c8def', 'https://vk.com/video-193270730_456239046?list=ln-QmXuKJaJv64pOkZ5vq' )
+                     +semifinalists( 'Жукова Юлия Николаевна', '&laquo;IT-куб&raquo; г.&nbsp;Липецк', 'klichenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239048&hash=1efdbf4a604a2e30', 'https://vk.com/video-193270730_456239048?list=ln-QzMVBYZs8YaWCVoZ32' )
 
                article.semifinalists__holder.mt4.semifinalists-5
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
+                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении
                   h1.mt07 Алгоритмика и&nbsp;логика
                   .row
-                     +semifinalists( 'Раздобреева Мария Николаевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Миасс', 'razdobreeva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239049&hash=b46b70ca90019502', 'https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt' )
-                     +semifinalists( 'Бондарева Елена Николаевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Надым', 'bondareva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239050&hash=935dcfe59cc0bea9', 'https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz' )
-                     +semifinalists( 'Давиденко Алла Владимировна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новокузнецк', 'davidenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239051&hash=3991919358221e03', 'https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB' )
+                     +semifinalists( 'Качалина Екатерина Алексеевна', '&laquo;IT-куб&raquo; г.&nbsp;Рязань', 'razdobreeva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239049&hash=b46b70ca90019502', 'https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt' )
+                     +semifinalists( 'Новгородов Айисен Алекса', '&laquo;IT-куб&raquo; г.&nbsp;Якутск', 'bondareva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239050&hash=935dcfe59cc0bea9', 'https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz' )
+                     +semifinalists( 'Осипова Анастасия Сергеевна ', '&laquo;IT-куб&raquo; г.&nbsp;Новосибирск', 'davidenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239051&hash=3991919358221e03', 'https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB' )
 
                article.semifinalists__holder.mt4.semifinalists-6
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
+                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении
                   h1.mt07 Мобильная разработка
                   .row
-                     +semifinalists( 'Раздобреева Мария Николаевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Миасс', 'razdobreeva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239049&hash=b46b70ca90019502', 'https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt' )
-                     +semifinalists( 'Бондарева Елена Николаевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Надым', 'bondareva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239050&hash=935dcfe59cc0bea9', 'https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz' )
-                     +semifinalists( 'Давиденко Алла Владимировна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новокузнецк', 'davidenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239051&hash=3991919358221e03', 'https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB' )
+                     +semifinalists( 'Воротова Наталия Афонасьевна ', '&laquo;IT-куб&raquo; г.&nbsp;Ижевск', 'razdobreeva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239049&hash=b46b70ca90019502', 'https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt' )
+                     +semifinalists( 'Вантеева Анастасия Леонидовна ', '&laquo;IT-куб&raquo; г.&nbsp;Ангарск (Иркутская область)', 'bondareva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239050&hash=935dcfe59cc0bea9', 'https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz' )
+                     +semifinalists( 'Миронова Елена Николаевна', '&laquo;IT-куб&raquo; г.&nbsp;Санкт-Петербург', 'davidenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239051&hash=3991919358221e03', 'https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB' )
 
                article.semifinalists__holder.mt4.semifinalists-7
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
+                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении
                   h1.mt07 Робототехника
                   .row
-                     +semifinalists( 'Раздобреева Мария Николаевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Миасс', 'razdobreeva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239049&hash=b46b70ca90019502', 'https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt' )
-                     +semifinalists( 'Бондарева Елена Николаевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Надым', 'bondareva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239050&hash=935dcfe59cc0bea9', 'https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz' )
-                     +semifinalists( 'Давиденко Алла Владимировна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новокузнецк', 'davidenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239051&hash=3991919358221e03', 'https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB' )
+                     +semifinalists( 'Паньшина Арина Сергеевна ', '&laquo;IT-куб&raquo; г.&nbsp;Княгинино (Нижегородская область)', 'razdobreeva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239049&hash=b46b70ca90019502', 'https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt' )
+                     +semifinalists( 'Есина Елена Николаевна ', '&laquo;IT-куб&raquo; г.&nbsp;Сургут (ХМАО – Югра)', 'bondareva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239050&hash=935dcfe59cc0bea9', 'https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz' )
+                     +semifinalists( 'Горяйнов Александр Олегович', '&laquo;IT-куб&raquo; г.&nbsp;Липецк', 'davidenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239051&hash=3991919358221e03', 'https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB' )
 
                article.semifinalists__holder.mt4.semifinalists-8
-                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в направлении
+                  .text-22 Лучший педагог Центров &laquo;IT-куб&raquo; в&nbsp;направлении
                   h1.mt07 Большие данные
                   .row
-                     +semifinalists( 'Раздобреева Мария Николаевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Миасс', 'razdobreeva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239049&hash=b46b70ca90019502', 'https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt' )
-                     +semifinalists( 'Бондарева Елена Николаевна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Надым', 'bondareva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239050&hash=935dcfe59cc0bea9', 'https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz' )
-                     +semifinalists( 'Давиденко Алла Владимировна', 'Центр цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Новокузнецк', 'davidenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239051&hash=3991919358221e03', 'https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB' )
+                     +semifinalists( 'Селезнев Андрей Андреевич ', '&laquo;IT-куб&raquo; г.&nbsp;Сургут (ХМАО – Югра)', 'razdobreeva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239049&hash=b46b70ca90019502', 'https://vk.com/video-193270730_456239049?list=ln-cZ18Oxub2ngZhqGxQt' )
+                     +semifinalists( 'Коннов Клим Глебович ', '&laquo;IT-куб&raquo; г.&nbsp;Санкт-Петербург', 'bondareva', 'https://vk.com/video_ext.php?oid=-193270730&id=456239050&hash=935dcfe59cc0bea9', 'https://vk.com/video-193270730_456239050?list=ln-8wLbKK6OZ1l2b1YLaz' )
+                     +semifinalists( 'Шикан Алексей Владимирович а', '&laquo;IT-куб&raquo; г.&nbsp;Норильск (Красноярский край)', 'davidenko', 'https://vk.com/video_ext.php?oid=-193270730&id=456239051&hash=3991919358221e03', 'https://vk.com/video-193270730_456239051?list=ln-K1pYAmNlGDS0HZ0klB' )
 
 
 
