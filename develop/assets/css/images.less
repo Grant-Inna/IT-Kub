@@ -490,7 +490,19 @@
    background-position: center;
    background-size: contain;
 }
+.hackathon-finalist-image( @nmbr ) {
+   background-image: url("../data/hackathon/winners/caption-@{nmbr}.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
 .hackathon-winner-place( @nmbr ) {
+   background-image: url("../data/hackathon/winners/@{nmbr}.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+.hackathon-finalist-place( @nmbr ) {
    background-image: url("../data/hackathon/winners/@{nmbr}.svg");
    background-repeat: no-repeat;
    background-position: center;
