@@ -53,7 +53,8 @@ section h1.digital_generation__caption {
    max-height: 550px;
    //min-height: 300px;
       object-fit: cover;
-   filter: opacity(90%);
+   transition: all .6s;
+   filter: opacity(70%);
    .middle-block({
       min-height: 400px;
       max-height: 400px;
@@ -70,15 +71,15 @@ section h1.digital_generation__caption {
       min-height: 150px;
       max-height: 150px;
    });
-   .sm-block({
-      filter: opacity(80%);
-   })
+
 }
 #container_digital_generation .slick-current .digital_generation__item img {
+   transition: all .6s;
    filter: opacity(100%);
    .sm-block({
       filter: opacity(100%);
-   })
+   });
+   animation: filter .3s ease;
 }
 .digital_generation__card {
    position: absolute;
@@ -112,3 +113,7 @@ section h1.digital_generation__caption {
 }
 
 
+@keyframes filter {
+   0% { filter: opacity(70%) }
+   100% { filter: opacity(100%) }
+}
