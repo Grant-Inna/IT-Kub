@@ -78,7 +78,7 @@ function html(done){
    done();
 }
 function news(done){
-   return gulp.src( base + 'news/news-one.jade', { allowEmpty: true })
+   return gulp.src( [base + 'news/news-one.jade', base + 'news/news.jade'])
    .pipe(jade())
    .pipe(gulp.dest( prod + 'news/' ))
    .pipe(gulpif(isSync, browserSync.stream()));
