@@ -295,9 +295,9 @@ $(document).ready(function () {
    /* новости */
    let image;
    
-   if( document.location.hash.length != 0 && $('#container_meetings').length == 0) {
+  /* if( document.location.hash.length != 0 && $('#container_meetings').length == 0) {
       let $news = $(document.location.hash);
-      // alert();
+      alert();
       // console.log('вот это хэш, ага!  ');
       // console.log($news);
       
@@ -309,7 +309,7 @@ $(document).ready(function () {
       let date = day + ' / ' + month + ' / ' + year;
       
       showHashNews($news, date, current_issue);
-   }
+   }*/
    
    function showHashNews( current, date, current_issue ) {
       $('.news_one__article').not(current).removeClass('active_news').hide();
