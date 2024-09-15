@@ -297,6 +297,10 @@ $(document).ready(function () {
    
    if( document.location.hash.length != 0 && $('#container_meetings').length == 0) {
       let $news = $(document.location.hash);
+      // alert();
+      // console.log('вот это хэш, ага!  ');
+      // console.log($news);
+      
       let current_issue = $news.prop('id').split('_')[1],
           day = current_issue.split('-')[0],
           month = current_issue.split('-')[1],
@@ -312,7 +316,7 @@ $(document).ready(function () {
       current.addClass('active_news').show();
       $('.news_one__date').text(date);
       
-      $('body, html').scrollTop($('.news__container').position().top);
+      // $('body, html').scrollTop($('.news__container').position().top);
    }
    
    
