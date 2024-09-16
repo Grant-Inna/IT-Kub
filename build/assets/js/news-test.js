@@ -2,7 +2,7 @@ $(document).ready(function () {
    
    
    
-   /* новости */
+   /* новые новости! сентябрь 2024 */
    
    if ($('#container_news_new').length > 0) {
       

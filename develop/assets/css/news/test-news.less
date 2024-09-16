@@ -4,6 +4,7 @@
    z-index: -10;
    display: none;
 }
+
 .news_one__article.active_news, .active_news {
    position: relative;
    z-index: 10;
@@ -11,6 +12,7 @@
    
    display: block;
 }
+
 .all_news__container {
    .wrapper();
    .sm-block({
@@ -18,9 +20,11 @@
       padding-left: 10px;
    })
 }
+
 .one_news__container {
    display: none;
 }
+
 .one_news__close {
    .flex();
    .items-center();
@@ -28,15 +32,15 @@
 }
 
 
-
- .grand_news__container {
+.grand_news__container {
    
-    .first {
+   .first {
       .xs-block({
          display: none;
       })
    }
-    .second {
+   
+   .second {
       display: none;
       .xs-block({
          display: block;
@@ -51,6 +55,7 @@
    .one_news__container {
       .col();
    }
+   
    .one_news__container {
       display: block;
       .size(16);
@@ -75,10 +80,12 @@
       }
       .main_news__image {
          height: 130px;
+         margin-right: 15px;
       }
       .main_news__holder {
          margin-left: 0;
          margin-right: -30px;
+         flex-grow: 1;
       }
       .news__holder .line {
          display: none;
@@ -128,19 +135,21 @@
          color: rgba(41, 44, 51, 0.6);
       }
       .materials__pagination_holder {
-         .justify-end();
-         margin-left: calc(-1rem - 4px);
+         .justify-start();
+         margin-left: -.5rem;
       }
-
+      
       
    });
    
    .news__more {
       color: rgba(107, 144, 193, 0.8);
    }
+   
    .news_one__article strong {
       .montserrat-bold();
    }
+   
    .news_one__date.text-22 {
       padding: .7rem 1.6rem;
       font-size: 1.5rem;
@@ -155,6 +164,7 @@
          display: none;
       });
    }
+   
    .one_news__container {
       .size-xl(14);
       .size-lg(24);
@@ -166,10 +176,12 @@
    .pagination__arrow {
       margin: 0 .5rem;
    }
+   
    .pagination_active {
       border-color: rgb(107, 144, 193);
       color: rgb(107, 144, 193);
    }
+   
    .pagination__item,
    #prev,
    #next {
@@ -178,6 +190,7 @@
    }
    
 }
+
 .news_one__article h1.title {
    .montserrat-bold();
    font-size: 2rem;
