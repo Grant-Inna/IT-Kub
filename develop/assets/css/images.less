@@ -10,6 +10,10 @@
    background-image: url("../data/@{folder}/@{name}.png");
    background-repeat: no-repeat;
 }
+.webp(@folder, @name) {
+   background-image: url("../data/@{folder}/@{name}.webp");
+   background-repeat: no-repeat;
+}
 
 
 
@@ -160,7 +164,7 @@
 }
 
 .competition-main() {
-   .png( 'teacher_competition', 'main-image' );
+   .webp( 'teacher_competition', 'main-image' );
        background-position: center;
    background-size: contain;
 }
@@ -268,7 +272,7 @@
 }
 
 .nominations(@name) {
-     background-image: url("../data/teacher_competition/icons/icon-nominations-@{name}.svg");
+     background-image: url("../data/teacher_competition/icons/icon-nominations-@{name}.webp");
    background-repeat: no-repeat;
     background-position: 100% 100%;
    background-size: 300px auto;
@@ -390,7 +394,7 @@
 
 .congress-gecs() {
    //background-image: url("../data/congress/after/photo/header/gecs.svg");
-   background-image: url("../data/congress/after/photo/header/gecs.png");
+   background-image: url("../data/congress/after/photo/header/gecs.webp");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
@@ -511,6 +515,15 @@
 
 .teacher-winner-image( @nmbr ) {
    background-image: url("../data/teacher_competition/winners/@{nmbr}.svg");
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: contain;
+   .md-block({
+      background-position: bottom right;
+   })
+}
+.teacher-winner-image-webp( @nmbr ) {
+   background-image: url("../data/teacher_competition/winners/@{nmbr}.webp");
    background-repeat: no-repeat;
    background-position: bottom;
    background-size: contain;
