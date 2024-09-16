@@ -6,6 +6,7 @@
    background-image: url("../data/@{folder}/@{name}.svg");
    background-repeat: no-repeat;
 }
+
 .png(@folder, @name) {
    background-image: url("../data/@{folder}/@{name}.png");
    background-repeat: no-repeat;
@@ -16,74 +17,71 @@
 }
 
 
+.svg-logo(@folder, @name) {
+   background-image: url("../data/system/@{folder}/@{name}.svg");
+   background-repeat: no-repeat;
+}
 
 .logo_ficto {
-   .svg( 'logo', 'ficto' );
+   .svg-logo( 'logo', 'ficto' );
    background-position: left;
    background-size: contain;
 }
 .logo_ficto-black {
-   .svg( 'logo', 'ficto-black' );
+   .svg-logo( 'logo', 'ficto-black' );
    background-position: left;
    background-size: contain;
 }
 .logo_kub-adaptive() {
-   .svg( 'logo', 'kub-adapt' );
+   .svg-logo( 'logo', 'kub-adapt' );
    background-position: left;
    background-size: contain;
 }
-.logo_arpp {
-   .svg( 'logo', 'arpp' );
-   background-position: left;
-   background-size: contain;
-}
-.logo_arpp-adapt() {
-   .svg( 'logo', 'arpp-adapt' );
-   background-position: center;
-   background-size: contain;
-}
 
-
+.svg-bg(@folder, @name) {
+   background-image: url("../data/system/@{folder}/@{name}.svg");
+   background-repeat: no-repeat;
+}
 .body-lines-left() {
-   .svg('bg', 'lines-dots-left');
+   .svg-bg('bg', 'lines-dots-left');
 }
 .body-lines-right-sm() {
-   .svg('bg', 'lines-dots-right-sm');
+   .svg-bg('bg', 'lines-dots-right-sm');
    background-position: right;
    background-size: contain;
 }
 .body-lines-right() {
-   .svg('bg', 'lines-dots-right');
+   .svg-bg('bg', 'lines-dots-right');
    background-position: right;
    background-size: contain;
 }
 .body-lines-center() {
-   .svg('bg', 'lines-dots-center');
+   .svg-bg('bg', 'lines-dots-center');
    background-position: right;
    background-size: contain;
 }
 .body-lines-competition() {
-   .svg('bg', 'competition-lines');
+   .svg-bg('bg', 'competition-lines');
    background-position: left;
    background-size: contain;
 }
 .body-lines-competition-left() {
-   .svg('bg', 'competition-lines-left');
+   .svg-bg('bg', 'competition-lines-left');
    background-position: right;
    background-size: contain;
 }
 .body-lines-news() {
-   .svg('bg', 'lines-dots-news');
+   .svg-bg('bg', 'lines-dots-news');
    background-position: right;
    background-size: contain;
 }
 .body-lines-doc() {
-   .svg('bg', 'lines-doc');
+   .svg-bg('bg', 'lines-doc');
    background-position: right;
    background-size: contain;
 }
 .list-lines() {
-   .svg('bg', 'list-lines');
+   .svg-bg('bg', 'list-lines');
    background-position: top right;
    background-size: contain;
 }
@@ -92,7 +90,7 @@
 
 
 .bg-mobile() {
-   .svg( 'bg', 'menu-mobile' );
+   .svg-bg('bg', 'menu-mobile' );
    background-position: right 500px;
    background-size: 85%;
 }
@@ -141,138 +139,148 @@
    });
 }
 
+
+.svg-b-project(@folder1, @folder2, @name) {
+   background-image: url("../data/projects/@{folder1}/@{folder2}/@{name}.svg");
+   background-repeat: no-repeat;
+}
+.webp-projects(@folder, @name) {
+   background-image: url("../data/projects/@{folder}/@{name}.webp");
+   background-repeat: no-repeat;
+}
+
 .competition-robo-hand() {
-   .svg-b( 'teacher_competition', 'icons', 'robo-hand');
+   .svg-b-project( 'teacher_competition', 'icons', 'robo-hand');
     background-position: left;
    background-size: contain;
 }
 
 .competition-hand-caption() {
-   .svg-b( 'teacher_competition', 'icons', 'hand');
+   .svg-b-project( 'teacher_competition', 'icons', 'hand');
     background-position: bottom;
    background-size: contain;
 }
 .competition-caption() {
-   .svg-b( 'teacher_competition', 'icons', 'caption-svg');
+   .svg-b-project( 'teacher_competition', 'icons', 'caption-svg');
     background-position: left;
    background-size: contain;
 }
 .competition-caption-sm() {
-   .svg-b( 'teacher_competition', 'icons', 'caption-sm-svg');
+   .svg-b-project( 'teacher_competition', 'icons', 'caption-sm-svg');
     background-position: left;
    background-size: contain;
 }
 
 .competition-main() {
-   .webp( 'teacher_competition', 'main-image' );
+   .webp-projects( 'teacher_competition', 'main-image' );
        background-position: center;
    background-size: contain;
 }
 
 .competition-stripes() {
-   .svg-b( 'teacher_competition', 'icons', 'stripes' );
+   .svg-b-project( 'teacher_competition', 'icons', 'stripes' );
     background-position: left;
    background-size: contain;
 }
 
 .competition-cube() {
-   .svg-b( 'teacher_competition', 'icons', 'cube' );
+   .svg-b-project( 'teacher_competition', 'icons', 'cube' );
     background-position: center;
    background-size: contain;
 }
 
 .competition-about() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-about' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-about' );
     background-position: left;
    background-size: contain;
 }
 .competition-about-adapt() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-about-adapt' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-about-adapt' );
     background-position: left;
    background-size: contain;
 }
 
 
 .competition-stage-arrow-2() {
-   .svg-b( 'teacher_competition', 'arrows', 'arrow-2' );
+   .svg-b-project( 'teacher_competition', 'arrows', 'arrow-2' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-arrow-1() {
-   .svg-b( 'teacher_competition', 'arrows', 'arrow-1' );
+   .svg-b-project( 'teacher_competition', 'arrows', 'arrow-1' );
     background-position: center;
    background-size: contain;
 }
 
 .competition-stage-1() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-1' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-1' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-2() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-2' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-2' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-3() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-3' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-3' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-arrow() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-arrow' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-arrow' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-arrow-long() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-arrow-long' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-arrow-long' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-arrow-right() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-arrow-right' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-arrow-right' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-arrow-right-long() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-arrow-right-long' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-arrow-right-long' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-arrow-straight-long() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-straight-long' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-straight-long' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-arrow-straight() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-straight' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-straight' );
     background-position: center;
    background-size: contain;
 }
 
 .competition-stage-arrow-adapt() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-arrow-adapt' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-arrow-adapt' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-adapt-1() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-1-adapt' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-1-adapt' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-adapt-2() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-2-adapt' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-2-adapt' );
     background-position: center;
    background-size: contain;
 }
 .competition-stage-adapt-3() {
-   .svg-b( 'teacher_competition', 'icons', 'icon-stage-3-adapt' );
+   .svg-b-project( 'teacher_competition', 'icons', 'icon-stage-3-adapt' );
     background-position: center;
    background-size: contain;
 }
 
 .nominations(@name) {
-     background-image: url("../data/teacher_competition/icons/icon-nominations-@{name}.webp");
+     background-image: url("../data/projects/teacher_competition/icons/icon-nominations-@{name}.webp");
    background-repeat: no-repeat;
     background-position: 100% 100%;
    background-size: 300px auto;
@@ -289,18 +297,18 @@
 }
 
 .competition-terms() {
-   .svg-b( 'teacher_competition', 'icons', 'terms' );
+   .svg-b-project( 'teacher_competition', 'icons', 'terms' );
     background-position: right top;
    background-size: contain;
 }
 .competition-quota() {
-   .svg-b( 'teacher_competition', 'icons', 'quota' );
+   .svg-b-project( 'teacher_competition', 'icons', 'quota' );
     background-position: left;
    background-size: contain;
 }
 
 .application(@name) {
-   background-image: url("../data/teacher_competition/icons/application-@{name}.svg");
+   background-image: url("../data/projects/teacher_competition/icons/application-@{name}.svg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
@@ -316,77 +324,77 @@
 
 // Конгресс
 
-.congress( @name ) {
-   background-image: url("../data/congress/@{name}.svg");
+.projects-congress( @name ) {
+   background-image: url("../data/projects/congress/@{name}.svg");
    background-repeat: no-repeat;
 }
 
 .congress-bg() {
-   .congress('bg');
+   .projects-congress('bg');
 }
 .congress-bg2() {
-   .congress('bg2');
+   .projects-congress('bg2');
 }
 .congress-bg3() {
-   .congress('bg3');
+   .projects-congress('bg3');
 }
 .congress-caption() {
-   .congress('caption');
+   .projects-congress('caption');
    background-position: center;
    background-size: contain;
 }
 .congress-logo() {
-   .congress('logo');
+   .projects-congress('logo');
    background-position: center;
    background-size: contain;
 }
 .congress-dash() {
-   .congress('dash');
+   .projects-congress('dash');
    background-position: top;
    background-size: cover;
 }
 
 .schedule-dash-vert() {
-   background-image: url("../data/hackathon/line-vert.svg");
+   background-image: url("../data/projects/hackathon/line-vert.svg");
    background-size: contain;
    background-position: top;
 }
 .schedule-dash-hor() {
-   background-image: url("../data/hackathon/line-hor.svg");
+   background-image: url("../data/projects/hackathon/line-hor.svg");
    background-position: left;
    background-size: contain;
 }
 .congress-figure() {
-   .congress('figure');
+   .projects-congress('figure');
    background-position: center;
    background-size: contain;
 }
 
 .congress_cube() {
-   background-image: url("../data/congress/after/cubes.png");
+   background-image: url("../data/projects/congress/after/cubes.png");
    background-repeat: no-repeat;
    background-position: top left;
    background-size: contain;
 }
 .congress_c() {
-   background-image: url("../data/congress/after/2c.svg");
+   background-image: url("../data/projects/congress/after/2c.svg");
    background-repeat: no-repeat;
    background-position: left;
    background-size: contain;
 }
 .congress-photo( @name ) {
-   background-image: url("../data/congress/after/photo/header/@{name}.svg");
+   background-image: url("../data/projects/congress/after/photo/header/@{name}.svg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
 }
 .congress-after-video-img() {
-   background-image: url("../data/congress/after/image-video.svg");
+   background-image: url("../data/projects/congress/after/image-video.svg");
    background-repeat: no-repeat;
    background-position: top left;
 }
 .congress-result() {
-   background-image: url("../data/congress/after/footer.svg");
+   background-image: url("../data/projects/congress/after/footer.svg");
    background-repeat: no-repeat;
    background-position: bottom;
    background-size: contain;
@@ -394,127 +402,127 @@
 
 .congress-gecs() {
    //background-image: url("../data/congress/after/photo/header/gecs.svg");
-   background-image: url("../data/congress/after/photo/header/gecs.webp");
+   background-image: url("../data/projects/congress/after/photo/header/gecs.webp");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
 }
 
 
-.hackathon( @name ) {
-   background-image: url("../data/hackathon/@{name}");
+.projects-hackathon( @name ) {
+   background-image: url("../data/projects/hackathon/@{name}");
    background-repeat: no-repeat;
 }
 .hackathon-bg() {
-   .hackathon('bg-top.svg');
+   .projects-hackathon('bg-top.svg');
 }
 .hackathon-logo() {
-   .hackathon('logo.svg');
+   .projects-hackathon('logo.svg');
    background-position: center;
    background-size: contain;
 }
 .hackathon-before-man() {
-   .hackathon('bg-man.svg');
+   .projects-hackathon('bg-man.svg');
    background-position: left;
    background-size: contain;
 }
 .hackathon-before-center() {
-   .hackathon('bd-center.svg');
+   .projects-hackathon('bd-center.svg');
    background-size: contain;
 }
 .hackathon-before-green() {
-   .hackathon('bg-green.svg');
+   .projects-hackathon('bg-green.svg');
    background-position: left;
    background-size: contain;
 }
 .hackathon-who-1() {
-   .hackathon('who-1.svg');
+   .projects-hackathon('who-1.svg');
    background-position: center;
    background-size: contain;
 }
 .hackathon-who-2() {
-   .hackathon('who-2.svg');
+   .projects-hackathon('who-2.svg');
    background-position: center;
    background-size: contain;
 }
 .hackathon-gr() {
-   .hackathon('green.svg');
+   .projects-hackathon('green.svg');
    background-position: center;
    background-size: contain;
 }
 .hackathon-direction-bg() {
-   .hackathon('bg-kod.svg');
+   .projects-hackathon('bg-kod.svg');
    background-position: right bottom;
 }
 .hackathon-direction-1() {
-   .hackathon('direction-1.svg');
+   .projects-hackathon('direction-1.svg');
    background-position: right bottom;
    background-size: contain;
 }
 .hackathon-direction-2() {
-   .hackathon('direction-2.svg');
+   .projects-hackathon('direction-2.svg');
    background-position: right bottom;
    background-size: contain;
 }
 .hackathon-direction-3() {
-   .hackathon('direction-3.svg');
+   .projects-hackathon('direction-3.svg');
    background-position: right bottom;
    background-size: contain;
 }
 .hackathon-step-0() {
-   .hackathon('step-0.svg');
+   .projects-hackathon('step-0.svg');
    background-position: center;
    background-size: contain;
 }
 .hackathon-step-1() {
-   .hackathon('step-1.svg');
+   .projects-hackathon('step-1.svg');
    background-position: center;
    background-size: contain;
 }
 .hackathon-step-2() {
-   .hackathon('step-2.svg');
+   .projects-hackathon('step-2.svg');
    background-position: center;
    background-size: contain;
 }
 .hackathon-step-3() {
-   .hackathon('step-3.svg');
+   .projects-hackathon('step-3.svg');
    background-position: center;
    background-size: contain;
 }
 .hackathon-application() {
-   .hackathon('bg-application1.svg');
+   .projects-hackathon('bg-application1.svg');
 }
 .hackathon-noyt() {
-   .hackathon('application.svg');
+   .projects-hackathon('application.svg');
 }
 
 .hackathon-winner-image( @nmbr ) {
-   background-image: url("../data/hackathon/winners/caption-@{nmbr}.svg");
+   background-image: url("../data/projects/hackathon/winners/caption-@{nmbr}.svg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
 }
 .hackathon-finalist-image( @nmbr ) {
-   background-image: url("../data/hackathon/winners/caption-@{nmbr}.svg");
+   background-image: url("../data/projects/hackathon/winners/caption-@{nmbr}.svg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
 }
 .hackathon-winner-place( @nmbr ) {
-   background-image: url("../data/hackathon/winners/@{nmbr}.svg");
+   background-image: url("../data/projects/hackathon/winners/@{nmbr}.svg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
 }
 .hackathon-finalist-place( @nmbr ) {
-   background-image: url("../data/hackathon/winners/@{nmbr}.svg");
+   background-image: url("../data/projects/hackathon/winners/@{nmbr}.svg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
 }
 
 .teacher-winner-image( @nmbr ) {
-   background-image: url("../data/teacher_competition/winners/@{nmbr}.svg");
+   background-image: url("../data/projects/teacher_competition/winners/@{nmbr}.svg");
    background-repeat: no-repeat;
    background-position: bottom;
    background-size: contain;
@@ -523,7 +531,7 @@
    })
 }
 .teacher-winner-image-webp( @nmbr ) {
-   background-image: url("../data/teacher_competition/winners/@{nmbr}.webp");
+   background-image: url("../data/projects/teacher_competition/winners/@{nmbr}.webp");
    background-repeat: no-repeat;
    background-position: bottom;
    background-size: contain;
@@ -532,26 +540,26 @@
    })
 }
 .teacher-winner-image-p( @nmbr ) {
-   background-image: url("../data/teacher_competition/winners/people/@{nmbr}.jpg");
+   background-image: url("../data/projects/teacher_competition/winners/people/@{nmbr}.jpg");
    background-repeat: no-repeat;
    background-position: top;
    background-size: contain;
 }
 
 .teacher-winner-archive() {
-   background-image: url("../data/teacher_competition/winners/archive_simple.jpg");
+   background-image: url("../data/projects/teacher_competition/winners/archive_simple.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
 }
 .teacher-winner-archive-left() {
-   background-image: url("../data/teacher_competition/winners/archive_left.svg");
+   background-image: url("../data/projects/teacher_competition/winners/archive_left.svg");
    background-repeat: no-repeat;
    background-position: top left;
    background-size: contain;
 }
 .teacher-winner-archive-right() {
-   background-image: url("../data/teacher_competition/winners/archive_right.svg");
+   background-image: url("../data/projects/teacher_competition/winners/archive_right.svg");
    background-repeat: no-repeat;
    background-position: top right;
    background-size: contain;
@@ -560,31 +568,31 @@
 
 /*  Окружные совещания  */
 
-.meeting( @name ) {
-   background-image: url("../data/meeting/@{name}");
+.projects-meeting( @name ) {
+   background-image: url("../data/projects/meeting/@{name}");
    background-repeat: no-repeat;
 }
 .meeting-bg() {
-   .meeting('pattern.svg');
+   .projects-meeting('pattern.svg');
 }
 .meeting-elem() {
-   .meeting('elem.svg');
+   .projects-meeting('elem.svg');
 }
 .meeting-cover() {
-   .meeting('cover.svg');
+   .projects-meeting('cover.svg');
 }
 .meeting-logo() {
-   .meeting('logo.svg');
+   .projects-meeting('logo.svg');
    background-position: left;
    background-size: contain;
 }
 .meeting-bg-1() {
-   .meeting('bg_1.svg');
+   .projects-meeting('bg_1.svg');
    background-position: top left;
    background-size: contain;
 }
 .meeting-bg-2() {
-   .meeting('bg_2.svg');
+   .projects-meeting('bg_2.svg');
    background-position: top right;
    background-size: contain;
 }
@@ -592,7 +600,7 @@
 
 
 .archive-footer() {
-   background-image: url("../data/teacher_competition/footer.svg");
+   background-image: url("../data/projects/teacher_competition/footer.svg");
    background-repeat: no-repeat;
    background-position: bottom;
    background-size: contain;
