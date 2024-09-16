@@ -54,23 +54,18 @@ $(document).ready(function () {
          $('.news_one__date').text(date);
          
          $('body, html').scrollTop($('.news__container .wrapper').position().top);
+
       }
       
       $('#one_news__close').on( 'click', () => {
          $('.one_news__container').hide();
          $('.grand_news__container').removeClass('show');
+         
+         let hash = location.hash.split('n').shift();
+         console.log(hash);
+         history.replaceState({}, '', hash)
       });
       
-      /*
       
-      $('.news_img__slider').slick({
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         dots: false,
-         arrows: true,
-         loop: true,
-         infinite: true
-      })*/
-  
    }
 });

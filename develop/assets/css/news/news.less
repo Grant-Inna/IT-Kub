@@ -165,12 +165,22 @@ section .main_news__date.text-25 {
    .lg-block({
       display: block;
    });
+   .sm-block({
+      margin-left: 0;
+   });
    .xs-block({
       display: none;
    })
 }
 .news__holder .line:after {
    background-color: @color-black;
+}
+.news__holder .line:after {
+   .sm-block({
+      width: 1px;
+      background-color: rgba(41, 44, 51, 0.5);
+   });
+   
 }
 .news_date__holder {
    .col();
@@ -179,7 +189,7 @@ section .main_news__date.text-25 {
    .size-middle(3);
    .size-lg(3);
    .size-md(4);
-   .size-sm(4);
+   .size-sm(4.8);
    .size-xs(20);
    .size-xxs(6);
    
@@ -194,7 +204,7 @@ section .main_news__date.text-25 {
    .size-middle(20);
    .size-lg(20);
    .size-md(19);
-   .size-sm(19);
+   .size-sm(18);
    .size-xs(24);
    .size-xxs(17);
    
@@ -264,11 +274,14 @@ a.back__holder:hover {
    color: @color-blue;
    .tr();
 }
-a.back__holder:hover .icon-arrow-back {
-   .icon-svg( 'arrow-back-hover' );
-   transform: translateX(-10px);
+.one_news__close:hover .icon-arrow-back {
+   transform: translateX(10px);
    .tr();
 }
+/*a.back__holder:hover .icon-arrow-back {
+   transform: translateX(-10px);
+   .tr();
+}*/
 
 //
 //.news_one__article {
@@ -390,8 +403,8 @@ section .news_one__article h1.title {
 /* цитаты в новости */
 .quote {
    position: relative;
-   margin-right: 4.5rem;
-   margin-left: 3.5rem;
+   margin-right: 3.5rem;
+   margin-left: 3.2rem;
    text-align: justify;
    .md-block({
       text-align: start;
@@ -417,7 +430,7 @@ section .news_one__article h1.title {
    display: block;
    position: absolute;
    bottom: 3px;
-   right: -3rem;
+   right: -3.2rem;
   
    font-size: 4rem;
    color: #426591;

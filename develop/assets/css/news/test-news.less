@@ -12,10 +12,15 @@
    display: block;
 }
 .all_news__container {
-
    .wrapper();
+   .sm-block({
+      padding-right: 10px;
+      padding-left: 10px;
+   })
 }
-
+.one_news__container {
+   display: none;
+}
 .one_news__close {
    .flex();
    .items-center();
@@ -45,24 +50,35 @@
    .all_news__container,
    .one_news__container {
       .col();
-      .size(12);
-      margin-right: 0;
+   }
+   .one_news__container {
+      display: block;
+      .size(16);
    }
    
    .all_news__container {
+      .size(8);
       padding: 0;
    }
    
    .from(@break_lg, {
+      .news_list__container {
+         margin-top: 2rem !important;
+         margin-left: 1rem;
+      }
       
       section .main_news__date {
          padding: 0;
          background-color: transparent;
          color: rgba(41, 44, 51, 0.75);
-         margin-bottom: 1rem;
+         margin-bottom: .5rem;
       }
       .main_news__image {
-         height: 200px;
+         height: 130px;
+      }
+      .main_news__holder {
+         margin-left: 0;
+         margin-right: -30px;
       }
       .news__holder .line {
          display: none;
@@ -78,6 +94,7 @@
       .row.news__holder {
          display: flex;
          flex-direction: column;
+         margin-bottom: 1rem !important;
       }
       .news__holder .first {
          display: none;
@@ -96,8 +113,9 @@
       }
       .news_text__holder {
          .montserrat-medium();
-         padding-top: .8rem;
+         padding-top: .4rem;
          font-size: 1rem;
+         .size(24);
       }
       .news_text__holder strong.block.text-22 {
          margin-bottom: .5rem;
@@ -106,19 +124,20 @@
          .montserrat-medium();
       }
       .main_news__text.text-22 {
+         margin-bottom: 1.5rem;
          color: rgba(41, 44, 51, 0.6);
       }
-      .news__more {
-         color: rgba(60, 120, 236, 0.95);
-      }
       .materials__pagination_holder {
-         .justify-start();
+         .justify-end();
          margin-left: calc(-1rem - 4px);
       }
 
       
    });
    
+   .news__more {
+      color: rgba(107, 144, 193, 0.8);
+   }
    .news_one__article strong {
       .montserrat-bold();
    }
@@ -142,6 +161,20 @@
       .lg-block({
          display: block;
       });
+   }
+   
+   .pagination__arrow {
+      margin: 0 .5rem;
+   }
+   .pagination_active {
+      border-color: rgb(107, 144, 193);
+      color: rgb(107, 144, 193);
+   }
+   .pagination__item,
+   #prev,
+   #next {
+      width: 28px;
+      height: 28px;
    }
    
 }
