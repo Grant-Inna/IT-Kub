@@ -77,13 +77,7 @@ function html(done){
    .pipe(gulpif(isSync, browserSync.stream()));
    done();
 }
-function news(done){
-   return gulp.src( [base + 'news/news-one.jade', base + 'news/news.jade'])
-   .pipe(jade())
-   .pipe(gulp.dest( prod + 'news/' ))
-   .pipe(gulpif(isSync, browserSync.stream()));
-   done();
-}
+
 function archive(done){
    return gulp.src( base + 'archive/**/*.jade' )
    .pipe(jade())
@@ -150,10 +144,10 @@ function watch(done){
    
    gulp.watch( src + 'css/**/*.less', styles);
    gulp.watch( base + '*.jade', html);
-   gulp.watch( base + 'news/*.jade', news);
    gulp.watch( base + 'archive/**/*.jade', archive);
    gulp.watch( base + 'archive/*.jade', archive);
    gulp.watch( src + 'jade/**/*.jade', html);
+   gulp.watch( base + 'news/*.jade', html);
    gulp.watch( src + 'images/**/*', images);
    gulp.watch( src + 'data/*', data);
    gulp.watch( src + 'data/**/*', data);
@@ -168,7 +162,7 @@ function grid(done){
 }
 
 const build = gulp.series(clear,
-   gulp.parallel(html, news, archive, styles, js, images, data, files, fonts )
+   gulp.parallel(html, archive, styles, js, images, data, files, fonts )
 );
 
 gulp.task('build', build);
