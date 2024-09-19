@@ -1,4 +1,4 @@
-mixin article-one-links( name, photo, age, itcube, nastavnik, about, place, link, text, morelink, moretext)
+mixin article-one-links( name, photo, age, itcube, nastavnik, about, place, link, text, morelink, moretext, icon)
    .digital_generation__article( id='#{photo}')
       .digital_generation__photo
          img( src='./assets/data/images/digital_generation/#{photo}.webp')
@@ -24,4 +24,4 @@ mixin article-one-links( name, photo, age, itcube, nastavnik, about, place, link
             .icon
          a( href='#{morelink}' target='_blank').digital_generation__link
             span !{moretext}
-            .icon
+            div( class='#{icon}')

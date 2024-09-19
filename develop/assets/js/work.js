@@ -265,7 +265,7 @@ $(document).ready(function () {
       $('.digital_generation__gallery').slick({
          slidesToShow: 1,
          slidesToScroll: 2,
-         // autoplay: true,
+         autoplay: true,
          autoplaySpeed: 2000,
          dots: true,
          arrows: true,
