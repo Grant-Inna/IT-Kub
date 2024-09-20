@@ -435,3 +435,29 @@ section .news_one__article h1.title {
    font-size: 4rem;
    color: #426591;
 }
+
+
+.row.flex {
+   div {
+      .col();
+      img {
+         min-height: 100%;
+         object-fit: cover;
+      }
+   }
+   .third {
+      .size(10);
+      .size-lg(10);
+      .size-sm(24);
+   }
+   .two-thirds {
+      .size(14);
+      .size-lg(14);
+      .size-sm(24);
+   }
+   .mb-sm {
+      .sm-block({
+         margin-bottom: @fields_sm;
+      })
+   }
+}
