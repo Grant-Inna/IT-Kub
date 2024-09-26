@@ -79,9 +79,9 @@ function html(done){
 }
 
 function archive(done){
-   return gulp.src( base + 'archive/**/*.jade' )
+   return gulp.src( base + 'archive/2023/*.jade' )
    .pipe(jade())
-   .pipe(gulp.dest( prod + 'archive/' ))
+   .pipe(gulp.dest( prod + 'archive/2023/' ))
    .pipe(gulpif(isSync, browserSync.stream()));
    done();
 }
