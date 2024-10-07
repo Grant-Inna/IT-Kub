@@ -1,0 +1,26 @@
+mixin program-3( t1, t2, caption, name, topic, name2, topic2, name3, topic3, place )
+   .program_row
+      .hackathon_program__time #{t1}&nbsp;&ndash; #{t2}
+      .meeting_program__info
+         .hackathon_program__caption.mb2 !{caption}
+
+         .flex
+            .dot &bull;
+            .block
+               .meeting_program__person.mb03 !{name}
+               .meeting_program__topic.mb15 !{topic}
+
+         .flex
+            .dot &bull;
+            .block
+               .meeting_program__person.mb03 !{name2}
+               .meeting_program__topic.mb15 !{topic2}
+
+         .flex
+            .dot &bull;
+            .block
+               .meeting_program__person.mb03 !{name3}
+               .meeting_program__topic.mb15 !{topic3}
+
+
+      .hackathon_row_place.top !{place}

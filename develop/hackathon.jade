@@ -5,6 +5,11 @@ html
    +title( 'Всероссийский хакатон по программированию | IT-cube' )
 
    body
+      include assets/jade/content/hackathon/__program
+      include assets/jade/content/hackathon/__program1
+      include assets/jade/content/hackathon/__program-3
+      include assets/jade/content/hackathon/__program-4
+      include assets/jade/content/hackathon/__program-4-1
       include assets/jade/static/metrika
       #container_hackathon
          #black_back
@@ -36,7 +41,7 @@ html
                         +item( 'Об&nbsp;участии', 'participation' )
                         +item( 'Направления', 'direction' )
                         +item( 'Этапы проведения', 'step' )
-                        +item( 'Заявка на&nbsp;участие', 'application' )
+                        +item( 'Программа мероприятий', 'program' )
                         +item( 'Мероприятие 2023', 'archive' )
 
 
@@ -168,14 +173,169 @@ html
                         +finalist( 'Тульская область', '')
 
 
-               //+finalist( '1', 'Программирование', 'Гусев Георгий Андреевич,<br>Ефременков Алексей Александрович,<br>Мартыненков Яков Юрьевич,<br>Жуков Артём Геннадьевич', 'Смоленская область', 'Юрков Владислав Юрьевич,<br>Литвиненко Даниил Александрович,<br>Бабкина Мария Игоревна', 'Алтайский край', 'Аверьянов Павел Андреевич,<br>Бакурин Максим Николаевич,<br>Русин-Купраш Григорий Васильевич,<br>Чебунин Георгий Викторович', 'Ульяновская область' )
-               //+finalist( '2', 'Диджитал (VR/AR технологии)', 'Газалтдинов Иван Равильевич,<br>Дзень Артем Сергеевич,<br>Помазкин Кирилл Евгеньевич', 'Свердловская область', 'Курлаев Никита Александрович,<br>Ахтямова София Ильдаровна', 'Оренбургская область', 'Сергеев Степан Сергеевич,<br>Кульбякина Дарья Алексеевна', 'Челябинская область'  )
-               //+finalist( '3', 'Информационная безопасность', 'Касимов Аскар Маратович,<br>Митрошин Данил Дмитриевич,<br>Вахрушев Иван Юрьевич,<br>Ватлин Денис Витальевич', 'Удмуртская Республика', 'Цукров Михаил Евгеньевич,<br>Воронский Алексей Станиславович,<br>Лапидус Арсений Евгеньевич,<br>Карпов Дмитрий Павлович', ' Свердловская область', 'Дранишников Сергей Юрьевич,<br>Федотко Назар Вадимович', 'Красноярский край'  )
+
+
+         include assets/jade/content/meeting/__trigger
+         section.hackathon__program.mb9#program
+            .wrapper
+               h1.caption.center.mb6 Программа мероприятий
+
+               section( aria-label='9 октября').mb5
+                  .meeting_list__section
+                     .program_trigger
+                        .program_day
+                           .caption.mr 9
+                           .text-22 октября,
+                           .number.mr первый
+                           .text-22 день
+                     a( href='https://yandex.ru/maps/-/CDXQuG1E' target='_blank').program_place
+                        .program__pin
+                        .program_place_name «Академия Маяк» имени А. Д. Сахарова
+                        .program_place_address г.&nbsp;Нижний Новгород
+
+
+                  section.meeting_program__holder.mt3
+                     +program( '09:30', '10:00', 'Регистрация участников', 'Холл первого этажа')
+
+                     +program-3( '10:10', '10:50', 'Церемония открытия мероприятия',
+                        'Шумилов А.С.', 'директор Центра реализации проектов и&nbsp;научной деятельности ФГАНУ &laquo;ФИЦТО&raquo;',
+                        'Якубович Т.В.', 'начальник отдела проектного и&nbsp;информационного сопровождения управления реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;',
+                        'Король А.А.', 'руководитель проектов отдела проектного и&nbsp;информационного сопровождения управления реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;',
+                        '/ Конференц-зал' )
+
+                     //+program( '11:00', '13:00', 'Название', 'Место')
+                     //+program( '09:30', '10:00', 'Название', 'Место')
+
+                     .program_row
+                        .hackathon_program__time 11:00&nbsp;&ndash; 13:00
+                        .meeting_program__info
+                           .meeting_program__text Регистрация участников
+                        .hackathon_row_place / Аудитории по&nbsp;направлениям
+
+                     .program_row
+                        .hackathon_program__time 13:00&nbsp;&ndash; 13:15
+                        .meeting_program__info
+                           .meeting_program__text Игра &laquo;Спорт в&nbsp;кубе&raquo;
+                        .hackathon_row_place / Аудитории по&nbsp;направлениям
+
+                     .program_row
+                        .hackathon_program__time 13:15&nbsp;&ndash; 14:00
+                        .meeting_program__dinner
+                           .hackathon__dinner.mr-20
+                           .meeting_program__text Обед
+                        .hackathon_row_place / Холл второго этажа
+
+                     +program( '14:00', '17:00', 'Работа над кейсами', 'Аудитории по&nbsp;направлениям')
+                     +program( '17:00', '17:15', 'Игра &laquo;Спорт в&nbsp;кубе&raquo;', 'Аудитории по&nbsp;направлениям')
 
 
 
 
 
+               section( aria-label='10 октября').mb5
+                  .meeting_list__section
+                     .program_trigger
+                        .program_day
+                           .caption.mr 10
+                           .text-22 октября,
+                           .number.mr второй
+                           .text-22 день
+                     a( href='https://yandex.ru/maps/-/CDXQuG1E' target='_blank').program_place
+                        .program__pin
+                        .program_place_name «Академия Маяк» имени А. Д. Сахарова
+                        .program_place_address г.&nbsp;Нижний Новгород
+
+
+                  section.meeting_program__holder.mt3
+
+                     +program( '10:00', '13:00', 'Работа над кейсами', 'Аудитории по&nbsp;направлениям')
+                     +program( '09:30', '10:00', 'Игра &laquo;Спорт в&nbsp;кубе&raquo;', 'Аудитории по&nbsp;направлениям')
+
+
+                     .program_row
+                        .hackathon_program__time 13:15&nbsp;&ndash; 14:00
+                        .meeting_program__dinner
+                           .hackathon__dinner.mr-20
+                           .meeting_program__text Обед
+                        .hackathon_row_place / Холл второго этажа
+
+                     +program( '14:00', '17:00', 'Работа над кейсами', 'Аудитории по&nbsp;направлениям')
+
+                     .program_row
+                        .hackathon_program__time 17:00&nbsp;&ndash; 18:00
+                        .meeting_program__info
+                           .hackathon_program__caption.mb2 Пешая экскурсия
+                           .program_row_person.mb03 Пегов,
+                              i.ml03 специалист ФГАНУ &laquo;ФИЦТО&raquo;
+                           .meeting_program__topic.mb15 Викторина такая-то
+
+                        .hackathon_row_place.top
+
+
+
+
+               section( aria-label='11 октября').mb5
+                  .meeting_list__section
+                     .program_trigger
+                        .program_day
+                           .caption.mr 11
+                           .text-22 октября,
+                           .number.mr третий
+                           .text-22 день
+                     a( href='https://yandex.ru/maps/-/CDXQuG1E' target='_blank').program_place
+                        .program__pin
+                        .program_place_name «Академия Маяк» имени А. Д. Сахарова
+                        .program_place_address г.&nbsp;Нижний Новгород
+
+
+                  section.meeting_program__holder.mt3
+                     +program( '10:00', '10:30', 'Подготовка к защите проектов', 'Аудитории по&nbsp;направлениям')
+                     +program( '10:30', '12:45', 'ЗАЩИТА проектов по направлениям', 'Аудитории по&nbsp;направлениям')
+
+                     +program( '12:45', '13:15', 'Финал игры &laquo;Спорт в&nbsp;кубе&raquo;', 'Конференц-зал')
+
+                     .program_row
+                        .hackathon_program__time 13:15&nbsp;&ndash; 14:00
+                        .meeting_program__dinner
+                           .hackathon__dinner.mr-20
+                           .meeting_program__text Обед
+                        .hackathon_row_place / Холл второго этажа
+
+                     +program( '14:00', '15:30', 'ФИНАЛ. ЗАЩИТА проектов', 'Конференц-зал')
+
+
+                     .program_row
+                        .hackathon_program__time 15:40&nbsp;&ndash; 16:30
+                        .meeting_program__info
+                           .flex
+                              .dot &bull;
+                              .meeting_program__topic.mb15 Квиз такой-то
+                           .flex
+                              .dot &bull;
+                              .block
+                                 .program_row_person.mb03 Пегов,
+                                    i.ml03 заместитель
+                                 .meeting_program__topic.mb15 Итоги викторины
+                        .hackathon_row_place / Конференц-зал
+
+                     .program_row
+                        .hackathon_program__time 16:30&nbsp;&ndash; 17:00
+                        .meeting_program__info
+                           .hackathon_program__caption.mb1 Подведение итогов. Награждение победителей.
+                           .meeting_program__topic.mb15 Представители технологических партнёров: ТБанк, КИБЕРПРОЕКТ, VARMIN
+
+                           .hackathon_program__caption.mb1 Церемония закрытия мероприятия
+                           .flex
+                              .dot &bull;
+                              .program_row_person.mb1 Пономарёва
+                                 i.ml03 первый заместитель
+                           .flex
+                              .dot &bull;
+                              .block
+                                 .program_row_person.mb1 Пегов
+                                    i.ml03 заместитель
+
+                        .hackathon_row_place.top / Конференц-зал
 
          section( aria-label='' )#application.hackathon__application
             .hackathon_application__image
