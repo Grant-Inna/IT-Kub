@@ -510,7 +510,19 @@ section strong {
       grid-row-gap: 5px;
    });
 }
-
+.program_row.no_place {
+   grid-template-columns: 173px auto;
+   
+   .lg-block({
+      grid-template-columns: 173px auto;
+   });
+   .smmd-block({
+      grid-template-columns: 145px auto;
+   });
+   .sm-block({
+      grid-template-columns: 100%;
+   });
+}
 .program_row .dot {
    .montserrat-bold();
     font-size: 1.2rem;
