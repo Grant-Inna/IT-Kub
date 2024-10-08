@@ -56,7 +56,7 @@ html
 
          include assets/jade/content/hackathon/__direction
          include assets/jade/content/hackathon/__direction-more
-         section( aria-label='По каким направлениям проводится хакатон' )#direction.hackathon__direction
+         section( aria-label='По каким направлениям проводится хакатон' )#direction.hackathon__direction.mb9
             .wrapper
                h1.caption.center.mb5 Направления
                .row
@@ -64,50 +64,218 @@ html
                   +direction( '2', 'Кибергигиена', 'kiber', 'Zadaniye_otborochnogo_etapa_po_napravleniyu_Kibergigiyena_(II_Vserossiyskiy_khakaton).pdf' )
                   +direction( '3', 'VR-разработка', 'varmin', 'Zadaniye_otborochnogo_etapa_po_napravleniyu_VR-razrabotka_(II_Vserossiyskiy_khakaton).pdf' )
 
+         //
+         //include assets/jade/content/hackathon/__step
+         //section( aria-label='Этапы проведения хакатона' )#step.hackathon__steps
+         //   .wrapper
+         //      h1.caption.center.mb5 Этапы проведения
+         //      //+step( '0', 'Объявление команд, прошедших в&nbsp;очный заключительный этап', '15 сентября', '' )
+         //      +step( '1', 'Подача заявок', '1&nbsp;&mdash; 30&nbsp;апреля 2024 года', '' )
+         //      article.hackathon_step__holder
+         //         .hackathon_step__icon
+         //            .hackathon_step__icon-2
+         //         .hackathon_step__about
+         //            h1.title.mb04 Отборочный этап
+         //            .hackathon_step__date.mb06 апрель&nbsp;&mdash; сентябрь 2024 года
+         //            .hackathon_step__about
+         //               .text-22 На&nbsp;базе субъектов Российской Федерации среди обучающихся Центров&nbsp;
+         //                  span.wwnow  &laquo;IT-куб&raquo;
+         //                  |  при&nbsp;информационной и&nbsp;консультационно&ndash;методической поддержке Организатора и&nbsp;Партнеров
+         //               .hackathon_step__more.first
+         //                  .icon__green_hackathon.mr1
+         //                  .hackathon_step__text
+         //                     b.text-24.mb04 Работа над кейсовым заданием
+         //                     .hackathon_step__date.mb06 май&nbsp;&mdash; июнь
+         //                     //.text-22 Работа команд над&nbsp;кейсами по&nbsp;расширенному заданию, полученному в&nbsp;первый день мероприятия
+         //
+         //               .hackathon_step__more
+         //                  .icon__green_hackathon.mr1
+         //                  .hackathon_step__text
+         //                     b.text-24.mb04 Прием работ
+         //                     .hackathon_step__date.mb06 до&nbsp;10 июня (включительно)
+         //
+         //               .hackathon_step__more
+         //                  .icon__green_hackathon.mr1
+         //                  .hackathon_step__text
+         //                     b.text-24.mb04 Работа экспертной комиссии
+         //                     .hackathon_step__date.mb06 июль&nbsp;&mdash; август
+         //
+         //               .hackathon_step__more
+         //                  .icon__green_hackathon.mr1
+         //                  .hackathon_step__text
+         //                     b.text-24.mb04 Объявление команд, прошедших в&nbsp;очный заключительный этап
+         //                     .hackathon_step__date.mb06 15 сентября
+         //
+         //
+         //      +step( '3', 'Заключительный очный этап', '9&nbsp;&mdash; 11 октября 2024&nbsp;года', '' )
+         //
 
-         include assets/jade/content/hackathon/__step
-         section( aria-label='Этапы проведения хакатона' )#step.hackathon__steps
+
+
+
+         include assets/jade/content/meeting/__trigger
+         section.hackathon__program.mb9#program
             .wrapper
-               h1.caption.center.mb5 Этапы проведения
-               //+step( '0', 'Объявление команд, прошедших в&nbsp;очный заключительный этап', '15 сентября', '' )
-               +step( '1', 'Подача заявок', '1&nbsp;&mdash; 30&nbsp;апреля 2024 года', '' )
-               article.hackathon_step__holder
-                  .hackathon_step__icon
-                     .hackathon_step__icon-2
-                  .hackathon_step__about
-                     h1.title.mb04 Отборочный этап
-                     .hackathon_step__date.mb06 апрель&nbsp;&mdash; сентябрь 2024 года
-                     .hackathon_step__about
-                        .text-22 На&nbsp;базе субъектов Российской Федерации среди обучающихся Центров&nbsp;
-                           span.wwnow  &laquo;IT-куб&raquo;
-                           |  при&nbsp;информационной и&nbsp;консультационно&ndash;методической поддержке Организатора и&nbsp;Партнеров
-                        .hackathon_step__more.first
-                           .icon__green_hackathon.mr1
-                           .hackathon_step__text
-                              b.text-24.mb04 Работа над кейсовым заданием
-                              .hackathon_step__date.mb06 май&nbsp;&mdash; июнь
-                              //.text-22 Работа команд над&nbsp;кейсами по&nbsp;расширенному заданию, полученному в&nbsp;первый день мероприятия
+               h2.caption.center.mb6 Программа II Всероссийского хакатона по программированию 
+                  br
+                  | «Проектирую. Программирую. Обучаюсь. Будущее»
 
-                        .hackathon_step__more
-                           .icon__green_hackathon.mr1
-                           .hackathon_step__text
-                              b.text-24.mb04 Прием работ
-                              .hackathon_step__date.mb06 до&nbsp;10 июня (включительно)
-
-                        .hackathon_step__more
-                           .icon__green_hackathon.mr1
-                           .hackathon_step__text
-                              b.text-24.mb04 Работа экспертной комиссии
-                              .hackathon_step__date.mb06 июль&nbsp;&mdash; август
-
-                        .hackathon_step__more
-                           .icon__green_hackathon.mr1
-                           .hackathon_step__text
-                              b.text-24.mb04 Объявление команд, прошедших в&nbsp;очный заключительный этап
-                              .hackathon_step__date.mb06 15 сентября
+               section( aria-label='9 октября').mb5
+                  .meeting_list__section
+                     .program_trigger
+                        .program_day
+                           .caption.mr 9
+                           .text-22 октября,
+                           .number.mr первый
+                           .text-22 день
+                     a( href='https://yandex.ru/maps/-/CDXQuG1E' target='_blank').program_place
+                        .program__pin
+                        .program_place_name &laquo;Академия Маяк&raquo; имени А. Д. Сахарова
+                        .program_place_address г.&nbsp;Нижний Новгород
 
 
-               +step( '3', 'Заключительный очный этап', '9&nbsp;&mdash; 11 октября 2024&nbsp;года', '' )
+                  section.meeting_program__holder.mt3
+                     +program( '09:30', '10:30', 'Регистрация участников', 'Холл первого этажа')
+
+                     +program-3( '10:30', '11:00', 'Церемония открытия мероприятия', 'Приветственное слово:',
+                        'Горобец Андрей Валерьевич,', 'директор Департамента цифровой трансформации и больших данных Министерства просвещения Российской Федерации',
+                        'Пучков Михаил Юрьевич,', 'министр образования и науки Нижегородской области',
+                        'Пономарёва Юлия Александровна,', 'первый заместитель директора ФГАНУ &laquo;ФИЦТО&raquo;',
+                        '/ Конференц-зал' )
+
+                     .program_row
+                        .hackathon_program__time 11:00&nbsp;&ndash; 13:00
+                        .program_row_info
+                           .meeting_program__text Получение заданий и начало работы над кейсами
+                        .hackathon_row_place / Аудитории по&nbsp;направлениям
+
+                     .program_row
+                        .hackathon_program__time 13:00&nbsp;&ndash; 13:15
+                        .program_row_info
+                           .meeting_program__text Игра &laquo;Спорт в&nbsp;кубе&raquo;
+                        .hackathon_row_place / Аудитории по&nbsp;направлениям
+
+                     .program_row
+                        .hackathon_program__time 13:15&nbsp;&ndash; 14:00
+                        .meeting_program__dinner
+                           .hackathon__dinner.mr-20
+                           .meeting_program__text Обед
+                        .hackathon_row_place / Холл второго этажа
+
+                     +program( '14:00', '17:00', 'Работа над кейсами', 'Аудитории по&nbsp;направлениям')
+                     +program( '17:00', '17:15', 'Игра &laquo;Спорт в&nbsp;кубе&raquo;', 'Аудитории по&nbsp;направлениям')
+
+
+
+
+
+               section( aria-label='10 октября').mb5
+                  .meeting_list__section
+                     .program_trigger
+                        .program_day
+                           .caption.mr 10
+                           .text-22 октября,
+                           .number.mr второй
+                           .text-22 день
+                     a( href='https://yandex.ru/maps/-/CDXQuG1E' target='_blank').program_place
+                        .program__pin
+                        .program_place_name &laquo;Академия Маяк&raquo; имени А. Д. Сахарова
+                        .program_place_address г.&nbsp;Нижний Новгород
+
+
+                  section.meeting_program__holder.mt3
+
+                     +program( '10:00', '13:00', 'Работа над кейсами', 'Аудитории по&nbsp;направлениям')
+                     +program( '13:00', '13:15', 'Игра &laquo;Спорт в&nbsp;кубе&raquo;', 'Аудитории по&nbsp;направлениям')
+
+
+                     .program_row
+                        .hackathon_program__time 13:15&nbsp;&ndash; 14:00
+                        .meeting_program__dinner
+                           .hackathon__dinner.mr-20
+                           .meeting_program__text Обед
+                        .hackathon_row_place / Холл второго этажа
+
+                     +program( '14:00', '17:00', 'Работа над кейсами', 'Аудитории по&nbsp;направлениям')
+
+                     .program_row.no_place
+                        .hackathon_program__time 17:00&nbsp;&ndash; 18:30
+                        .program_row_info
+                           .hackathon_program__caption.mb15 Пешая экскурсия по Нижнему Новгороду
+
+                           .flex
+                              .dot &bull;
+                              .block
+                                 .meeting_program__topic.mb05 Викторина с использованием мобильного приложения &laquo;Игра Первых&raquo;
+                                 .program_row_person.mb03 Пегов Кирилл Евгеньевич,
+                                    i.ml03 специалист ФГАНУ &laquo;ФИЦТО&raquo;
+
+
+
+
+               section( aria-label='11 октября').mb5
+                  .meeting_list__section
+                     .program_trigger
+                        .program_day
+                           .caption.mr 11
+                           .text-22 октября,
+                           .number.mr третий
+                           .text-22 день
+                     a( href='https://yandex.ru/maps/-/CDXQuG1E' target='_blank').program_place
+                        .program__pin
+                        .program_place_name &laquo;Академия Маяк&raquo; имени А. Д. Сахарова
+                        .program_place_address г.&nbsp;Нижний Новгород
+
+
+                  section.meeting_program__holder.mt3
+                     +program( '10:00', '10:30', 'Подготовка к защите проектов', 'Аудитории по&nbsp;направлениям')
+                     +program( '10:30', '12:45', 'ЗАЩИТА проектов по направлениям', 'Аудитории по&nbsp;направлениям')
+
+                     +program( '12:45', '13:15', 'Финал игры &laquo;Спорт в&nbsp;кубе&raquo;', 'Конференц-зал')
+
+                     .program_row
+                        .hackathon_program__time 13:15&nbsp;&ndash; 14:00
+                        .meeting_program__dinner
+                           .hackathon__dinner.mr-20
+                           .meeting_program__text Обед
+                        .hackathon_row_place / Холл второго этажа
+
+                     +program( '14:00', '15:30', 'ФИНАЛ. ЗАЩИТА проектов', 'Конференц-зал')
+
+
+                     .program_row
+                        .hackathon_program__time 15:40&nbsp;&ndash; 16:30
+                        .program_row_info
+                           .flex
+                              .dot &bull;
+                              .meeting_program__topic.mb15 Квиз от компании &laquo;КИБЕРПРОТЕКТ&raquo;
+
+                           .flex
+                              .dot &bull;
+                              .block
+                                 .meeting_program__topic.mb05 Итоги викторины с использованием мобильного приложения &laquo;Игра Первых&raquo;
+                                 .program_row_person.mb03 Пегов Кирилл Евгеньевич,
+                                    i.ml03 специалист ФГАНУ &laquo;ФИЦТО&raquo;
+                        .hackathon_row_place / Конференц-зал
+
+                     .program_row
+                        .hackathon_program__time 16:30&nbsp;&ndash; 17:00
+                        .program_row_info
+                           .hackathon_program__caption.mb1 Подведение итогов. Награждение победителей
+                           .meeting_program__topic.mb15 Представители технологических партнёров: ТБанк, КИБЕРПРОТЕКТ, VARWIN
+
+                           .hackathon_program__caption.mb1 Церемония закрытия мероприятия
+                           .flex
+                              .dot &bull;
+                              .program_row_person.mb08 Пономарёва Юлия Александровна,
+                                 i.ml03 первый заместитель директора ФГАНУ &laquo;ФИЦТО&raquo;
+                           .flex
+                              .dot &bull;
+                              .block
+                                 .program_row_person.mb1 Гамула Андрей Николаевич
+                                    i.ml03 заместитель директора  ФГАНУ &laquo;ФИЦТО&raquo;
+
+                        .hackathon_row_place.top / Конференц-зал
 
 
 
@@ -175,165 +343,6 @@ html
 
 
 
-         include assets/jade/content/meeting/__trigger
-         section.hackathon__program.mb9#program
-            .wrapper
-               h1.caption.center.mb6 Программа мероприятий
-
-               section( aria-label='9 октября').mb5
-                  .meeting_list__section
-                     .program_trigger
-                        .program_day
-                           .caption.mr 9
-                           .text-22 октября,
-                           .number.mr первый
-                           .text-22 день
-                     a( href='https://yandex.ru/maps/-/CDXQuG1E' target='_blank').program_place
-                        .program__pin
-                        .program_place_name «Академия Маяк» имени А. Д. Сахарова
-                        .program_place_address г.&nbsp;Нижний Новгород
-
-
-                  section.meeting_program__holder.mt3
-                     +program( '09:30', '10:00', 'Регистрация участников', 'Холл первого этажа')
-
-                     +program-3( '10:10', '10:50', 'Церемония открытия мероприятия', 'Приветственное слово:',
-                        'Горобец Андрей Валерьевич,', 'директор Департамента цифровой трансформации и больших данных Министерства просвещения Российской Федерации',
-                        'Пучков Михаил Юрьевич,', 'министр образования и науки Нижегородской области',
-                        'Пономарёва Юлия Александровна,', 'первый заместитель директора ФГАНУ «ФИЦТО»',
-                        '/ Конференц-зал' )
-
-                     //+program( '11:00', '13:00', 'Название', 'Место')
-                     //+program( '09:30', '10:00', 'Название', 'Место')
-
-                     .program_row
-                        .hackathon_program__time 11:00&nbsp;&ndash; 13:00
-                        .program_row_info
-                           .meeting_program__text Получение заданий и начало работы над кейсами
-                        .hackathon_row_place / Аудитории по&nbsp;направлениям
-
-                     .program_row
-                        .hackathon_program__time 13:00&nbsp;&ndash; 13:15
-                        .program_row_info
-                           .meeting_program__text Игра &laquo;Спорт в&nbsp;кубе&raquo;
-                        .hackathon_row_place / Аудитории по&nbsp;направлениям
-
-                     .program_row
-                        .hackathon_program__time 13:15&nbsp;&ndash; 14:00
-                        .meeting_program__dinner
-                           .hackathon__dinner.mr-20
-                           .meeting_program__text Обед
-                        .hackathon_row_place / Холл второго этажа
-
-                     +program( '14:00', '17:00', 'Работа над кейсами', 'Аудитории по&nbsp;направлениям')
-                     +program( '17:00', '17:15', 'Игра &laquo;Спорт в&nbsp;кубе&raquo;', 'Аудитории по&nbsp;направлениям')
-
-
-
-
-
-               section( aria-label='10 октября').mb5
-                  .meeting_list__section
-                     .program_trigger
-                        .program_day
-                           .caption.mr 10
-                           .text-22 октября,
-                           .number.mr второй
-                           .text-22 день
-                     a( href='https://yandex.ru/maps/-/CDXQuG1E' target='_blank').program_place
-                        .program__pin
-                        .program_place_name «Академия Маяк» имени А. Д. Сахарова
-                        .program_place_address г.&nbsp;Нижний Новгород
-
-
-                  section.meeting_program__holder.mt3
-
-                     +program( '10:00', '13:00', 'Работа над кейсами', 'Аудитории по&nbsp;направлениям')
-                     +program( '13:30', '13:15', 'Игра &laquo;Спорт в&nbsp;кубе&raquo;', 'Аудитории по&nbsp;направлениям')
-
-
-                     .program_row
-                        .hackathon_program__time 13:15&nbsp;&ndash; 14:00
-                        .meeting_program__dinner
-                           .hackathon__dinner.mr-20
-                           .meeting_program__text Обед
-                        .hackathon_row_place / Холл второго этажа
-
-                     +program( '14:00', '17:00', 'Работа над кейсами', 'Аудитории по&nbsp;направлениям')
-
-                     .program_row.no_place
-                        .hackathon_program__time 17:00&nbsp;&ndash; 18:00
-                        .program_row_info
-                           .hackathon_program__caption.mb2 Пешая экскурсия по Нижнему Новгороду
-                           .program_row_person.mb03 Пегов Кирилл Евгеньевич,
-                              i.ml03 специалист ФГАНУ &laquo;ФИЦТО&raquo;
-                           .meeting_program__topic.mb15 Викторина с использованием мобильного приложения «Игра Первых»
-
-
-
-
-               section( aria-label='11 октября').mb5
-                  .meeting_list__section
-                     .program_trigger
-                        .program_day
-                           .caption.mr 11
-                           .text-22 октября,
-                           .number.mr третий
-                           .text-22 день
-                     a( href='https://yandex.ru/maps/-/CDXQuG1E' target='_blank').program_place
-                        .program__pin
-                        .program_place_name «Академия Маяк» имени А. Д. Сахарова
-                        .program_place_address г.&nbsp;Нижний Новгород
-
-
-                  section.meeting_program__holder.mt3
-                     +program( '10:00', '10:30', 'Подготовка к защите проектов', 'Аудитории по&nbsp;направлениям')
-                     +program( '10:30', '12:45', 'ЗАЩИТА проектов по направлениям', 'Аудитории по&nbsp;направлениям')
-
-                     +program( '12:45', '13:15', 'Финал игры &laquo;Спорт в&nbsp;кубе&raquo;', 'Конференц-зал')
-
-                     .program_row
-                        .hackathon_program__time 13:15&nbsp;&ndash; 14:00
-                        .meeting_program__dinner
-                           .hackathon__dinner.mr-20
-                           .meeting_program__text Обед
-                        .hackathon_row_place / Холл второго этажа
-
-                     +program( '14:00', '15:30', 'ФИНАЛ. ЗАЩИТА проектов', 'Конференц-зал')
-
-
-                     .program_row
-                        .hackathon_program__time 15:40&nbsp;&ndash; 16:30
-                        .program_row_info
-                           .flex
-                              .dot &bull;
-                              .meeting_program__topic.mb15 Квиз от компании «КИБЕРПРОТЕКТ»
-                           .flex
-                              .dot &bull;
-                              .block
-                                 .program_row_person.mb03 Пегов Кирилл Евгеньевич,
-                                    i.ml03 специалист ФГАНУ «ФИЦТО»
-                                 .meeting_program__topic.mb15 Итоги викторины с использованием мобильного приложения «Игра Первых»
-                        .hackathon_row_place / Конференц-зал
-
-                     .program_row
-                        .hackathon_program__time 16:30&nbsp;&ndash; 17:00
-                        .program_row_info
-                           .hackathon_program__caption.mb1 Подведение итогов. Награждение победителей.
-                           .meeting_program__topic.mb15 Представители технологических партнеров: ТБанк, КИБЕРПРОТЕКТ, VARWIN
-
-                           .hackathon_program__caption.mb1 Церемония закрытия мероприятия
-                           .flex
-                              .dot &bull;
-                              .program_row_person.mb1 Пономарёва Юлия Александровна,
-                                 i.ml03 первый заместитель директора ФГАНУ «ФИЦТО»
-                           .flex
-                              .dot &bull;
-                              .block
-                                 .program_row_person.mb1 Гамула Андрей Николаевич
-                                    i.ml03 заместитель директора  ФГАНУ «ФИЦТО»
-
-                        .hackathon_row_place.top / Конференц-зал
 
          section( aria-label='' )#application.hackathon__application
             .hackathon_application__image
