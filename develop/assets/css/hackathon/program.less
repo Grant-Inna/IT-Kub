@@ -4,6 +4,15 @@
    .smmd-block({
       height: 32px
    });
+   .sm-block({
+      grid-column: ~"1 / 3";
+   });
+   .xs-block({
+      width: 140px;
+      height: 36px;
+      grid-column: ~"1 / 2";
+      margin-bottom: 5px;
+   });
 }
 .hackathon_program__place {
    .meeting_program__place;
@@ -12,14 +21,41 @@
 .hackathon_row_place {
    .program_row_place;
    color: #009484;
+   .sm-block({
+      grid-column: ~"1 / 3";
+   });
+   .xs-block({
+      grid-column: ~"1 / 2";
+      text-align: start;
+   });
 }
 .hackathon_row_place {
    align-self: center;
+   .sm-block({
+      grid-column: ~"2 / 3";
+      align-self: flex-start;
+   });
+   .xs-block({
+      grid-column: ~"1 / 2";
+      margin-left: 15px;
+   });
 }
 .hackathon_row_place.top {
    align-self: flex-start;
+   .xs-block({
+      margin-top: -0.5rem;
+   });
 }
 
 .hackathon_program__caption {
    .program_row_caption;
+   .xs-block({
+      margin-bottom: 1rem !important;
+   });
+}
+
+.meeting_program__topic {
+   .xs-block({
+      margin-bottom: .8rem !important;
+   });
 }
