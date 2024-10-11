@@ -48,6 +48,18 @@
    .shift-md-left(2);
    .shift-sm-left(0);
 }
+.hackathon_winners__list .block_16 {
+   .col();
+   .size(16);
+   .size-xl(16);
+   .size-middle(16);
+   .size-lg(16);
+   .size-md(20);
+   .size-sm(24);
+   
+   .shift-md-left(2);
+   .shift-sm-left(0);
+}
 @media screen and (max-width: @break_middle) {
    .hackathon_winners__list .block_8 {
       margin-top: 1rem;
@@ -80,7 +92,7 @@ section .hackathon_winner__name.text-22 {
    position: relative;
    z-index: 100;
    
-   border: 8px solid transparent;
+   //border: 8px solid transparent;
    border-radius: 2px;
    line-height: 0;
 }
@@ -95,23 +107,30 @@ section .hackathon_winner__name.text-22 {
    position: absolute;
    z-index: 500;
    
-   width: 5rem;
-   height: 5rem;
-   top: -2.5rem;
-   right: -2.3rem;
+   width: 3rem;
+   height: 3rem;
+   /*top: -2.5rem;
+   right: -2.3rem;*/
+   top: -.8rem;
+   right: 0;
+   
+   padding-left: 2rem;
 }
 .hackathon_winners__holder article.block_8:first-of-type .hackathon_winner__place {
-   width: 6.5rem;
+   width: 4rem;
    height: 7rem;
-   top: -2.7rem;
-   right: -3rem;
+/*   top: -2.7rem;
+   right: -3rem;*/
+   top: -1.9rem;
+   right: 0;
+   padding-left: 0;
 }
 
 
 
-.hw__place-1 { .hackathon-winner-place( '1')}
-.hw__place-2 { .hackathon-winner-place( '2')}
-.hw__place-3 { .hackathon-winner-place( '3')}
+.hw__place-1 { .hackathon-winner-place( '1'); }
+.hw__place-2 { .hackathon-winner-place( '2'); }
+.hw__place-3 { .hackathon-winner-place( '3'); }
 
 
 .slick-dots li button:before {

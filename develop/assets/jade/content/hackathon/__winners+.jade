@@ -1,4 +1,4 @@
-mixin winners( nbr, title, name1, place1, name2, place2, name3, place3 )
+mixin winners-plus( nbr, title, name1, place1, name2, place2, name3, place3 )
    section.hackathon_winners__holder.mb5
       .hackathon_winners__caption
          .hackathon_winners__caption_icon( class='hw__caption_icon-#{nbr}')
@@ -22,3 +22,11 @@ mixin winners( nbr, title, name1, place1, name2, place2, name3, place3 )
                   .hackathon_winner__place( class='hw__place-3' )
                .hackathon_winner__name.text-22 !{place3}
                //.hackathon_winner__location.text-22
+
+         .row.mt4
+            article.block_16
+               .hackathon_winner__img
+                  .hackathon_winner__place
+               .hackathon_winner__name.text-22 Специальная номинация «Прорыв года»:
+               .hackathon_winner__location.text-22 команда Донецкой Народной Республики
+

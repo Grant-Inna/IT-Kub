@@ -32,7 +32,7 @@ html
                      .hackathon_button__inner
                         i.icon-file
                         span Положение о&nbsp;хакатоне
-                  a( href='./assets/data/projects/hackathon/files/2024/program_full.pdf' download='Программа хакатона 2024. День 1, 2, 3.pdf' target='_blank').hackathon__button.mb3
+                  a( href='./assets/data/projects/hackathon/files/2024/programm_hackaton_2024_full.pdf' download='Программа хакатона 2024. День 1, 2, 3.pdf' target='_blank').hackathon__button.mb3
                      .hackathon_button__inner
                         i.icon-file
                         span Программа&nbsp;хакатона
@@ -311,8 +311,8 @@ html
                            .hackathon_program__caption.mb15 Церемония закрытия мероприятия
                            .flex
                               .dot &bull;
-                              .program_row_person.mb08 Пучков Михаил Юрьевич,
-                                 i.ml03 министр образования и науки Нижегородской области
+                              .program_row_person.mb08 Широкова Любовь Викторовна,
+                                 i.ml03 заместитель министра образования и науки Нижегородской области
                            .flex
                               .dot &bull;
                               .program_row_person.mb08 Пономарёва Юлия Александровна,
@@ -327,67 +327,78 @@ html
 
 
 
+         //
+         //include ./assets/jade/content/hackathon/__finalist
+         //section( aria-label='Команды — участники заключительного этапа' )#winners.hackathon__winners.mt5.mb10
+         //   .wrapper
+         //      h1.caption.center.mb5 Команды&ndash;участники заключительного этапа
+         //
+         //      section.hackathon_finalists__holder.mb5
+         //         .hackathon_finalists__caption
+         //            .hackathon_finalists__caption_icon( class='hw__caption_icon-1')
+         //            h1.title Программирование
+         //         .hackathon_finalists__list.mt2
+         //            .row
+         //               +finalist( 'Донецкая Народная Республика', '')
+         //               +finalist( 'Иркутская область', '')
+         //               +finalist( 'Камчатский край', '')
+         //               +finalist( 'Ленинградская область', '')
+         //               +finalist( 'Нижегородская область', '')
+         //               +finalist( 'Новосибирская область', '')
+         //               +finalist( 'Оренбургская область', '')
+         //               +finalist( 'Смоленская область', '')
+         //               +finalist( 'Удмуртская Республика', '')
+         //               +finalist( 'Ульяновская область', '')
+         //
+         //
+         //      section.hackathon_finalists__holder.mb5
+         //         .hackathon_finalists__caption
+         //            .hackathon_finalists__caption_icon( class='hw__caption_icon-2')
+         //            h1.title VR-разработка
+         //         .hackathon_finalists__list.mt2
+         //            .row
+         //               +finalist( 'Алтайский край', '')
+         //               +finalist( 'Донецкая Народная Республика', '')
+         //               +finalist( 'Кировская область', '')
+         //               +finalist( 'Оренбургская область', '')
+         //               +finalist( 'Приморский край', '')
+         //               +finalist( 'Псковская область', '')
+         //               +finalist( 'Республика Хакасия', '')
+         //               +finalist( 'Свердловская область', '')
+         //               +finalist( 'Смоленская область', '')
+         //               +finalist( 'Удмуртская Республика', '')
+         //
+         //
+         //
+         //
+         //      section.hackathon_finalists__holder.mb5
+         //         .hackathon_finalists__caption
+         //            .hackathon_finalists__caption_icon( class='hw__caption_icon-3')
+         //            h1.title Кибергигиена
+         //         .hackathon_finalists__list.mt2
+         //            .row
+         //               +finalist( 'Астраханская область', '')
+         //               +finalist( 'Донецкая Народная Республика', '')
+         //               +finalist( 'Забайкальский край', '')
+         //               +finalist( 'Красноярский край', '')
+         //               +finalist( 'Новосибирская область', '')
+         //               +finalist( 'Приморский край', '')
+         //               +finalist( 'Республика Дагестан', '')
+         //               +finalist( 'Республика Северная Осетия&nbsp;&mdash; Алания', '')
+         //               +finalist( 'Ставропольский край', '')
+         //               +finalist( 'Тульская область', '')
+         //
+         //
 
-         include ./assets/jade/content/hackathon/__finalist
-         section( aria-label='Команды — участники заключительного этапа' )#winners.hackathon__winners.mt5.mb10
+
+         include ./assets/jade/content/hackathon/__winners
+         include ./assets/jade/content/hackathon/__winners+
+         section( aria-label='Победители' )#winners.hackathon__winners.mb8
             .wrapper
-               h1.caption.center.mb5 Команды&ndash;участники заключительного этапа
-
-               section.hackathon_finalists__holder.mb5
-                  .hackathon_finalists__caption
-                     .hackathon_finalists__caption_icon( class='hw__caption_icon-1')
-                     h1.title Программирование
-                  .hackathon_finalists__list.mt2
-                     .row
-                        +finalist( 'Донецкая Народная Республика', '')
-                        +finalist( 'Иркутская область', '')
-                        +finalist( 'Камчатский край', '')
-                        +finalist( 'Ленинградская область', '')
-                        +finalist( 'Нижегородская область', '')
-                        +finalist( 'Новосибирская область', '')
-                        +finalist( 'Оренбургская область', '')
-                        +finalist( 'Смоленская область', '')
-                        +finalist( 'Удмуртская Республика', '')
-                        +finalist( 'Ульяновская область', '')
-
-
-               section.hackathon_finalists__holder.mb5
-                  .hackathon_finalists__caption
-                     .hackathon_finalists__caption_icon( class='hw__caption_icon-2')
-                     h1.title VR-разработка
-                  .hackathon_finalists__list.mt2
-                     .row
-                        +finalist( 'Алтайский край', '')
-                        +finalist( 'Донецкая Народная Республика', '')
-                        +finalist( 'Кировская область', '')
-                        +finalist( 'Оренбургская область', '')
-                        +finalist( 'Приморский край', '')
-                        +finalist( 'Псковская область', '')
-                        +finalist( 'Республика Хакасия', '')
-                        +finalist( 'Свердловская область', '')
-                        +finalist( 'Смоленская область', '')
-                        +finalist( 'Удмуртская Республика', '')
-
-
-
-
-               section.hackathon_finalists__holder.mb5
-                  .hackathon_finalists__caption
-                     .hackathon_finalists__caption_icon( class='hw__caption_icon-3')
-                     h1.title Кибергигиена
-                  .hackathon_finalists__list.mt2
-                     .row
-                        +finalist( 'Астраханская область', '')
-                        +finalist( 'Донецкая Народная Республика', '')
-                        +finalist( 'Забайкальский край', '')
-                        +finalist( 'Красноярский край', '')
-                        +finalist( 'Новосибирская область', '')
-                        +finalist( 'Приморский край', '')
-                        +finalist( 'Республика Дагестан', '')
-                        +finalist( 'Республика Северная Осетия&nbsp;&mdash; Алания', '')
-                        +finalist( 'Ставропольский край', '')
-                        +finalist( 'Тульская область', '')
-
+               h1.caption.center.mb5 Победители
+               +winners-plus( '1', 'Программирование', '', ' команда<br>Смоленской области', '', 'команда<br>Удмуртской Республики', '', 'команда<br>Новосибирской области' )
+               +winners( '2', 'Диджитал (VR/AR технологии)', '', 'команда<br>Приморского края', '', 'команда<br>Свердловской области', '', 'команда<br>Оренбургской области'  )
+               +winners( '3', 'Информационная безопасность', '', 'команда<br>Забайкальского края', '', 'команда<br>Новосибирской области', '', 'команда<br>Ставропольского края'  )
 
 
 

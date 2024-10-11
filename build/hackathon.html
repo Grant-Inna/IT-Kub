@@ -72,7 +72,7 @@
         <div class="wrapper">
           <div class="hackathon_header__image"></div>
           <div class="hackathon__header"><a href="./assets/data/files/documentation/Polozheniye_o_Khakatone_2024.pdf" target="_blank" class="hackathon__button mt9 mb3">
-              <div class="hackathon_button__inner"><i class="icon-file"></i><span>Положение о&nbsp;хакатоне</span></div></a><a href="./assets/data/projects/hackathon/files/2024/program_full.pdf" download="Программа хакатона 2024. День 1, 2, 3.pdf" target="_blank" class="hackathon__button mb3">
+              <div class="hackathon_button__inner"><i class="icon-file"></i><span>Положение о&nbsp;хакатоне</span></div></a><a href="./assets/data/projects/hackathon/files/2024/programm_hackaton_2024_full.pdf" download="Программа хакатона 2024. День 1, 2, 3.pdf" target="_blank" class="hackathon__button mb3">
               <div class="hackathon_button__inner"><i class="icon-file"></i><span>Программа&nbsp;хакатона</span></div></a>
             <div class="hackathon_menu__holder">
               <menu class="hackathon_navigation__holder"><a href="#participation" class="hackathon__navigation js_href">
@@ -405,7 +405,7 @@
                   <div class="hackathon_program__caption mb15">Церемония закрытия мероприятия</div>
                   <div class="flex">
                     <div class="dot">&bull;</div>
-                    <div class="program_row_person mb08">Пучков Михаил Юрьевич,<i class="ml03">министр образования и науки Нижегородской области</i></div>
+                    <div class="program_row_person mb08">Широкова Любовь Викторовна,<i class="ml03">заместитель министра образования и науки Нижегородской области</i></div>
                   </div>
                   <div class="flex">
                     <div class="dot">&bull;</div>
@@ -424,189 +424,174 @@
           </section>
         </div>
       </section>
-      <section aria-label="Команды — участники заключительного этапа" id="winners" class="hackathon__winners mt5 mb10">
+      <!---->
+      <!--include ./assets/jade/content/hackathon/__finalist-->
+      <!--section( aria-label='Команды — участники заключительного этапа' )#winners.hackathon__winners.mt5.mb10-->
+      <!--   .wrapper-->
+      <!--      h1.caption.center.mb5 Команды&ndash;участники заключительного этапа-->
+      <!---->
+      <!--      section.hackathon_finalists__holder.mb5-->
+      <!--         .hackathon_finalists__caption-->
+      <!--            .hackathon_finalists__caption_icon( class='hw__caption_icon-1')-->
+      <!--            h1.title Программирование-->
+      <!--         .hackathon_finalists__list.mt2-->
+      <!--            .row-->
+      <!--               +finalist( 'Донецкая Народная Республика', '')-->
+      <!--               +finalist( 'Иркутская область', '')-->
+      <!--               +finalist( 'Камчатский край', '')-->
+      <!--               +finalist( 'Ленинградская область', '')-->
+      <!--               +finalist( 'Нижегородская область', '')-->
+      <!--               +finalist( 'Новосибирская область', '')-->
+      <!--               +finalist( 'Оренбургская область', '')-->
+      <!--               +finalist( 'Смоленская область', '')-->
+      <!--               +finalist( 'Удмуртская Республика', '')-->
+      <!--               +finalist( 'Ульяновская область', '')-->
+      <!---->
+      <!---->
+      <!--      section.hackathon_finalists__holder.mb5-->
+      <!--         .hackathon_finalists__caption-->
+      <!--            .hackathon_finalists__caption_icon( class='hw__caption_icon-2')-->
+      <!--            h1.title VR-разработка-->
+      <!--         .hackathon_finalists__list.mt2-->
+      <!--            .row-->
+      <!--               +finalist( 'Алтайский край', '')-->
+      <!--               +finalist( 'Донецкая Народная Республика', '')-->
+      <!--               +finalist( 'Кировская область', '')-->
+      <!--               +finalist( 'Оренбургская область', '')-->
+      <!--               +finalist( 'Приморский край', '')-->
+      <!--               +finalist( 'Псковская область', '')-->
+      <!--               +finalist( 'Республика Хакасия', '')-->
+      <!--               +finalist( 'Свердловская область', '')-->
+      <!--               +finalist( 'Смоленская область', '')-->
+      <!--               +finalist( 'Удмуртская Республика', '')-->
+      <!---->
+      <!---->
+      <!---->
+      <!---->
+      <!--      section.hackathon_finalists__holder.mb5-->
+      <!--         .hackathon_finalists__caption-->
+      <!--            .hackathon_finalists__caption_icon( class='hw__caption_icon-3')-->
+      <!--            h1.title Кибергигиена-->
+      <!--         .hackathon_finalists__list.mt2-->
+      <!--            .row-->
+      <!--               +finalist( 'Астраханская область', '')-->
+      <!--               +finalist( 'Донецкая Народная Республика', '')-->
+      <!--               +finalist( 'Забайкальский край', '')-->
+      <!--               +finalist( 'Красноярский край', '')-->
+      <!--               +finalist( 'Новосибирская область', '')-->
+      <!--               +finalist( 'Приморский край', '')-->
+      <!--               +finalist( 'Республика Дагестан', '')-->
+      <!--               +finalist( 'Республика Северная Осетия&nbsp;&mdash; Алания', '')-->
+      <!--               +finalist( 'Ставропольский край', '')-->
+      <!--               +finalist( 'Тульская область', '')-->
+      <!---->
+      <!---->
+      
+      <section aria-label="Победители" id="winners" class="hackathon__winners mb8">
         <div class="wrapper">
-          <h1 class="caption center mb5">Команды&ndash;участники заключительного этапа</h1>
-          <section class="hackathon_finalists__holder mb5">
-            <div class="hackathon_finalists__caption">
-              <div class="hackathon_finalists__caption_icon hw__caption_icon-1"></div>
-              <h1 class="title">Программирование</h1>
-            </div>
-            <div class="hackathon_finalists__list mt2">
-              <div class="row">
+          <h1 class="caption center mb5">Победители</h1>
+                <section class="hackathon_winners__holder mb5">
+                  <div class="hackathon_winners__caption">
+                    <div class="hackathon_winners__caption_icon hw__caption_icon-1"></div>
+                    <h1 class="title">Программирование</h1>
+                  </div>
+                  <div class="hackathon_winners__list mt2">
+                    <div class="row">
                       <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Донецкая Народная Республика</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
+                        <div class="hackathon_winner__img">
+                          <div class="hackathon_winner__place hw__place-1"></div>
+                        </div>
+                        <div class="hackathon_winner__name text-22"> команда<br>Смоленской области</div>
+                        <!--.hackathon_winner__location.text-22 !{place1}-->
                       </article>
                       <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Иркутская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
+                        <div class="hackathon_winner__img">
+                          <div class="hackathon_winner__place hw__place-2"></div>
+                        </div>
+                        <div class="hackathon_winner__name text-22">команда<br>Удмуртской Республики</div>
+                        <!--.hackathon_winner__location.text-22 !{place2}-->
                       </article>
                       <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Камчатский край</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
+                        <div class="hackathon_winner__img">
+                          <div class="hackathon_winner__place hw__place-3"></div>
+                        </div>
+                        <div class="hackathon_winner__name text-22">команда<br>Новосибирской области</div>
+                        <!--.hackathon_winner__location.text-22-->
+                      </article>
+                    </div>
+                    <div class="row mt4">
+                      <article class="block_16">
+                        <div class="hackathon_winner__img">
+                          <div class="hackathon_winner__place"></div>
+                        </div>
+                        <div class="hackathon_winner__name text-22">Специальная номинация «Прорыв года»:</div>
+                        <div class="hackathon_winner__location text-22">команда Донецкой Народной Республики</div>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+                <section class="hackathon_winners__holder mb5">
+                  <div class="hackathon_winners__caption">
+                    <div class="hackathon_winners__caption_icon hw__caption_icon-2"></div>
+                    <h1 class="title">Диджитал (VR/AR технологии)</h1>
+                  </div>
+                  <div class="hackathon_winners__list mt2">
+                    <div class="row">
+                      <article class="block_8">
+                        <div class="hackathon_winner__img">
+                          <div class="hackathon_winner__place hw__place-1"></div>
+                        </div>
+                        <div class="hackathon_winner__name text-22">команда<br>Приморского края</div>
+                        <!--.hackathon_winner__location.text-22 !{place1}-->
                       </article>
                       <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Ленинградская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
+                        <div class="hackathon_winner__img">
+                          <div class="hackathon_winner__place hw__place-2"></div>
+                        </div>
+                        <div class="hackathon_winner__name text-22">команда<br>Свердловской области</div>
+                        <!--.hackathon_winner__location.text-22 !{place2}-->
                       </article>
                       <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Нижегородская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
+                        <div class="hackathon_winner__img">
+                          <div class="hackathon_winner__place hw__place-3"></div>
+                        </div>
+                        <div class="hackathon_winner__name text-22">команда<br>Оренбургской области</div>
+                        <!--.hackathon_winner__location.text-22-->
+                      </article>
+                    </div>
+                  </div>
+                </section>
+                <section class="hackathon_winners__holder mb5">
+                  <div class="hackathon_winners__caption">
+                    <div class="hackathon_winners__caption_icon hw__caption_icon-3"></div>
+                    <h1 class="title">Информационная безопасность</h1>
+                  </div>
+                  <div class="hackathon_winners__list mt2">
+                    <div class="row">
+                      <article class="block_8">
+                        <div class="hackathon_winner__img">
+                          <div class="hackathon_winner__place hw__place-1"></div>
+                        </div>
+                        <div class="hackathon_winner__name text-22">команда<br>Забайкальского края</div>
+                        <!--.hackathon_winner__location.text-22 !{place1}-->
                       </article>
                       <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Новосибирская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
+                        <div class="hackathon_winner__img">
+                          <div class="hackathon_winner__place hw__place-2"></div>
+                        </div>
+                        <div class="hackathon_winner__name text-22">команда<br>Новосибирской области</div>
+                        <!--.hackathon_winner__location.text-22 !{place2}-->
                       </article>
                       <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Оренбургская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
+                        <div class="hackathon_winner__img">
+                          <div class="hackathon_winner__place hw__place-3"></div>
+                        </div>
+                        <div class="hackathon_winner__name text-22">команда<br>Ставропольского края</div>
+                        <!--.hackathon_winner__location.text-22-->
                       </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Смоленская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Удмуртская Республика</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Ульяновская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-              </div>
-            </div>
-          </section>
-          <section class="hackathon_finalists__holder mb5">
-            <div class="hackathon_finalists__caption">
-              <div class="hackathon_finalists__caption_icon hw__caption_icon-2"></div>
-              <h1 class="title">VR-разработка</h1>
-            </div>
-            <div class="hackathon_finalists__list mt2">
-              <div class="row">
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Алтайский край</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Донецкая Народная Республика</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Кировская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Оренбургская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Приморский край</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Псковская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Республика Хакасия</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Свердловская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Смоленская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Удмуртская Республика</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-              </div>
-            </div>
-          </section>
-          <section class="hackathon_finalists__holder mb5">
-            <div class="hackathon_finalists__caption">
-              <div class="hackathon_finalists__caption_icon hw__caption_icon-3"></div>
-              <h1 class="title">Кибергигиена</h1>
-            </div>
-            <div class="hackathon_finalists__list mt2">
-              <div class="row">
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Астраханская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Донецкая Народная Республика</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Забайкальский край</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Красноярский край</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Новосибирская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Приморский край</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Республика Дагестан</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Республика Северная Осетия&nbsp;&mdash; Алания</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Ставропольский край</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-                      <article class="block_8">
-                        <div class="hackathon_finalist__location text-22">Тульская область</div>
-                        <div class="finalist_line"></div>
-                        <!--.hackathon_finalist__name.text-22 !{name}-->
-                      </article>
-              </div>
-            </div>
-          </section>
+                    </div>
+                  </div>
+                </section>
         </div>
       </section>
       <section aria-label="" id="application" class="hackathon__application">
