@@ -38,13 +38,18 @@
 
 .hackathon_winners__list .block_8 {
    .col();
-   .size(8);
-   .size-xl(8);
-   .size-middle(12);
-   .size-lg(12);
-   .size-md(20);
+   .size(6);
+   .size-xl(7);
+   .size-middle(7);
+   .size-lg(8);
+   .size-md(18);
    .size-sm(24);
    
+   .shift-right(2);
+   .shift-xl-right(1);
+   .shift-middle-right(1);
+   .shift-lg-right(0);
+   .shift-md-left(2);
    .shift-md-left(2);
    .shift-sm-left(0);
 }
@@ -59,6 +64,11 @@
    
    .shift-md-left(2);
    .shift-sm-left(0);
+   
+   margin-top: 4rem;
+   .md-block({
+      margin-top: 2rem;
+   });
 }
 @media screen and (max-width: @break_middle) {
    .hackathon_winners__list .block_8 {
