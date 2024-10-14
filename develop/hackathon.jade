@@ -44,10 +44,125 @@ html
                         +item( 'Мероприятие 2023', 'archive' )
 
 
+
+         include ./assets/jade/content/hackathon/__winners
+         include ./assets/jade/content/hackathon/__winners+
+         section( aria-label='Победители' )#winners.hackathon__winners
+            .wrapper
+               h1.caption.center.mb5 Победители
+               section.hackathon_winners__holder.mb5
+                  .hackathon_winners__caption.mt5
+                     .hackathon_winners__caption_icon( class='hw__caption_icon-1')
+                     h1.title Программирование
+                  .hackathon_winners__list.mt2
+                     .row
+                        +winners-plus( 'Кожурина Юлия Александровна<br>Кравцов Григорий Павлович<br>Михальченков Александр Николаевич<br>Базин Алексей Сергеевич', 'Смоленская область', 'Суяков Егор Владимирович<br>Дерендяев Александр Сергеевич<br>Мироненко Виктор Яковлевич<br>Вострецова Евгения Сергеевна', 'Удмуртская Республика', 'Сивец Данил Юрьевич<br>Назаров Назар Романович<br>Яковлев Артём Сергеевич<br>Петишев Дмитрий Евгеньевич', 'Новосибирская область' )
+                     .row.mt3.others
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Донецкая Народная Республика
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Иркутская область
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Камчатский край
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Ленинградская область
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Нижегородская область
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Оренбургская область
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Ульяновская область
+
+                  .hackathon_winners__caption.mt5
+                     .hackathon_winners__caption_icon( class='hw__caption_icon-3')
+                     h1.title Кибергигиена
+                  .hackathon_winners__list.mt2
+                     .row
+                        +winners-plus( 'Черняев Кирилл Евгеньевич<br>Шишин Даниил Олегович<br>Миргород Максим Дмитриевич', 'Забайкальский край', 'Амрулин Эльдар Халидович<br>Зотов Артемий Евгеньевич<br>Гельбер Екатерина Андреевна<br>Евстратова Мария Михайловна', 'Новосибирская область', 'Волобуев Олег Андреевич<br>Бирюков Егор Александрович', 'Ставропольский край' )
+                     .row.mt3.others
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Донецкая Народная Республика
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Красноярский край
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Республика Дагестан
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Калужская область
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Свердловская область
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Тульская область
+
+
+                  .hackathon_winners__caption.mt5
+                     .hackathon_winners__caption_icon( class='hw__caption_icon-2')
+                     h1.title VR&ndash;разработка
+                  .hackathon_winners__list.mt2
+                     .row
+                        +winners-plus( 'Ким Эвелина Алексеевна<br>Рыличев Александр Игоревич<br>Хон Егор Константинович', 'Приморский край', 'Деревягин Семён Денисович<br>Еланцев Николай Леонидович<br>Загнойко Олег Александрович<br>Помазкин Кирилл Евгеньевич', 'Свердловская область', 'Митин Игорь Александрович<br>Огурцова Екатерина Витальена', 'Оренбургская область' )
+                     .row.mt3.others
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Алтайский край
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Донецкая Народная Республика
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Кировская область
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Псковская область
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Республика Хакасия
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Смоленская область
+                        article.block_8.mt1
+                           .hackathon_winner__img.mb2
+                              .hackathon_winner__place.hw__place-0
+                           .hackathon_winner__location.text-22 Удмуртская Республика
+
+
+
+
          include assets/jade/content/hackathon/__participation
          section( aria-label='Кто может принять участие' )#participation.hackathon__participation
             .wrapper
-               h1.caption.center.mb5 В&nbsp;Хакатоне могут принять участие:
+               h1.caption.center.mb4 Об участии
                .row
                   +participation( '1', 'Обучающиеся Центров цифрового образования детей <span class="wwnow">&laquo;IT-куб&raquo;</span> в&nbsp;возрасте 14-18&nbsp;лет' )
                   +participation( '2', 'Состав команды&nbsp;&mdash; от&nbsp;2 до&nbsp;4 человек* <br><span class="sup">*Один участник может быть зарегистрирован только в&nbsp;одной команде</span>'  )
@@ -387,121 +502,6 @@ html
          //               +finalist( 'Ставропольский край', '')
          //               +finalist( 'Тульская область', '')
          //
-
-
-
-         include ./assets/jade/content/hackathon/__winners
-         include ./assets/jade/content/hackathon/__winners+
-         section( aria-label='Победители' )#winners.hackathon__winners.mb8
-            .wrapper
-               h1.caption.center.mb5 Победители
-               section.hackathon_winners__holder.mb5
-
-                  .hackathon_winners__caption.mt5
-                     .hackathon_winners__caption_icon( class='hw__caption_icon-1')
-                     h1.title Программирование
-                  .hackathon_winners__list.mt2
-                     .row
-                        +winners-plus( 'Кожурина Юлия Александровна<br>Кравцов Григорий Павлович<br>Михальченков Александр Николаевич<br>Базин Алексей Сергеевич', 'Смоленская область', 'Суяков Егор Владимирович<br>Дерендяев Александр Сергеевич<br>Мироненко Виктор Яковлевич<br>Вострецова Евгения Сергеевна', 'Удмуртская Республика', 'Сивец Данил Юрьевич<br>Назаров Назар Романович<br>Яковлев Артём Сергеевич<br>Петишев Дмитрий Евгеньевич', 'Новосибирская область' )
-                     .row.mt3.others
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Донецкая Народная Республика
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Иркутская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Камчатский край
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Ленинградская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Нижегородская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Оренбургская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Ульяновская область
-
-                  .hackathon_winners__caption.mt5
-                     .hackathon_winners__caption_icon( class='hw__caption_icon-3')
-                     h1.title Кибергигиена
-                  .hackathon_winners__list.mt2
-                     .row
-                        +winners-plus( 'Черняев Кирилл Евгеньевич<br>Шишин Даниил Олегович<br>Миргород Максим Дмитриевич', 'Забайкальский край', 'Амрулин Эльдар Халидович<br>Зотов Артемий Евгеньевич<br>Гельбер Екатерина Андреевна<br>Евстратова Мария Михайловна', 'Новосибирская область', 'Волобуев Олег Андреевич<br>Бирюков Егор Александрович', 'Ставропольский край' )
-                     .row.mt3.others
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Донецкая Народная Республика
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Красноярский край
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Республика Дагестан
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Калужская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Свердловская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Тульская область
-
-
-                  .hackathon_winners__caption.mt5
-                     .hackathon_winners__caption_icon( class='hw__caption_icon-2')
-                     h1.title VR&ndash;разработка
-                  .hackathon_winners__list.mt2
-                     .row
-                        +winners-plus( 'Ким Эвелина Алексеевна<br>Рыличев Александр Игоревич<br>Хон Егор Константинович', 'Приморский край', 'Деревягин Семён Денисович<br>Еланцев Николай Леонидович<br>Загнойко Олег Александрович<br>Помазкин Кирилл Евгеньевич', 'Свердловская область', 'Митин Игорь Александрович<br>Огурцова Екатерина Витальена', 'Оренбургская область' )
-                     .row.mt3.others
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Алтайский край
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Донецкая Народная Республика
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Кировская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Псковская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Республика Хакасия
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Смоленская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Удмуртская Республика
-
 
 
 
