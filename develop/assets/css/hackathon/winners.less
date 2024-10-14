@@ -100,13 +100,13 @@
    }
 }
 section .hackathon_winner__name.text-22 {
-   .montserrat-bold();
    margin-top: 1.5rem;
    margin-bottom: .5rem;
    
    margin-left: 8px;
 }
-.hackathon_winner__location {
+.hackathon_winner__location.text-22 {
+   .montserrat-bold();
    margin-left: 8px;
 }
 
@@ -150,8 +150,19 @@ section .hackathon_winner__name.text-22 {
    //padding-left: 0;
 }
 
+.hackathon_winners__holder article.block_8 .hackathon_winner__place.hw__place-0,
+.hackathon_winners__holder article.block_8:first-of-type .hackathon_winner__place.hw__place-0 {
+   width: 2rem;
+   height: 2rem;
+   top: .5rem;
+   right: .5rem;
+
+   //padding-left: 0;
+}
 
 
+
+.hw__place-0 { .hackathon-winner-place( '0')}
 .hw__place-1 { .hackathon-winner-place( '1')}
 .hw__place-2 { .hackathon-winner-place( '2')}
 .hw__place-3 { .hackathon-winner-place( '3')}
