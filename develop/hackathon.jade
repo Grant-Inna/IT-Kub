@@ -179,21 +179,49 @@ html
                   +direction( '3', 'VR-разработка', 'varmin', 'Zadaniye_po_VR_Final_Khakatona.pdf' )
 
 
+
+
+
+         section( aria-label='Фотогалерея' )#gallery.hackathon__gallery.mb9
+            .wrapper
+               h1.caption.center.mb5 Фотогалерея
+               .congress_button__holder.mt6
+                  a( href='https://vk.com/album-193270730_304609817' target='_blank' ).congress__button
+                     .congress_button__inner
+                        .icon-congress-vk.mr2
+                        .congress_button__text Посмотреть все фотографии
+
+            .hackathon_gallery__holder.mt3
+               .gallery_big__photo
+                  img( src='../../assets/data/projects/hackathon/archive/2023/winners/winners/1.webp')
+               .gallery_big__photo
+                  img( src='../../assets/data/projects/hackathon/archive/2023/winners/winners/2.webp')
+               .gallery_big__photo
+                  img( src='../../assets/data/projects/hackathon/archive/2023/winners/winners/3.webp')
+               .gallery_big__photo
+                  img( src='../../assets/data/projects/hackathon/archive/2023/winners/winners/4.webp')
+               .gallery_big__photo
+                  img( src='../../assets/data/projects/hackathon/archive/2023/winners/winners/5.webp')
+               .gallery_big__photo
+                  img( src='../../assets/data/projects/hackathon/archive/2023/winners/winners/6.webp')
+
+
+         .wrapper
+            .video_wrapper.mb10
+               .video_relative
+                  .video_ratio
+                  .iframe_holder
+                     iframe(src='https://vk.com/video_ext.php?oid=-193270730&id=456239091&hd=2' width='100%' height='100%' frameborder='0' allowfullscreen)
+                        p Твой браузер устарел для отображения элемента iframe
+
+
          section( aria-label='' )#application.hackathon__application
             .hackathon_application__image
                .wrapper
                   .hackathon_application__icon
             .hackathon_application__holder
                .wrapper
-                  .video_wrapper.mb8
-                     .video_relative
-                        .video_ratio
-                        .iframe_holder
-                           iframe(src='https://vk.com/video_ext.php?oid=-193270730&id=456239066&hd=2' width='100%' height='100%' frameborder='0' allowfullscreen)
-                              p Твой браузер устарел для отображения элемента iframe
-
-
-                  a( href='./archive/2023/hackathon.html')#archive.archive_button__image.mb12
+                  a( href='./archive/2023/hackathon.html')#archive.archive_button__image.mb10.mt4
                      .video_ratio
                      .iframe_holder
                         .archive__image
