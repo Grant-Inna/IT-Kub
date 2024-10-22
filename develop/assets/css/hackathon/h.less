@@ -220,16 +220,31 @@ menu.hackathon_navigation__holder {
 
 .hackathon_header__image:before {
    .pseudo();
-   width: calc( 100% + 4vw );
+   width: calc( 100% + 20vw );
    max-width: 1000px;
    height: calc( 100% + 10rem );
    
-   top: -3rem;
-   left: 0;
+   top: -8rem;
+   left: -10vw;
    
    .hackathon-before-man();
    
+   .from( 2250px, {
+      left: 0;
+   });
+   
+   .ll-block({
+      width: calc( 100% + 30vw );
+      top: -4rem;
+      left: -18vw;
+   });
+   .lg-block({
+      width: calc( 100% + 28vw );
+      top: -4rem;
+      left: -15vw
+   });
    .smmd-block({
+      top: -4rem;
       left: -4vw
    });
    .xs-block({
