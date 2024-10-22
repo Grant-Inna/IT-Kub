@@ -116,6 +116,11 @@ function files(done){
    .pipe(gulp.dest( dist + 'data/files/'));
    done();
 }
+function video(done){
+   return gulp.src([src + 'data/video/*', src + 'data/video/**/*'])
+   .pipe(gulp.dest( dist + 'data/video/'));
+   done();
+}
 function fonts(done){
    return gulp.src(src + 'fonts/**/*')
    .pipe(gulp.dest( dist + 'fonts/'));
@@ -149,6 +154,8 @@ function watch(done){
    gulp.watch( src + 'jade/**/*.jade', html);
    gulp.watch( base + 'news/*.jade', html);
    gulp.watch( src + 'images/**/*', images);
+   gulp.watch( src + 'data/video/*', video);
+   gulp.watch( src + 'data/video/**/*', video);
    gulp.watch( src + 'data/*', data);
    gulp.watch( src + 'data/**/*', data);
    gulp.watch( src + 'data/**/*', data);
@@ -162,7 +169,7 @@ function grid(done){
 }
 
 const build = gulp.series(clear,
-   gulp.parallel(html, archive, styles, js, images, data, files, fonts )
+   gulp.parallel(html, archive, styles, js, images, data, files, video, fonts )
 );
 
 gulp.task('build', build);
