@@ -236,7 +236,29 @@ $(document).ready(function () {
    }
    
    
-   if ($('.hackathon_gallery__holder').length > 0) {
+   if ($('#container_hackathon .hackathon_gallery__holder').length > 0) {
+      $('.hackathon_gallery__holder').slick({
+         slidesToShow: 3,
+         slidesToScroll: 2,
+         dots: true,
+         autoplay: true,
+         autoplaySpeed: 3000,
+         arrows: false,
+         loop: true,
+         infinite: true,
+         responsive: [
+            {
+               breakpoint: 480,
+               settings: {
+                  slidesToScroll: 1,
+                  slidesToShow: 1
+               }
+            }
+         ]
+      })
+   }
+   
+   if ($('div[id^="container_hackathon_archive"] .hackathon_gallery__holder').length > 0) {
       $('.hackathon_gallery__holder').slick({
          slidesToShow: 2,
          slidesToScroll: 2,
@@ -247,7 +269,7 @@ $(document).ready(function () {
          loop: true,
          infinite: true,
          centerMode: true,
-         centerPadding: '60px',
+         // centerPadding: '60px',
          responsive: [
             {
                breakpoint: 480,
