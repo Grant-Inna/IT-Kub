@@ -17,6 +17,10 @@ mixin article-team( name, photo, nastavnik, sostav, about, place, link)
          .digital_generation__info.mb2
             p !{place}
 
-         a( href='#{link}' target='_blank').digital_generation__link
-            span Смотреть видеоролик
-            .icon
+         case link
+            when ''
+               break
+            default
+               a( href='#{link}' target='_blank').digital_generation__link
+                  span Смотреть видеоролик
+                  .icon
