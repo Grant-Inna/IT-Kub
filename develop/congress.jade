@@ -9,12 +9,12 @@ html
       #container_congress
          #black_back
          include assets/jade/header/__header
-         +menu( '', '', '', '', '', '', '', '', 'active', '', '', '' )
+         +menu( '', '', '', '', '', '', 'active', '', '', '' )
          include assets/jade/header/main-pages
 
 
          include assets/jade/content/congress/__navigation
-         section( aria-label='Страница съезда руководителей "Кубов в кубе"' ).congress__title
+         section.congress__title
             .congress__image.congress__cube
             .wrapper
                .congress_caption__holder
@@ -45,7 +45,7 @@ html
          include assets/jade/content/congress/__ps-2
          include assets/jade/content/congress/__ps-3
 
-         section( aria-label='Программа мероприятий на 20 и 21 августа' ).congress__main
+         section.congress__main
             .wrapper
                h1.caption.center.mb8 Программа съезда
 
@@ -68,9 +68,9 @@ html
          include assets/jade/content/congress/__clock-3
          include assets/jade/content/congress/__break
 
-         section( aria-label='Программа проведения съезда руководителей' ).congress__container
+         section.congress__container
             .wrapper.list#program20
-               section( aria-label='')
+               section
                   .congress_list__section
                      .congress__day_title
                         .congress__day
@@ -170,7 +170,7 @@ html
 
 
             .wrapper.list#program21
-               section( aria-label='').mb3.mt5
+               section.mb3.mt5
                   .congress_list__section
                      .congress__day_title
                         .congress__day
@@ -256,7 +256,7 @@ html
                      .congress__block.sm
 
 
-         section( aria-label='Видео-презентация' )#videopresentation.congress__video
+         section#videopresentation.congress__video
             .wrapper
                h1.caption.center.mb5 Видеопрезентация
                   br
@@ -274,7 +274,7 @@ html
 
 
 
-         section( aria-label='Видео итогов съезда' )#result.congress__results
+         section#result.congress__results
             .wrapper
                h1.caption.center.mb5 Итоги I Съезда
 
