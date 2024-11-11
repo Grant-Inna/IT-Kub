@@ -41,7 +41,7 @@ html
                   +task( '05', 'Обобщение и&nbsp;трансляция опыта педагогов' )
 
 
-         section( aria-label='Этапы проведения"' )#stages.competition_stage__container.mt7
+         section#stages.competition_stage__container.mt7
             .wrapper
                h1.caption.center.mb7 Этапы проведения
                .competition_stage__block
@@ -83,7 +83,79 @@ html
                               h2.title.mb15 Заключительный этап
                            .competition_stage__phase Финал Конкурса
                            .competition_stage__text.mb-10 15&nbsp;ноября 2024&nbsp;года
-                           .competition_stage__phase Публичная презентация дополнительной общеобразовательной программы педагогов Центров &laquo;IT-куб&raquo;
+                           .competition_stage__phase Публичная презентация дополнительной общеобразовательной программы педагогов центров &laquo;IT-куб&raquo;
+
+
+
+
+
+
+         include assets/jade/content/teacher_competition/__program
+         include assets/jade/content/teacher_competition/__program1
+         include assets/jade/content/teacher_competition/__program-3
+         include assets/jade/content/teacher_competition/__program-4
+         include assets/jade/content/teacher_competition/__program-4-1
+         section#program.competition_program__container.mt10
+            .wrapper
+               h2.caption.center.mb6 Защита методических разработок
+
+               section.mb5
+                  .meeting_list__section
+                     .program_trigger
+                        .program_day
+                           .caption.mr 15
+                           .text-22 ноября
+                           .number.mr
+                           .text-22
+                     a( href='https://yandex.ru/maps/-/CDXQuG1E' target='_blank').program_place
+                        .program__pin
+                        .program_place_name Название
+                        .program_place_address город
+
+
+                  section.program_col__holder.mt3
+                     .program_row
+                        .program_row__time 09:30&nbsp;&ndash; 10:30
+                        .program_row_info
+                           .meeting_program__text Регистрация участников
+                        .program_row_place / Холл первого этажа
+
+                     +program-3( '10:30', '11:00', 'Церемония открытия мероприятия', 'Приветственное слово:',
+                        'Горобец Андрей Валерьевич,', 'директор Департамента цифровой трансформации и&nbsp;больших данных Министерства просвещения Российской Федерации',
+                        'Пучков Михаил Юрьевич,', 'министр образования и&nbsp;науки Нижегородской области',
+                        'Пономарёва Юлия Александровна,', 'первый заместитель директора ФГАНУ &laquo;ФИЦТО&raquo;',
+                        '/ Конференц-зал' )
+
+                     .program_row
+                        .program_row__time 11:00&nbsp;&ndash; 13:00
+                        .program_row_info
+                           .meeting_program__text Получение заданий и&nbsp;начало работы над&nbsp;кейсами
+                        .program_row_place / Аудитории по&nbsp;направлениям
+
+                     .program_row
+                        .program_row__time 13:00&nbsp;&ndash; 13:15
+                        .program_row_info
+                           .meeting_program__text Игра &laquo;Спорт в&nbsp;кубе&raquo;
+                        .program_row_place / Аудитории по&nbsp;направлениям
+
+                     .program_row
+                        .program_row__time 13:15&nbsp;&ndash; 14:00
+                        .meeting_program__dinner
+                           .competition__dinner.mr-20
+                           .meeting_program__text Обед
+                        .program_row_place / Холл второго этажа
+
+                     .program_row
+                        .program_row__time 14:00&nbsp;&ndash; 17:00
+                        .program_row_info
+                           .meeting_program__text Работа над кейсами
+                        .program_row_place / Аудитории по&nbsp;направлениям
+
+                     .program_row
+                        .program_row__time 17:00&nbsp;&ndash; 17:15
+                        .program_row_info
+                           .meeting_program__text Игра &laquo;Спорт в&nbsp;кубе&raquo;
+                        .program_row_place / Аудитории по&nbsp;направлениям
 
 
 
@@ -91,13 +163,10 @@ html
 
 
 
-         section#program.competition_program__contaiber
 
 
 
-
-
-         section#semifinalists.semifinalists__container.mt8
+         section#semifinalists.semifinalists__container.mt12
             .wrapper
                h1.caption.center.mb5 Финалисты конкурса
 
@@ -131,7 +200,7 @@ html
                   h1.mt07 Кибергигиена
                   .row
                      +semifinalists( 'Староверова<br>Елена Львовна ', '&laquo;IT-куб&raquo; г.&nbsp;Астрахань<br>Астраханская область', 'staroverova' )
-                     +semifinalists( 'Суслов<br>Пётр Витальевич ', '&laquo;IT-куб&raquo; г.&nbsp;Снежинск<br>Челябинская область', 'syslov' )
+                     +semifinalists( 'Чернова<br>Диана Брониславовна', '&laquo;IT-куб&raquo; г.&nbsp;Нижневартовск<br>Ханты&#8209;Мансийский автономный округ &ndash; Югра', 'syslov' )
                      +semifinalists( 'Жукова<br>Юлия Николаевна', '&laquo;IT-куб&raquo; г.&nbsp;Липецк<br>Липецкая область', 'zhykova' )
 
                article.semifinalists__holder.mt4.semifinalists-5
@@ -140,7 +209,7 @@ html
                   .row
                      +semifinalists( 'Качалина<br>Екатерина Алексеевна', '&laquo;IT-куб&raquo; г.&nbsp;Рязань<br>Рязанская область', 'kachalina' )
                      +semifinalists( 'Новгородов<br>Айисен Александрович', '&laquo;IT-куб&raquo; г.&nbsp;Якутск<br>Республика Саха (Якутия)', 'novgorodov' )
-                     +semifinalists( 'Кирчегина<br>Ирина Александровна', '&laquo;IT-куб&raquo; г.&nbsp;Арамиль<br>Свердловская область', 'osipova' )
+                     +semifinalists( 'Кирчегина<br>Ирина Анатольевна', '&laquo;IT-куб&raquo; г.&nbsp;Арамиль<br>Свердловская область', 'osipova' )
 
                article.semifinalists__holder.mt4.semifinalists-6
                   .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
