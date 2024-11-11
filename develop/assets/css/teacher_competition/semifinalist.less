@@ -6,6 +6,14 @@
    background-color: white;
    border-radius: 2px;
 }
+.semifinalists__title {
+   justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px dashed #ff722c;
+    transition: border-bottom-color 0.3s ease-in-out;
+}
 
 .semifinalists__holder h1 {
    .montserrat-semibold();
@@ -86,10 +94,10 @@
       height: 3rem;
    });
    .sm-block({
-      height: 2.5rem;
+      height: 3.5rem;
    });
    .xs-block({
-      min-height: 3.5rem;
+      min-height: 4rem;
       height: auto;
    });
 }
@@ -225,5 +233,115 @@
    }
    .semifinalists-5 {
       background-size: 250px auto;
+   }
+}
+
+
+
+.competition_more__arrow {
+   .t-competition-arrow();
+   .tr();
+}
+.congress_list__section:hover .competition_more__arrow {
+   .t-competition-arrow-hover();
+}
+.semifinalists__container .show .competition_more__arrow {
+   .t-competition-arrow-hover();
+   transform: rotate(180deg);
+   .tr();
+}
+
+.semifinalists__container .show .semifinalists__title {
+    border-bottom: 2px dashed transparent;
+    transition: border-bottom-color 0.3s ease-in-out;
+}
+
+
+// ПРОГРАММА
+
+.competition_program__container .line {
+   width: 100%;
+   height: 0;
+   border-bottom: 2px dashed #ff722c;
+   margin: 1.5rem 0;
+}
+.competition_program__container .program_row {
+   margin-bottom: 1.5rem;
+}
+
+.competition_program__container .uppercase {
+   text-transform: uppercase;
+}
+
+.competition_program__container .program_row__time {
+   background-color: #ffa275;
+   color: #292C33;
+   
+}
+.competition_program__container .program_row_place {
+   color: #ff722c;
+   .sm-block({
+      grid-column: ~"1 / 3";
+   });
+   .xs-block({
+      grid-column: ~"1 / 2";
+      text-align: start;
+   });
+}
+.competition_program__block,
+.competition_program__block .flex {
+   width: 100%;
+}
+.competition_program__block > .flex {
+   .justify-between();
+}
+
+.competition_program__row {
+}
+
+.competition_program__topic {
+   display: inline-block;
+   .montserrat-regular();
+   color: #1D2332;
+   font-size: 1.2rem;
+   line-height: 110%;
+   .middle-block({
+      font-size: 1.2rem;
+   });
+   .sm-block({
+      font-size: 1.1rem;
+   });
+   .xs-block({
+      font-size: 1.1rem;
+   });
+   .big {
+      .montserrat-regular();
+      
+      font-size: 1.4rem;
+      line-height: 110%;
+      .middle-block({
+         font-size: 1.4rem;
+      });
+      .sm-block({
+         font-size: 1.3rem;
+      });
+      .xs-block({
+         font-size: 1.3rem;
+      });
+   }
+   b.name {
+      .montserrat-bold();
+      color: #1D2332;
+      font-size: 1.2rem;
+      line-height: 105%;
+      .middle-block({
+         font-size: 1.2rem;
+      });
+      .sm-block({
+         font-size: 1.2rem;
+      });
+      .xs-block({
+         font-size: 1.2rem;
+      });
    }
 }

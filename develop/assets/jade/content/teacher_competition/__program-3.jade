@@ -1,8 +1,8 @@
-mixin program-3( t1, t2, caption, title, name, topic, name2, topic2, name3, topic3, place )
+mixin program-3( t1, t2, caption, title, name, topic, name2, topic2, name3, topic3, name4, topic4, place )
    .program_row
       .program_row__time #{t1}&nbsp;&ndash; #{t2}
       .meeting_program__info
-         .hackathon_program__caption.mb2 !{caption}
+         .hackathon_program__caption.mb2.uppercase !{caption}
          .program_row_topic.mb15 !{title}
          .flex
             .dot &bull;
@@ -19,8 +19,14 @@ mixin program-3( t1, t2, caption, title, name, topic, name2, topic2, name3, topi
          .flex
             .dot &bull;
             .block
-               .program_row_person.mb15 !{name3}
+               .program_row_person.mb08 !{name3}
                   i.ml03 !{topic3}
+
+         .flex
+            .dot &bull;
+            .block
+               .program_row_person !{name4}
+                  i.ml03 !{topic4}
 
 
       .program_row_place.top !{place}

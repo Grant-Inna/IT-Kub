@@ -1,10 +1,27 @@
-mixin program1( t1, t2, caption, title, name, topic, place )
-   .program_row
-      .hackathon_program__time #{t1}&nbsp;&ndash; #{t2}
-      .meeting_program__info
-         .hackathon_program__caption.mb2 !{caption}
+mixin program1( t1, t2, topic1, topic2, place1, topic3, topic4, place2  )
+   .program_row.fraction
+      .program_row__time #{t1}&nbsp;&ndash; #{t2}
+      .competition_program__block
+         .flex
+            .competition_program__row.pt10
+               .program_row_topic.mb15 Презентация дополнительных общеобразовательных программ по&nbsp;направлениям:
 
-         .meeting_program__title !{title}
-         .meeting_program__person !{name}
-         .meeting_program__topic !{topic}
-      .hackathon_row_place !{place}
+               .flex
+                  .dot &bull;
+                  .program_row_person.mb08.uppercase !{topic1}
+               .flex
+                  .dot &bull;
+                  .program_row_person.uppercase !{topic2}
+            .program_row_place.ml4 / Аудитория &#8470;!{place1}
+         .line
+         .flex
+            .competition_program__row
+               .program_row_topic.mb15 Презентация дополнительных общеобразовательных программ по&nbsp;направлениям:
+
+               .flex
+                  .dot &bull;
+                  .program_row_person.mb08.uppercase !{topic3}
+               .flex
+                  .dot &bull;
+                  .program_row_person.uppercase !{topic4}
+            .program_row_place.top.ml4  / Аудитория &#8470;!{place2}

@@ -1,0 +1,39 @@
+mixin program-2( t1, t2, caption, theme1, name, topic, theme2, name2, topic2, name3, topic3, theme4, name4, topic4, place )
+   .program_row
+      .program_row__time #{t1}&nbsp;&ndash; #{t2}
+      .meeting_program__info
+         .hackathon_program__caption.mb2 !{caption}
+
+         .flex.mb08
+            .dot &bull;
+            .block
+               .competition_program__topic.mb03
+                  .big !{theme1}
+               .competition_program__topic
+                  b.name !{name}
+                  i.ml03  !{topic}
+
+         .flex.mb08
+            .dot &bull;
+            .block
+               .competition_program__topic.mb03
+                  .big !{theme2}
+               .competition_program__topic.mb
+                  b.name !{name2}
+                  i.ml03  !{topic2};
+               .competition_program__topic
+                  b.name !{name3}
+                  i.ml03  !{topic3}
+
+         .flex
+            .dot &bull;
+            .block
+               .competition_program__topic.mb03
+                  .big !{theme4}
+               .competition_program__topic
+                  b.name !{name4}
+                  i.ml03  !{topic4}
+
+
+      .program_row_place.top / !{place}
+

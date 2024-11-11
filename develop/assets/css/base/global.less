@@ -526,6 +526,47 @@ section strong {
       grid-row-gap: 5px;
    });
 }
+.program_row.fraction {
+   display: grid;
+   grid-template-columns: 173px minmax(350px, auto);
+   grid-template-rows: repeat(auto-fit, minmax(24px, auto));
+   grid-column-gap: 4rem;
+   grid-row-gap: 10px;
+   
+   margin-bottom: 2rem;
+   
+   .lg-block({
+      grid-template-columns: 173px auto ;
+      grid-column-gap: 3rem;
+   });
+   .smmd-block({
+      display: grid;
+      grid-template-columns: 145px auto;
+      grid-template-rows: repeat(auto-fit, minmax(24px, auto));
+      grid-column-gap: 2rem;
+      grid-row-gap: 10px;
+      margin-bottom: 2rem;
+   });
+   .sm-block({
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: 30px auto;
+      grid-column-gap: 1rem;
+      margin-bottom: 1rem;
+   });
+   .xs-block({
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(auto-fit, minmax(15px, auto));
+      margin-bottom: 2.2rem;
+      grid-row-gap: 5px;
+   });
+   .program_row_place {
+      padding-top: 0;
+      margin-left: auto;
+      white-space: nowrap;
+   }
+}
+
+
 .program_row.no_place {
    grid-template-columns: 173px auto;
    
@@ -548,6 +589,21 @@ section strong {
 .program_row_place {
    .montserrat-semibold();
    text-align: right;
+   padding-top: 8px;
+   .middle-block({
+      padding-top: 4px;
+   });
+   .md-block({
+      padding-top: 4px;
+   });
+   .sm-block({
+      padding-top: 2px;
+   });
+}
+.program_row_place.top {
+   .montserrat-semibold();
+   text-align: right;
+   padding-top: 0;
 }
 .program_row_caption {
     .montserrat-bold();
@@ -590,6 +646,17 @@ section strong {
 }
 .program_row_info {
    .meeting_program__info();
+   padding-top: 8px;
+   
+   .middle-block({
+      padding-top: 4px;
+   });
+   .md-block({
+      padding-top: 4px;
+   });
+   .sm-block({
+      padding-top: 2px;
+   });
    .xs-block({
       grid-template-rows: auto;
       margin-left: 15px;
@@ -647,20 +714,5 @@ section strong {
       height: 36px;
       grid-column: ~"1 / 2";
       margin-bottom: 5px;
-   });
-}
-.competition_program__container .program_row__time {
-   background-color: #ffa275;
-   color: #292C33;
-   
-}
-.competition_program__container .program_row_place {
-   color: #3162c1;
-   .sm-block({
-      grid-column: ~"1 / 3";
-   });
-   .xs-block({
-      grid-column: ~"1 / 2";
-      text-align: start;
    });
 }

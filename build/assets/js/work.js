@@ -487,6 +487,10 @@ $(document).ready(function () {
       let $trigger = $('.trigger');
       $trigger.on('click', meetingSchedule);
    }
+   if ($('#container_competition').length > 0) {
+      let $trigger = $('.trigger');
+      $trigger.on('click', openList);
+   }
    
    function openSchedule() {
       let current = $(this).closest('.list_section');

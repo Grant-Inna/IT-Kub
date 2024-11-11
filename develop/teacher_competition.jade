@@ -88,16 +88,103 @@ html
 
 
 
+         section#semifinalists.semifinalists__container.mt12.mb12
+            .wrapper.list
+               h1.caption.center.mb5 Финалисты конкурса
+
+               .congress_list__section.trigger
+                  .semifinalists__title
+                     .congress__day
+                        .congress__numb
+                           h1.title.inline Список
+                           .text-22.inline  &nbsp;финалистов
+
+                     .congress__more
+                        .competition_more__arrow.congress__trigger
+
+
+               section.list__holder( style='display: none' )
+                  article.semifinalists__holder.mt4.semifinalists-1
+                     .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
+                     h1.mt07 Программирование
+                     .row
+                        include assets/jade/content/teacher_competition/__semifinalists
+                        +semifinalists( 'Кузнецова<br>Ксения Валерьевна ', '&laquo;IT-куб&raquo; г.&nbsp;Мурманск<br>Мурманская область', 'kyznecova' )
+                        +semifinalists( 'Никифорова<br>Маргарита Дмитриевна', '&laquo;IT-куб&raquo; г.&nbsp;Магнитогорск<br>Челябинская область', 'nikiforova' )
+                        +semifinalists( 'Шатров<br>Антон Рудольфович', '&laquo;IT-куб&raquo; г.&nbsp;Южноуральск<br>Челябинская область', 'shatov')
+
+                  article.semifinalists__holder.mt4.semifinalists-2
+                     .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
+                     h1.mt07 Разработка VR/AR-приложений
+                     .row
+                        +semifinalists( 'Войт<br>Екатерина Игоревна', '&laquo;IT-куб&raquo; г.&nbsp;Сыктывкар<br>Республика Коми', 'voit' )
+                        +semifinalists( 'Вдовиченко<br>Никита Александрович', '&laquo;IT-куб&raquo; г.&nbsp;Кировск<br>Мурманская область', 'vdovichenko' )
+                        +semifinalists( 'Бобровских<br>Владимир Алексеевич', '&laquo;IT-куб&raquo; г.&nbsp;Семёнов<br>Нижегородская область', 'bobrocskih' )
+
+                  article.semifinalists__holder.mt4.semifinalists-3
+                     .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
+                     h1.mt07 Системное администрирование
+                     .row
+                        +semifinalists( 'Зорин<br>Захар Алексеевич', '&laquo;IT-куб&raquo; г.&nbsp;Княгинино<br>Нижегородская область', 'zorin' )
+                        +semifinalists( 'Бурдин<br>Дмитрий Андреевич', '&laquo;IT-куб&raquo; г.&nbsp;Липецк<br>Липецкая область', 'bydrin' )
+                        +semifinalists( 'Авимский<br>Денис Вадимович', '&laquo;IT-куб&raquo; г.&nbsp;Сургут<br>ХМАО – Югра', 'plygov' )
+
+                  article.semifinalists__holder.mt4.semifinalists-4
+                     .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
+                     h1.mt07 Кибергигиена
+                     .row
+                        +semifinalists( 'Староверова<br>Елена Львовна ', '&laquo;IT-куб&raquo; г.&nbsp;Астрахань<br>Астраханская область', 'staroverova' )
+                        +semifinalists( 'Чернова<br>Диана Брониславовна', '&laquo;IT-куб&raquo; г.&nbsp;Нижневартовск<br>Ханты&#8209;Мансийский автономный округ &ndash; Югра', 'syslov' )
+                        +semifinalists( 'Жукова<br>Юлия Николаевна', '&laquo;IT-куб&raquo; г.&nbsp;Липецк<br>Липецкая область', 'zhykova' )
+
+                  article.semifinalists__holder.mt4.semifinalists-5
+                     .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
+                     h1.mt07 Алгоритмика и&nbsp;логика
+                     .row
+                        +semifinalists( 'Качалина<br>Екатерина Алексеевна', '&laquo;IT-куб&raquo; г.&nbsp;Рязань<br>Рязанская область', 'kachalina' )
+                        +semifinalists( 'Новгородов<br>Айисен Александрович', '&laquo;IT-куб&raquo; г.&nbsp;Якутск<br>Республика Саха (Якутия)', 'novgorodov' )
+                        +semifinalists( 'Кирчегина<br>Ирина Анатольевна', '&laquo;IT-куб&raquo; г.&nbsp;Арамиль<br>Свердловская область', 'osipova' )
+
+                  article.semifinalists__holder.mt4.semifinalists-6
+                     .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
+                     h1.mt07 Мобильная разработка
+                     .row
+                        +semifinalists( 'Воротова<br>Наталия Афонасьевна', '&laquo;IT-куб&raquo; г.&nbsp;Ижевск<br>Удмуртская Республика', 'vorotova' )
+                        +semifinalists( 'Вантеева<br>Анастасия Леонидовна', '&laquo;IT-куб&raquo; г.&nbsp;Ангарск<br>Иркутская область', 'vanteeva' )
+                        +semifinalists( 'Миронова<br>Елена Николаевна', '&laquo;IT-куб&raquo; г.&nbsp;Санкт-Петербург', 'mironova' )
+
+                  article.semifinalists__holder.mt4.semifinalists-7
+                     .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
+                     h1.mt07 Робототехника
+                     .row
+                        +semifinalists( 'Паньшина<br>Арина Сергеевна', '&laquo;IT-куб&raquo; г.&nbsp;Княгинино<br>Нижегородская область', 'panshina' )
+                        +semifinalists( 'Есина<br>Елена Николаевна', '&laquo;IT-куб&raquo; г.&nbsp;Сургут<br>ХМАО – Югра', 'esina' )
+                        +semifinalists( 'Белицкая<br>Анна Вячеславовна', '&laquo;IT-куб&raquo; г.&nbsp;Челябинск<br>Челябинская область', 'gorainov' )
+
+                  article.semifinalists__holder.mt4.semifinalists-8
+                     .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
+                     h1.mt07 Большие данные
+                     .row
+                        +semifinalists( 'Селезнев<br>Андрей Андреевич', '&laquo;IT-куб&raquo; г.&nbsp;Сургут<br>ХМАО – Югра', 'seleznev' )
+                        +semifinalists( 'Коннов<br>Клим Глебович', '&laquo;IT-куб&raquo; г.&nbsp;Санкт-Петербург', 'konnov' )
+                        +semifinalists( 'Шикан<br>Алексей Владимирович', '&laquo;IT-куб&raquo; г.&nbsp;Норильск<br>Красноярский край', 'shikan' )
+
+
+
+
+
+
+
 
 
          include assets/jade/content/teacher_competition/__program
          include assets/jade/content/teacher_competition/__program1
          include assets/jade/content/teacher_competition/__program-3
          include assets/jade/content/teacher_competition/__program-4
-         include assets/jade/content/teacher_competition/__program-4-1
-         section#program.competition_program__container.mt10
+         include assets/jade/content/teacher_competition/__program-2
+         section#program.competition_program__container.mt12
             .wrapper
-               h2.caption.center.mb6 Защита методических разработок
+               h2.caption.center.mb6 Программа
 
                section.mb5
                   .meeting_list__section
@@ -107,133 +194,95 @@ html
                            .text-22 ноября
                            .number.mr
                            .text-22
-                     a( href='https://yandex.ru/maps/-/CDXQuG1E' target='_blank').program_place
+                     a( href='https://yandex.ru/maps/-/CDtK78Ma' target='_blank').program_place
                         .program__pin
-                        .program_place_name Название
-                        .program_place_address город
+                        .program_place_name Смоленское областное ГАУ&nbsp;ДПО
+                           br
+                           | &laquo;Центр опережающей профессиональной подготовки&raquo;
+                        .program_place_address г.&nbsp;Смоленск, ул. Шевченко, 87 
 
 
-                  section.program_col__holder.mt3
+                  section.program_col__holder.mt4
                      .program_row
                         .program_row__time 09:30&nbsp;&ndash; 10:30
                         .program_row_info
-                           .meeting_program__text Регистрация участников
+                           .meeting_program__text.uppercase Регистрация участников
                         .program_row_place / Холл первого этажа
 
-                     +program-3( '10:30', '11:00', 'Церемония открытия мероприятия', 'Приветственное слово:',
-                        'Горобец Андрей Валерьевич,', 'директор Департамента цифровой трансформации и&nbsp;больших данных Министерства просвещения Российской Федерации',
-                        'Пучков Михаил Юрьевич,', 'министр образования и&nbsp;науки Нижегородской области',
-                        'Пономарёва Юлия Александровна,', 'первый заместитель директора ФГАНУ &laquo;ФИЦТО&raquo;',
+                     .line
+
+                     +program-3( '10:30', '11:00', 'Церемония открытия мероприятия', 'Выступление с&nbsp;приветственным словом:',
+                        'Хомутова В.М.,', 'заместитель председателя Правительства Смоленской области',
+                        'Кудрицкая Е.В.,', 'заместитель министра&nbsp;&mdash; директор департамента по&nbsp;обеспечению деятельности образовательных организаций',
+                        'Щербакова Т.О.,', 'первый заместитель министра цифрового развития Смоленской области',
+                        'Пономарёва Ю.А.,', 'первый заместитель директора ФГАНУ &laquo;ФИЦТО&raquo;',
                         '/ Конференц-зал' )
 
-                     .program_row
-                        .program_row__time 11:00&nbsp;&ndash; 13:00
-                        .program_row_info
-                           .meeting_program__text Получение заданий и&nbsp;начало работы над&nbsp;кейсами
-                        .program_row_place / Аудитории по&nbsp;направлениям
+                     .line
+
+                     +program1( '10:00', '11:30',
+                        'алгоритмика и&nbsp;логика', 'программирование', '12',
+                        'разработка vr/ar-приложений', 'робототехника', '13')
+
+                     .line
 
                      .program_row
-                        .program_row__time 13:00&nbsp;&ndash; 13:15
-                        .program_row_info
-                           .meeting_program__text Игра &laquo;Спорт в&nbsp;кубе&raquo;
-                        .program_row_place / Аудитории по&nbsp;направлениям
+                        .program_row__time 11:30&nbsp;&ndash; 11:40
+                        .meeting_program__dinner
+                           .meeting_program__text.uppercase Перерыв
+
+                     .line
+
+                     +program1( '11:40', '13:10',
+                        'кибергигиена', 'системное администрирование', '12',
+                        'большие данные', 'мобильная разработка', '13')
+
+                     .line
 
                      .program_row
-                        .program_row__time 13:15&nbsp;&ndash; 14:00
+                        .program_row__time 13:10&nbsp;&ndash; 14:00
                         .meeting_program__dinner
                            .competition__dinner.mr-20
-                           .meeting_program__text Обед
-                        .program_row_place / Холл второго этажа
+                           .meeting_program__text.uppercase Обед
+
+                     .line
+
+                     +program-2( '14:00', '15:30', 'Практико-ориентированная сессия',
+                        '&laquo;Форматы профориентационной работы: опыт Смоленской области&raquo;', 'Никанорова Т.С., ', 'заместитель директора СОГАУ&nbsp;ДПО &laquo;Центр опережающей профессиональной подготовки&raquo;',
+                        '&laquo;IT_РЕГИОН&raquo; &ndash; предпрофессиональная подготовка школьников&raquo;',
+                        'Кудрявцева Т.В.,', 'руководитель &laquo;IT-куб&raquo; г.&nbsp;Смоленск',
+                        'Вятошин Р.А.,', 'педагог дополнительного образования &laquo;IT-куб&raquo; г.&nbsp;Смоленск',
+                        '&laquo;Командообразование&raquo;', 'Ковалев В.А.,', 'педагог дополнительного образования &laquo;IT-куб&raquo; г.&nbsp;Смоленск',
+                        'Конференц-зал')
+
+                     .line
 
                      .program_row
-                        .program_row__time 14:00&nbsp;&ndash; 17:00
+                        .program_row__time 15:30&nbsp;&ndash; 16:00
                         .program_row_info
-                           .meeting_program__text Работа над кейсами
-                        .program_row_place / Аудитории по&nbsp;направлениям
+                           .meeting_program__text.uppercase Церемония закрытия мероприятия. Награждение
+                        .program_row_place / Конференц-зал
 
+                     .line
                      .program_row
-                        .program_row__time 17:00&nbsp;&ndash; 17:15
-                        .program_row_info
-                           .meeting_program__text Игра &laquo;Спорт в&nbsp;кубе&raquo;
-                        .program_row_place / Аудитории по&nbsp;направлениям
+                        .program_row__time 16:00&nbsp;&ndash; 16:30
+                        .meeting_program__dinner
+                           .competition__break.mr-20
+                           .meeting_program__text.uppercase Кофе-брейк
+                        .program_row_place / Аудитория &#8470;16
+
+                     .line
+                     .program_row
+                        .program_row__time 16:30&nbsp;&ndash; 18:00
+                        .meeting_program__dinner
+                           .competition__watch.mr-20
+                           .meeting_program__text.uppercase Экскурсия
 
 
 
 
 
 
-
-
-
-
-         section#semifinalists.semifinalists__container.mt12
-            .wrapper
-               h1.caption.center.mb5 Финалисты конкурса
-
-               article.semifinalists__holder.mt4.semifinalists-1
-                  .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
-                  h1.mt07 Программирование
-                  .row
-                     include assets/jade/content/teacher_competition/__semifinalists
-                     +semifinalists( 'Кузнецова<br>Ксения Валерьевна ', '&laquo;IT-куб&raquo; г.&nbsp;Мурманск<br>Мурманская область', 'kyznecova' )
-                     +semifinalists( 'Никифорова<br>Маргарита Дмитриевна', '&laquo;IT-куб&raquo; г.&nbsp;Магнитогорск<br>Челябинская область', 'nikiforova' )
-                     +semifinalists( 'Шатров<br>Антон Рудольфович', '&laquo;IT-куб&raquo; г.&nbsp;Южноуральск<br>Челябинская область', 'shatov')
-
-               article.semifinalists__holder.mt4.semifinalists-2
-                  .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
-                  h1.mt07 Разработка VR/AR-приложений
-                  .row
-                     +semifinalists( 'Войт<br>Екатерина Игоревна', '&laquo;IT-куб&raquo; г.&nbsp;Сыктывкар<br>Республика Коми', 'voit' )
-                     +semifinalists( 'Вдовиченко<br>Никита Александрович', '&laquo;IT-куб&raquo; г.&nbsp;Кировск<br>Мурманская область', 'vdovichenko' )
-                     +semifinalists( 'Бобровских<br>Владимир Алексеевич', '&laquo;IT-куб&raquo; г.&nbsp;Семёнов<br>Нижегородская область', 'bobrocskih' )
-
-               article.semifinalists__holder.mt4.semifinalists-3
-                  .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
-                  h1.mt07 Системное администрирование
-                  .row
-                     +semifinalists( 'Зорин<br>Захар Алексеевич', '&laquo;IT-куб&raquo; г.&nbsp;Княгинино<br>Нижегородская область', 'zorin' )
-                     +semifinalists( 'Бурдин<br>Дмитрий Андреевич', '&laquo;IT-куб&raquo; г.&nbsp;Липецк<br>Липецкая область', 'bydrin' )
-                     +semifinalists( 'Авимский<br>Денис Вадимович', '&laquo;IT-куб&raquo; г.&nbsp;Сургут<br>ХМАО – Югра', 'plygov' )
-
-               article.semifinalists__holder.mt4.semifinalists-4
-                  .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
-                  h1.mt07 Кибергигиена
-                  .row
-                     +semifinalists( 'Староверова<br>Елена Львовна ', '&laquo;IT-куб&raquo; г.&nbsp;Астрахань<br>Астраханская область', 'staroverova' )
-                     +semifinalists( 'Чернова<br>Диана Брониславовна', '&laquo;IT-куб&raquo; г.&nbsp;Нижневартовск<br>Ханты&#8209;Мансийский автономный округ &ndash; Югра', 'syslov' )
-                     +semifinalists( 'Жукова<br>Юлия Николаевна', '&laquo;IT-куб&raquo; г.&nbsp;Липецк<br>Липецкая область', 'zhykova' )
-
-               article.semifinalists__holder.mt4.semifinalists-5
-                  .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
-                  h1.mt07 Алгоритмика и&nbsp;логика
-                  .row
-                     +semifinalists( 'Качалина<br>Екатерина Алексеевна', '&laquo;IT-куб&raquo; г.&nbsp;Рязань<br>Рязанская область', 'kachalina' )
-                     +semifinalists( 'Новгородов<br>Айисен Александрович', '&laquo;IT-куб&raquo; г.&nbsp;Якутск<br>Республика Саха (Якутия)', 'novgorodov' )
-                     +semifinalists( 'Кирчегина<br>Ирина Анатольевна', '&laquo;IT-куб&raquo; г.&nbsp;Арамиль<br>Свердловская область', 'osipova' )
-
-               article.semifinalists__holder.mt4.semifinalists-6
-                  .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
-                  h1.mt07 Мобильная разработка
-                  .row
-                     +semifinalists( 'Воротова<br>Наталия Афонасьевна', '&laquo;IT-куб&raquo; г.&nbsp;Ижевск<br>Удмуртская Республика', 'vorotova' )
-                     +semifinalists( 'Вантеева<br>Анастасия Леонидовна', '&laquo;IT-куб&raquo; г.&nbsp;Ангарск<br>Иркутская область', 'vanteeva' )
-                     +semifinalists( 'Миронова<br>Елена Николаевна', '&laquo;IT-куб&raquo; г.&nbsp;Санкт-Петербург', 'mironova' )
-
-               article.semifinalists__holder.mt4.semifinalists-7
-                  .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
-                  h1.mt07 Робототехника
-                  .row
-                     +semifinalists( 'Паньшина<br>Арина Сергеевна', '&laquo;IT-куб&raquo; г.&nbsp;Княгинино<br>Нижегородская область', 'panshina' )
-                     +semifinalists( 'Есина<br>Елена Николаевна', '&laquo;IT-куб&raquo; г.&nbsp;Сургут<br>ХМАО – Югра', 'esina' )
-                     +semifinalists( 'Белицкая<br>Анна Вячеславовна', '&laquo;IT-куб&raquo; г.&nbsp;Челябинск<br>Челябинская область', 'gorainov' )
-
-               article.semifinalists__holder.mt4.semifinalists-8
-                  .text-22 Лучший педагог центров &laquo;IT-куб&raquo; в&nbsp;направлении
-                  h1.mt07 Большие данные
-                  .row
-                     +semifinalists( 'Селезнев<br>Андрей Андреевич', '&laquo;IT-куб&raquo; г.&nbsp;Сургут<br>ХМАО – Югра', 'seleznev' )
-                     +semifinalists( 'Коннов<br>Клим Глебович', '&laquo;IT-куб&raquo; г.&nbsp;Санкт-Петербург', 'konnov' )
-                     +semifinalists( 'Шикан<br>Алексей Владимирович', '&laquo;IT-куб&raquo; г.&nbsp;Норильск<br>Красноярский край', 'shikan' )
 
 
 
