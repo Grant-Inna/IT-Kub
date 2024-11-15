@@ -714,3 +714,13 @@
 .t-competition_icon_dot-10 {
    .t-competition_icon_dot( '10' )
 }
+
+
+.comp_winner_icon( @numb ) {
+    background-image: url("../data/projects/teacher_competition/winners/icon/@{numb}.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: top;
+   flex-shrink: 0;
+   .size-33();
+}

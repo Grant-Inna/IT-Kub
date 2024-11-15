@@ -1,8 +1,6 @@
-mixin semifinalists( name, position, img )
+mixin semifinalists( numb, name, position, img )
    article.semifinalist_one__holder
+      div( class='winner_icon-#{numb}')
       strong.text-22 !{name}
       .semi-line
       p.text-20 !{position}
-      //.semifinalists__image.mtauto( id='trigger_#{img}' )
-      //img( src='./assets/data/projects/teacher_competition/semifinalist/#{img}.webp' )
-

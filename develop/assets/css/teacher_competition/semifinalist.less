@@ -1,10 +1,15 @@
 .semifinalists__container {}
-
+/*.semifinalists__finalist {
+   width: 100%;
+   .row();
+}*/
 .semifinalists__holder {
    padding: 4rem 2rem;
    box-shadow: 0 0 18px rgba(0, 0, 0, 0.07);
    background-color: white;
    border-radius: 2px;
+/*   .col();
+   .size(8);*/
 }
 .semifinalists__title {
    justify-content: space-between;
@@ -36,13 +41,17 @@
 .semifinalists__holder .row {
    margin-top: 5rem;
    
-   .u-row-flex(2rem)
+   .u-row-flex(2rem);
 }
 .semifinalist_one__holder {
+   position: relative;
    .column();
    .items-start();
    .justify-start();
-   
+   /*
+   .u-col(2rem);
+   .u-size(24, 24, 2rem);
+   */
    .u-col(2rem);
    .u-size(6, 24, 2rem);
    .col-offsets-bottom();
