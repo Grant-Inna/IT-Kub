@@ -27,14 +27,13 @@ html
                      menu.congress_navigation__holder
                         +item( 'Программа на&nbsp;20 августа', 'program20' )
                         +item( 'Программа на&nbsp;21 августа', 'program21' )
-                        +item( 'Видеопрезентация', 'videopresentation' )
-                        +item( 'Итоги I Съезда', 'result' )
-
-                        a( href='./assets/data/congress/Zayavka_na_uchastiye_vo_Vserossiyskom_syezde_rukovoditeley.zip' download target='blank').save_regulations
-                           .competition__regulations_icon
-                           .competition__regulations_text Заявка
-                              br
-                              | на&nbsp;участие
+                        +item( 'Итоги II Съезда', 'result' )
+                        //
+                        //a( href='./assets/data/congress/Zayavka_na_uchastiye_vo_Vserossiyskom_syezde_rukovoditeley.zip' download target='blank').save_regulations
+                        //   .competition__regulations_icon
+                        //   .competition__regulations_text Заявка
+                        //      br
+                        //      | на&nbsp;участие
 
 
          include assets/jade/content/congress/__trigger
@@ -256,9 +255,9 @@ html
                      .congress__block.sm
 
 
-         section#videopresentation.congress__video
+         section#result.congress__results
             .wrapper
-               h1.caption.center.mb5 Видеопрезентация
+               h1.caption.center.mb5 Итоги
                   br
                   span.mr1 II Съезда
                .congress_button__holder.mt7
@@ -272,16 +271,16 @@ html
 
 
 
-
-         section#result.congress__results
-            .wrapper
-               h1.caption.center.mb5 Итоги I Съезда
-
-               .video_relative
-                  .video_ratio
-                  .iframe_holder
-                     iframe(src='https://vk.com/video_ext.php?oid=-193270730&id=456239062&hash=a2f2e19fe1da2a74' width='100%' height='100%' frameborder='0')
-                        p Твой браузер устарел для отображения элемента iframe
+         //
+         //section#result.congress__results
+         //   .wrapper
+         //      h1.caption.center.mb5 Итоги I Съезда
+         //
+         //      .video_relative
+         //         .video_ratio
+         //         .iframe_holder
+         //            iframe(src='https://vk.com/video_ext.php?oid=-193270730&id=456239062&hash=a2f2e19fe1da2a74' width='100%' height='100%' frameborder='0')
+         //               p Твой браузер устарел для отображения элемента iframe
 
          include assets/jade/footer/footer
 
