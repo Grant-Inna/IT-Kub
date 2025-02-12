@@ -33,89 +33,89 @@ html
                   img( src='./assets/data/projects/meeting/photo-24.webp' )
 
          include assets/jade/content/meeting/__trigger
-         section( aria-label='Программа мероприятий' ).meeting__main#program
-            .wrapper#june
-               h1.caption.center.mb6 Программа мероприятий
-
-               section( aria-label='14 июня').mb5
-                  .meeting_list__section
-                     .meeting__trigger
-                        .meeting__day
-                           .caption.mr 14
-                           .text-22 июня
-                     a( href='https://yandex.ru/maps/62/krasnoyarsk/house/prospekt_mira_76/bUsYfgBiTkEPQFtsfXxwc39hZA==/?ll=92.872903%2C56.011895&z=18.96' target='_blank').meeting__place
-                        .meeting__pin
-                        .meeting__name ул.&nbsp;Мира, 76
-                        .meeting__address г.&nbsp;Красноярск
-
-
-                  section.meeting_program__holder.mt3
-                     .meeting__program
-                        .meeting_program__time 09:30&nbsp;&ndash; 10:00
-                        .meeting_program__info
-                           .meeting_program__title Регистрация
-
-                     +program( '10:00', '10:10', 'Открытие окружного совещания &laquo;Поиск решений&raquo;', 'Маковская C.И.', 'министр образования Красноярского края', 'Актовый зал' )
-                     +program-4-1( '10:10', '10:50', 'Пленарное заседание',
-                        'Мероприятия, проводимые федеральным оператором для&nbsp;центров цифрового образования детей &laquo;IT-куб&raquo;: этапы проведения', 'Шумилов А.С.', 'директор Центра реализации проектов и&nbsp;научной деятельности ФГАНУ &laquo;ФИЦТО&raquo;',
-                        'Выполнение задач функционирования центров цифрового образования детей &laquo;IT-куб&raquo;: результаты работы', 'Якубович Т.В.', 'начальник отдела проектного и&nbsp;информационного сопровождения управления реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;',
-                        'О&nbsp;календаре мероприятий', 'Король А.А.', 'руководитель проектов отдела проектного и&nbsp;информационного сопровождения управления реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;',
-                        'Проект &laquo;Цифровое поколение&nbsp;&mdash; наше будущее&raquo;', 'Лукиенко Е.В.', 'руководитель проектов отдела проектного и&nbsp;информационного сопровождения управления реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;',
-                        'Актовый зал' )
-
-                     .meeting__program
-                        .meeting_program__time 11:00&nbsp;&ndash; 13:00
-                        .meeting_program__info
-                           .meeting_program__title Мастер-классы
-                           .meeting_program__place Аудитории 1-01, 2-08, 3-15
-
-
-                     .meeting__program
-                        .meeting_program__time 13:00&nbsp;&ndash; 13:30
-                        .meeting_program__info
-                           .meeting_program__title Экскурсия в&nbsp;музейно&ndash;образовательный центр
-                     .meeting__program
-                        .meeting_program__time 13:30&nbsp;&ndash; 14:30
-                        .meeting_program__dinner
-                           .meeting__dinner.mr-20
-                           .meeting_program__text Перерыв на&nbsp;обед
-
-                     +program-4-1( '14:30', '16:00', 'Практико&ndash;ориентированная сессия',
-                        'Инструменты выполнения показателей функционирования и&nbsp;привлечения кадров центра цифрового образования детей &laquo;IT-куб&raquo;', 'Кениг С.Р.', 'генеральный директор автономной некоммерческой организации &laquo;Красноярский детский технопарк &laquo;Кванториум&raquo; (АНО&nbsp;ДТ &laquo;Красноярский Кванториум&raquo;)',
-                        'Реализация образовательных программ в&nbsp;сетевой форме', 'Ким Н.А.', 'начальник управления цифрового образования государственного автономного учреждения дополнительного профессионального образования Новосибирской области &laquo;Новосибирский институт повышения квалификации и&nbsp;переподготовки работников образования&raquo; (НИПКиПРО)',
-                        'Партнерство: проблемы и&nbsp;решения', 'Дыняк А.В.', 'директор Центра цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Тынды структурного подразделения государственного профессионального образовательного автономного учреждения Амурской области &laquo;Амурский технический колледж&raquo;',
-                        'Вовлечение детей в&nbsp;научно&ndash;техническое творчество. Выявление и&nbsp;сопровождение одаренных детей', 'Полушкин Д.П.', 'заместитель директора по&nbsp;реализации образовательных программ, руководитель Центра цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Магнитогорск&nbsp;&mdash; филиала государственного бюджетного учреждения дополнительного образования &laquo;Дом юношеского технического творчества Челябинской области&raquo;',
-                        'Актовый зал' )
-                     .meeting__program
-                        .meeting_program__time 16:00&nbsp;&ndash; 16:15
-                        .meeting_program__info
-                           .meeting_program__title Подведение итогов дня
-                     .meeting__program
-                        .meeting_program__time 16:30&nbsp;&ndash; 18:30
-                        .meeting_program__info
-                           .meeting_program__title Обзорная экскурсия по&nbsp;Красноярску
-
-
-               section( aria-label='14 июня').mb5
-                  .meeting_list__section
-                     .meeting__trigger
-                        .meeting__day
-                           .caption.mr 15
-                           .text-22 июня
-                     a( href='https://yandex.ru/maps/62/krasnoyarsk/house/prospekt_mira_76/bUsYfgBiTkEPQFtsfXxwc39hZA==/?ll=92.872903%2C56.011895&z=18.96' target='_blank').meeting__place
-                        .meeting__pin
-                        .meeting__name ул.&nbsp;Мира, 76
-                        .meeting__address г.&nbsp;Красноярск
-
-                  section.meeting_program__holder.mt3
-                     .meeting__program
-                        .meeting_program__time 10:00&nbsp;&ndash; 10:30
-                        .meeting_program__info
-                           .meeting_program__title Регистрация
-
-
-                     +program1( '10:30', '11:30', 'Экскурсия по&nbsp;образовательной организации', '&laquo;Организация проектной деятельности обучающихся детского технопарка &laquo;Кванториум&raquo;', 'АНО ДТ &laquo;Красноярский Кванториум&raquo;', 'г.&nbsp;Красноярск, ул.&nbsp;Дубровинского, д.&nbsp;1И' )
-                     +program1( '12:00', '13:00', 'Экскурсия по&nbsp;образовательной организации', '&laquo;Организация проектной деятельности обучающихся центра цифрового образования детей &laquo;IT-куб&raquo;', 'Центр цифрового образования детей &laquo;IT-Cube.Красноярск&raquo;', 'г.&nbsp;Красноярск, ул.&nbsp;Железнодорожников, д.&nbsp;22')
+         //section( aria-label='Программа мероприятий' ).meeting__main#program
+         //   .wrapper
+         //      h1.caption.center.mb6 Программа мероприятий
+         //
+         //      section( aria-label='14 июня').mb5
+         //         .meeting_list__section
+         //            .meeting__trigger
+         //               .meeting__day
+         //                  .caption.mr 14
+         //                  .text-22 июня
+         //            a( href='https://yandex.ru/maps/62/krasnoyarsk/house/prospekt_mira_76/bUsYfgBiTkEPQFtsfXxwc39hZA==/?ll=92.872903%2C56.011895&z=18.96' target='_blank').meeting__place
+         //               .meeting__pin
+         //               .meeting__name ул.&nbsp;Мира, 76
+         //               .meeting__address г.&nbsp;Красноярск
+         //
+         //
+         //         section.meeting_program__holder.mt3
+         //            .meeting__program
+         //               .meeting_program__time 09:30&nbsp;&ndash; 10:00
+         //               .meeting_program__info
+         //                  .meeting_program__title Регистрация
+         //
+         //            +program( '10:00', '10:10', 'Открытие окружного совещания &laquo;Поиск решений&raquo;', 'Маковская C.И.', 'министр образования Красноярского края', 'Актовый зал' )
+         //            +program-4-1( '10:10', '10:50', 'Пленарное заседание',
+         //               'Мероприятия, проводимые федеральным оператором для&nbsp;центров цифрового образования детей &laquo;IT-куб&raquo;: этапы проведения', 'Шумилов А.С.', 'директор Центра реализации проектов и&nbsp;научной деятельности ФГАНУ &laquo;ФИЦТО&raquo;',
+         //               'Выполнение задач функционирования центров цифрового образования детей &laquo;IT-куб&raquo;: результаты работы', 'Якубович Т.В.', 'начальник отдела проектного и&nbsp;информационного сопровождения управления реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;',
+         //               'О&nbsp;календаре мероприятий', 'Король А.А.', 'руководитель проектов отдела проектного и&nbsp;информационного сопровождения управления реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;',
+         //               'Проект &laquo;Цифровое поколение&nbsp;&mdash; наше будущее&raquo;', 'Лукиенко Е.В.', 'руководитель проектов отдела проектного и&nbsp;информационного сопровождения управления реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;',
+         //               'Актовый зал' )
+         //
+         //            .meeting__program
+         //               .meeting_program__time 11:00&nbsp;&ndash; 13:00
+         //               .meeting_program__info
+         //                  .meeting_program__title Мастер-классы
+         //                  .meeting_program__place Аудитории 1-01, 2-08, 3-15
+         //
+         //
+         //            .meeting__program
+         //               .meeting_program__time 13:00&nbsp;&ndash; 13:30
+         //               .meeting_program__info
+         //                  .meeting_program__title Экскурсия в&nbsp;музейно&ndash;образовательный центр
+         //            .meeting__program
+         //               .meeting_program__time 13:30&nbsp;&ndash; 14:30
+         //               .meeting_program__dinner
+         //                  .meeting__dinner.mr-20
+         //                  .meeting_program__text Перерыв на&nbsp;обед
+         //
+         //            +program-4-1( '14:30', '16:00', 'Практико&ndash;ориентированная сессия',
+         //               'Инструменты выполнения показателей функционирования и&nbsp;привлечения кадров центра цифрового образования детей &laquo;IT-куб&raquo;', 'Кениг С.Р.', 'генеральный директор автономной некоммерческой организации &laquo;Красноярский детский технопарк &laquo;Кванториум&raquo; (АНО&nbsp;ДТ &laquo;Красноярский Кванториум&raquo;)',
+         //               'Реализация образовательных программ в&nbsp;сетевой форме', 'Ким Н.А.', 'начальник управления цифрового образования государственного автономного учреждения дополнительного профессионального образования Новосибирской области &laquo;Новосибирский институт повышения квалификации и&nbsp;переподготовки работников образования&raquo; (НИПКиПРО)',
+         //               'Партнерство: проблемы и&nbsp;решения', 'Дыняк А.В.', 'директор Центра цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Тынды структурного подразделения государственного профессионального образовательного автономного учреждения Амурской области &laquo;Амурский технический колледж&raquo;',
+         //               'Вовлечение детей в&nbsp;научно&ndash;техническое творчество. Выявление и&nbsp;сопровождение одаренных детей', 'Полушкин Д.П.', 'заместитель директора по&nbsp;реализации образовательных программ, руководитель Центра цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Магнитогорск&nbsp;&mdash; филиала государственного бюджетного учреждения дополнительного образования &laquo;Дом юношеского технического творчества Челябинской области&raquo;',
+         //               'Актовый зал' )
+         //            .meeting__program
+         //               .meeting_program__time 16:00&nbsp;&ndash; 16:15
+         //               .meeting_program__info
+         //                  .meeting_program__title Подведение итогов дня
+         //            .meeting__program
+         //               .meeting_program__time 16:30&nbsp;&ndash; 18:30
+         //               .meeting_program__info
+         //                  .meeting_program__title Обзорная экскурсия по&nbsp;Красноярску
+         //
+         //
+         //      section.mb5
+         //         .meeting_list__section
+         //            .meeting__trigger
+         //               .meeting__day
+         //                  .caption.mr 15
+         //                  .text-22 июня
+         //            a( href='https://yandex.ru/maps/62/krasnoyarsk/house/prospekt_mira_76/bUsYfgBiTkEPQFtsfXxwc39hZA==/?ll=92.872903%2C56.011895&z=18.96' target='_blank').meeting__place
+         //               .meeting__pin
+         //               .meeting__name ул.&nbsp;Мира, 76
+         //               .meeting__address г.&nbsp;Красноярск
+         //
+         //         section.meeting_program__holder.mt3
+         //            .meeting__program
+         //               .meeting_program__time 10:00&nbsp;&ndash; 10:30
+         //               .meeting_program__info
+         //                  .meeting_program__title Регистрация
+         //
+         //
+         //            +program1( '10:30', '11:30', 'Экскурсия по&nbsp;образовательной организации', '&laquo;Организация проектной деятельности обучающихся детского технопарка &laquo;Кванториум&raquo;', 'АНО ДТ &laquo;Красноярский Кванториум&raquo;', 'г.&nbsp;Красноярск, ул.&nbsp;Дубровинского, д.&nbsp;1И' )
+         //            +program1( '12:00', '13:00', 'Экскурсия по&nbsp;образовательной организации', '&laquo;Организация проектной деятельности обучающихся центра цифрового образования детей &laquo;IT-куб&raquo;', 'Центр цифрового образования детей &laquo;IT-Cube.Красноярск&raquo;', 'г.&nbsp;Красноярск, ул.&nbsp;Железнодорожников, д.&nbsp;22')
 
 
          include assets/jade/content/meeting/__meeting_block
@@ -171,7 +171,96 @@ html
 
 
 
-               section( aria-label='21-22 мая').meeting_schedule#may
+               section( aria-label='14-15 июня').meeting_schedule#june
+                  .meeting_list__section.mb3
+                     .meeting__trigger
+                        .meeting__day
+                           .caption.mr 14-15
+                           .text-22 июня
+                     .meeting__place
+                        .meeting__pin
+                        .meeting__name ул.&nbsp;Мира, 76
+                        .meeting__address г.&nbsp;Красноярск
+                     .icon-angle.trigger.ml3
+
+                  section.meeting_program__holder.list__holder.mt3.mb5( style='display: none' )
+                     section.mb2
+                        .meeting_list__section.border-transparent
+                           .meeting__trigger
+                              .meeting__day
+                                 .caption.mr 14
+                                 .text-22 июня
+                     section.meeting_program__holder.mt3
+                     .meeting__program
+                        .meeting_program__time 09:30&nbsp;&ndash; 10:00
+                        .meeting_program__info
+                           .meeting_program__title Регистрация
+
+                     +program( '10:00', '10:10', 'Открытие окружного совещания &laquo;Поиск решений&raquo;', 'Маковская C.И.', 'министр образования Красноярского края', 'Актовый зал' )
+                     +program-4-1( '10:10', '10:50', 'Пленарное заседание',
+                        'Мероприятия, проводимые федеральным оператором для&nbsp;центров цифрового образования детей &laquo;IT-куб&raquo;: этапы проведения', 'Шумилов А.С.', 'директор Центра реализации проектов и&nbsp;научной деятельности ФГАНУ &laquo;ФИЦТО&raquo;',
+                        'Выполнение задач функционирования центров цифрового образования детей &laquo;IT-куб&raquo;: результаты работы', 'Якубович Т.В.', 'начальник отдела проектного и&nbsp;информационного сопровождения управления реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;',
+                        'О&nbsp;календаре мероприятий', 'Король А.А.', 'руководитель проектов отдела проектного и&nbsp;информационного сопровождения управления реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;',
+                        'Проект &laquo;Цифровое поколение&nbsp;&mdash; наше будущее&raquo;', 'Лукиенко Е.В.', 'руководитель проектов отдела проектного и&nbsp;информационного сопровождения управления реализации проектов ФГАНУ &laquo;ФИЦТО&raquo;',
+                        'Актовый зал' )
+
+                     .meeting__program
+                        .meeting_program__time 11:00&nbsp;&ndash; 13:00
+                        .meeting_program__info
+                           .meeting_program__title Мастер-классы
+                           .meeting_program__place Аудитории 1-01, 2-08, 3-15
+
+
+                     .meeting__program
+                        .meeting_program__time 13:00&nbsp;&ndash; 13:30
+                        .meeting_program__info
+                           .meeting_program__title Экскурсия в&nbsp;музейно&ndash;образовательный центр
+                     .meeting__program
+                        .meeting_program__time 13:30&nbsp;&ndash; 14:30
+                        .meeting_program__dinner
+                           .meeting__dinner.mr-20
+                           .meeting_program__text Перерыв на&nbsp;обед
+
+                     +program-4-1( '14:30', '16:00', 'Практико&ndash;ориентированная сессия',
+                        'Инструменты выполнения показателей функционирования и&nbsp;привлечения кадров центра цифрового образования детей &laquo;IT-куб&raquo;', 'Кениг С.Р.', 'генеральный директор автономной некоммерческой организации &laquo;Красноярский детский технопарк &laquo;Кванториум&raquo; (АНО&nbsp;ДТ &laquo;Красноярский Кванториум&raquo;)',
+                        'Реализация образовательных программ в&nbsp;сетевой форме', 'Ким Н.А.', 'начальник управления цифрового образования государственного автономного учреждения дополнительного профессионального образования Новосибирской области &laquo;Новосибирский институт повышения квалификации и&nbsp;переподготовки работников образования&raquo; (НИПКиПРО)',
+                        'Партнерство: проблемы и&nbsp;решения', 'Дыняк А.В.', 'директор Центра цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Тынды структурного подразделения государственного профессионального образовательного автономного учреждения Амурской области &laquo;Амурский технический колледж&raquo;',
+                        'Вовлечение детей в&nbsp;научно&ndash;техническое творчество. Выявление и&nbsp;сопровождение одаренных детей', 'Полушкин Д.П.', 'заместитель директора по&nbsp;реализации образовательных программ, руководитель Центра цифрового образования детей &laquo;IT-куб&raquo; г.&nbsp;Магнитогорск&nbsp;&mdash; филиала государственного бюджетного учреждения дополнительного образования &laquo;Дом юношеского технического творчества Челябинской области&raquo;',
+                        'Актовый зал' )
+                     .meeting__program
+                        .meeting_program__time 16:00&nbsp;&ndash; 16:15
+                        .meeting_program__info
+                           .meeting_program__title Подведение итогов дня
+                     .meeting__program
+                        .meeting_program__time 16:30&nbsp;&ndash; 18:30
+                        .meeting_program__info
+                           .meeting_program__title Обзорная экскурсия по&nbsp;Красноярску
+
+
+                     section.mb3.mt5
+                        .meeting_list__section.border-transparent
+                           .meeting__trigger
+                              .meeting__day
+                                 .caption.mr 15
+                                 .text-22 июня
+
+                     section.meeting_program__holder.mt3
+                        .meeting__program
+                           .meeting_program__time 10:00&nbsp;&ndash; 10:30
+                           .meeting_program__info
+                              .meeting_program__title Регистрация
+
+
+                        +program1( '10:30', '11:30', 'Экскурсия по&nbsp;образовательной организации', '&laquo;Организация проектной деятельности обучающихся детского технопарка &laquo;Кванториум&raquo;', 'АНО ДТ &laquo;Красноярский Кванториум&raquo;', 'г.&nbsp;Красноярск, ул.&nbsp;Дубровинского, д.&nbsp;1И' )
+                        +program1( '12:00', '13:00', 'Экскурсия по&nbsp;образовательной организации', '&laquo;Организация проектной деятельности обучающихся центра цифрового образования детей &laquo;IT-куб&raquo;', 'Центр цифрового образования детей &laquo;IT-Cube.Красноярск&raquo;', 'г.&nbsp;Красноярск, ул.&nbsp;Железнодорожников, д.&nbsp;22')
+
+
+
+
+
+
+
+               section( aria-label='21-22 мая').meeting_schedule.mt7#may
                   .meeting_list__section.mb3
                      .meeting__trigger
                         .meeting__day
@@ -255,6 +344,8 @@ html
                               .meeting_program__title Круглый стол
                                  br
                                  |  &laquo;IT: соперничество  или&nbsp;сотрудничество?&raquo;
+
+
 
 
 
