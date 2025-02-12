@@ -452,8 +452,8 @@ $(document).ready(function () {
    
    /*  читать дальше  */
 
-   if ($('#container_congress').length > 0) {
-      let $trigger = $('.congress__trigger');
+   if ($('#container_congress').length > 0 || $('#container_congress_archive_2023').length > 0) {
+      let $trigger = $('.congress__trigger'); alert();
       $trigger.on('click', openList);
       
       $('.congress_gallery__holder').slick({
