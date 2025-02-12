@@ -730,18 +730,34 @@ article.congress__article:hover a {
 }
 
 #container_congress .archive__container {
+   padding-bottom: 7rem;
+}
+#container_congress .archive__container,
+#container_congress .archive_button__image {
    background-color: #191b3e;
 }
-.archive-img() {
-   background-position: center;
-   background-size: cover;
-   
-}
-#container_congress .archive_button__image .archive__image {
+
+
+#container_congress .archive_button__image {
    background-image: url("../data/projects/congress/files/2023.webp");
+   background-position: left;
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
-#container_congress .archive_button__image .archive__image:hover {
+#container_congress .archive_button__image:hover {
    background-image: url("../data/projects/congress/files/2023-hover.webp");
+   background-position: left;
+   background-size: cover;
+   background-repeat: no-repeat;
    .tr();
+}
+
+
+#container_congress_archive_2023 .footer__container {
+   margin-top: 0;
+}
+#container_congress_archive_2023 .footer__container .background-gray,
+#container_congress_archive_2023 .footer__container .background-black {
+   background-color: #191B3E;
 }

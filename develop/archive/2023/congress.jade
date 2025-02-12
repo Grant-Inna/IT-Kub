@@ -1,19 +1,19 @@
 doctype
 html
 
-   include assets/jade/static/__head
-   +title( 'Съезд руководителей центров  «IT-куб» | IT-cube' )
+   include ../__head
+   +title( 'Съезд руководителей центров «IT-куб» | IT-cube' )
 
    body
-      include assets/jade/static/metrika
-      #container_congress
+      include ../../assets/jade/static/metrika
+      #container_congress_archive_2023
          #black_back
-         include assets/jade/header/__header
+         include ../__header
          +menu( '', '', '', '', '', '', 'active', '', '', '' )
-         include assets/jade/header/main-pages
+         include ../../assets/jade/header/main-pages
 
 
-         include assets/jade/content/congress/__navigation
+         include ../../assets/jade/content/congress/__navigation
          section.congress__title
             .congress__image.congress__cube
             .wrapper
@@ -27,22 +27,16 @@ html
                      menu.congress_navigation__holder
                         +item( 'Программа на&nbsp;20 августа', 'program20' )
                         +item( 'Программа на&nbsp;21 августа', 'program21' )
-                        +item( 'Итоги II Съезда (видео)', 'result' )
-                        //
-                        //a( href='./assets/data/congress/Zayavka_na_uchastiye_vo_Vserossiyskom_syezde_rukovoditeley.zip' download target='blank').save_regulations
-                        //   .competition__regulations_icon
-                        //   .competition__regulations_text Заявка
-                        //      br
-                        //      | на&nbsp;участие
+                        +item( 'Итоги I Съезда (видео)', 'result' )
 
 
-         include assets/jade/content/congress/__trigger
-         include assets/jade/content/congress/__text
-         include assets/jade/content/congress/__text-0
-         include assets/jade/content/congress/__video
-         include assets/jade/content/congress/__ps-1
-         include assets/jade/content/congress/__ps-2
-         include assets/jade/content/congress/__ps-3
+         include ../../assets/jade/content/congress/__trigger
+         include ../../assets/jade/content/congress/__text
+         include ../../assets/jade/content/congress/__text-0
+         include ../../assets/jade/content/congress/__video
+         include ../../assets/jade/content/congress/__ps-1
+         include ../../assets/jade/content/congress/__ps-2
+         include ../../assets/jade/content/congress/__ps-3
 
          section.congress__main
             .wrapper
@@ -50,22 +44,22 @@ html
 
 
 
-         include assets/jade/content/congress/__day
-         include assets/jade/content/congress/__place
-         include assets/jade/content/congress/__place2
-         include assets/jade/content/congress/__event-simple
-         include assets/jade/content/congress/__event-0
-         include assets/jade/content/congress/__event
-         include assets/jade/content/congress/__event-more
-         include assets/jade/content/congress/__event-no-time
-         include assets/jade/content/congress/__event-no-time-last
-         include assets/jade/content/congress/__clock
-         include assets/jade/content/congress/__clock-0
-         include assets/jade/content/congress/__clock-simple
-         include assets/jade/content/congress/__clock-1
-         include assets/jade/content/congress/__clock-2
-         include assets/jade/content/congress/__clock-3
-         include assets/jade/content/congress/__break
+         include ../../assets/jade/content/congress/__day
+         include ../../assets/jade/content/congress/__place
+         include ../../assets/jade/content/congress/__place2
+         include ../../assets/jade/content/congress/__event-simple
+         include ../../assets/jade/content/congress/__event-0
+         include ../../assets/jade/content/congress/__event
+         include ../../assets/jade/content/congress/__event-more
+         include ../../assets/jade/content/congress/__event-no-time
+         include ../../assets/jade/content/congress/__event-no-time-last
+         include ../../assets/jade/content/congress/__clock
+         include ../../assets/jade/content/congress/__clock-0
+         include ../../assets/jade/content/congress/__clock-simple
+         include ../../assets/jade/content/congress/__clock-1
+         include ../../assets/jade/content/congress/__clock-2
+         include ../../assets/jade/content/congress/__clock-3
+         include ../../assets/jade/content/congress/__break
 
          section.congress__container
             .wrapper.list#program20
@@ -257,28 +251,17 @@ html
 
          section#result.congress__results
             .wrapper
-               h1.caption.center.mb5 Итоги II Съезда (видео)
-               .congress_button__holder.mt7
-                  .video_relative
-                     .video_ratio
-                     .iframe_holder
-                        iframe(src='https://vkvideo.ru/video_ext.php?oid=-193270730&id=456239149&hd=2&autoplay=1' width='100%' height='100%' frameborder='0')
-                           p Твой браузер устарел для отображения элемента iframe
+               h1.caption.center.mb5 Итоги I Съезда
 
-
-         section#archive.archive__container
-            .wrapper
-               a( href='./archive/2023/congress.html').archive_button__image
+               .video_relative
                   .video_ratio
-                  //.iframe_holder
-                     //.archive__image
+                  .iframe_holder
+                     iframe(src='https://vk.com/video_ext.php?oid=-193270730&id=456239062&hash=a2f2e19fe1da2a74' width='100%' height='100%' frameborder='0')
+                        p Твой браузер устарел для отображения элемента iframe
 
+         include ../../assets/jade/footer/footer
 
-
-
-         include assets/jade/footer/footer
-
-      include assets/jade/static/script
+      include ../../assets/jade/static/script
 
 
 
