@@ -453,10 +453,11 @@ $(document).ready(function () {
    /*  читать дальше  */
 
    if ($('#container_congress').length > 0 || $('#container_congress_archive_2023').length > 0) {
-      let $trigger = $('.congress__trigger'); alert();
+      let $trigger = $('.congress__trigger'),
+          carousel_holder = $('.congress_gallery__holder');
       $trigger.on('click', openList);
       
-      $('.congress_gallery__holder').slick({
+      carousel_holder.slick({
          slidesToShow: 2,
          slidesToScroll: 2,
          dots: true,
@@ -474,7 +475,8 @@ $(document).ready(function () {
                }
             }
          ]
-      })
+      });
+      carousel_holder.find('.slick-slide').css('padding', '0 .6rem' )
    }
    if ($('#container_hackathon').length > 0) {
       let $trigger = $('.schedule__trigger');
