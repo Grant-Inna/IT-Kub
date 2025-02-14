@@ -27,8 +27,8 @@ html
             .meeting__header
                .wrapper
                   menu.meeting_navigation__holder
-                     +item( 'Программа', 'program' )
                      +item( 'Место <br>проведения', 'place' )
+                     +item( 'Прошедшие <br>мероприятия', 'past' )
                .meeting__img
                   img( src='./assets/data/projects/meeting/photo-24.webp' )
 
@@ -164,7 +164,7 @@ html
 
 
 
-         section( aria-label='Прошедшие мероприятия' ).meeting__main.mt10
+         section#past.meeting__main.mt10
             .wrapper
                h1.caption.center.mb6 Прошедшие мероприятия
 
