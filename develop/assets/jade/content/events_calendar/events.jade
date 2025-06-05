@@ -5,10 +5,7 @@ section( aria-label='Календарь мероприятий центра' ).e
             .slider__month
                include __month
 
-               +month( 'Февраль' )
-               +month( 'Март', 'new' )
-               +month( 'Апрель' )
-               +month( 'Май' )
+
                +month( 'Июнь' )
                +month( 'Июль' )
                +month( 'Август' )
@@ -17,7 +14,10 @@ section( aria-label='Календарь мероприятий центра' ).e
                +month( 'Ноябрь' )
                +month( 'Декабрь' )
                +month( 'Январь' )
-
+               +month( 'Февраль' )
+               +month( 'Март', 'new' )
+               +month( 'Апрель' )
+               +month( 'Май' )
 
             .slider__calendar
                include __calendar
@@ -33,12 +33,7 @@ section( aria-label='Календарь мероприятий центра' ).e
                include __calendar-9
 
 
-               +events_calendar-null( '02', '' )
-               +events_calendar-null( '03', ''  )
 
-               +events_calendar-null( '04', '' )
-
-               +events_calendar-null( '05', '' )
                +events_calendar-null( '06', '' )
 
                +events_calendar-null( '07', '' )
@@ -52,3 +47,10 @@ section( aria-label='Календарь мероприятий центра' ).e
                +events_calendar-null( '12', ''  )
 
                +events_calendar-null( '01', '' )
+               +events_calendar-null( '02', '' )
+               +events_calendar-null( '03', ''  )
+
+
+               +events_calendar-null( '04', '' )
+
+               +events_calendar-null( '05', '' )
