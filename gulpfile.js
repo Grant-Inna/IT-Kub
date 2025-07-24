@@ -10,8 +10,7 @@ const gulp = require('gulp'),
       concat = require('gulp-concat'),
       uglify = require('gulp-uglify'),
       jade = require('gulp-jade'),
-      less = require('gulp-less'),
-      smartgrid = require('smart-grid');
+      less = require('gulp-less');
 
 const isDev = process.argv.indexOf('--dev') !== -1,
       isProd = !isDev,
@@ -21,54 +20,6 @@ const base = './develop/',
       src = './develop/assets/',
       prod = './build/',
       dist = './build/assets/';
-
-let gridOptions = {
-   columns: 24,
-   offset: "60px",
-   // mobileFirst: true,
-   container: {
-      maxWidth: "1400px",
-      fields: "60px" // fields не меньше offset делённого на 2
-   },
-   breakPoints: {
-      ll: {
-         width: "1350px"
-      },
-      xxl: {
-         width: "1240px"
-      },
-      xl: {
-         width: "1150px",
-         offset: "40px"
-      },
-      middle: {
-         width: "1030px",
-         offset: "30px"
-      },
-      lg: {
-         width: "995px",
-         fields: "40px",
-         offset: "20px"
-      },
-      md: {
-         width: "770px"
-      },
-      smmd: {
-         width: "660px"
-      },
-      sm: {
-         width: "580px",
-         fields: "30px",
-         offset: "10px"
-      },
-      xs: {
-         width: "470px"
-      },
-      xxs: {
-         width: "370px"
-      }
-   }
-};
 
 function html(done){
    return gulp.src( base + '*.jade' )
@@ -163,10 +114,10 @@ function watch(done){
    done();
 }
 
-function grid(done){
-   smartgrid( src + 'css/base', gridOptions);
-   done();
-}
+// function grid(done){
+//    smartgrid( src + 'css/base', gridOptions);
+//    done();
+// }
 
 const build = gulp.series(clear,
    gulp.parallel(html, archive, styles, js, images, data, files, video, fonts )
@@ -174,7 +125,59 @@ const build = gulp.series(clear,
 
 gulp.task('build', build);
 gulp.task('watch', gulp.series(build, watch));
-gulp.task('grid', gulp.parallel(grid));
+// gulp.task('grid', gulp.parallel(grid));
 gulp.task('fonts', fonts);
 gulp.task('js', js);
 gulp.task('data', data);
+
+
+/*
+
+let gridOptions = {
+   columns: 24,
+   offset: "60px",
+   // mobileFirst: true,
+   container: {
+      maxWidth: "1400px",
+      fields: "60px" // fields не меньше offset делённого на 2
+   },
+   breakPoints: {
+      ll: {
+         width: "1350px"
+      },
+      xxl: {
+         width: "1240px"
+      },
+      xl: {
+         width: "1150px",
+         offset: "40px"
+      },
+      middle: {
+         width: "1030px",
+         offset: "30px"
+      },
+      lg: {
+         width: "995px",
+         fields: "40px",
+         offset: "20px"
+      },
+      md: {
+         width: "770px"
+      },
+      smmd: {
+         width: "660px"
+      },
+      sm: {
+         width: "580px",
+         fields: "30px",
+         offset: "10px"
+      },
+      xs: {
+         width: "470px"
+      },
+      xxs: {
+         width: "370px"
+      }
+   }
+};
+*/
