@@ -27,6 +27,9 @@ html
 
                   .one_news__list
 
+                     include ./news/__news_67_12082025
+                     include ./news/__news_66_30072025
+                     include ./news/__news_65_24072025
                      include ./news/__news_64_30042025
                      include ./news/__news_63_29042025
                      include ./news/__news_62_28042025
@@ -100,15 +103,15 @@ html
                         .main_news__image
                            img( src='./assets/data/images/news/2025/08.12/1.webp' )
                         main.main_news__holder
-                           .main_news__date.text-25
-                              span.first &nbsp;/&nbsp; 12
+                           .main_news__date.text-25 12
+                              span.first &nbsp;/&nbsp;
                               span.second .
                               | 08
                               span.first &nbsp;/&nbsp;
                               span.second .
                               | 2025
                            .main_news__text.text-22
-                              p
+                              p &laquo;Цифровое наставничество&raquo;: сотрудничество Центра &laquo;IT&#8209;куб. Липецк&raquo; и&nbsp;&laquo;Донецкой гимназии &#8470;6&raquo;
                            a( href='./news.html#news_12-08-2025' ).news__more.hover.inline Подробнее
 
 
@@ -118,10 +121,10 @@ html
                         .news__block.news_block-1#active
                            include ./assets/jade/content/__news-one
                            .pagination__block.pagination_show#block_1
-                              +news( '30', '07', '2025', '', 'news_30-07-2025' )
-                              +news( '24', '07', '2025', '', 'news_24-07-2025' )
+                              +news( '30', '07', '2025', 'Обучающиеся Центра &laquo;IT&#8209;куб. Магнитогорск&raquo; создали смарт-теплицу', 'news_30-07-2025' )
+                              +news( '24', '07', '2025', '&laquo;Цифровое наставничество&raquo;: сотрудничество Центра &laquo;IT&#8209;куб. Болохово&raquo; и&nbsp;Генической школы &#8470;1&raquo;', 'news_24-07-2025' )
                               +news( '29', '05', '2025', 'Обучающиеся Центра &laquo;IT&#8209;куб. Оренбург&raquo; заняли второе место на&nbsp;первом Кубке России по&nbsp;спортивному программированию', 'news_29-05-2025' )
-                              +news( '27', '05', '2025', 'Обучающиеся Центра &laquo;IT&#8209;куб. Болохово&raquo; разработали мобильное приложение для &laquo;Генической школы №1&raquo;', 'news_27-05-2025' )
+                              +news( '27', '05', '2025', 'Обучающиеся Центра &laquo;IT&#8209;куб. Болохово&raquo; разработали мобильное приложение для&nbsp;&laquo;Генической школы &#8470;1&raquo;', 'news_27-05-2025' )
                               +news( '07', '05', '2025', 'Центры &laquo;IT&#8209;куб&raquo; участвуют в&nbsp;мероприятиях, приуроченных ко&nbsp;Дню Победы', 'news_07-05-2025' )
                               +news( '30', '04', '2025', 'В&nbsp;Центре &laquo;IT&#8209;куб. Княгинино&raquo; прошёл VII областной молодёжный технический фестиваль &laquo;IT-диалог. Твоё цифровое будущее&raquo;', 'news_30-04-2025' )
                               +news( '29', '04', '2025', 'В&nbsp;Центре &laquo;IT&#8209;куб. Болохово&raquo; прошла онлайн-дискуссия &laquo;Путь наставника: расширение возможностей обучения&raquo;', 'news_29-04-2025' )

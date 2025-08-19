@@ -308,6 +308,13 @@ a.back__holder:hover {
 .news_img__flex {
    .flex();
 }
+.news_img__flex-shift {
+   .flex();
+   .justify-between();
+   .lg-block({
+      flex-wrap: wrap;
+   });
+}
 .news_img__small {
    padding-right: 30%;
 }
@@ -321,6 +328,13 @@ a.back__holder:hover {
 .news_img__flex img.half {
    max-width: 50%;
    object-fit: cover;
+}
+.news_img__flex-shift img.half {
+   max-width: 49%;
+   object-fit: cover;
+   .lg-block({
+      max-width: 100%;
+   });
 }
 .news_one__date.text-22 {
    display: inline-block;
