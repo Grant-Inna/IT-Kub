@@ -11,14 +11,14 @@ html
       include assets/jade/content/hackathon/__program-4
       include assets/jade/content/hackathon/__program-4-1
       include assets/jade/static/metrika
-      #container_hackathon
+      #container_hackathon.container_hackathon-25
          #black_back
          include assets/jade/header/__header
          +menu( '', '', '', '', '', '', '', 'active', '' )
          include assets/jade/header/main-pages
 
          include assets/jade/content/hackathon/__navigation
-         section( aria-label='Страница всероссийского хакатона по программированию' ).hackathon__title
+         section( aria-label='Страница всероссийского хакатона по программированию' ).hackathon__title.mb16
             .wrapper
                .logo_relative
                   .logo_ratio
@@ -32,206 +32,62 @@ html
                      .hackathon_button__inner
                         i.icon-file
                         span Положение о&nbsp;хакатоне
-                  a( href='./assets/data/projects/hackathon/files/2024/programm_hackaton_2024_full.pdf' download='Программа хакатона 2024. День 1, 2, 3.pdf' target='_blank').hackathon__button.mb3
-                     .hackathon_button__inner
-                        i.icon-file
-                        span Программа&nbsp;хакатона
+
                   .hackathon_menu__holder
                      menu.hackathon_navigation__holder
-                        +item( 'Результаты', 'winners' )
                         +item( 'Об&nbsp;участии', 'participation' )
                         +item( 'Направления', 'direction' )
-                        +item( 'Фотогалерея', 'gallery' )
-                        +item( 'Мероприятие 2023', 'archive' )
-
-
-
-         include ./assets/jade/content/hackathon/__winners
-         include ./assets/jade/content/hackathon/__winners+
-         section( aria-label='Победители' )#winners.hackathon__winners
-            .wrapper
-               h1.caption.center.mb5 Результаты заключительного этапа хакатона
-               section.hackathon_winners__holder.mb5
-                  .hackathon_winners__caption.mt5
-                     .hackathon_winners__caption_icon( class='hw__caption_icon-1')
-                     h1.title Программирование
-                  .hackathon_winners__list.mt2
-                     .row
-                        +winners-plus( 'Кожурина Юлия Александровна<br>Кравцов Григорий Павлович<br>Михальченков Александр Николаевич<br>Базин Алексей Сергеевич', 'Смоленская область', 'Суяков Егор Владимирович<br>Дерендяев Александр Сергеевич<br>Мироненко Виктор Яковлевич<br>Вострецова Евгения Сергеевна', 'Удмуртская Республика', 'Сивец Данил Юрьевич<br>Назаров Назар Романович<br>Яковлев Артём Сергеевич<br>Петишев Дмитрий Евгеньевич', 'Новосибирская область' )
-                     .row.mt3.others
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Донецкая Народная Республика
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Иркутская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Камчатский край
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Ленинградская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Нижегородская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Оренбургская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Ульяновская область
-
-                  .hackathon_winners__caption.mt5
-                     .hackathon_winners__caption_icon( class='hw__caption_icon-3')
-                     h1.title Кибергигиена
-                  .hackathon_winners__list.mt2
-                     .row
-                        +winners-plus( 'Черняев Кирилл Евгеньевич<br>Шишин Даниил Олегович<br>Миргород Максим Дмитриевич', 'Забайкальский край', 'Амрулин Эльдар Халидович<br>Зотов Артемий Евгеньевич<br>Гельбер Екатерина Андреевна<br>Евстратова Мария Михайловна', 'Новосибирская область', 'Волобуев Олег Андреевич<br>Бирюков Егор Александрович', 'Ставропольский край' )
-                     .row.mt3.others
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Донецкая Народная Республика
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Красноярский край
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Республика Дагестан
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Калужская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Свердловская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Тульская область
-
-
-                  .hackathon_winners__caption.mt5
-                     .hackathon_winners__caption_icon( class='hw__caption_icon-2')
-                     h1.title VR&ndash;разработка
-                  .hackathon_winners__list.mt2
-                     .row
-                        +winners-plus( 'Ким Эвелина Алексеевна<br>Рыличев Александр Игоревич<br>Хон Егор Константинович', 'Приморский край', 'Деревягин Семён Денисович<br>Еланцев Николай Леонидович<br>Загнойко Олег Александрович<br>Помазкин Кирилл Евгеньевич', 'Свердловская область', 'Митин Игорь Александрович<br>Огурцова Екатерина Витальена', 'Оренбургская область' )
-                     .row.mt3.others
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Алтайский край
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Донецкая Народная Республика
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Кировская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Псковская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Республика Хакасия
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Смоленская область
-                        article.block_8.mt1
-                           .hackathon_winner__img.mb2
-                              .hackathon_winner__place.hw__place-0
-                           .hackathon_winner__location.text-22 Удмуртская Республика
-
+                        +item( 'Этапы проведения', 'step' )
+                        +item( 'Мероприятие 2024', 'archive' )
 
 
 
          include assets/jade/content/hackathon/__participation
          section( aria-label='Кто может принять участие' )#participation.hackathon__participation
             .wrapper
-               h1.caption.center.mb4 Об участии
+               h1.caption.center.mb4 В Хакатоне могут  принять участие:
                .row
                   +participation( '1', 'Обучающиеся Центров цифрового образования детей <span class="wwnow">&laquo;IT-куб&raquo;</span> в&nbsp;возрасте 14-18&nbsp;лет' )
-                  +participation( '2', 'Состав команды&nbsp;&mdash; от&nbsp;2 до&nbsp;4 человек* <br><span class="sup">*Один участник может быть зарегистрирован только в&nbsp;одной команде</span>'  )
 
 
          include assets/jade/content/hackathon/__direction
-         include assets/jade/content/hackathon/__direction-more
-         section( aria-label='По каким направлениям проводится хакатон' )#direction.hackathon__direction.mb9
+         section( aria-label='По каким направлениям проводится хакатон' )#direction.hackathon__direction.mb16
             .wrapper
-               h1.caption.center.mb5 Направления
-               .row
-                  +direction-more( '1', 'Программирование', 't-bank', 'cu', 'Zadaniye_po_programmirovaniyu_Final_Khakatona.pdf' )
-                  +direction( '2', 'Кибергигиена', 'kiber', 'Zadaniye_po_kibergigiene_Final_Khakatona.pdf' )
-                  +direction( '3', 'VR-разработка', 'varmin', 'Zadaniye_po_VR_Final_Khakatona.pdf' )
+               h1.caption.center.mb4 Направление
+               article.hackathon_direction__holder
+                  .hackathon_direction__about
+                     h1.title.mb4.mt1 Программирование
+                  .hackathon_direction__icon( class='hackathon_direction__icon-1' )
 
 
 
 
-
-         section#gallery.hackathon__gallery.mb9
+         include assets/jade/content/hackathon/__step
+         section( aria-label='Этапы проведения хакатона' )#step.hackathon__steps
             .wrapper
-               h1.caption.center.mb5 Фотогалерея
-               .congress_button__holder.mt6
-                  a( href='https://vk.com/album-193270730_304609817' target='_blank' ).congress__button
-                     .congress_button__inner
-                        .icon-congress-vk.mr2
-                        .congress_button__text Посмотреть все фотографии
+               h1.caption.center Этапы проведения
+               h2.title.center.mb8 15–17 октября 2025 г.
 
-            .hackathon_gallery__holder.mt3
-               .gallery_big__photo
-                  img( src='./assets/data/projects/hackathon/gallery_2024/1.webp')
-               .gallery_big__photo
-                  img( src='./assets/data/projects/hackathon/gallery_2024/2.webp')
-               .gallery_big__photo
-                  img( src='./assets/data/projects/hackathon/gallery_2024/3.webp')
-               .gallery_big__photo
-                  img( src='./assets/data/projects/hackathon/gallery_2024/4.webp')
-               .gallery_big__photo
-                  img( src='./assets/data/projects/hackathon/gallery_2024/5.webp')
-               .gallery_big__photo
-                  img( src='./assets/data/projects/hackathon/gallery_2024/6.webp')
-               .gallery_big__photo
-                  img( src='./assets/data/projects/hackathon/gallery_2024/7.webp')
-               .gallery_big__photo
-                  img( src='./assets/data/projects/hackathon/gallery_2024/8.webp')
-               .gallery_big__photo
-                  img( src='./assets/data/projects/hackathon/gallery_2024/9.webp')
-               .gallery_big__photo
-                  img( src='./assets/data/projects/hackathon/gallery_2024/10.webp')
+               +step( '1', 'Подача заявок', '15&nbsp;октября 2025&nbsp;г.', 'Работа над отборочными заданиями' )
+               +step( '2', 'Полуфинал', '16&nbsp;октября 2025&nbsp;г.', 'Работа над заданием полуфинала' )
+               +step( '3', 'Финал', '17&nbsp;октября 2025&nbsp;г.', 'Работа над заданием финала' )
 
 
-
-         .wrapper
-            .video_wrapper.mb10
-               .video_relative
-                  .video_ratio
-                  .iframe_holder
-                     iframe(src='https://vk.com/video_ext.php?oid=-193270730&id=456239091&hd=2' width='100%' height='100%' frameborder='0' allowfullscreen)
-                        p Твой браузер устарел для отображения элемента iframe
-
-
-         section( aria-label='' )#application.hackathon__application
+         section( aria-label='Подать заявку на участие' )#application.hackathon__application
             .hackathon_application__image
                .wrapper
                   .hackathon_application__icon
             .hackathon_application__holder
                .wrapper
-                  a( href='./archive/2023/hackathon.html')#archive.archive_button__image.mb10.mt4
+                  h1.caption.center.mb4 Заявка на&nbsp;участие
+                  h2.text-25.mb2 Для участия в Хакатоне необходимо в&nbsp;срок до&nbsp;10&nbsp;октября 2025&nbsp;г. (включительно) подать заявку для&nbsp;регистрации в&nbsp;Яндекс-форме Организатора.
+                  p.text-25.mb2 После подачи заявки для&nbsp;регистрации участники Хакатона будет направлена ссылка для&nbsp;регистрации в&nbsp;геймифицированном мобильном приложении &laquo;Игра Первых&raquo;.
+                  p.text-25 Хакатон проводится с&nbsp;использованием геймифицированного мобильного приложения  &laquo;Игра Первых&raquo;. Задания Хакатона размещаются в&nbsp;приложении и&nbsp;предполагают ввод ответов для&nbsp;автоматической проверки в&nbsp;соответствующих модулях.
+
+
+
+               .wrapper.mt4
+                  a( href='./archive/2024/hackathon.html')#archive.archive_button__image.mb10.mt4
                      .video_ratio
                      .iframe_holder
                         .archive__image

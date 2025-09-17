@@ -1,0 +1,10 @@
+mixin direction-more( numb, title, img, img2, link)
+   article.hackathon_direction__holder
+      .hackathon_direction__about(class='#{img}')
+         h1.text-27.mb4.mt1 !{title}
+         img( src='../../assets/data/projects/hackathon/#{img}.png?v=3' ).mb2
+         img( src='../../assets/data/projects/hackathon/#{img2}.png?v=3' ).mb4
+         .hackathon_direction__link
+            a( href='../../assets/data/projects/hackathon/files/2024/#{link}?v=3' target='_blank'  download='Задание для заключительного этапа по направлению #{title}.pdf') Скачать
+            span &nbsp;задание для&nbsp;заключительного этапа
+      .hackathon_direction__icon( class='hackathon_direction__icon-#{numb}' )

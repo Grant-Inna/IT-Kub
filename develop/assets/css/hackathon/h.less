@@ -1,5 +1,5 @@
 #container_hackathon .menu__item.active {
-   color: #00AF9D;
+   color: #1F75BA;
 }
 .hackathon__title {
    margin-top: 8rem;
@@ -18,10 +18,26 @@
    background-size: contain;
    background-position: bottom right;
    
+   .from( 2250px, {
+      top: -12vw;
+      right: -100px;
+      .hackathon-bg-full();
+   });
+   
    .smmd-block({
+      right: 0;
+      width: 100%;
+      background-position: 30% 30%;
+      opacity: .8;
+   });
+   .sm-block({
       right: -1px;
-      background-position: 0 30%;
-   })
+      left: -1px;
+      width: 105%;
+      background-size: 105% auto;
+      background-position: 50% 0;
+      opacity: .7;
+   });
 }
 .hackathon__title .wrapper:nth-of-type(2) {
    .flex();
@@ -53,6 +69,7 @@
    });
    .sm-block({
       height: 40vw;
+      margin-bottom: 12rem;
    });
    .xs-block({
       height: 30vw;
@@ -70,7 +87,7 @@
       width: 100%;
    });
    .xs-block({
-      margin-bottom: 5rem;
+      margin-bottom: 0;
    });
 }
 .hackathon__header .hackathon__button:first-of-type {
@@ -78,7 +95,7 @@
       margin-top: 12rem;
    });
    .xs-block({
-      margin-top: 21rem;
+      margin-top: 18rem;
    });
 }
 .hackathon__logo {
@@ -87,8 +104,8 @@
    height: 100%;
    
    .xs-block({
-      width: calc( 100% + 50px );
-      height: calc( 100% + 50px );
+      //width: calc( 100% + 50px );
+      //height: calc( 100% + 50px );
       margin-bottom: 15px;
       margin-left: -15px;
    })
@@ -182,7 +199,7 @@ menu.hackathon_navigation__holder {
    .tr();
 }
 .hackathon__navigation:hover .hackathon__navigation_text {
-   color: #00AF9D;
+   color: #1F75BA;
    .tr();
 }
 
@@ -198,9 +215,11 @@ menu.hackathon_navigation__holder {
 .logo_relative {
    position: relative;
    z-index: 500;
-   width: 824px;
-   max-width: 74vw;
-   
+   width: 700px;
+   max-width: 70vw;
+   .sm-block({
+      max-width: 90vw;
+   });
 }
 .logo_ratio {
    width: 100%;
@@ -220,37 +239,97 @@ menu.hackathon_navigation__holder {
 
 .hackathon_header__image:before {
    .pseudo();
-   width: calc( 100% + 20vw );
+   width: calc( 100% + 10vw );
    max-width: 1000px;
-   height: calc( 100% + 10rem );
+   height: calc( 100% + 24rem );
    
-   top: -8rem;
-   left: -10vw;
+   top: -14rem;
+   left: 10vw;
    
    .hackathon-before-man();
    
    .from( 2250px, {
-      left: 0;
+      left: 6vw;
    });
    
    .ll-block({
       width: calc( 100% + 30vw );
-      top: -4rem;
-      left: -18vw;
+      height: calc( 100% + 24rem );
+      top: -14rem;
+      left: 9vw;
    });
    .lg-block({
       width: calc( 100% + 28vw );
-      top: -4rem;
-      left: -15vw
+      height: calc( 100% + 18rem );
+      top: -7rem;
+      left: 2vw
    });
    .smmd-block({
-      top: -4rem;
-      left: -4vw
+      width: 100%;
+      height: 530px;
+      top: -70px;
+      left: -4vw;
+      //background-position: right;
    });
    .xs-block({
-      width: calc( 100% + 30px );
-      height: calc( 100% + 21rem );
-      
+      height: 440px;
+      top: -140px;
       left: -15px
-   })
+   });
+   .xxs-block({
+      height: 420px;
+      top: -140px;
+      left: -15px
+   });
+}
+
+.hackathon_header__image:after {
+   .pseudo();
+   width: 900px;
+   height: 650px;
+   
+   top: -14rem;
+   left: 0;
+   
+   .hackathon-before-elements-plus();
+   
+   .from( 2250px, {
+      //left: 6vw;
+   });
+   
+   .ll-block({
+      width: 800px;
+      height: 600px;
+      top: -16rem;
+      //left: 9vw;
+   });
+   .lg-block({
+      width: 600px;
+      height: 500px;
+      top: -7rem;
+      left: -2vw
+   });
+   .smmd-block({
+      width: 100%;
+      height: 450px;
+      top: -50px;
+      right: 0;
+      background-position: right;
+      .hackathon-before-elements();
+   });
+   .sm-block({
+      width: 100%;
+      height: 340px;
+      top: -50px;
+      right: 50vw;
+      background-position: right;
+      .hackathon-before-elements();
+   });
+   .xs-block({
+      height: 280px;
+      top: -50px;
+   });
+   .xxs-block({
+      display: none;
+   });
 }

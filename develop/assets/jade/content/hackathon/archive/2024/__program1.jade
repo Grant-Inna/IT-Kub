@@ -1,0 +1,10 @@
+mixin program1( t1, t2, caption, title, name, topic, place )
+   .program_row
+      .hackathon_program__time #{t1}&nbsp;&ndash; #{t2}
+      .meeting_program__info
+         .hackathon_program__caption.mb2 !{caption}
+
+         .meeting_program__title !{title}
+         .meeting_program__person !{name}
+         .meeting_program__topic !{topic}
+      .hackathon_row_place !{place}

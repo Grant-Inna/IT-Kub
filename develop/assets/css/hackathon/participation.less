@@ -39,8 +39,9 @@
    left: -10px;
    
    .hackathon-before-green();
-   .smmd-block({
-   })
+   .sm-block({
+      opacity: .6;
+   });
 }
 .hackathon__participation:after {
    .pseudo();
@@ -59,12 +60,12 @@
    .xs-block({
       width: calc( 100% - 30px );
       left: 15px;
-      top: -9rem;
+      top: -10rem;
    });
    .xxs-block({
       width: calc( 100% - 30px );
       left: 15px;
-      top: -5rem;
+      top: -6.5rem;
    });
 }
 .hackathon__participation .row {
@@ -103,11 +104,17 @@
    z-index: 100;
    width: 6rem;
    height: 6rem;
-   .hackathon-gr();
+   .hackathon-hexagon();
+
 }
 .hackathon_participation__holder:nth-of-type(1) .hackathon_participation__icon:after {
    top: -1rem;
    right: -1.5rem;
+   .md-block({
+      top: -.8rem;
+      right: -1.2rem;
+   });
+   
 }
 .hackathon_participation__holder:nth-of-type(2) .hackathon_participation__icon:after {
    bottom: -2rem;

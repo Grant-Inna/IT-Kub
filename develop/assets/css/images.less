@@ -355,12 +355,12 @@
 }
 
 .schedule-dash-vert() {
-   background-image: url("../data/projects/hackathon/line-vert.svg");
+   background-image: url("../data/projects/hackathon/archive/2023/line-vert.svg");
    background-size: contain;
    background-position: top;
 }
 .schedule-dash-hor() {
-   background-image: url("../data/projects/hackathon/line-hor.svg");
+   background-image: url("../data/projects/hackathon/archive/2023/line-hor.svg");
    background-position: left;
    background-size: contain;
 }
@@ -415,16 +415,40 @@
 }
 
 
-.projects-hackathon( @name ) {
+.projects-hackathon-universal( @name ) {
    background-image: url("../data/projects/hackathon/@{name}");
+   background-repeat: no-repeat;
+}
+.hackathon-who-1() {
+   .projects-hackathon-universal('who-1.svg');
+   background-position: center;
+   background-size: contain;
+}
+.hackathon-who-2() {
+   .projects-hackathon-universal('who-2.svg');
+   background-position: center;
+   background-size: contain;
+}
+.hackathon-direction-bg() {
+   .projects-hackathon-universal('bg-kod.svg');
+   background-position: right bottom;
+}
+
+
+
+.projects-hackathon( @name ) {
+   background-image: url("../data/projects/hackathon/current/@{name}");
    background-repeat: no-repeat;
 }
 .hackathon-bg() {
    .projects-hackathon('bg-top.svg');
 }
+.hackathon-bg-full() {
+   .projects-hackathon('bg-top-full.svg');
+}
 .hackathon-logo() {
    .projects-hackathon('logo.svg');
-   background-position: center;
+   background-position: left;
    background-size: contain;
 }
 .hackathon-before-man() {
@@ -432,34 +456,31 @@
    background-position: left;
    background-size: contain;
 }
+.hackathon-before-elements() {
+   .projects-hackathon('elements.svg');
+   background-position: right;
+   background-size: contain;
+}
+.hackathon-before-elements-plus() {
+   .projects-hackathon('elements-plus.svg');
+   background-position: right;
+   background-size: contain;
+}
 .hackathon-before-center() {
-   .projects-hackathon('bd-center.svg');
+   .projects-hackathon('bg-center.svg');
    background-size: contain;
 }
 .hackathon-before-green() {
-   .projects-hackathon('bg-green.svg');
+   .projects-hackathon('bg-blue.svg');
    background-position: left;
    background-size: contain;
 }
-.hackathon-who-1() {
-   .projects-hackathon('who-1.svg');
+.hackathon-hexagon() {
+   .projects-hackathon('hexagon-color.svg');
    background-position: center;
    background-size: contain;
 }
-.hackathon-who-2() {
-   .projects-hackathon('who-2.svg');
-   background-position: center;
-   background-size: contain;
-}
-.hackathon-gr() {
-   .projects-hackathon('green.svg');
-   background-position: center;
-   background-size: contain;
-}
-.hackathon-direction-bg() {
-   .projects-hackathon('bg-kod.svg');
-   background-position: right bottom;
-}
+
 .hackathon-direction-1() {
    .projects-hackathon('direction-1.svg');
    background-position: right bottom;
@@ -496,7 +517,7 @@
    background-size: contain;
 }
 .hackathon-application() {
-   .projects-hackathon('bg-application1.svg');
+   .projects-hackathon('application-bg.svg');
 }
 .hackathon-noyt() {
    .projects-hackathon('application.svg');
