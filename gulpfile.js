@@ -29,10 +29,17 @@ function html(done){
    done();
 }
 
-function archive(done){
-   return gulp.src([ base + 'archive/**/*.jade' ])
+function archive23(done){
+   return gulp.src([ base + 'archive/2023/*.jade' ])
    .pipe(jade())
-   .pipe(gulp.dest( prod + 'archive/' ))
+   .pipe(gulp.dest( prod + 'archive/2023/' ))
+   .pipe(gulpif(isSync, browserSync.stream()));
+   done();
+}
+function archive24(done){
+   return gulp.src([ base + 'archive/2024/*.jade' ])
+   .pipe(jade())
+   .pipe(gulp.dest( prod + 'archive/2024/' ))
    .pipe(gulpif(isSync, browserSync.stream()));
    done();
 }
@@ -100,8 +107,10 @@ function watch(done){
    
    gulp.watch( src + 'css/**/*.less', styles);
    gulp.watch( base + '*.jade', html);
-   gulp.watch( base + 'archive/**/*.jade', archive);
-   gulp.watch( base + 'archive/*.jade', archive);
+   gulp.watch( base + 'archive/**/*.jade', archive23);
+   gulp.watch( base + 'archive/**/*.jade', archive24);
+   gulp.watch( base + 'archive/*.jade', archive23);
+   gulp.watch( base + 'archive/*.jade', archive24);
    gulp.watch( src + 'jade/**/*.jade', html);
    gulp.watch( base + 'news/*.jade', html);
    gulp.watch( src + 'images/**/*', images);
@@ -120,7 +129,7 @@ function watch(done){
 // }
 
 const build = gulp.series(clear,
-   gulp.parallel(html, archive, styles, js, images, data, files, video, fonts )
+   gulp.parallel(html, archive23, archive24, styles, js, images, data, files, video, fonts )
 );
 
 gulp.task('build', build);
