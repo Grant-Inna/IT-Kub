@@ -221,11 +221,12 @@ menu.hackathon_navigation__holder {
       max-width: 90vw;
    });
 }
+.container_hackathon-25 {
 .logo_ratio {
    width: 100%;
    height: 0;
-   padding-top: 24.8%;
-}
+   padding-top: 27.8%;
+}}
 .logo_holder {
    position: absolute;
    z-index: 600;
@@ -266,20 +267,23 @@ menu.hackathon_navigation__holder {
    });
    .smmd-block({
       width: 100%;
-      height: 530px;
-      top: -70px;
-      left: -4vw;
-      //background-position: right;
+      height: 560px;
+      top: -120px;
+      right: 2vw;
+      left: unset;
+      background-position: right;
    });
    .xs-block({
       height: 440px;
       top: -140px;
-      left: -15px
+      right: -15px
    });
    .xxs-block({
-      height: 420px;
-      top: -140px;
-      left: -15px
+      height: 400px;
+      top: -120px;
+      right: -15px;
+      left: unset;
+      background-position: right;
    });
 }
 .container_hackathon-25 {
@@ -294,14 +298,12 @@ menu.hackathon_navigation__holder {
    .hackathon-before-elements-plus();
    
    .from( 2250px, {
-      //left: 6vw;
    });
    
    .ll-block({
       width: 800px;
       height: 600px;
       top: -16rem;
-      //left: 9vw;
    });
    .lg-block({
       width: 600px;
@@ -313,24 +315,30 @@ menu.hackathon_navigation__holder {
       width: 100%;
       height: 450px;
       top: -50px;
-      right: 0;
-      background-position: right;
+      right: unset;
+      left: -6vw;
+      
       .hackathon-before-elements();
+      background-position: left;
    });
    .sm-block({
       width: 100%;
       height: 340px;
-      top: -50px;
-      right: 50vw;
-      background-position: right;
-      .hackathon-before-elements();
+      top: 0;
+      right: unset;
+      left: -30px;
+      background-position: left;
    });
    .xs-block({
       height: 280px;
       top: -50px;
    });
    .xxs-block({
-      display: none;
+      height: 230px;
+      top: -50px;
+      right: unset;
+      left: -15px;
+      background-position: left;
    });
 }
 }
