@@ -27,6 +27,7 @@ html
 
                   .one_news__list
 
+                     include ./news/__news_75_24092025
                      include ./news/__news_74_18092025
                      include ./news/__news_73_17092025
                      include ./news/__news_72_08092025
@@ -108,9 +109,9 @@ html
                   section( aria-label='Главная новость' ).main_news__container
                      .row
                         .main_news__image
-                           img( src='./assets/data/images/news/2025/09.18/0.webp' )
+                           img( src='./assets/data/images/news/2025/09.24/0.webp' )
                         main.main_news__holder
-                           .main_news__date.text-25 18
+                           .main_news__date.text-25 24
                               span.first &nbsp;/&nbsp;
                               span.second .
                               | 09
@@ -118,8 +119,8 @@ html
                               span.second .
                               | 2025
                            .main_news__text.text-22
-                              p Онлайн-хакатон &laquo;Код доступа&raquo; объединит юных программистов из&nbsp;Центров &laquo;IT-куб&raquo;
-                           a( href='./news.html#news_18-09-2025' ).news__more.hover.inline Подробнее
+                              p Центры &laquo;IT&#8209;куб&raquo; достойно выступили на&nbsp;XII Всероссийской конференции &laquo;Юные техники и&nbsp;изобретатели&raquo;
+                           a( href='./news.html#news_24-09-2025' ).news__more.hover.inline Подробнее
 
 
 
@@ -128,6 +129,7 @@ html
                         .news__block.news_block-1#active
                            include ./assets/jade/content/__news-one
                            .pagination__block.pagination_show#block_1
+                              +news( '18', '09', '2025', 'Онлайн-хакатон &laquo;Код доступа&raquo; объединит юных программистов из&nbsp;Центров &laquo;IT-куб&raquo;', 'news_18-09-2025' )
                               +news( '17', '09', '2025', '&laquo;Цифровое наставничество&raquo;: сотрудничество организаций Удмуртской Республики, Херсонской области и&nbsp;ЛНР', 'news_17-09-2025' )
                               +news( '08', '09', '2025', '&laquo;Цифровое наставничество&raquo;: сотрудничество Центра &laquo;IT&#8209;куб. Княгинино&raquo; и&nbsp;ГБОУДО &laquo;Центр технического творчества&raquo;&nbsp;&mdash; &laquo;Кванториум&raquo;', 'news_08-09-2025' )
                               +news( '03', '09', '2025', 'Центр &laquo;IT&#8209;куб. Болохово&raquo; в&nbsp;День знаний провёл региональный телемост &laquo;Навстречу цифровому будущему!&raquo;', 'news_03-09-2025' )
