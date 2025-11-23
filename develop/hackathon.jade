@@ -36,13 +36,52 @@ html
                   .hackathon_menu__holder
                      menu.hackathon_navigation__holder
                         +item( 'Об&nbsp;участии', 'participation' )
+                        +item( 'Победители', 'winners' )
                         +item( 'Направление', 'direction' )
                         +item( 'Этапы проведения', 'step' )
                         +item( 'Мероприятие 2024', 'archive' )
 
 
+
+
+         include assets/jade/content/hackathon/archive/2025/__winner
+         section( aria-label='Победители' )#winners.hackathon__winners.mb12
+            .wrapper
+               h1.caption.center.mb5 Победители хакатона
+               section.hackathon_winners__holder.mb5
+                  .hackathon_winners__list.mt2
+                     .hackathon_winners__flex
+                        .row
+                           +winner( 'Андрей Морозов', 'Удмуртская Республика<br>АНО ЦЦОД &laquo;IT-куб&raquo;', '1' )
+                           +winner( 'Тамара Копылова', 'Пермский край<br>Центр &laquo;IT-куб. Добрянка&raquo;', '2' )
+                           +winner( 'Татьяна Назаренкова', 'Новосибирская область<br>ЦЦОД &laquo;IT-куб&raquo; на&nbsp;базе МБОУ &laquo;Новосибирская классическая гимназия &#8470;17&raquo;', '3' )
+                           +winner( 'Владислав Калугин', 'Республика Хакасия<br>ЦЦО &laquo;IT-куб. Абакан&raquo;', '4' )
+                           +winner( 'Фёдор Урадовский', 'Новосибирская область<br>ЦЦОД &laquo;IT-куб&raquo;', '5' )
+
+                        .row
+                           +winner( 'Александр Соловьёв', 'Челябинская область<br>ЦЦОД &laquo;IT-куб. Сатка&raquo;', '6' )
+                           +winner( 'Даниил Рыков', 'Новосибирская область<br>ЦЦОД &laquo;IT-куб&raquo; на&nbsp;базе МБОУ &laquo;Технический лицей &#8470; 176&raquo;', '7' )
+                           +winner( 'Данила Апрелков ', 'Новосибирская область<br>ЦЦОД &laquo;IT-куб&raquo; на&nbsp;базе МБОУ &laquo;Новосибирская классическая гимназия &#8470;17&raquo;', '8' )
+                           +winner( 'Матвей Ваулин', 'Челябинская область<br>ЦЦОД &laquo;IT-куб. Сатка&raquo;', '9' )
+                           +winner( 'Максим Насибулин', 'Челябинская область<br>ЦЦОД &laquo;IT-куб. Сатка&raquo;', '10' )
+                     //
+                     //.hackathon_winners__flex
+                     //   .row
+                     //      +winner( 'Андрей Морозов', 'Удмуртская Республика<br>АНО ЦЦОД &laquo;IT-куб&raquo;', '1' )
+                     //      +winner( 'Татьяна Назаренкова', 'Новосибирская область<br>ЦЦОД &laquo;IT-куб&raquo; на&nbsp;базе МБОУ &laquo;Новосибирская классическая гимназия &#8470;17&raquo;', '3' )
+                     //      +winner( 'Фёдор Урадовский', 'Новосибирская область<br>ЦЦОД &laquo;IT-куб&raquo;', '5' )
+                     //      +winner( 'Даниил Рыков', 'Новосибирская область<br>ЦЦОД &laquo;IT-куб&raquo; на&nbsp;базе МБОУ &laquo;Технический лицей &#8470; 176&raquo;', '7' )
+                     //      +winner( 'Матвей Ваулин', 'Челябинская область<br>ЦЦОД &laquo;IT-куб. Сатка&raquo;', '9' )
+                     //
+                     //   .row
+                     //      +winner( 'Тамара Копылова', 'Пермский край<br>Центр &laquo;IT-куб. Добрянка&raquo;', '2' )
+                     //      +winner( 'Владислав Калугин', 'Республика Хакасия<br>ЦЦО &laquo;IT-куб. Абакан&raquo;', '4' )
+                     //      +winner( 'Александр Соловьёв', 'Челябинская область<br>ЦЦОД &laquo;IT-куб. Сатка&raquo;', '6' )
+                     //      +winner( 'Данила Апрелков ', 'Новосибирская область<br>ЦЦОД &laquo;IT-куб&raquo; на&nbsp;базе МБОУ &laquo;Новосибирская классическая гимназия &#8470;17&raquo;', '8' )
+                     //      +winner( 'Максим Насибулин', 'Челябинская область<br>ЦЦОД &laquo;IT-куб. Сатка&raquo;', '10' )
+
          include assets/jade/content/hackathon/__participation
-         section( aria-label='Кто может принять участие' )#participation.hackathon__participation
+         section( aria-label='Кто может принять участие' )#participation.hackathon__participation.mt18
             .wrapper
                h1.caption.center.mb4 В Хакатоне могут  принять участие:
                .row
@@ -83,7 +122,7 @@ html
                      p Для участия в Хакатоне необходимо в&nbsp;срок до&nbsp;10&nbsp;октября 2025&nbsp;г. (включительно) подать заявку для&nbsp;регистрации в&nbsp;
                         a.inline-block.hover( href='https://clck.ru/3PH43i' target='_blank') Яндекс-форме Организатора.
                   p.text-25.mb2 После подачи заявки для&nbsp;регистрации участники Хакатона будет направлена ссылка для&nbsp;регистрации в&nbsp;геймифицированном мобильном приложении.
-                  p.text-25 Хакатон проводится с&nbsp;использованием геймифицированного мобильного приложения  &laquo;Игра Первых&raquo;. Задания Хакатона размещаются в&nbsp;приложении и&nbsp;предполагают ввод ответов для&nbsp;автоматической проверки в&nbsp;соответствующих модулях.
+                  p.text-25 Хакатон проводится с&nbsp;использованием геймифицированного мобильного приложения. Задания Хакатона размещаются в&nbsp;приложении и&nbsp;предполагают ввод ответов для&nbsp;автоматической проверки в&nbsp;соответствующих модулях.
                   .flex.mt2.download
                      a.mr1( href='https://apps.apple.com/app/id6503953951' target='_blank').apple
                         img( src='./assets/data/icons/social/apple.svg' )
