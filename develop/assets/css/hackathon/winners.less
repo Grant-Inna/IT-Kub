@@ -201,11 +201,24 @@ section .hackathon_winner__name.text-22 {
 }
 
 .container_hackathon-25 {
-   .hackathon_winners__flex {
-      .flex-wrap();
-      .justify-evenly();
-      .sm-block({
-         .justify-start();
+   .hackathon_winners__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(5, max-content);
+      grid-column-gap: 6rem;
+      grid-row-gap: 1.8rem;
+      
+      margin-left: 10rem;
+      .ll-block({
+         margin-left: 6rem;
+      });
+      .md-block({
+         margin-left: 10%;
+         grid-template-columns: 85%;
+      });
+      .xs-block({
+         margin-left: 5%;
+         grid-template-columns: 90%;
       });
       
       .row {
@@ -214,15 +227,19 @@ section .hackathon_winner__name.text-22 {
          min-width: 300px;
       }
       .block_12 {
-         width: 100%;
-         margin-left: 3.5rem;
-         .xs-block({
-            margin-left: 0;
-         });
+         grid-column: span 1;
+         grid-row: span 1;
       }
+      //.block_12 {
+      //   width: 100%;
+      //   margin-left: 3.5rem;
+      //   .xs-block({
+      //      margin-left: 0;
+      //   });
+      //}
    }
    .hackathon_winners__holder article {
-      margin-bottom: 2rem;
+      //margin-bottom: 2rem;
    }
    .hackathon_winner__place {
       position: absolute;
@@ -242,10 +259,18 @@ section .hackathon_winner__name.text-22 {
       margin-bottom: .5rem;
       
       margin-left: 50px;
+      
+      .xs-block({
+         margin-left: 35px;
+      });
    }
    .hackathon_winner__location.text-22 {
       .montserrat-regular();
+      max-width: 450px;
       margin-left: 50px;
+      .xs-block({
+         margin-left: 35px;
+      });
    }
    
    .hackathon_winners__list .row.others {
@@ -253,4 +278,7 @@ section .hackathon_winner__name.text-22 {
    }
    
    
+}
+.hackathon_winner-25-1 {
+
 }
