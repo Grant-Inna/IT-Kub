@@ -208,17 +208,23 @@ section .hackathon_winner__name.text-22 {
       grid-column-gap: 6rem;
       grid-row-gap: 1.8rem;
       
-      margin-left: 10rem;
+      max-width: 1250px;
+      margin-right: auto;
+      margin-left: auto;
+      
+      //margin-left: 10rem;
       .ll-block({
          margin-left: 6rem;
       });
       .md-block({
          margin-left: 10%;
-         grid-template-columns: 85%;
+         display: block;
       });
       .xs-block({
          margin-left: 5%;
-         grid-template-columns: 90%;
+      });
+      .xxs-block({
+         margin-left: 0;
       });
       
       .row {
@@ -227,8 +233,9 @@ section .hackathon_winner__name.text-22 {
          min-width: 300px;
       }
       .block_12 {
-         grid-column: span 1;
-         grid-row: span 1;
+         .md-block({
+            margin-top: 2.8rem;
+         });
       }
       //.block_12 {
       //   width: 100%;
@@ -252,6 +259,10 @@ section .hackathon_winner__name.text-22 {
       left: -1rem;
       
       padding-left: 0;
+      
+      .md-block({
+         top: 0;
+      })
    }
    section .hackathon_winner__name.text-22 {
       .montserrat-bold();
@@ -277,8 +288,62 @@ section .hackathon_winner__name.text-22 {
       .justify-start();
    }
    
-   
 }
 .hackathon_winner-25-1 {
+   grid-row-start: 1;
+   grid-row-end: 2;
+   
+   grid-column-start: 1;
+   grid-column-end: 2;
+}
+.hackathon_winner-25-2 {
+   grid-row-start: 2;
+   grid-row-end: 3;
+   
+   grid-column-start: 1;
+   grid-column-end: 2;
+
+}
+.hackathon_winner-25-3 {
+   grid-row-start: 3;
+   grid-row-end: 4;
+   
+   grid-column-start: 1;
+   grid-column-end: 2;
+
+}
+.hackathon_winner-25-4 {
+   grid-row-start: 4;
+   grid-row-end: 5;
+   
+   grid-column-start: 1;
+   grid-column-end: 2;
+
+}
+.hackathon_winner-25-5 {
+   grid-row-start: 5;
+   grid-row-end: 6;
+   
+   grid-column-start: 1;
+   grid-column-end: 2;
+
+}
+
+
+
+.hackathon_winner-25-6 {
+   grid-row-start: 1;
+   grid-row-end: 2;
+   
+   grid-column-start: 2;
+   grid-column-end: 3;
+
+}
+.hackathon_winner-25-7 {
+   grid-row-start: 2;
+   grid-row-end: 3;
+   
+   grid-column-start: 2;
+   grid-column-end: 3;
 
 }
