@@ -32,6 +32,7 @@ html
                      include ./news/__img_25-lazy
 
 
+                     include ./news/__news_103_05022026
                      include ./news/__news_102_03022026_2
                      include ./news/__news_101_03022026
                      include ./news/__news_100_28012026
@@ -143,9 +144,9 @@ html
                   section( aria-label='Главная новость' ).main_news__container
                      .row
                         .main_news__image
-                           img( src='./assets/data/images/news/2026/02.03-2/1.webp' title='© Центр «IT-куб. Смоленск»' )
+                           img( src='./assets/data/images/news/2026/02.05/1.webp' title='«ТЕХНО-IT-куб» г. Хабаровска' )
                         main.main_news__holder
-                           .main_news__date.text-25 03
+                           .main_news__date.text-25 05
                               span.first &nbsp;/&nbsp;
                               span.second .
                               | 02
@@ -153,8 +154,8 @@ html
                               span.second .
                               | 2026
                            .main_news__text.text-22
-                              p Хакатон «Код большой страны» в&nbsp;Смоленске посвятили единству народов России
-                           a( href='./news.html#news_03-02-2026_2' ).news__more.hover.inline Подробнее
+                              p Педагог из&nbsp;Центра «ТЕХНО-IT-куб» г.&nbsp;Хабаровска вошла в&nbsp;двадцатку сильнейших методистов России
+                           a( href='./news.html#news_05-02-2026' ).news__more.hover.inline Подробнее
 
 
 
@@ -163,6 +164,7 @@ html
                         .news__block.news_block-1#active
                            include ./assets/jade/content/__news-one
                            .pagination__block.pagination_show#block_1
+                              +news( '03', '02', '2026', 'Хакатон «Код большой страны» в&nbsp;Смоленске посвятили единству народов России', 'news_03-02-2026_2' )
                               +news( '03', '02', '2026', 'Обучающиеся Центра «IT-куб. Уралмаш» приняли участие в&nbsp;сменах Всероссийских детских центров', 'news_03-02-2026' )
                               +news( '28', '01', '2026', 'ФИЦТО исполнил мечты детей из&nbsp;Херсонской и&nbsp;Тульской областей', 'news_28-01-2026' )
                               +news( '20', '01', '2026', 'Воспитанники Центров «IT-куб» Амурской области показали выдающийся результат на&nbsp;чемпионате по&nbsp;подводно-исследовательскому спорту «IFURS-Благовещенск»', 'news_20-01-2026' )
