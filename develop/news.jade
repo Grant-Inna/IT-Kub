@@ -32,6 +32,7 @@ html
                      include ./news/__img_25-lazy
 
 
+                     include ./news/__news_108_19022026
                      include ./news/__news_107_18022026
                      include ./news/__news_106_12022026
                      include ./news/__news_105_11022026
@@ -148,9 +149,9 @@ html
                   section( aria-label='Главная новость' ).main_news__container
                      .row
                         .main_news__image
-                           img( src='./assets/data/images/news/2026/02.18/1.webp' title='© Центр «IT-куб. Абакан»' )
+                           img( src='./assets/data/images/news/2026/02.19/1.webp' title='© Центр «IT-куб.Мурманск»' )
                         main.main_news__holder
-                           .main_news__date.text-25 18
+                           .main_news__date.text-25 19
                               span.first &nbsp;/&nbsp;
                               span.second .
                               | 02
@@ -158,8 +159,8 @@ html
                               span.second .
                               | 2026
                            .main_news__text.text-22
-                              p Воспитанники Центра «IT-куб. Абакан» заняли весь пьедестал в&nbsp;компетенции «Программные решения для бизнеса» на&nbsp;чемпионате «Профессионалы»
-                           a( href='./news.html#news_18-02-2026' ).news__more.hover.inline Подробнее
+                              p Центр «IT-куб.Мурманск» приглашает школьников на&nbsp;хакатон «3D&#8209;артист», посвящённый Году единства народов России
+                           a( href='./news.html#news_19-02-2026' ).news__more.hover.inline Подробнее
 
 
 
@@ -168,6 +169,7 @@ html
                         .news__block.news_block-1#active
                            include ./assets/jade/content/__news-one
                            .pagination__block.pagination_show#block_1
+                              +news( '18', '02', '2026', 'Воспитанники Центра «IT-куб. Абакан» заняли весь пьедестал в&nbsp;компетенции «Программные решения для бизнеса» на&nbsp;чемпионате «Профессионалы»', 'news_18-02-2026' )
                               +news( '12', '02', '2026', 'Школьники Тульской и&nbsp;Херсонской областей сразились в&nbsp;киберспортивном поединке', 'news_12-02-2026' )
                               +news( '11', '02', '2026', 'От дошкольников до&nbsp;старшеклассников: фестиваль «ТехноСТАРТ» собрал в&nbsp;Хабаровске более 600&nbsp;юных инженеров', 'news_11-02-2026' )
                               +news( '05', '02', '2026', 'Десять воспитанников Центра «IT-куб. Мурманск» вышли в&nbsp;региональный финал Чемпионата «Профессионалы»', 'news_05-02-2026_2' )
